@@ -1,0 +1,170 @@
+    /*@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500,700,900&display=swap");*/
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+
+    body {background-color: #195E87;}
+
+    * {margin: 0; padding: 0; list-style: none; font-family: 'Noto Sans TC', sans-serif;}
+    a {text-decoration: none;}
+    p {font-weight: 300;line-height: 2rem;}
+    ol li {
+        list-style-type: square;
+        font-weight: 300;
+        line-height: 2rem;
+      }
+    .container.main-container{color: #ffffff;}
+    .row{--bs-gutter-x: 0.8rem;}
+
+    .pdfdl {text-align: center; margin-top: -10px ; position: relative;}
+    .pdfdl a {color: #bbbbbb; border-radius: .25rem; transition: .3s; padding: .2rem 2rem .3rem;
+    }
+    .pdfdl a:hover {border: 1px solid #ffffff;color: #ffffff;}
+    .pdfdl i{margin-left: 0.5rem;}/**/
+
+/*    
+    .pdfdl a {
+        padding: .2rem 2.2rem .4rem .8rem;
+        position: relative;
+    }
+    .pdfdl a::after {
+        position: absolute;
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        content: "\f1c1";
+        font-size: 1.2rem;
+        margin-top: .1rem;
+        margin-left: 0.5rem;
+    }
+*/
+
+
+
+    /*輪播img定位*/
+    .carousel-item {height: 300px; position: relative; }
+    .carousel-item img {position: absolute; top: 0; bottom: 0; margin: auto;}
+
+
+    .banner1 {margin-bottom: 15px; width: 100%;height: 300px; background-color: #000000;}
+    .container1 {width: 90%; height: 100%; margin: auto;}
+    .banner1-txt {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        color: #ffffff;
+    }
+    /*.banner1-txt h1 {font-weight: 700;
+        border-bottom: 1px solid rgb(192, 192, 192);
+        因為有align-items: flex-start 所以線的寬度會對齊h1這個容器 
+    }*/
+
+    .banner1.siteNav{
+        background: linear-gradient(115deg, #022d41 10%, transparent 80%) center center / 100% 100%,
+        url("../img/digital-map-1140975.jpg") right center / 100% auto;
+    }
+    .banner1.about{
+        background: linear-gradient(115deg, #022d41 10%, transparent 80%) center center / 100% 100%,
+        url("https://picsum.photos/id/2/2048/1024") right center / 100% auto;
+    }
+    .banner1.applications{
+        background: linear-gradient(115deg, #022d41 10%, transparent 80%) center center / 100% 100%,
+        url("../img/itsupport-1635938.jpg") right center / 100% auto;
+    }
+    .banner1.support{
+        background: linear-gradient(115deg, #022d41 10%, transparent 80%) center center / 100% 100%,
+        url("../img/technology-background.jpg") right center / 100% auto;
+    }    
+    .banner1.careers{
+        background: linear-gradient(115deg, #022d41 10%, transparent 80%) center center / 100% 100%,
+        url("../img/handshake-1237743.jpg") right center /100% auto;
+    }
+    .banner1.contactus{
+        background: linear-gradient(115deg, #022d41 10%, transparent 80%) center center / 100% 100%,
+        url("https://picsum.photos/id/3/2048/1024") right center / 100% auto;
+    }
+    .banner1.siteNav, .banner1.about, .banner1.applications, .banner1.support, .banner1.careers, .banner1.contactus{
+        background-repeat  :no-repeat,no-repeat;
+    }
+
+
+
+
+    .card-img-top{padding: 2px; border-radius: 5px;}
+    .card img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /*填滿元素的寬度及高度(維持原比例)，通常會剪掉超出部分的物件。*/
+        
+    }/**/
+    .card.about{
+        background-color: rgba(255, 255, 255, 0.2);
+        color:#ffffff;
+        border: 0px;
+        /*border-left:1px solid #ffffff;*/
+    }
+
+    .white-title {
+        color: #ffffff;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    h6.work-content-title{border-bottom: 1px solid #000;padding-bottom: 3px; margin-bottom: 3px;}
+    .work-content-wrap small{font-size: 0.8rem;}
+
+    /*.text-muted{color:#dddddd!important;}*/
+
+    footer {
+        background-color: #313131;
+        width: 100%;
+        font-size: 0.8rem;
+    }
+
+    #footer, #footer a {color: #bdbdbd;}
+    .copyright {border-top: 1px solid #bdbdbd; padding-top: 8px;}
+
+    @media (max-width: 576px) {
+        .carousel-item, .banner1  {height: 180px;}
+      }
+
+      /*回到最上按鈕 起始*/
+    
+      #gotop {
+        position:fixed;
+        z-index:90;
+        right:30px;
+        bottom:31px;
+        display:none;
+        width:50px;
+        height:50px;
+        color:#fff;
+        background:#33b5e5;
+        line-height:50px;
+        border-radius:50%;
+        /*transition:all 0.5s;*/
+        text-align: center;
+        box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+    }
+    #gotop :hover{
+        background:#0099CC;
+    }
+      /*回到最上按鈕 結束*/
+
+    /* 如果要固定上方選單要註銷這個區塊的註解 起始*/
+    /*固定選單*/
+    .navFixed {
+        z-index: 10;
+        position: fixed;
+        top: 0;
+        left: 0;
+        margin-top: 0;
+        min-width: 100%;
+        /*opacity: .99;*/
+        transition: opacity .3s ease-out;
+    }
+    .change-mt3{margin-top: 6rem!important;}
+    .carousel, .banner1{margin-top: 65px;}
+    /*補上選單空間*/
+    /*.mt-add80 {margin-top: 75px;} 
+    .new-body-mt{margin-top: 60px;} 補上選單空間*/
+    /*如果要固定上方選單要註銷這個區塊的註解 結束*/
