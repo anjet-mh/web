@@ -14,7 +14,7 @@
 .header_nav li::after {position: absolute; content: ''; width: 0%; height: 5px;bottom: 0;left: 40%;transition: .3s;}
 .header_nav li:hover::after {width: 60%;left: 20%;background-color: rgba(254, 223, 225,1);}
 
-/*.header_nav a.active{color:#ffffff;}*/
+.header_nav a.active{color:#ffffff;}/**/
 
 .header_nav .test{display: none;}/*隱藏橫向選單中調整空間用的li*/
 
