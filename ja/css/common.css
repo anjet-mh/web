@@ -1,0 +1,283 @@
+    /*@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500,700,900&display=swap");*/
+    /*
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+    * {margin: 0; padding: 0; list-style: none; font-family: 'Noto Sans TC', sans-serif;letter-spacing: .3rem;}
+    */
+
+    /*
+    @import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700;800;900&display=swap');
+    * {margin: 0; padding: 0; list-style: none; font-family: 'M PLUS 1p', sans-serif; letter-spacing: .3rem;}
+    */
+
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap');
+    * {margin: 0; padding: 0; list-style: none; font-family: 'Noto Serif JP', serif; letter-spacing: .1rem;}
+
+    ul li {list-style-type:none;}
+    a {text-decoration: none; }
+    p{line-height: 1.5rem; margin: .5rem 0;}
+    
+    body.div-gradient {        
+        background: linear-gradient(90deg, rgba(250, 214, 137, .3)35%, rgba(254, 223, 225, .3)60%);
+        background: -moz-linear-gradient(90deg, rgba(250, 214, 137, .3)35%, rgba(254, 223, 225, .3)60%);
+        background: -webkit-linear-gradient(90deg, rgba(250, 214, 137, .3)35%, rgba(254, 223, 225, .3)60%);
+        background: -o-linear-gradient(90deg, rgba(250, 214, 137, .3)35%, rgba(254, 223, 225, .3)60%);
+        /*background-color: rgba(141, 72, 44, 0.2);*/
+        }
+    .header, .header_nav, #footer {background-color: rgba(8, 25, 45, .9);}
+    .header{padding: 0m .8rem; height: 63px;}
+    #footer {width: 100%; font-size: 0.8rem;padding: 2px 0 20px;}
+    #footer, #footer a {color: #dfdfdf;}
+    /*.copyright {border-top: 1px solid #bdbdbd; padding-top: 8px;}*/
+    #footer p{ line-height: 1.2rem; margin: 0; letter-spacing: 1px;}
+
+    .area{margin-top: 2rem;}
+    .area .container{padding: 1rem 0;}
+
+    .section_header{
+        margin-bottom: 1rem;
+        padding-bottom: .5rem;
+        border-bottom: 1px solid rgb(110, 85, 47, 1);
+    }
+    h2.title, p.sub_title{
+        color:rgb(110, 85, 47, 1);
+        margin-bottom: 0px;
+    }    
+    p.sub_title{
+        text-align: right;
+        padding: 0;
+        line-height: 1rem;
+        margin:-1.1rem 0  0 180px;
+        opacity: .8;
+    }/*margin-top: -2rem; margin-bottom: 1.5rem;*/
+    .more{
+        font-size: 1rem;
+        margin-left: 1rem;
+        z-index: 5;
+    }
+    .item{
+        margin: 1rem 0;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid rgba(128, 128, 128, .2);
+    }
+
+    a{color: rgb(8, 108, 108);}
+    a .date{margin-right: 2rem;}
+    a:hover, a:hover *{color: rgb(247, 92, 47);}    
+    
+    #home_area .item a:hover .label {text-decoration: underline;}
+
+    #about_area, #recruit_area{width: 100%;background-color: rgba(182, 20, 20, .05);}
+
+    #about_area .about_img{
+        border-radius: 6px;
+        background-color: rgba(255, 255, 255, .8);
+        border: 1px solid rgba(128, 128, 128, 0.2);/**/
+        padding: 3px;
+        margin-bottom:12px;
+        /*box-shadow: 0px 4px 6px 1px rgba(66, 22, 2, 0.2);*/
+    }
+    #about_area .about_img img{border-radius: 4px 4px 0 0;}
+    #about_area .about_img p{text-align: center; letter-spacing: 2px; margin: 3px 5px;}
+
+    #recruit_area li {/*list-style-type:circle ;*/ margin-left: 3rem;line-height: 1.5rem;}
+    .Work_location{text-align: center;}
+    .Work_location img{ max-width: 100%;margin-bottom: 10px;}
+    /*#recruit_area span{
+        font-size: .4rem;
+        text-align: center;
+        width: 25px;
+        height: 25px;
+        padding: 0 2px 2px 6px;
+        margin-right: 4px;
+        border: 1px solid ;
+        border-radius: 100%;
+    }*/
+    .Work_location a{padding: 0 5px 0 9px; border: 1px solid rgba(8, 108, 108, .8);border-radius: 5px;transition: .3s;}
+    .Work_location a:hover{border: 1px solid rgba(247, 92, 47, 0);background-color: rgba(8, 108, 108);color: seashell;}
+
+    #contactus_area .map_area{
+        box-shadow: 0 0 10px 5px rgba(153, 107, 7, 0.3);
+        border-radius: 10px;
+        margin-top: -5rem;
+        margin-bottom: 2rem;
+    }
+    #contactus_area p{font-size: .9rem; margin: .2rem 0; letter-spacing: .1rem;}
+    #contactus_area .setsumei{margin-bottom: 3rem;}
+    #contactus_area .badge{padding: .35em .8em;font-weight: 300;font-size: .4em;margin-right: .5em;letter-spacing: 0rem;}
+
+    #contactus_area p > a, #policy_area p > a{text-decoration: underline;}
+
+    #policy_area h4{margin: 2rem 1rem .5rem;}
+    #policy_area .section_body p, #policy_area ul{margin: 0 2rem 0; font-size: .88rem;line-height: 1.8rem;}
+
+    
+    #recruit_area ul, #policy_area ul{counter-reset: li;}
+    #recruit_area li, #policy_area li{position: relative;}
+    #recruit_area li::before, #policy_area li::before{
+        content: counter(li)'. ';
+        counter-increment: li;
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    #recruit_area li, #policy_area li{margin-left: 1.2rem; padding-left: 1.4rem;}
+
+
+
+    .card-text{ letter-spacing: 2px;}
+
+    .row{--bs-gutter-x: .5rem;}/**/
+
+    .pdfdl {text-align: center; margin-top: -10px ; position: relative;}
+    .pdfdl a {color: #bbbbbb; border-radius: .25rem; transition: .3s; padding: .2rem 2rem .3rem;
+    }
+    .pdfdl a:hover {border: 1px solid #ffffff;color: #ffffff;}
+    .pdfdl i{margin-left: 0.5rem;}/**/
+
+/*    
+    .pdfdl a {
+        padding: .2rem 2.2rem .4rem .8rem;
+        position: relative;
+    }
+    .pdfdl a::after {
+        position: absolute;
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        content: "\f1c1";
+        font-size: 1.2rem;
+        margin-top: .1rem;
+        margin-left: 0.5rem;
+    }
+*/
+
+
+
+    /*輪播img定位*/
+    .carousel-item {height: 300px; position: relative; }
+    .carousel-item img {position: absolute; top: 0; bottom: 0; margin: auto;}
+
+
+    .banner1 {margin-bottom: 15px; width: 100%;height: 300px; background-color: #000000;}
+    .container1 {width: 90%; height: 100%; margin: auto;}
+    .banner1-txt {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        color: #ffffff;
+    }
+    /*.banner1-txt h1 {font-weight: 700;
+        border-bottom: 1px solid rgb(192, 192, 192);
+        因為有align-items: flex-start 所以線的寬度會對齊h1這個容器 
+    }*/
+
+    .banner1.siteNav{
+        background: linear-gradient(115deg, #022d41 10%, transparent 80%) center center / 100% 100%,
+        url("../img/digital-map-1140975.jpg") right center / 100% auto;
+    }
+    .banner1.about{
+        background: linear-gradient(115deg, #022d41 10%, transparent 80%) center center / 100% 100%,
+        url("https://picsum.photos/id/2/2048/1024") right center / 100% auto;
+    }
+    .banner1.applications{
+        background: linear-gradient(115deg, #022d41 10%, transparent 80%) center center / 100% 100%,
+        url("../img/itsupport-1635938.jpg") right center / 100% auto;
+    }
+    .banner1.support{
+        background: linear-gradient(115deg, #022d41 10%, transparent 80%) center center / 100% 100%,
+        url("../img/technology-background.jpg") right center / 100% auto;
+    }    
+    .banner1.careers{
+        background: linear-gradient(115deg, #022d41 10%, transparent 80%) center center / 100% 100%,
+        url("../img/handshake-1237743.jpg") right center /100% auto;
+    }
+    .banner1.contactus{
+        background: linear-gradient(115deg, #022d41 10%, transparent 80%) center center / 100% 100%,
+        url("../img/contactus.jpg") right center / 100% auto;
+    }
+    .banner1.siteNav, .banner1.about, .banner1.applications, .banner1.support, .banner1.careers, .banner1.contactus{
+        background-repeat  :no-repeat,no-repeat;
+    }
+
+
+
+
+    .card-img-top{padding: 2px; border-radius: 5px;}
+    .card img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /*填滿元素的寬度及高度(維持原比例)，通常會剪掉超出部分的物件。*/
+    }/**/
+    .card-title{letter-spacing: .1rem;}
+    .card.about{
+        background-color: rgba(255, 255, 255, 0.5);
+        color:#ffffff;
+        border: 0px;
+        /*border-left:1px solid #ffffff;*/
+    }
+
+
+    /*.text-muted{color:#dddddd!important;}*/
+
+
+    /*@media (min-width: 936px) {
+      .container, .container-lg, .container-md, .container-sm, .container-xl {
+          max-width: 936px;}
+    }*/
+   
+
+    @media (max-width: 576px) {.carousel-item, .banner1  {height: 180px;}}
+
+      /*回到最上按鈕 起始*/
+      #gotop {
+        position:fixed;
+        z-index:99;
+        right:10px;
+        bottom:10px;
+        display:none;
+        width:38px;
+        height:38px;
+        line-height:38px;
+        text-align: center;
+        color:#fff;
+        background:#33b5e5; 
+        box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);       
+        border-radius:10%;
+        padding-left: 5px;
+        /*transition:all 0.5s;*/    
+    }
+    #gotop:hover, #gotop:hover > i{background:#0099CC;color: #fff;}
+      /*回到最上按鈕 結束*/
+
+    /* 如果不要固定上方選單要註銷這個區塊 起始*/
+    /*固定選單*/
+    .navFixed {
+        z-index: 10;
+        position: fixed;
+        top: 0;
+        left: 0;
+        margin-top: 0;
+        min-width: 100%;
+        /*opacity: .99;*/
+        transition: opacity .3s ease-out;
+    }
+
+
+    .carousel, .banner1{margin-top: 63px;}/**/
+    /*補上選單空間*/
+    /*.mt-add80 {margin-top: 75px;} 
+    .new-body-mt{margin-top: 60px;} 補上選單空間*/
+    /*如果不要固定上方選單要註銷這個區塊 結束*/
+
+    @media (min-width: 768px) {
+        *{letter-spacing: .3rem;}
+        #home_area a{display: inline-flex;}
+        .col-md-9{padding-right: 25px;}
+        #about_area .left{width: 115px;}
+        #about_area .right{width:calc(100% - 115px)}
+        #contactus_area .left{width: 300px;}
+        #contactus_area .right{width:calc(100% - 300px)}
+        #contactus_area label {border-bottom: 1px solid rgba(0,0,0,0.12);}
+    }
