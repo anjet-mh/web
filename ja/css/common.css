@@ -40,9 +40,10 @@
         padding-bottom: .5rem;
         border-bottom: 1px solid rgb(110, 85, 47, 1);
     }
-    h2.title, p.sub_title{
+    h2.title, .sub_title{
         color:rgb(110, 85, 47, 1);
         margin-bottom: 0px;
+        position: relative;
     }    
     .sub_title{
         font-size: 1rem;
@@ -55,10 +56,10 @@
     }/*margin-top: -2rem; margin-bottom: 1.5rem;*/
 
 
-    .title_btn{font-size: 1rem; margin-left: 1rem; z-index: 10;}
+    .title_btn{position: absolute; font-size: .6rem; letter-spacing: .1rem; border: 1px solid; border-radius: 5px;margin-left: 10px; padding: 2px 8px 3px 8px; top: 8px; transition: .2s;}
 
-    .Back_to_list_btn {position: fixed;font-size: .9rem; letter-spacing: .1rem;color: #fff; top: 18%; padding: 10px 0;
-        writing-mode: vertical-rl; text-align: center; background-color: rgba(8, 108, 108, .5); border-radius: 0 10px 10px 0;}
+    .Back_to_list_btn {position: fixed; font-size: .9rem; letter-spacing: .1rem; color: #fff; top: 18%; padding: 10px 0;
+        writing-mode: vertical-rl; text-align: center; background-color: rgba(8, 108, 108, .5); border-radius: 0 10px 10px 0; transition: .2s;}
     .Back_to_list_btn:hover{background-color:rgba(8, 108, 108, .8);color: #fff;}
 
 
