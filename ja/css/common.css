@@ -24,8 +24,8 @@
         /*background-color: rgba(141, 72, 44, 0.2);*/
         background: url(../img/bodybg.png);
         }
-    .header, .header_nav, #footer {background-color: rgba(1, 64, 80, .85);}/*rgba(8, 25, 45, .7)*/
-    .header{padding: 0m .8rem; height: 63px;}
+    #load-nav .header, .header_nav, #footer {background-color: rgba(1, 64, 80, .85);}/*rgba(8, 25, 45, .7)*/
+    #load-nav .header{padding: 0m .8rem; height: 63px;}
     #footer {width: 100%; font-size: 0.8rem;padding: 2px 0 20px;}
     #footer, #footer a {color: #dfdfdf;}
     /*.copyright {border-top: 1px solid #bdbdbd; padding-top: 8px;}*/
@@ -127,11 +127,16 @@
     #news_page_area .date{font-size: 1.4rem; margin-bottom: 1rem; text-align: center;}
     #news_page_area .label{font-size: 1.2rem; margin-bottom: 2rem; text-align: center;}
     #news_page_area .content{margin: 0 2rem;}
+    
+    .content_item{margin-bottom: 1rem;border: 1px solid rgba(0, 0, 0, 0.1);}
+    .content_header {background-color: rgba(250, 214, 137, .4);color: rgba(58, 29, 1, .9);padding:0.8rem}
+    .content_header h4 {font-size: 1.2rem; letter-spacing: .2rem; margin-bottom: 0;}
+    .content_header span{font-size: .9rem; opacity: .8;}
+    .content_body {padding: 1rem .5rem; background-color: rgba(255, 255, 255, 0.4);}
+    .content_txt{letter-spacing: 0rem; padding:0 .5rem;}
+    .content_body ol{margin-bottom: 0;}
+    .content_body li{list-style-type:circle;letter-spacing: .05rem;}
 
-    #product_page_area .accordion-body { letter-spacing: .15em;}
-    #product_page_area li{list-style-type:circle;letter-spacing: .15em;}
-    .accordion-button{background-color: rgba(255, 255, 255, .4);}
-    .accordion-button:not(.collapsed){background-color: rgba(250, 214, 137, .4);color: rgba(58, 29, 1, .9);}
 
     #news_list_area, #product_list_area{margin-top: 80px;}
 
@@ -214,7 +219,8 @@
 
 
 
-    .card{background-color: rgb(255, 255, 255, .5); box-shadow: 0px 3px 6px 1px rgba(58, 29, 1, 0.1); border: 0px;}
+    .card{background-color: rgb(255, 255, 255, .4); box-shadow: 0px 3px 6px 1px rgba(58, 29, 1, 0.1); border: 0px;}
+    .card-header{background-color: rgba(250, 214, 137, .4);color: rgba(58, 29, 1, .9);}
     .card-img-top{ width: 100%; padding: 2px; border-radius: 5px; object-fit: cover; /*填滿元素的寬度及高度(維持原比例)，通常會剪掉超出部分的物件。*/}
 
     .card-title{letter-spacing: .1rem;}
