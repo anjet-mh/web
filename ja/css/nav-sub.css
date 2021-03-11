@@ -2,8 +2,12 @@
     background-color: rgba(86, 63, 46, .9);
     border-bottom: .15rem solid #bdbdbd;
 }*/
-.logo{padding: 0 .8rem;height: 100%;display: flex;justify-content: center;align-items: center;}/**/
-.logo img {height: 36px;/*transform:scale(0.5, 0.5);*/}
+.logo{padding: 0 .8rem;height: 100%;display: flex;justify-content: center;align-items: center;
+
+}/**/
+.logo_img{width: 130px;height: 36px;background: url(../img/LOGO.png)no-repeat;background-size: auto 36px ;
+    background-position:center center;}
+.logo img { height: 36px; /*transform:scale(0.5, 0.5);*/}
 .header_nav {text-align: center; margin-top: 0px;  /*background-color: rgba(86, 63, 46, .9)*/}
 .header_nav>ul {height: 92.3vh; overflow-y: auto; padding-bottom: 30px;}/*控制卷軸*/
 
