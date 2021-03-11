@@ -124,8 +124,9 @@
         top: 0;
     }
 
-    #news_page_area .date{font-size: 1.4rem; margin-bottom: 1rem; text-align: center;}
-    #news_page_area .label{font-size: 1.2rem; margin-bottom: 2rem; text-align: center;}
+    #news_page_area .date, #news_page_area .label{font-size: 1.4rem; margin-bottom: 1rem; color: rgba(58, 29, 1, .9); text-align: center;}
+
+    #news_page_area .label{font-size: 1.2rem; margin-bottom: 2rem;}
     #news_page_area .content{margin: 0 2rem;}
     
     .content_item{margin-bottom: 1rem;border: 1px solid rgba(0, 0, 0, 0.1);}
