@@ -223,7 +223,7 @@
         background: linear-gradient(115deg, #022d41 10%, transparent 80%) center center / 100% 100%,
         url("../img/policy.png")no-repeat right center / 100% auto;
     }
-    .banner1.siteNav, .banner1.about, .banner1.applications, .banner1.support, .banner1.careers, .banner1.contactus{
+    .banner1.siteNav, .banner1.about, .banner1.applications, .banner1.support, .banner1.careers, .banner1.contactus, .banner1.policy{
         background-repeat  :no-repeat,no-repeat;
     }
 
