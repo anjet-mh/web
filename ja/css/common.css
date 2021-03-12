@@ -78,6 +78,7 @@
 
     #about_area, #recruit_area{width: 100%;background-color: rgba(182, 20, 20, .05);}
 
+    #about_area .left, #about_area .right{padding: 0;}
     #about_area .about_img{
         border-radius: 6px;
         background-color: rgba(255, 255, 255, .8);
@@ -113,7 +114,8 @@
     #policy_area h4{margin: 2rem 1rem .5rem;}
     #policy_area .section_body p, #policy_area ul{margin: 0 2rem 0; font-size: .88rem;line-height: 1.8rem;}
 
-
+    #recruit_area h4{font-size: 1.3rem;}
+    #recruit_area h5{font-size: 1.05rem;}
     #recruit_area ul li, #policy_area ul li{margin-left: 1.2rem; padding-left: 1.4rem;}
     #recruit_area ul, #policy_area ul{counter-reset: li;}
     #recruit_area ul li, #policy_area ul li{position: relative;}
@@ -294,8 +296,8 @@
 
         #home_area a, #news_area a{display: inline-flex;}
         .col-md-9{padding-right: 25px;}
-        #about_area .left{width: 115px;}
-        #about_area .right{width:calc(100% - 115px)}
+        #about_area .left{width: 105px;}
+        #about_area .right{width:calc(100% - 105px)}
         #contactus_area .left{width: 300px;}
         #contactus_area .right{width:calc(100% - 300px)}
         #contactus_area label {border-bottom: 1px solid rgba(0,0,0,0.12);}
