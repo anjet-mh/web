@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+
+<head></head>
+
+<body>
+  <div id="news_page_area" class="area">
+    <div class="container">
+      <div class="section_wrap">
+        <div class="section_header">
+          <h2 class="title">NEWS
+            <span class="sub_title">お知らせ</span>
+          </h2>
+        </div>
+        <div class="section_body">
+  
+          <div class="date"><samp>2021/03/08</samp> </div>
+          <div class="label"><b>
+            日米貿易は不公平！トランプ大統領が激怒で日本経済が大ピンチ！安倍さん頑張れ
+          </b></div>
+          <div class="content">
+            <p>
+                記事によると<br>
+                　来日中のトランプ米大統領は６日、日米貿易について、日本はここ数十年にわたり「勝利を収めている」と指摘した上で、日米の経済関係を強化し、より互恵的なものとする方法を協議すると語った。
+                大統領は日本の財界トップとの会合の冒頭、米国は日本のせいで「長い年月にわたって」巨額の貿易赤字に苦しんできたと発言。改善に向けた交渉が必要だとしつつも、友好的な方法で協議に臨む姿勢を明らかにした。
+                大統領は、米国の軍用装備品は世界で最も優れていると述べ、日本が軍用装備品を米国から購入していることを称賛。一方で、多くの日本車が米国で販売されているが、米国から日本に輸出される車はほとんどない、と指摘した。
+                「われわれは自由かつ互恵的な貿易を望むが、現時点で日米貿易は自由でも互恵的でもない。ただ、今後そうなるだろう」と述べた。
+                大統領はまた、米国を日本企業にとって雇用・投資・成長の面で最も魅力的な場所にしたいと語った。
+                米財務省によると、昨年の日本の対米貿易黒字は６９０億ドル。
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </div>
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      var str=$(".content").text();
+      str=str.replace(/\。/g,"。<br><br>");
+      $(".content").html(str)
+    });
+    </script>
+
+</body>
+
+</html>
