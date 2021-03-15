@@ -136,6 +136,7 @@
         });
 
       window.addEventListener('popstate', (event) => {
+        alert(window.location.pathname)
         if(window.location.pathname == "/news2.html"){
           window.location.reload();  }
       }) 
