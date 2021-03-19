@@ -83,10 +83,16 @@
 
     body .area:nth-child(odd){width: 100%;background-color: rgba(182, 20, 20, .05);}
 
+    #carouselExampleCaptions{background-color: rgba(255, 123, 0, 0.4);}
+
+
+
     #about_area .row>*{flex-shrink: 1;}
     #about_area .container .section_wrap .section_body .row{--bs-gutter-x: 0rem; }
     #about_area .right{ margin-left: 1rem;}
     #about_area li{list-style: circle; margin-left: 1rem; }
+
+    .map_img{padding: 10px 0 ;}
 
     /*#about_area .about_img{
         border-radius: 6px;
@@ -133,7 +139,7 @@
     #policy_area h4{margin: 2rem 1rem .5rem;}
     #policy_area .section_body p, #policy_area ul{margin: 0 2rem 0; font-size: .88rem;line-height: 1.8rem;}
 
-    #recruit_area {background-image: url(../img/recurit/Screentone.png);}
+    #recruit_area {background-image: url(../img/recurit/Screentone2.png);}
     #recruit_area h4{font-size: 1.3rem;}
     #recruit_area h5{font-size: 1.05rem;}
     #recruit_area ul li, #policy_area ul li{margin-left: 1.2rem; padding-left: 1.4rem;}
@@ -344,6 +350,8 @@
         #about_area .left, #about_area .right{padding: 0;}/**/
         #about_area .left{width: 118px;}
         #about_area .right{width:calc(100% - 118px); margin: 0 0 0 0;}
+        .map_img{padding: 10px 0 10px 20px;}
+
         #contactus_area .left{width: 300px;}
         #contactus_area .right{width:calc(100% - 300px)}
         #contactus_area label {border-bottom: 1px solid rgba(0,0,0,0.12);}
