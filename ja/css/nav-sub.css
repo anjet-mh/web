@@ -80,14 +80,13 @@
 .header_nav_Open_Close{height: 0px; transform:translateY(-1000px);}/**/
 /* 隱藏 .header_nav 選單 E */
 
-/* width>936px時 多層選單的定位 768*/
-@media (min-width: 866px) {
-    .header{/*height: 65px;*/
+/* width>936px 866px 768px 時 多層選單的定位*/
+@media (min-width: 768px) {
+    .header{
         display: flex;
         justify-content:space-between;
         align-items: center;
-        /*background-color: rgba(0, 0, 0, .9);*/
-    }
+    }/**/
     .header_nav {background-color: rgba(0, 0, 0, 0); width: 82vw; }
     .header_nav>ul{display: flex; white-space:nowrap; padding-right: 10px;} /*主選單 橫向排列*/
     .header_nav>ul {height: 100%;overflow-x: auto; overflow-y: hidden; padding-bottom: 0px;}

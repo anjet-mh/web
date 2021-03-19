@@ -83,8 +83,13 @@
 
     body .area:nth-child(odd){width: 100%;background-color: rgba(182, 20, 20, .05);}
 
-    #carouselExampleCaptions{background-color: rgba(255, 123, 0, 0.4);}
 
+    #carouselExampleCaptions{background-color: rgba(255, 123, 0, 0.4);}
+    #carouselExampleCaptions .carousel-item.bg1, #carouselExampleCaptions .carousel-item.bg2, #carouselExampleCaptions .carousel-item.bg3{
+        height: 300px;}
+    #carouselExampleCaptions .carousel-item.bg1{background: url(../img/banner/banner-01.jpeg)no-repeat; background-size: auto 100% ; background-position:center center;}
+    #carouselExampleCaptions .carousel-item.bg2{background: url(../img/banner/banner-02.jpg)no-repeat; background-size: auto 100% ; background-position:center center;}
+    #carouselExampleCaptions .carousel-item.bg3{background: url(../img/banner/banner-03.jpg)no-repeat; background-size: auto 100% ; background-position:center center;}
 
 
     #about_area .row>*{flex-shrink: 1;}
@@ -92,7 +97,8 @@
     #about_area .right{ margin-left: 1rem;}
     #about_area li{list-style: circle; margin-left: 1rem; }
 
-    .map_img{padding: 10px 0 ;}
+    .map_img{padding: 10px 0 ; text-align: center;}
+    .map_img img{ max-height: 300px;}
 
     /*#about_area .about_img{
         border-radius: 6px;
@@ -339,6 +345,10 @@
 
     @media (min-width: 768px) {
         *{letter-spacing: .2rem;}
+
+        #carouselExampleCaptions .carousel-item.bg1{background-size: 100% auto;}
+        #carouselExampleCaptions .carousel-item.bg2{background-size: 100% auto;}
+        #carouselExampleCaptions .carousel-item.bg3{background-size: 100% auto;}
 
 
         #home_area a, #news_area a{display: inline-flex;}
