@@ -87,9 +87,9 @@
     #carouselExampleCaptions{background-color: rgba(255, 123, 0, 0.4);}
     #carouselExampleCaptions .carousel-item.bg1, #carouselExampleCaptions .carousel-item.bg2, #carouselExampleCaptions .carousel-item.bg3{
         height: 300px;}
-    #carouselExampleCaptions .carousel-item.bg1{background: url(../img/banner/banner-01.jpeg)no-repeat; background-size: auto 100% ; background-position:center center;}
-    #carouselExampleCaptions .carousel-item.bg2{background: url(../img/banner/banner-02.jpg)no-repeat; background-size: auto 100% ; background-position:center center;}
-    #carouselExampleCaptions .carousel-item.bg3{background: url(../img/banner/banner-03.jpg)no-repeat; background-size: auto 100% ; background-position:center center;}
+    #carouselExampleCaptions .carousel-item.bg1{background: url(../img/banner/banner-01.jpeg)no-repeat; background-size: auto 110% ; background-position:center center;}
+    #carouselExampleCaptions .carousel-item.bg2{background: url(../img/banner/banner-02.jpg)no-repeat; background-size: auto 110% ; background-position:center center;}
+    #carouselExampleCaptions .carousel-item.bg3{background: url(../img/banner/banner-03.jpg)no-repeat; background-size: auto 110% ; background-position:center center;}
 
 
     #about_area .row>*{flex-shrink: 1;}
@@ -339,7 +339,9 @@
     .new-body-mt{margin-top: 60px;} 補上選單空間*/
     /*如果不要固定上方選單要註銷這個區塊 結束*/
 
-    @media (min-width: 866px) {
+    @media (min-width: 1080px) {
+        #carouselExampleCaptions .carousel-item.bg1, #carouselExampleCaptions .carousel-item.bg2, #carouselExampleCaptions .carousel-item.bg3{
+            height: 480px;}
 
     }
 
