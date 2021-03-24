@@ -68,13 +68,13 @@
 
 
 
-    .item{
+    .item{ width: 100%;
         padding: 1rem 0;
         border-bottom: 1px solid rgba(128, 128, 128, .2);
     }
 
     a{color: rgb(8, 108, 108);}
-    a .date{margin-right: 2rem;}
+    #home_area .date{width: 120px; margin-right: 2rem;}
     a:hover, a:hover *{color: rgb(247, 92, 47);}    
     
     #home_area .item a:hover .label, #news_area .item a:hover .label{text-decoration: underline;}
@@ -159,7 +159,10 @@
         left: 0;
         top: 0;
     }
-    #recruit_area ol li{list-style: circle;}
+
+    #product-area ol li, #recruit_area ol li{list-style: circle;}
+
+    #product-area h6 {color: rgb(139, 53, 58);}
 
     .img_box{
         border-radius: 6px;
@@ -353,12 +356,13 @@
         #carouselExampleCaptions .carousel-item.bg3{background-size: 100% auto;}
 
 
-        #home_area a, #news_area a{display: inline-flex;}
+        #home_area .item, #news_area .item,#home_area a, #news_area a{display: inline-flex;}
         #product_list_area .card-img-top{width: 130px;}
         #product_list_area .card-img-top img {width: 100%;}
         .col-md-9{padding-right: 25px;}
         
        
+        #about_area .row{ padding-right: 1rem;padding-left: 1rem;}
         #about_area .left, #about_area .right{padding: 0;}/**/
         #about_area .left{width: 118px;}
         #about_area .right{width:calc(100% - 118px); margin: 0 0 0 0;}
