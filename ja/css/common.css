@@ -25,8 +25,8 @@
         /*background-color: rgba(141, 72, 44, 0.2);*/
         background: url(../img/bodybg.png);
         }
-    #load-nav .header, .header_nav, #footer {background-color: rgba(1, 64, 80, .85);}/*rgba(8, 25, 45, .7)*/
-    #load-nav .header{height: 63px;}
+    #load-nav .header, .header_nav, #foote{background-color: rgba(1, 64, 80, .85);}/*rgba(8, 25, 45, .7)*/
+    #load-nav .header{height:63px;}
     #footer {width: 100%; font-size: 0.8rem;padding: 2px 0 20px;}
     #footer, #footer a {color: #dfdfdf;}
     /*.copyright {border-top: 1px solid #bdbdbd; padding-top: 8px;}*/
@@ -159,8 +159,15 @@
         top: 0;
     }
 
-    #product-area ol li, #recruit_area ol li{list-style: circle;}
+    #product-area .card-img{width: 100%; text-align: center;}
+    #product-area .card-img img{width: 50%;} 
+    #product-area .card-text{width: 100%;}
+    #product-area .row{--bs-gutter-x: 0rem; }
 
+    #product-area .card-title{margin-bottom: 0rem;}
+
+
+    #product-area ol li, #recruit_area ol li{list-style: circle;}
     #product-area h6 {color: rgb(139, 53, 58);}
 
     .img_box{
@@ -348,7 +355,7 @@
     }
 
     @media (min-width: 768px) {
-        *{letter-spacing: .2rem;}
+        *{letter-spacing: .15rem;}
 
         #carouselExampleCaptions .carousel-item.bg1{background-size: 100% auto;}
         #carouselExampleCaptions .carousel-item.bg2{background-size: 100% auto;}
@@ -359,7 +366,11 @@
         #product_list_area .card-img-top{width: 130px;}
         #product_list_area .card-img-top img {width: 100%;}
         .col-md-9{padding-right: 25px;}
-        
+
+        #product-area .card-img{width: 20%;}
+        #product-area .card-img img{width: 100%;} 
+        #product-area .card-text{width: 40%;}        
+        #product-area .row  .mb-3{width: 49%;}
        
         #about_area .wrap ~ .row{ padding-right: 1rem; padding-left: 1rem;}/**/
         #about_area .left, #about_area .right{padding: 0;}/**/
@@ -370,6 +381,8 @@
         #contactus_area .left{width: 300px;}
         #contactus_area .right{width:calc(100% - 300px)}
         #contactus_area label {border-bottom: 1px solid rgba(0,0,0,0.12);}
+
+
 
         .team{margin-right: 1rem;margin-left: 1rem;}
         #members_area .col_photo{order: 1; width: 120px; display: flex; align-items: center; justify-content: center;}

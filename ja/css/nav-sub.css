@@ -8,11 +8,13 @@
 .logo_img{width: 130px;height: 36px;background: url(../img/LOGO.png)no-repeat;background-size: auto 36px ;
     background-position:center center;}
 .logo img { height: 36px; /*transform:scale(0.5, 0.5);*/}
-.header_nav {text-align: center; margin-top: 0px;  /*background-color: rgba(86, 63, 46, .9)*/}
+
+
+.header_nav {text-align: center; margin-top: 0px;  /*background-color: rgba(86, 63, 46, .9)*/ }
 .header_nav>ul {height: 92.3vh; overflow-y: auto; padding-bottom: 30px;}/*控制卷軸*/
 
 .header_nav ol, ul{margin: 0; padding: 0;z-index: 99;}/**/
-.header_nav a{font-size: .95rem; color:#b9b9b9; /*padding: 3px 10px;*/ }
+.header_nav a, .mezasu{font-size: .95rem; color:#b9b9b9; /*padding: 3px 10px;*/ }
 .header_nav li{padding: 15px 10px; position: relative;}
 .header_nav li:hover a{color: rgba(254, 223, 225,1);}
 .header_nav li::after {position: absolute; content: ''; width: 0%; height: 5px;bottom: 0;left: 40%;transition: .3s;}
@@ -21,6 +23,13 @@
 .header_nav a.active{color:#ffffff;}/**/
 
 .header_nav .test{display: none;}/*隱藏橫向選單中調整空間用的li*/
+
+
+/*.header::before{
+    content: 'Anjet Research Lab 株式会社はパワーデバイス設計でグリーンテクノロジーに貢献します';
+    position: absolute;
+}*/
+.mezasu{background-color: rgb(1, 64, 80); padding: 3px; top:63px; text-align: center; }
 
 /*.header_nav ul li ul {padding-left:.5rem;}/*第二層開始的ul*/
 /*.header_nav ul li ul a{color:#999999;} /*第二層開始的a*/
