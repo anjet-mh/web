@@ -25,7 +25,7 @@
         /*background-color: rgba(141, 72, 44, 0.2);*/
         background: url(../img/bodybg.png);
         }
-    #load-nav .header, .header_nav, #foote{background-color: rgba(1, 64, 80, .85);}/*rgba(8, 25, 45, .7)*/
+    #load-nav .header, .header_nav, #footer{background-color: rgba(1, 64, 80, .85);}/*rgba(8, 25, 45, .7)*/
     #load-nav .header{height:63px;}
     #footer {width: 100%; font-size: 0.8rem;padding: 2px 0 20px;}
     #footer, #footer a {color: #dfdfdf;}
@@ -85,10 +85,18 @@
 
 
     #carouselExampleCaptions{background-color: rgba(255, 123, 0, 0.4);}
-    #carouselExampleCaptions .carousel-item.bg1, #carouselExampleCaptions .carousel-item.bg2, #carouselExampleCaptions .carousel-item.bg3{
-        height: 300px;}
-    #carouselExampleCaptions .carousel-item.bg1{background: url(../img/banner/HOME-Kinkakuji.jpg)no-repeat; background-size: auto 110% ; background-position:center center;}
-    #carouselExampleCaptions .carousel-item.bg2{background: url(../img/banner/HOME-Arashiyama.jpg)no-repeat; background-size: auto 110% ; background-position:center center;}
+    #carouselExampleCaptions .carousel-item.bg1,
+    #carouselExampleCaptions .carousel-item.bg2,
+    #carouselExampleCaptions .carousel-item.bg3,
+    #carouselExampleCaptions .carousel-item.bg4,
+    #carouselExampleCaptions .carousel-item.bg5{height: 300px;}
+
+    #carouselExampleCaptions .carousel-item.bg1{background: url(../img/banner/HOME-Smiconductor.jpg)no-repeat; background-size: auto 110% ; background-position:center center;}
+    #carouselExampleCaptions .carousel-item.bg2{background: url(../img/banner/HOME-Kinkakuji.jpg)no-repeat; background-size: auto 110% ; background-position:center center;}
+    #carouselExampleCaptions .carousel-item.bg3{background: url(../img/banner/HOME-Arashiyama.jpg)no-repeat; background-size: auto 110% ; background-position:center center;}
+    #carouselExampleCaptions .carousel-item.bg4{background: url(../img/banner/HOME-02.jpg)no-repeat; background-size: auto 110% ; background-position:center center;}
+    #carouselExampleCaptions .carousel-item.bg5{background: url(../img/banner/HOME-101.jpg)no-repeat; background-size: auto 110% ; background-position:center center;}
+
 
 
     #about_area .row>*{flex-shrink: 1;}
@@ -349,8 +357,11 @@
     /*如果不要固定上方選單要註銷這個區塊 結束*/
 
     @media (min-width: 1080px) {
-        #carouselExampleCaptions .carousel-item.bg1, #carouselExampleCaptions .carousel-item.bg2, #carouselExampleCaptions .carousel-item.bg3{
-            height: 480px;}
+        #carouselExampleCaptions .carousel-item.bg1,
+        #carouselExampleCaptions .carousel-item.bg2,
+        #carouselExampleCaptions .carousel-item.bg3,
+        #carouselExampleCaptions .carousel-item.bg4,
+        #carouselExampleCaptions .carousel-item.bg5{height: 380px;}
 
     }
 
@@ -360,6 +371,8 @@
         #carouselExampleCaptions .carousel-item.bg1{background-size: 100% auto;}
         #carouselExampleCaptions .carousel-item.bg2{background-size: 100% auto;}
         #carouselExampleCaptions .carousel-item.bg3{background-size: 100% auto;}
+        #carouselExampleCaptions .carousel-item.bg4{background-size: 100% auto;}
+        #carouselExampleCaptions .carousel-item.bg5{background-size: 100% auto;}
 
 
         #home_area .item, #news_area .item,#home_area a, #news_area a{display: inline-flex;}
