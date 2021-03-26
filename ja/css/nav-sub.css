@@ -88,10 +88,10 @@
         align-items: center;
     }/**/
     .header_nav {background-color: rgba(0, 0, 0, 0); width: 82vw; }
-    .header_nav>ul{display: flex; white-space:nowrap; padding-right: 10px;} /*主選單 橫向排列*/
+    .header_nav>ul{display: flex; white-space:nowrap; padding-right: 16px;} /*主選單 橫向排列*/
     .header_nav>ul {height: 100%;overflow-x: auto; overflow-y: hidden; padding-bottom: 0px;}
     .header_nav>ul>li{margin-top: -4px;}
-    .header_nav li{padding: 20px 10px;}
+    .header_nav li{padding: 20px 9px;}
     .header_nav li:hover::after {width: 100%;left: 0;}/*調整選單下方出現的方塊寬度位置*/
     /*.header_nav > ul > li{position: relative;}讓第二層定位*/
     /*.header_nav > ul > li > ul{top: 70%;left: -.5rem; position: absolute;} 第二層定位*/

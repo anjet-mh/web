@@ -26,7 +26,7 @@
         background: url(../img/bodybg.png);
         }
     #load-nav .header, .header_nav, #footer {background-color: rgba(1, 64, 80, .85);}/*rgba(8, 25, 45, .7)*/
-    #load-nav .header{padding: 0m .8rem; height: 63px;}
+    #load-nav .header{height: 63px;}
     #footer {width: 100%; font-size: 0.8rem;padding: 2px 0 20px;}
     #footer, #footer a {color: #dfdfdf;}
     /*.copyright {border-top: 1px solid #bdbdbd; padding-top: 8px;}*/
