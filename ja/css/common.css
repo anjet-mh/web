@@ -91,7 +91,11 @@
     #carouselExampleCaptions .carousel-item.bg4,
     #carouselExampleCaptions .carousel-item.bg5{height: 300px;}
 
-    #carouselExampleCaptions .carousel-item.bg1{background: url(../img/banner/HOME-Smiconductor.jpg)no-repeat; background-size: auto 110% ; background-position:center center;}
+    #carouselExampleCaptions .carousel-item.bg1{background: url(../img/banner/HOME-Smiconductor.jpg)no-repeat; background-size: auto 110% ; background-position:top center;}
+    .bg1{position: relative;}
+    .bg1 .txt{width: 100%; color: #fff; background: rgba(0, 0, 0, 0.8); font-size: 1.2rem; position: absolute; display: flex; bottom: 40px; justify-content: center;}
+   
+
     #carouselExampleCaptions .carousel-item.bg2{background: url(../img/banner/HOME-Kinkakuji.jpg)no-repeat; background-size: auto 110% ; background-position:center center;}
     #carouselExampleCaptions .carousel-item.bg3{background: url(../img/banner/HOME-Arashiyama.jpg)no-repeat; background-size: auto 110% ; background-position:center center;}
     #carouselExampleCaptions .carousel-item.bg4{background: url(../img/banner/HOME-02.jpg)no-repeat; background-size: auto 110% ; background-position:center center;}
