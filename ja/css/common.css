@@ -89,7 +89,9 @@
     #carouselExampleCaptions .carousel-item.bg2,
     #carouselExampleCaptions .carousel-item.bg3,
     #carouselExampleCaptions .carousel-item.bg4,
-    #carouselExampleCaptions .carousel-item.bg5{height: 300px;}
+    #carouselExampleCaptions .carousel-item.bg5,
+    #carouselExampleCaptions .carousel-item.bg6
+    {height: 300px;}
 
     #carouselExampleCaptions .carousel-item.bg1{background: url(../img/banner/HOME-Smiconductor.jpg)no-repeat; background-size: auto 100% ; background-position:top center;}
     .bg1{position: relative;}
@@ -368,7 +370,8 @@
         #carouselExampleCaptions .carousel-item.bg2,
         #carouselExampleCaptions .carousel-item.bg3,
         #carouselExampleCaptions .carousel-item.bg4,
-        #carouselExampleCaptions .carousel-item.bg5{height: 300px;background-size: auto 100%;}
+        #carouselExampleCaptions .carousel-item.bg5,
+        #carouselExampleCaptions .carousel-item.bg6{height: 300px;background-size: auto 100%;}
         
 
 
@@ -409,7 +412,8 @@
         #carouselExampleCaptions .carousel-item.bg2,
         #carouselExampleCaptions .carousel-item.bg3,
         #carouselExampleCaptions .carousel-item.bg4,
-        #carouselExampleCaptions .carousel-item.bg5{height: 300px;background-size: 100% auto;}
+        #carouselExampleCaptions .carousel-item.bg5,
+        #carouselExampleCaptions .carousel-item.bg6{height: 300px;background-size: 100% auto;}
     }/**/
     
 
