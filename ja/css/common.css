@@ -83,7 +83,7 @@
 
     body .area:nth-child(odd){width: 100%;background-color: rgba(182, 20, 20, .05);}
 
-
+/* 輪播 S */
     #carouselExampleCaptions{background-color: rgba(255, 123, 0, 0.4);}
     #carouselExampleCaptions .carousel-item.bg1,
     #carouselExampleCaptions .carousel-item.bg2,
@@ -91,16 +91,17 @@
     #carouselExampleCaptions .carousel-item.bg4,
     #carouselExampleCaptions .carousel-item.bg5{height: 300px;}
 
-    #carouselExampleCaptions .carousel-item.bg1{background: url(../img/banner/HOME-Smiconductor.jpg)no-repeat; background-size: auto 110% ; background-position:top center;}
+    #carouselExampleCaptions .carousel-item.bg1{background: url(../img/banner/HOME-Smiconductor.jpg)no-repeat; background-size: auto 100% ; background-position:top center;}
     .bg1{position: relative;}
-    .bg1 .txt{width: 100%; color: #fff; background: rgba(0, 0, 0, 0.8); font-size: 1.2rem; position: absolute; display: flex; bottom: 40px; justify-content: center;}
+    .bg1 .txt{width: 100%; color: #fff; padding: 8PX 0; text-align: center; background: rgba(0, 0, 0, 0.8); font-size: 1.2rem; position: absolute; display: flex; bottom: 40px; justify-content: center;}
    
 
-    #carouselExampleCaptions .carousel-item.bg2{background: url(../img/banner/HOME-Kinkakuji.jpg)no-repeat; background-size: auto 110% ; background-position:center center;}
-    #carouselExampleCaptions .carousel-item.bg3{background: url(../img/banner/HOME-Arashiyama.jpg)no-repeat; background-size: auto 110% ; background-position:center center;}
-    #carouselExampleCaptions .carousel-item.bg4{background: url(../img/banner/HOME-02.jpg)no-repeat; background-size: auto 110% ; background-position:center center;}
-    #carouselExampleCaptions .carousel-item.bg5{background: url(../img/banner/HOME-101.jpg)no-repeat; background-size: auto 110% ; background-position:center center;}
-
+    #carouselExampleCaptions .carousel-item.bg2{background: url(../img/banner/HOME-Kinkakuji.jpg)no-repeat; background-size: auto 100% ; background-position:center center;}
+    #carouselExampleCaptions .carousel-item.bg3{background: url(../img/banner/HOME-Arashiyama.jpg)no-repeat; background-size: auto 100% ; background-position:center center;}
+    #carouselExampleCaptions .carousel-item.bg4{background: url(../img/banner/HOME-02.jpg)no-repeat; background-size: auto 100% ; background-position:center center;}
+    #carouselExampleCaptions .carousel-item.bg5{background: url(../img/banner/HOME-101.jpg)no-repeat; background-size: auto 100% ; background-position:center center;}
+    #carouselExampleCaptions .carousel-item.bg6{background: url(../img/banner/HOME-9.jpg)no-repeat; background-size: auto 100% ; background-position:center center;}
+/* 輪播 E */
 
 
     #about_area .row>*{flex-shrink: 1;}
@@ -360,23 +361,15 @@
     .new-body-mt{margin-top: 60px;} 補上選單空間*/
     /*如果不要固定上方選單要註銷這個區塊 結束*/
 
-    @media (min-width: 1080px) {
+
+    @media (min-width: 768px) {
+        *{letter-spacing: .15rem;}
         #carouselExampleCaptions .carousel-item.bg1,
         #carouselExampleCaptions .carousel-item.bg2,
         #carouselExampleCaptions .carousel-item.bg3,
         #carouselExampleCaptions .carousel-item.bg4,
-        #carouselExampleCaptions .carousel-item.bg5{height: 380px;}
-
-    }
-
-    @media (min-width: 768px) {
-        *{letter-spacing: .15rem;}
-
-        #carouselExampleCaptions .carousel-item.bg1{background-size: 100% auto;}
-        #carouselExampleCaptions .carousel-item.bg2{background-size: 100% auto;}
-        #carouselExampleCaptions .carousel-item.bg3{background-size: 100% auto;}
-        #carouselExampleCaptions .carousel-item.bg4{background-size: 100% auto;}
-        #carouselExampleCaptions .carousel-item.bg5{background-size: 100% auto;}
+        #carouselExampleCaptions .carousel-item.bg5{height: 300px;background-size: auto 100%;}
+        
 
 
         #home_area .item, #news_area .item,#home_area a, #news_area a{display: inline-flex;}
@@ -411,6 +404,14 @@
         .justify::after {content: ''; display: inline-block; width: 100%;}*/
 
 
+    @media (min-width: 1513px) {
+        #carouselExampleCaptions .carousel-item.bg1,
+        #carouselExampleCaptions .carousel-item.bg2,
+        #carouselExampleCaptions .carousel-item.bg3,
+        #carouselExampleCaptions .carousel-item.bg4,
+        #carouselExampleCaptions .carousel-item.bg5{height: 300px;background-size: 100% auto;}
+    }/**/
+    
 
 
     }
