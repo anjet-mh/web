@@ -22,12 +22,11 @@
         background: -moz-linear-gradient(90deg, rgba(250, 214, 137, .3)35%, rgba(254, 223, 225, .3)60%);
         background: -webkit-linear-gradient(90deg, rgba(250, 214, 137, .3)35%, rgba(254, 223, 225, .3)60%);
         background: -o-linear-gradient(90deg, rgba(250, 214, 137, .3)35%, rgba(254, 223, 225, .3)60%);
-        /*background-color: rgba(141, 72, 44, 0.2);*/
         background: url(../img/bodybg.png);
         }
-    #load-nav .header, .header_nav, #footer{background-color: rgba(1, 64, 80, .85);}/*rgba(8, 25, 45, .7)*/
-    #load-nav .header{height:63px;}
-    #footer {width: 100%; font-size: 0.8rem;padding: 2px 0 20px;}
+
+
+    #footer {width: 100%; font-size: 0.8rem;padding: 2px 0 20px; background-color: rgb(1, 64, 80, 1); }
     #footer, #footer a {color: #dfdfdf;}
     /*.copyright {border-top: 1px solid #bdbdbd; padding-top: 8px;}*/
     #footer p{ line-height: 1.2rem; margin: 0; letter-spacing: 1px;}
@@ -84,7 +83,7 @@
     body .area:nth-child(odd){width: 100%;background-color: rgba(182, 20, 20, .05);}
 
 /* 輪播 S */
-    #carouselExampleCaptions{background-color: rgba(255, 123, 0, 0.4);}
+    #carouselExampleCaptions{background-color: rgb(255, 200, 148);}/**/
     #carouselExampleCaptions .carousel-item.bg1,
     #carouselExampleCaptions .carousel-item.bg2,
     #carouselExampleCaptions .carousel-item.bg3,
@@ -96,13 +95,16 @@
     #carouselExampleCaptions .carousel-item.bg1{background: url(../img/banner/HOME-Smiconductor.jpg)no-repeat; background-size: auto 100% ; background-position:top center;}
     .bg1{position: relative;}
     .bg1 .txt{width: 100%; color: #fff; padding: 8PX 0; text-align: center; background: rgba(0, 0, 0, 0.8); font-size: 1.2rem; position: absolute; display: flex; bottom: 40px; justify-content: center;}
-   
+   /*毛玻璃效果filter: blur(20px);*/
 
     #carouselExampleCaptions .carousel-item.bg2{background: url(../img/banner/HOME-Kinkakuji.jpg)no-repeat; background-size: auto 100% ; background-position:center center;}
     #carouselExampleCaptions .carousel-item.bg3{background: url(../img/banner/HOME-Arashiyama.jpg)no-repeat; background-size: auto 100% ; background-position:center center;}
     #carouselExampleCaptions .carousel-item.bg4{background: url(../img/banner/HOME-02.jpg)no-repeat; background-size: auto 100% ; background-position:center center;}
     #carouselExampleCaptions .carousel-item.bg5{background: url(../img/banner/HOME-101.jpg)no-repeat; background-size: auto 100% ; background-position:center center;}
     #carouselExampleCaptions .carousel-item.bg6{background: url(../img/banner/HOME-9.jpg)no-repeat; background-size: auto 100% ; background-position:center center;}
+
+
+
 /* 輪播 E */
 
 
@@ -258,7 +260,7 @@
         border-bottom: 1px solid rgb(192, 192, 192);
         因為有align-items: flex-start 所以線的寬度會對齊h1這個容器 
     }*/
-
+/*
     .banner1.siteNav{
         background: linear-gradient(115deg, #022d41 10%, transparent 80%) center center / 100% 100%,
         url("../img/banner/digital-map-1140975.jpg") right center / 100% auto;
@@ -278,7 +280,7 @@
     .banner1.careers{
         background: linear-gradient(115deg, #022d41 10%, transparent 80%) center center / 100% 100%,
         url("../img/banner/handshake-1237743.jpg") right center /100% auto;
-    }
+    }*/
     .banner1.contactus{
         background: linear-gradient(115deg, #022d41 10%, transparent 80%) center center / 100% 100%,
         url("../img/banner/contactus.jpg") right center / 100% auto;
@@ -344,34 +346,36 @@
     /* 如果不要固定上方選單要註銷這個區塊 起始*/
     /*固定選單*/
     .navFixed {
-        z-index: 10;
         position: fixed;
+        z-index: 99; 
         top: 0;
         left: 0;
         margin-top: 0;
         min-width: 100%;
-        /*opacity: .99;*/
-        transition: opacity .3s ease-out;
-    }
+        transition: opacity .3s ease-out; 
+    }/*opacity: .99;*/
 
 
 
 
-    .carousel, .banner1{margin-top: 63px;}/**/
+    .carousel, .banner1{margin-top: 85px;}/**/
     /*補上選單空間*/
     /*.mt-add80 {margin-top: 75px;} 
     .new-body-mt{margin-top: 60px;} 補上選單空間*/
     /*如果不要固定上方選單要註銷這個區塊 結束*/
 
 
-    @media (min-width: 768px) {
+
+
+    @media (min-width: 768px){
         *{letter-spacing: .15rem;}
+
         #carouselExampleCaptions .carousel-item.bg1,
         #carouselExampleCaptions .carousel-item.bg2,
         #carouselExampleCaptions .carousel-item.bg3,
         #carouselExampleCaptions .carousel-item.bg4,
         #carouselExampleCaptions .carousel-item.bg5,
-        #carouselExampleCaptions .carousel-item.bg6{height: 300px;background-size: auto 100%;}
+        #carouselExampleCaptions .carousel-item.bg6{height: 380px;background-size: auto 100%;}
         
 
 
@@ -406,15 +410,22 @@
         /*.justify {text-align: justify; text-justify: inter-ideograph;}
         .justify::after {content: ''; display: inline-block; width: 100%;}*/
 
+        @media (min-width: 1100px){
+            .carousel, .banner1{margin-top:63px;}/**/
+        }   
 
-    @media (min-width: 1513px) {
-        #carouselExampleCaptions .carousel-item.bg1,
-        #carouselExampleCaptions .carousel-item.bg2,
-        #carouselExampleCaptions .carousel-item.bg3,
-        #carouselExampleCaptions .carousel-item.bg4,
-        #carouselExampleCaptions .carousel-item.bg5,
-        #carouselExampleCaptions .carousel-item.bg6{height: 300px;background-size: 100% auto;}
-    }/**/
+
+        @media (min-width: 1513px) {
+            #carouselExampleCaptions .carousel-item.bg1,
+            #carouselExampleCaptions .carousel-item.bg2,
+            #carouselExampleCaptions .carousel-item.bg3,
+            #carouselExampleCaptions .carousel-item.bg4,
+            #carouselExampleCaptions .carousel-item.bg5,
+            #carouselExampleCaptions .carousel-item.bg6{height: 380px;background-size: auto 100%;}
+        }/**/
+    
+
+    
     
 
 
