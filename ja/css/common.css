@@ -133,9 +133,10 @@
     #members_area .row{margin:0 .5rem 2.5rem;}
     #members_area .col_photo{text-align: center;}
     #members_area .col_photo img{width: 50%;}
-    #members_area .col_name{text-align: center; font-size: 1.1rem; letter-spacing: .1rem; padding-bottom: 5px;}
+    #members_area .wrap_name{text-align: center; font-size: 1.1rem; letter-spacing: .1rem; padding-bottom: 5px;}
+    #members_area .wrap_name p{display: inline; margin: 0;}
+    #members_area .position{font-size: .9rem; letter-spacing: .1rem; color: rgb(218, 124, 18); border-top: 1px solid rgba(0, 0, 0, 0.15); margin-top: 3px;}
     #members_area .col_experience{border-top: 1px dotted rgb(90, 90, 90); }
-    #members_area .education{font-size: .9rem; letter-spacing: .1rem; color: rgb(218, 124, 18); margin-bottom: 10px; display: inline-block; border-top: 1px solid rgba(0, 0, 0, 0.15);}
     #members_area .experience {font-size: .9rem; letter-spacing: .1rem; margin-left: 1rem;}
     
     /*#members_area .card-text{ position: relative;}*/
@@ -409,9 +410,12 @@
         .team{margin-right: 1rem; margin-left: 1rem;}
         #members_area .col_photo{order: 1; width: 120px; display: flex; align-items: center; justify-content: center;}
         #members_area .col_photo img{width: 100%;}
-        #members_area .col_name{text-align: right;}
+        #members_area .wrap_name{width: 230px; text-align: right;}
+        #members_area .wrap_name p{display: block;}
+        #members_area .col_experience{order: 2; width:calc(100% - 230px);}/**/
         #members_area .col_experience {border-left: 1px dotted rgb(90, 90, 90); border-top: 0px;}
-        /*#members_area .col_experience{order: 2;width:calc(100% - 10px);}*/
+        #members_area .position{padding: 0;}
+        
 
         /*.justify {text-align: justify; text-justify: inter-ideograph;}
         .justify::after {content: ''; display: inline-block; width: 100%;}*/
