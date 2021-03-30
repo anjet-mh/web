@@ -103,8 +103,6 @@
     #carouselExampleCaptions .carousel-item.bg5{background: url(../img/banner/HOME-101.jpg)no-repeat; background-size: auto 100% ; background-position:center center;}
     #carouselExampleCaptions .carousel-item.bg6{background: url(../img/banner/HOME-9.jpg)no-repeat; background-size: auto 100% ; background-position:center center;}
 
-
-
 /* 輪播 E */
 
 
@@ -130,13 +128,20 @@
 
     .wrap{margin:2.5rem 0 1.5rem;}
     .team{font-size: 1.4rem; text-align: center; margin:0 0 1.5rem; padding-bottom: 10px; border-bottom: 1px solid rgba(58, 29, 1, .3);}
-    #members_area .row{margin:0 .5rem 2.5rem; }
+    
+    /* 成員 S */
+    #members_area .row{margin:0 .5rem 2.5rem;}
     #members_area .col_photo{text-align: center;}
     #members_area .col_photo img{width: 50%;}
-    #members_area .name{font-size: 1.1rem; letter-spacing: .2rem; margin-bottom: 5px; text-align: center;}
+    #members_area .col_name{text-align: center; font-size: 1.1rem; letter-spacing: .1rem; padding-bottom: 5px;}
+    #members_area .col_experience{border-top: 1px dotted rgb(90, 90, 90); }
     #members_area .education{font-size: .9rem; letter-spacing: .1rem; color: rgb(218, 124, 18); margin-bottom: 10px; display: inline-block; border-top: 1px solid rgba(0, 0, 0, 0.15);}
-    #members_area .experience li{font-size: .9rem; letter-spacing: .1rem; margin-left: 1.5rem; list-style: circle;}
-
+    #members_area .experience {font-size: .9rem; letter-spacing: .1rem; margin-left: 1rem;}
+    
+    /*#members_area .card-text{ position: relative;}*/
+    #members_area .experience{margin-bottom:0rem; padding-left: .5rem;}
+    #members_area .experience li{list-style: circle;}
+    /* 成員 E */
     
     .Work_location{text-align: center;}
     .Work_location img{ max-width: 100%;margin-bottom: 10px;}
@@ -401,11 +406,12 @@
 
 
 
-        .team{margin-right: 1rem;margin-left: 1rem;}
+        .team{margin-right: 1rem; margin-left: 1rem;}
         #members_area .col_photo{order: 1; width: 120px; display: flex; align-items: center; justify-content: center;}
         #members_area .col_photo img{width: 100%;}
-        #members_area .name{text-align: left;}
-        #members_area .col_experience{order: 2;width:calc(100% - 120px);}
+        #members_area .col_name{text-align: right;}
+        #members_area .col_experience {border-left: 1px dotted rgb(90, 90, 90); border-top: 0px;}
+        /*#members_area .col_experience{order: 2;width:calc(100% - 10px);}*/
 
         /*.justify {text-align: justify; text-justify: inter-ideograph;}
         .justify::after {content: ''; display: inline-block; width: 100%;}*/

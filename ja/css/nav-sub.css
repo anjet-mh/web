@@ -4,13 +4,22 @@
 }*/
 
 #load-nav .header{background-color: rgba(188, 255, 211, 0.85);}/*rgba(1, 64, 80, .85)*/
-.mezasu{min-width: 230px; font-size: .95rem; padding: 0 5px; background-color: rgba(188, 255, 211,0.85);color: rgb(78, 78, 78) ; text-align: center;}
-.header_nav{background-color: rgba(188, 255, 211,0.85);}
+.header_nav{background-color: rgba(188, 255, 211,0.95);}
+.mezasu{
+    min-width: 230px;
+    font-size: .95rem;
+    font-weight: 900;
+    padding: 0 5px;
+    background-color: rgba(188, 255, 211,0.85);
+    color: rgb(255, 123, 0) ;
+    text-align: center;
+}
+
 
 
 #load-nav .header{height:63px;}
 
-.logo{padding: 0 .8rem;height: 100%;display: flex;justify-content: center;align-items: center;
+.logo{padding: 8px 10px 0;height: 100%;display: flex;justify-content: center;align-items: center;
 
 }/**/
 .logo_img{width: 130px;height: 36px;background: url(../img/LOGO.png)no-repeat;background-size: auto 36px ;
@@ -122,6 +131,10 @@
 
     /*橫向選單中調整空間用的li*/
     .header_nav .test{display: block; width: 100%; padding: 0;margin-left: -10px; z-index: -99;}
+}
+
+@media (min-width: 1100px) {
+    .mezasu{}
 }
 
 
