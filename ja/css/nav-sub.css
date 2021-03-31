@@ -6,7 +6,7 @@
 #load-nav .header{background-color: rgba(188, 255, 211, 0.85);}/*rgba(1, 64, 80, .85)*/
 .header_nav{background-color: rgba(188, 255, 211,0.95);}
 .mezasu{
-    min-width: 230px;
+    min-width: 320px;
     font-size: .95rem;
     font-weight: 900;
     padding: 0 5px;
@@ -14,7 +14,6 @@
     color: rgb(255, 123, 0) ;
     text-align: center;
 }
-
 
 
 #load-nav .header{height:63px;}
@@ -108,17 +107,28 @@
 /* 隱藏 .header_nav 選單 E */
 
 
+
+
+
+
 /* width>936px 866px 768px 時 多層選單的定位*/
+
+
 @media (min-width: 1100px) {
     .header{
         display: flex;
-        justify-content:space-between;
+        justify-content:space-between;/**/
         align-items: center; z-index: 120;
     }/**/
 
-    .mezasu{background-color: rgba(188, 255, 211,0);}
+    .mezasu{
+        background-color: rgba(188, 255, 211,0);
+        min-width: 230px;max-width: 410px;/**/
+        text-align: left;
+    }
 
-    .header_nav {background-color: rgba(0, 0, 0, 0);  }/*width: 82vw;*/
+    .test{display: block; width:calc(100% - 1350px); padding: 0; z-index: -99;}/*橫向選單中調整空間用的li*/
+    .header_nav {background-color: rgba(0, 0, 0, 0);}/* width: 68vw;*/
     .header_nav>ul{display: flex; white-space:nowrap; padding-right: 16px;} /*主選單 橫向排列*/
     .header_nav>ul {height: 100%;overflow-x: auto; overflow-y: hidden; padding-bottom: 0px;}
     .header_nav>ul>li{margin-top: -4px;}
@@ -128,13 +138,6 @@
     /*.header_nav > ul > li > ul{top: 70%;left: -.5rem; position: absolute;} 第二層定位*/
     .menu_btn{display: none;}
     .header_nav_Open_Close{height: auto; transform:translateY(0px);}
-
-    /*橫向選單中調整空間用的li*/
-    .header_nav .test{display: block; width: 100%; padding: 0;margin-left: -10px; z-index: -99;}
-}
-
-@media (min-width: 1100px) {
-    .mezasu{}
 }
 
 

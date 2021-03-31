@@ -370,7 +370,12 @@
     .new-body-mt{margin-top: 60px;} 補上選單空間*/
     /*如果不要固定上方選單要註銷這個區塊 結束*/
 
-
+    @media (min-width: 320px){
+        .carousel, .banner1{margin-top:106px;}/**/
+    }
+    @media (min-width: 411px){
+        .carousel, .banner1{margin-top:85px;}/**/
+    }
 
 
     @media (min-width: 768px){
