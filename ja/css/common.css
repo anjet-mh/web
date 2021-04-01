@@ -73,9 +73,10 @@
     }
 
     a{color: rgb(8, 108, 108);}
+
     #home_area .date{width: 120px; margin-right: 2rem;}
     a:hover, a:hover *{color: rgb(247, 92, 47);}    
-    
+    #home_area ul{padding-left: 0rem;}
     #home_area .item a:hover .label, #news_area .item a:hover .label{text-decoration: underline;}
 
     
@@ -182,16 +183,16 @@
         top: 0;
     }
 
-    #product-area .card-img{width: 100%; text-align: center;}
-    #product-area .card-img img{width: 50%;} 
-    #product-area .card-text{width: 100%;}
-    #product-area .row{--bs-gutter-x: 0rem; }
+    #product_area .card-img, #product-area .card-img{width: 100%; text-align: center;}
+    #product_area .card-img img, #product-area .card-img img{width: 50%;} 
+    #product_area .card-text, #product-area .card-text{width: 100%;}
+    #product_area .row, #product-area .row{--bs-gutter-x: 0rem; }
 
-    #product-area .card-title{margin-bottom: 0rem;}
+    #product_area .card-title, #product-area .card-title{margin-bottom: 0rem;}
 
 
-    #product-area ol li, #recruit_area ol li{list-style: circle;}
-    #product-area h6 {color: rgb(139, 53, 58);}
+    #product_area ol li, #product-area ol li, #recruit_area ol li{list-style: circle;}
+    #product_area h6, #product-area h6 {color: rgb(139, 53, 58);}
 
     .img_box{
         border-radius: 6px;
@@ -395,10 +396,10 @@
         #product_list_area .card-img-top img {width: 100%;}
         .col-md-9{padding-right: 25px;}
 
-        #product-area .card-img{width: 20%;}
-        #product-area .card-img img{width: 100%;} 
-        #product-area .card-text{width: 40%;}        
-        #product-area .row  .mb-3{width: 49%;}
+        #product_area .card-img, #product-area .card-img{width: 20%;}
+        #product_area .card-img img, #product-area .card-img img{width: 100%;} 
+        #product_area .card-text, #product-area .card-text{width: 40%;}        
+        #product_area .row .mb-3, #product-area .row .mb-3{width: 49%;}
        
         #about_area .wrap ~ .row{ padding-right: 1rem; padding-left: 1rem;}/**/
         #about_area .left, #about_area .right{padding: 0;}/**/
