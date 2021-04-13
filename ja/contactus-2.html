@@ -56,7 +56,7 @@
 
 <form id="form1" name="form1" method="post" action="" onclick="return false">
             <div class="form-group row mb-2">
-              <label for="inputname3" class="col-md-3 col-form-label">
+              <label for="inputname" class="col-md-3 col-form-label">
                 <span class="badge bg-danger">必須</span>
                 お名前
               </label>
@@ -65,7 +65,7 @@
               </div>
             </div>
             <div class="form-group row mb-2">
-              <label for="inputcompany3" class="col-md-3 col-form-label">
+              <label for="inputcompany" class="col-md-3 col-form-label">
                 <span class="badge bg-danger">必須</span>
                 会社名及び所属先
               </label>
@@ -74,7 +74,7 @@
               </div>
             </div>
             <div class="form-group row mb-2">
-              <label for="inputEmail3" class="col-md-3 col-form-label">
+              <label for="inputEmail" class="col-md-3 col-form-label">
                 <span class="badge bg-danger">必須</span>
                 メールアドレス
               </label>
@@ -83,7 +83,7 @@
               </div>
             </div>
             <div class="form-group row mb-2">
-              <label for="inputEmail3" class="col-md-3 col-form-label">
+              <label for="inputtextarea" class="col-md-3 col-form-label">
                 <span class="badge bg-danger">必須</span>
                 お問い合わせ内容
               </label>
@@ -134,41 +134,48 @@
 
 <script>
  $(document).ready(function(){
+
     $("#submit").click(function(){
-        if($("#name").val()==""){
-            alert("お名前を記入してください");
-            eval("document.form1['name'].focus()");       
+
+        var strEmail = $("#email").val();
+        emailRule = /^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z]+$/;  
+
+        if($("#name").val()==""){ /*如果尚未填寫*/
+          alert("お名前を入力してください");
+          eval("document.form1['name'].focus()");       
         }else if($("#company").val()==""){
-            alert("会社名及び所属先を記入してください");
-            eval("document.form1['company'].focus()");    
+          alert("会社名及び所属先を入力してください");
+          eval("document.form1['company'].focus()");    
         }else if($("#email").val()==""){
-            alert("メールアドレスを記入してください");
-            eval("document.form1['email'].focus()");
+          alert("メールアドレスを入力してください");
+          eval("document.form1['email'].focus()");
+        }else if(strEmail.search(emailRule)== -1){/*如果Email格式錯誤*/
+          alert("正しいメールアドレスを入力してください");
+          eval("document.form1['email'].focus()");
         }else if($("#textarea").val()==""){
-            alert("お問い合わせ内容を記入してください");
-            eval("document.form1['textarea'].focus()");   
+          alert("お問い合わせ内容を入力してください");
+          eval("document.form1['textarea'].focus()");   
         }else{
-            /*document.form1.submit();*/
-            var name = $('#name').val() || '記入されていません';
-            var company = $('#company').val() || '記入されていません';
-            var email = $('#email').val() || '記入されていません';
-            var msg = $('#textarea').val() || '記入されていません';
-            var data = {
-                'entry.836309681': name,
-                'entry.1412993864': company,
-                'entry.609688704': email,
-                'entry.1961171879': msg
-            };
-            $.ajax({
-                type: 'POST',
-                url: 'https://docs.google.com/forms/u/0/d/e/1FAIpQLSclKNIM2Oo-DIAAPmlE4Ou33tobAR_KkL_84zpE0tQuKoEixg/formResponse',
-                data: data,
-                contentType: 'application/json',
-                dataType: 'jsonp',
-                complete: function() {alert('お問い合わせ内容が送信されました！');}
-            });
-
-
+          /*document.form1.submit();*/
+          var name = $('#name').val();
+          var company = $('#company').val();
+          var email = $('#email').val();
+          var msg = $('#textarea').val();
+          var data = {
+              'entry.836309681': name,
+              'entry.1412993864': company,
+              'entry.609688704': email,
+              'entry.1961171879': msg
+          };/**/
+          $.ajax({
+              type: 'POST',
+              url: 'https://docs.google.com/forms/u/0/d/e/1FAIpQLSclKNIM2Oo-DIAAPmlE4Ou33tobAR_KkL_84zpE0tQuKoEixg/formResponse',
+              data: data,
+              contentType: 'application/json',
+              dataType: 'jsonp',
+              complete: function() {alert('お問い合わせ内容が送信されました！');
+              $('#form1')[0].reset();} /*送出後清空*/
+          });
         }
     })
  })
