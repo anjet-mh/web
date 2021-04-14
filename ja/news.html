@@ -23,8 +23,6 @@
   <div id="load-nav"></div>
   <!-- 選單 -->
 
-
-
   <div id="news_list_area" class="area">
   
     <div class="container">
@@ -34,68 +32,52 @@
             <span class="sub_title">お知らせ</span>
           </h2>
         </div>
-        <div class="section_body">
-          <div class="item">
-            <a class="" href="news/20210308-01.html">
-              <div class="date">2021/03/08</div>
-              <div class="label">〈独自〉軽症者は宿泊療養　感染再拡大に備え方針継続　厚労省</div>
-            </a>
-          </div>
-          <div class="item">
-            <a class="" href="news/20210308-02.html">
-              <div class="date">2021/03/08</div>
-              <div class="label">小池都知事に「信頼関係薄れる」と抗議　緊急事態宣言めぐり神奈川の黒岩知事</div>
-            </a>
-          </div>
-          <div class="item">
-            <a class="" href="news/20210308-03.html">
-              <div class="date">2021/03/08</div>
-              <div class="label">日米貿易は不公平！トランプ大統領が激怒で日本経済が大ピンチ！安倍さん頑張れ - 関西人のまとめブログ？</div>
-            </a>
-          </div>
-          <div class="item">
-            <a class="" href="news/20210308-01.html">
-              <div class="date">2021/03/08</div>
-              <div class="label">〈独自〉軽症者は宿泊療養　感染再拡大に備え方針継続　厚労省</div>
-            </a>
-          </div>
-          <div class="item">
-            <a class="" href="news/20210308-02.html">
-              <div class="date">2021/03/08</div>
-              <div class="label">小池都知事に「信頼関係薄れる」と抗議　緊急事態宣言めぐり神奈川の黒岩知事</div>
-            </a>
-          </div>
-          <div class="item">
-            <a class="" href="news/20210308-03.html">
-              <div class="date">2021/03/08</div>
-              <div class="label">日米貿易は不公平！トランプ大統領が激怒で日本経済が大ピンチ！安倍さん頑張れ - 関西人のまとめブログ？</div>
-            </a>
-          </div>
-          <div class="item">
-            <a class="" href="news/20210308-01.html">
-              <div class="date">2021/03/08</div>
-              <div class="label">〈独自〉軽症者は宿泊療養　感染再拡大に備え方針継続　厚労省</div>
-            </a>
-          </div>
-          <div class="item">
-            <a class="" href="news/20210308-02.html">
-              <div class="date">2021/03/08</div>
-              <div class="label">小池都知事に「信頼関係薄れる」と抗議　緊急事態宣言めぐり神奈川の黒岩知事</div>
-            </a>
-          </div>
-          <div class="item">
-            <a class="" href="news/20210308-03.html">
-              <div class="date">2021/03/08</div>
-              <div class="label">日米貿易は不公平！トランプ大統領が激怒で日本経済が大ピンチ！安倍さん頑張れ - 関西人のまとめブログ？</div>
-            </a>
-          </div>
-  
-  
-        </div>
+        
+        <ul class="section_body">
+
+          <li class="item">
+            <a class="" href=""></a>
+              <div class="date">2020/12</div>
+              <div class="label">台湾 ACTRON TECHNOLOGY COPR. より出資を受ける</div>
+          </li>
+          <li class="item">
+            <a class="" href=""></a>
+              <div class="date">2020/12</div>
+              <div class="label">SiC ショットキーバリアダイオードの量産化に成功</div>
+          </li>
+          <li class="item">
+            <a class="" href=""></a>
+            <div class="date">2019/03/02</div>
+            <div class="label">JETRO京都のサポートにより経済産業省所管の中小機構運営の京大桂ベンチャープラザ南館に事務所移転</div>
+        </li>
+        <li class="item">
+          <a class="" href=""></a>
+          <div class="date">2019/12/03</div>
+          <div class="label">京都高度技術研究所内 STC3にAnjet Research Lab 株式会社 設立</div>
+        </li>
+        <li class="item">
+          <a class="" href=""></a>
+          <div class="date">2019/09/06</div>
+          <div class="label">Silicon Valley Angel, 個人投資家の出資によりTaipei Anjet Corporation 設立</div>
+        </li>
+
+<!--
+        <li class="item">
+          <a class="" href="#20210308-01-1">
+            <div class="date">2021/03/08</div>
+            <div class="label">〈独自〉軽症者は宿泊療養　感染再拡大に備え方針継続　厚労省</div>
+          </a>
+        </li> 
+-->          
+        </ul>
       </div>
     </div>
-  
+  <div style="margin-top: 10vh;"></div>
   </div>
+
+  <a class="Back_to_list_btn" href="news.html">Back to list</a>
+  <div id="load-news"></div> 
+
 
   <!-- 頁尾-->
   <div id="load-footer"></div>
@@ -121,9 +103,45 @@
     $(document).ready(function () {
       $("#load-nav").load("nav.html");
       $("#load-footer").load("footer.html");
-      $(".page_name").data("namedata", "news");/* 要修改成"news" */
-      /*在.page_name的div裡面添加namedata=news數據 給選單判斷加入.active用*/
+      $(".page_name").data("namedata", "newspage");/* 要修改成"newspage" */
+      /*在.page_name的div裡面添加namedata=newspage數據 給選單判斷加入.active用*/
+
+
+      $(".Back_to_list_btn").hide();
+
+      $(".item>a").click(function(){
+        var pagedata = "news/" + $(this).attr('href').replace('#', '') +".html";
+        //var pagedata = "news/" + $(this).attr('class') +".html";
+        $("#load-news").load(pagedata);
+        $("#news_list_area").hide();
+        $(".Back_to_list_btn").show();
+      });
+
+      // $(".Back_to_list_btn").click(function(){
+      //   $(".Back_to_list_btn").hide();
+      //   $("#news_page_area").hide();
+      //   $("#news_list_area").show();
+      // });
+
+      
+      $(function () {
+        var getnextpagehash = "news/" + location.hash.replace('#', '') + ".html";
+        if ( getnextpagehash != "news/.html"){
+          $("#load-news").load(getnextpagehash);
+          $("#news_list_area").hide();
+          $(".Back_to_list_btn").show();}
+        });
+
+      window.addEventListener('popstate', (event) => {
+
+          window.location.reload(); 
+      }) 
+
   });
+
+
+
+
 
 
 
