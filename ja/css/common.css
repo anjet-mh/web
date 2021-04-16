@@ -102,7 +102,7 @@
     #carouselExampleCaptions .carousel-item.bg3{background: url(../img/banner/HOME-Arashiyama.jpg)no-repeat; background-size: auto 100% ; background-position:center center;}
     #carouselExampleCaptions .carousel-item.bg4{background: url(../img/banner/HOME-02.jpg)no-repeat; background-size: auto 100% ; background-position:center center;}
     #carouselExampleCaptions .carousel-item.bg5{background: url(../img/banner/HOME-101.jpg)no-repeat; background-size: auto 100% ; background-position:center center;}
-    #carouselExampleCaptions .carousel-item.bg6{background: url(../img/banner/HOME-9.jpg)no-repeat; background-size: auto 100% ; background-position:center center;}
+    #carouselExampleCaptions .carousel-item.bg6{background: url(../img/banner/HOME-taipei.jpg)no-repeat; background-size: auto 100% ; background-position:center center;}
 
 /* 輪播 E */
 
@@ -410,6 +410,8 @@
         #contactus_area .left{width: 300px;}
         #contactus_area .right{width:calc(100% - 300px)}
         #contactus_area label {border-bottom: 1px solid rgba(0,0,0,0.12);}
+
+        #news_list_area 
 
 
 
