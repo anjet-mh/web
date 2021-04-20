@@ -7,13 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Bootstrap CSS -->
-  <!--<link rel="stylesheet" href="css/all.css"> -->
-  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-  <link href="css/common.css" rel="stylesheet" type="text/css">
-  <link href="css/nav-sub.css" rel="stylesheet" type="text/css">
+  <!--<link rel="stylesheet" href="../css/all.css"> -->
+  <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="../css/common_ja.css" rel="stylesheet" type="text/css">
+  <link href="../css/nav-sub_ja.css" rel="stylesheet" type="text/css">
 
   <script src="https://kit.fontawesome.com/4e45cb4cc4.js" crossorigin="anonymous"></script>
-
   
   <title>ANJET - Contact us</title>
 
@@ -48,56 +47,51 @@
             <p>必要事項にご記入後、弊社<a href="policy.html">プライバシーポリシー</a>にご同意の上、確認ボタンを押して下さい。</p>
             <p>お急ぎの場合・お電話でのお問い合わせは、Tel: 075-393-2565までお願いいたします。</p>
           </div>
-
-  <!-- Google Tag Manager (noscript)-->
-  <noscript>
-    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGQ9WQT" height="0" width="0" style="display:none;visibility:hidden"></iframe>
-  </noscript>
-
-<form id="form1" name="form1" method="post" action="" onclick="return false">
+          <form>
             <div class="form-group row mb-2">
-              <label for="inputname" class="col-md-3 col-form-label">
+              <label for="inputname3" class="col-md-3 col-form-label">
                 <span class="badge bg-danger">必須</span>
                 お名前
               </label>
               <div class="col-md-9">
-                <input class="form-control" type="text" placeholder="お名前" id="name" value=""><!--required 必填-->
+                <input type="text" class="form-control" id="inputname3" placeholder="お名前">
               </div>
             </div>
             <div class="form-group row mb-2">
-              <label for="inputcompany" class="col-md-3 col-form-label">
+              <label for="inputcompany3" class="col-md-3 col-form-label">
                 <span class="badge bg-danger">必須</span>
                 会社名及び所属先
               </label>
               <div class="col-md-9">
-                <input class="form-control" type="text" placeholder="会社名及び所属先" id="company" value="">
+                <input type="text" class="form-control" id="inputcompany3" placeholder="会社名及び所属先">
+                
               </div>
             </div>
             <div class="form-group row mb-2">
-              <label for="inputEmail" class="col-md-3 col-form-label">
+              <label for="inputEmail3" class="col-md-3 col-form-label">
                 <span class="badge bg-danger">必須</span>
                 メールアドレス
               </label>
               <div class="col-md-9">
-                <input class="form-control" type="email" placeholder="メールアドレス" id="email" value="">
+                <input type="text" class="form-control" id="inputEmail3" placeholder="メールアドレス">
               </div>
             </div>
             <div class="form-group row mb-2">
-              <label for="inputtextarea" class="col-md-3 col-form-label">
+              <label for="inputEmail3" class="col-md-3 col-form-label">
                 <span class="badge bg-danger">必須</span>
                 お問い合わせ内容
               </label>
               <div class="col-md-9">
-                <textarea class="form-control" type="text" rows="3" placeholder="お問い合わせ内容" id="textarea" value=""></textarea>
+                <textarea type="text"  class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="お問い合わせ内容"></textarea>
               </div>
             </div>
             <div class="form-group">
               <div class="col text-center">
-                <!--<button type="submit" class="btn">Submit</button>-->
-                <button type="button" id="submit" class="btn">Submit</button>
+                <button type="submit" class="btn">Submit</button>
               </div>
             </div>
           </form>
+
 
           
          </div>
@@ -112,12 +106,12 @@
 
   <!-- Optional JavaScript; choose one of the two! -->
   <!-- Option 1: Bootstrap Bundle with Popper -->
-  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="../js/bootstrap.bundle.min.js"></script>
   <!--<script src="Bootstrap5/js/bootstrap.min.js"></script>
      Option 2: Separate Popper and Bootstrap JS -->
-  <script src="js/popper.min.js"></script>
+  <script src="../js/popper.min.js"></script>
 
-  <script src="js/jquery-3.5.1.js"></script>
+  <script src="../js/jquery-3.5.1.js"></script>
   <div class="page_name" style="display: none;"></div> <!--塞數據-->
  
   <script type="text/javascript">
@@ -130,82 +124,9 @@
 
       
   });
-  </script>
 
-<script>
- $(document).ready(function(){
 
-    $("#submit").click(function(){
 
-        var strEmail = $("#email").val();
-        emailRule = /^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z]+$/;  
-
-        if($("#name").val()==""){ /*如果尚未填寫*/
-          alert("お名前を入力してください");
-          eval("document.form1['name'].focus()");       
-        }else if($("#company").val()==""){
-          alert("会社名及び所属先を入力してください");
-          eval("document.form1['company'].focus()");    
-        }else if($("#email").val()==""){
-          alert("メールアドレスを入力してください");
-          eval("document.form1['email'].focus()");
-        }else if(strEmail.search(emailRule)== -1){/*如果Email格式錯誤*/
-          alert("正しいメールアドレスを入力してください");
-          eval("document.form1['email'].focus()");
-        }else if($("#textarea").val()==""){
-          alert("お問い合わせ内容を入力してください");
-          eval("document.form1['textarea'].focus()");   
-        }else{
-          /*document.form1.submit();*/
-          var name = $('#name').val();
-          var company = $('#company').val();
-          var email = $('#email').val();
-          var msg = $('#textarea').val();
-          var data = {
-              'entry.836309681': name,
-              'entry.1412993864': company,
-              'entry.609688704': email,
-              'entry.1961171879': msg
-          };/**/
-          $.ajax({
-              type: 'POST',
-              url: 'https://docs.google.com/forms/u/0/d/e/1FAIpQLSclKNIM2Oo-DIAAPmlE4Ou33tobAR_KkL_84zpE0tQuKoEixg/formResponse',
-              data: data,
-              contentType: 'application/json',
-              dataType: 'jsonp',
-              complete: function() {alert('お問い合わせ内容が送信されました！');
-              $('#form1')[0].reset();} /*送出後清空*/
-          });
-        }
-    })
- })
-
-/*
-    $(function() {
-      $('#submit').on('click', function() {
-        var name = $('#name').val() || '記入されていません';
-        var company = $('#company').val() || '記入されていません';
-        var email = $('#email').val() || '記入されていません';
-        var msg = $('#textarea').val() || '記入されていません';
-        var data = {
-          'entry.836309681': name,
-          'entry.1412993864': company,
-          'entry.609688704': email,
-          'entry.1961171879': msg
-        };
-        $.ajax({
-          type: 'POST',
-          url: 'https://docs.google.com/forms/u/0/d/e/1FAIpQLSclKNIM2Oo-DIAAPmlE4Ou33tobAR_KkL_84zpE0tQuKoEixg/formResponse',
-          data: data,
-          contentType: 'application/json',
-          dataType: 'jsonp',
-          complete: function() {
-            alert('お問い合わせ内容が送信されました！');
-          }
-        });        
-      });
-    });
-*/
   </script>
 
 </body>
