@@ -12,9 +12,10 @@
     @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap');
     * {margin: 0; padding: 0; list-style: none; font-family: 'Noto Serif JP', serif; letter-spacing: .1rem;}
 
-    ul li {list-style-type:none;}
+    ul li {list-style-type:none; }
     a {text-decoration: none; }
     p{line-height: 1.5rem; margin: .5rem 0;}
+
     
     
     body.div-gradient {        
@@ -403,7 +404,7 @@
         #product_area .card-text, #product-area .card-text{width: 40%;}        
         #product_area .row .mb-3, #product-area .row .mb-3{width: 49%;}
        
-        #about_area .wrap ~ .row{ padding-right: 1rem; padding-left: 1rem;}/**/
+        /*#about_area .wrap ~ .row{ padding-right: 1rem; padding-left: 1rem;}*/
         #about_area .left, #about_area .right{padding: 0;}/**/
         #about_area .left{width: 118px;}
         #about_area .right{width:calc(100% - 118px); margin: 0 0 0 0;}
