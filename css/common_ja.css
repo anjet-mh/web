@@ -207,7 +207,9 @@
     }
     .img_box p{font-size: .9rem; letter-spacing: 2px; line-height: 1rem; margin: 5px 5px 0;}
 
-
+    #news_list_area .section_body, #news_list_area ul{padding-left: 0rem;}
+    /*#news_list_area .date{width: 110px;}*/
+    #news_list_area .label{/*width:calc(100% - 230px);*/padding-left: 22px;}
     #news_page_area .date, #news_page_area .label{font-size: 1.4rem; margin-bottom: 1rem; color: rgba(58, 29, 1, .9); text-align: center;}
     #news_page_area .label{font-size: 1.2rem; margin-bottom: 2rem;}
     #news_page_area .content{margin: 0 2rem;}
