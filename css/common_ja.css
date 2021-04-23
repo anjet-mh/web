@@ -113,6 +113,7 @@
     #about_area .right{ margin-left: 1rem;}
     #about_area ul{padding-left: 0rem;}
     #about_area li{list-style: circle; margin-left: 1rem; }
+    #about_area li ul li{list-style: disc;}
 
     .map_img{padding: 10px 0 ; text-align: center;}
     .map_img img{ max-height: 300px;}
