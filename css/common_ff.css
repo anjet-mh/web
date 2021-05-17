@@ -1,0 +1,116 @@
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap');
+    * {margin: 0; padding: 0; list-style: none; font-family: 'Noto Serif JP', serif; letter-spacing: .1rem;}
+
+    body.div-gradient {        
+        background: linear-gradient(90deg, rgba(250, 214, 137, .3)35%, rgba(254, 223, 225, .3)60%);
+        background: -moz-linear-gradient(90deg, rgba(250, 214, 137, .3)35%, rgba(254, 223, 225, .3)60%);
+        background: -webkit-linear-gradient(90deg, rgba(250, 214, 137, .3)35%, rgba(254, 223, 225, .3)60%);
+        background: -o-linear-gradient(90deg, rgba(250, 214, 137, .3)35%, rgba(254, 223, 225, .3)60%);
+        background: url(../img/bodybg.png);
+        }
+
+/* 輪播 S */
+    /* 變數設定 S */
+    :root{
+        --carousel_item_height1:300px;
+        --carousel_item_height2:380px;
+        --background_url_bg1:url(../img/banner/HOME-Smiconductor1.jpg)no-repeat;
+        --background_url_bg2:url(../img/banner/HOME-Kinkakuji1.jpg)no-repeat;
+        --background_url_bg3:url(../img/banner/HOME-Arashiyama1.jpg)no-repeat;
+        --background_url_bg4:url(../img/banner/HOME-021.jpg)no-repeat;
+        --background_url_bg5:url(../img/banner/HOME-1011.jpg)no-repeat;
+        --background_url_bg6:url(../img/banner/HOME-taipei1.jpg)no-repeat;
+    }
+    /* 變數設定 E */
+
+    #carouselExampleCaptions{background-color: rgb(32, 62, 65);}/**/
+    #carouselExampleCaptions .carousel-item{height: var(--carousel_item_height1); }
+
+    .carousel-inner{position: relative; overflow: hidden;}
+
+    .bg1 .txt{position: absolute; display: flex; z-index: 1; width: 100%; color: #fff; padding: 8PX 0; text-align: center; background: rgba(0, 0, 0, 0.8); font-size: 1.2rem; bottom: 40px; justify-content: center;}
+    
+    #carouselExampleCaptions .carousel-item.bg1::after{background: var(--background_url_bg1);}
+    #carouselExampleCaptions .carousel-item.bg1::before{background: var(--background_url_bg1);}
+    #carouselExampleCaptions .carousel-item.bg2::after{background: var(--background_url_bg2);}
+    #carouselExampleCaptions .carousel-item.bg2::before{background: var(--background_url_bg2);}
+    #carouselExampleCaptions .carousel-item.bg3::after{background: var(--background_url_bg3);}
+    #carouselExampleCaptions .carousel-item.bg3::before{background: var(--background_url_bg3);}
+    #carouselExampleCaptions .carousel-item.bg4::after{background: var(--background_url_bg4);}
+    #carouselExampleCaptions .carousel-item.bg4::before{background: var(--background_url_bg4);}
+    #carouselExampleCaptions .carousel-item.bg5::after{background: var(--background_url_bg5);}
+    #carouselExampleCaptions .carousel-item.bg5::before{background: var(--background_url_bg5);}
+    #carouselExampleCaptions .carousel-item.bg6::after{background: var(--background_url_bg6);}
+    #carouselExampleCaptions .carousel-item.bg6::before{background: var(--background_url_bg6);}
+
+    #carouselExampleCaptions .carousel-item.bg1::after, 
+    #carouselExampleCaptions .carousel-item.bg2::after,
+    #carouselExampleCaptions .carousel-item.bg3::after, 
+    #carouselExampleCaptions .carousel-item.bg4::after, 
+    #carouselExampleCaptions .carousel-item.bg5::after, 
+    #carouselExampleCaptions .carousel-item.bg6::after{background-size: auto var(--carousel_item_height1); position: absolute; content: ' '; width: 100%; height: 100%; background-position:top center;} 
+
+    #carouselExampleCaptions .carousel-item.bg1::before, 
+    #carouselExampleCaptions .carousel-item.bg2::before,
+    #carouselExampleCaptions .carousel-item.bg3::before,
+    #carouselExampleCaptions .carousel-item.bg4::before,
+    #carouselExampleCaptions .carousel-item.bg5::before,
+    #carouselExampleCaptions .carousel-item.bg6::before{filter: blur(10px) opacity(80%);  position: absolute; content: ' ';width: 100%; height: 100%; background-size: 100% auto; background-position:center center;}
+
+
+/*
+    #carouselExampleCaptions{background-color: rgb(255, 200, 148);}
+    #carouselExampleCaptions .carousel-item.bg1,
+    #carouselExampleCaptions .carousel-item.bg2,
+    #carouselExampleCaptions .carousel-item.bg3,
+    #carouselExampleCaptions .carousel-item.bg4,
+    #carouselExampleCaptions .carousel-item.bg5,
+    #carouselExampleCaptions .carousel-item.bg6{height: 300px;}
+
+    #carouselExampleCaptions .carousel-item.bg1{background: url(../img/banner/HOME-Smiconductor1.jpg)no-repeat; background-size: auto 100% ; background-position:top center;}
+    .bg1{position: relative;}
+    .bg1 .txt{width: 100%; color: #fff; padding: 8PX 0; text-align: center; background: rgba(0, 0, 0, 0.8); font-size: 1.2rem; position: absolute; display: flex; bottom: 40px; justify-content: center;}
+
+    #carouselExampleCaptions .carousel-item.bg2{background: url(../img/banner/HOME-Kinkakuji.jpg)no-repeat; background-size: auto 100% ; background-position:center center;}
+    #carouselExampleCaptions .carousel-item.bg3{background: url(../img/banner/HOME-Arashiyama.jpg)no-repeat; background-size: auto 100% ; background-position:center center;}
+    #carouselExampleCaptions .carousel-item.bg4{background: url(../img/banner/HOME-02.jpg)no-repeat; background-size: auto 100% ; background-position:center center;}
+    #carouselExampleCaptions .carousel-item.bg5{background: url(../img/banner/HOME-101.jpg)no-repeat; background-size: auto 100% ; background-position:center center;}
+    #carouselExampleCaptions .carousel-item.bg6{background: url(../img/banner/HOME-taipei.jpg)no-repeat; background-size: auto 100% ; background-position:center center;}
+*/
+/* 輪播 E */
+
+
+    @media (min-width: 320px){.carousel, .banner1{margin-top:106px;}}
+    @media (min-width: 411px){.carousel, .banner1{margin-top:85px;}}
+    @media (max-width: 576px){.carousel-item, .banner1{height: 180px;}}
+
+    @media (min-width: 768px){
+        #carouselExampleCaptions .carousel-item{height: var(--carousel_item_height2);}
+
+        #carouselExampleCaptions .carousel-item.bg1::after, 
+        #carouselExampleCaptions .carousel-item.bg2::after,
+        #carouselExampleCaptions .carousel-item.bg3::after, 
+        #carouselExampleCaptions .carousel-item.bg4::after, 
+        #carouselExampleCaptions .carousel-item.bg5::after, 
+        #carouselExampleCaptions .carousel-item.bg6::after{background-size: auto var(--carousel_item_height2);} 
+
+        /*
+        #carouselExampleCaptions .carousel-item.bg1,
+        #carouselExampleCaptions .carousel-item.bg2,
+        #carouselExampleCaptions .carousel-item.bg3,
+        #carouselExampleCaptions .carousel-item.bg4,
+        #carouselExampleCaptions .carousel-item.bg5,
+        #carouselExampleCaptions .carousel-item.bg6{height: 380px;background-size: auto 100%;}
+        */
+        
+    }
+
+    @media (min-width: 1100px){.carousel, .banner1{margin-top:63px;}}
+    
+    /*@media (min-width: 1513px) { #carouselExampleCaptions .carousel-item{background-size: auto 100%;}}*/
+
+    
+    
+
+
+

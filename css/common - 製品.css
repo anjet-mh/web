@@ -12,10 +12,9 @@
     @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap');
     * {margin: 0; padding: 0; list-style: none; font-family: 'Noto Serif JP', serif; letter-spacing: .1rem;}
 
-    ul li {list-style-type:none; }
+    ul li {list-style-type:none;}
     a {text-decoration: none; }
     p{line-height: 1.5rem; margin: .5rem 0;}
-
     
     
     body.div-gradient {        
@@ -23,13 +22,13 @@
         background: -moz-linear-gradient(90deg, rgba(250, 214, 137, .3)35%, rgba(254, 223, 225, .3)60%);
         background: -webkit-linear-gradient(90deg, rgba(250, 214, 137, .3)35%, rgba(254, 223, 225, .3)60%);
         background: -o-linear-gradient(90deg, rgba(250, 214, 137, .3)35%, rgba(254, 223, 225, .3)60%);
+        /*background-color: rgba(141, 72, 44, 0.2);*/
         background: url(../img/bodybg.png);
         }
-
-
-    #footer {width: 100%; font-size: 0.8rem;padding: 2px 0 20px; background-color: rgb(1, 64, 80, 1); }
+    #load-nav .header, .header_nav, #footer {background-color: rgba(1, 64, 80, .85);}/*rgba(8, 25, 45, .7)*/
+    #load-nav .header{height: 63px;}
+    #footer {width: 100%; font-size: 0.8rem;padding: 2px 0 20px;}
     #footer, #footer a {color: #dfdfdf;}
-    #footer a:hover {color: #ffffff; border-bottom: 1px solid #ffffff;}
     /*.copyright {border-top: 1px solid #bdbdbd; padding-top: 8px;}*/
     #footer p{ line-height: 1.2rem; margin: 0; letter-spacing: 1px;}
 
@@ -75,93 +74,27 @@
     }
 
     a{color: rgb(8, 108, 108);}
-
     #home_area .date{width: 120px; margin-right: 2rem;}
     a:hover, a:hover *{color: rgb(247, 92, 47);}    
-    #home_area ul{padding-left: 0rem;}
+    
     #home_area .item a:hover .label, #news_area .item a:hover .label{text-decoration: underline;}
 
     
 
     body .area:nth-child(odd){width: 100%;background-color: rgba(182, 20, 20, .05);}
 
-/* 輪播 S */
-    /* 變數設定 S */
-    :root{
-        --carousel_item_height1:300px;
-        --carousel_item_height2:380px;
-        --background_url_bg1:url(../img/banner/HOME-Smiconductor1.jpg)no-repeat;
-        --background_url_bg2:url(../img/banner/HOME-Kinkakuji1.jpg)no-repeat;
-        --background_url_bg3:url(../img/banner/HOME-Arashiyama1.jpg)no-repeat;
-        --background_url_bg4:url(../img/banner/HOME-021.jpg)no-repeat;
-        --background_url_bg5:url(../img/banner/HOME-1011.jpg)no-repeat;
-        --background_url_bg6:url(../img/banner/HOME-taipei1.jpg)no-repeat;
-    }
-    /* 變數設定 E */
 
-    #carouselExampleCaptions{background-color: rgb(32, 62, 65);}/**/
-    #carouselExampleCaptions .carousel-item{height: var(--carousel_item_height1); }
-
-    .carousel-inner{position: relative; overflow: hidden;}
-
-    .bg1 .txt{position: absolute; display: flex; z-index: 1; width: 100%; color: #fff; padding: 8PX 0; text-align: center; background: rgba(0, 0, 0, 0.8); font-size: 1.2rem; bottom: 40px; justify-content: center;}
-    
-    #carouselExampleCaptions .carousel-item.bg1::after{background: var(--background_url_bg1);}
-    #carouselExampleCaptions .carousel-item.bg1::before{background: var(--background_url_bg1);}
-    #carouselExampleCaptions .carousel-item.bg2::after{background: var(--background_url_bg2);}
-    #carouselExampleCaptions .carousel-item.bg2::before{background: var(--background_url_bg2);}
-    #carouselExampleCaptions .carousel-item.bg3::after{background: var(--background_url_bg3);}
-    #carouselExampleCaptions .carousel-item.bg3::before{background: var(--background_url_bg3);}
-    #carouselExampleCaptions .carousel-item.bg4::after{background: var(--background_url_bg4);}
-    #carouselExampleCaptions .carousel-item.bg4::before{background: var(--background_url_bg4);}
-    #carouselExampleCaptions .carousel-item.bg5::after{background: var(--background_url_bg5);}
-    #carouselExampleCaptions .carousel-item.bg5::before{background: var(--background_url_bg5);}
-    #carouselExampleCaptions .carousel-item.bg6::after{background: var(--background_url_bg6);}
-    #carouselExampleCaptions .carousel-item.bg6::before{background: var(--background_url_bg6);}
-
-    #carouselExampleCaptions .carousel-item.bg1::after, 
-    #carouselExampleCaptions .carousel-item.bg2::after,
-    #carouselExampleCaptions .carousel-item.bg3::after, 
-    #carouselExampleCaptions .carousel-item.bg4::after, 
-    #carouselExampleCaptions .carousel-item.bg5::after, 
-    #carouselExampleCaptions .carousel-item.bg6::after{background-size: auto var(--carousel_item_height1); position: absolute; content: ' '; width: 100%; height: 100%; background-position:top center;} 
-
-    #carouselExampleCaptions .carousel-item.bg1::before, 
-    #carouselExampleCaptions .carousel-item.bg2::before,
-    #carouselExampleCaptions .carousel-item.bg3::before,
-    #carouselExampleCaptions .carousel-item.bg4::before,
-    #carouselExampleCaptions .carousel-item.bg5::before,
-    #carouselExampleCaptions .carousel-item.bg6::before{filter: blur(10px) opacity(80%);  position: absolute; content: ' ';width: 100%; height: 100%; background-size: 100% auto; background-position:center center;}
-
-
-/*
-    #carouselExampleCaptions{background-color: rgb(255, 200, 148);}
-    #carouselExampleCaptions .carousel-item.bg1,
-    #carouselExampleCaptions .carousel-item.bg2,
-    #carouselExampleCaptions .carousel-item.bg3,
-    #carouselExampleCaptions .carousel-item.bg4,
-    #carouselExampleCaptions .carousel-item.bg5,
-    #carouselExampleCaptions .carousel-item.bg6{height: 300px;}
-
-    #carouselExampleCaptions .carousel-item.bg1{background: url(../img/banner/HOME-Smiconductor1.jpg)no-repeat; background-size: auto 100% ; background-position:top center;}
-    .bg1{position: relative;}
-    .bg1 .txt{width: 100%; color: #fff; padding: 8PX 0; text-align: center; background: rgba(0, 0, 0, 0.8); font-size: 1.2rem; position: absolute; display: flex; bottom: 40px; justify-content: center;}
-
-    #carouselExampleCaptions .carousel-item.bg2{background: url(../img/banner/HOME-Kinkakuji.jpg)no-repeat; background-size: auto 100% ; background-position:center center;}
-    #carouselExampleCaptions .carousel-item.bg3{background: url(../img/banner/HOME-Arashiyama.jpg)no-repeat; background-size: auto 100% ; background-position:center center;}
-    #carouselExampleCaptions .carousel-item.bg4{background: url(../img/banner/HOME-02.jpg)no-repeat; background-size: auto 100% ; background-position:center center;}
-    #carouselExampleCaptions .carousel-item.bg5{background: url(../img/banner/HOME-101.jpg)no-repeat; background-size: auto 100% ; background-position:center center;}
-    #carouselExampleCaptions .carousel-item.bg6{background: url(../img/banner/HOME-taipei.jpg)no-repeat; background-size: auto 100% ; background-position:center center;}
-*/
-/* 輪播 E */
+    #carouselExampleCaptions{background-color: rgba(255, 123, 0, 0.4);}
+    #carouselExampleCaptions .carousel-item.bg1, #carouselExampleCaptions .carousel-item.bg2, #carouselExampleCaptions .carousel-item.bg3{
+        height: 300px;}
+    #carouselExampleCaptions .carousel-item.bg1{background: url(../img/banner/HOME-Kinkakuji.jpg)no-repeat; background-size: auto 110% ; background-position:center center;}
+    #carouselExampleCaptions .carousel-item.bg2{background: url(../img/banner/HOME-Arashiyama.jpg)no-repeat; background-size: auto 110% ; background-position:center center;}
 
 
     #about_area .row>*{flex-shrink: 1;}
     #about_area .container .section_wrap .section_body .row{--bs-gutter-x: 0rem; }
     #about_area .right{ margin-left: 1rem;}
-    #about_area ul{padding-left: 0rem;}
     #about_area li{list-style: circle; margin-left: 1rem; }
-    #about_area li ul li{list-style: disc;}
 
     .map_img{padding: 10px 0 ; text-align: center;}
     .map_img img{ max-height: 300px;}
@@ -180,21 +113,13 @@
 
     .wrap{margin:2.5rem 0 1.5rem;}
     .team{font-size: 1.4rem; text-align: center; margin:0 0 1.5rem; padding-bottom: 10px; border-bottom: 1px solid rgba(58, 29, 1, .3);}
-    
-    /* 成員 S */
-    #members_area .row{margin:0 .5rem 2.5rem;}
+    #members_area .row{margin:0 .5rem 2.5rem; }
     #members_area .col_photo{text-align: center;}
     #members_area .col_photo img{width: 50%;}
-    #members_area .wrap_name{text-align: center; font-size: 1.1rem; letter-spacing: .1rem; padding-bottom: 5px;}
-    #members_area .wrap_name p{display: inline; margin: 0;}
-    #members_area .position{font-size: .9rem; letter-spacing: .1rem; color: rgb(218, 124, 18); border-top: 1px solid rgba(0, 0, 0, 0.15); margin-top: 3px;}
-    #members_area .col_experience{border-top: 1px dotted rgb(90, 90, 90); }
-    #members_area .experience {font-size: .9rem; letter-spacing: .1rem; margin-left: 1rem;}
-    
-    /*#members_area .card-text{ position: relative;}*/
-    #members_area .experience{margin-bottom:0rem; padding-left: .5rem;}
-    #members_area .experience li{list-style: circle;}
-    /* 成員 E */
+    #members_area .name{font-size: 1.1rem; letter-spacing: .2rem; margin-bottom: 5px; text-align: center;}
+    #members_area .education{font-size: .9rem; letter-spacing: .1rem; color: rgb(218, 124, 18); margin-bottom: 10px; display: inline-block; border-top: 1px solid rgba(0, 0, 0, 0.15);}
+    #members_area .experience li{font-size: .9rem; letter-spacing: .1rem; margin-left: 1.5rem; list-style: circle;}
+
     
     .Work_location{text-align: center;}
     .Work_location img{ max-width: 100%;margin-bottom: 10px;}
@@ -222,8 +147,7 @@
     #recruit_area {background-image: url(../img/recurit/Screentone2.png);}
     #recruit_area h4{font-size: 1.3rem;}
     #recruit_area h5{font-size: 1.05rem;}
-    #recruit_area .ulleft ul, #policy_area .ulleft ul{padding-left: 0rem;}
-    #recruit_area ul li, #policy_area ul li{margin-left: 0.8rem; padding-left: 1.4rem;}
+    #recruit_area ul li, #policy_area ul li{margin-left: 1.2rem; padding-left: 1.4rem;}
     #recruit_area ul, #policy_area ul{counter-reset: li;}
     #recruit_area ul li, #policy_area ul li{position: relative;}
     #recruit_area ul li::before, #policy_area ul li::before{
@@ -235,16 +159,9 @@
         top: 0;
     }
 
-    #product_area .card-img, #product-area .card-img{width: 100%; text-align: center; padding: 10px;}
-    #product_area .card-img img, #product-area .card-img img{width: 50%;} 
-    #product_area .card-text, #product-area .card-text{width: 100%;}
-    #product_area .row, #product-area .row{--bs-gutter-x: 0rem; }
+    #product-area ol li, #recruit_area ol li{list-style: circle;}
 
-    #product_area .card-title, #product-area .card-title{margin-bottom: 0rem;}
-
-
-    #product_area ol li, #product-area ol li, #recruit_area ol li{list-style: circle;}
-    #product_area h6, #product-area h6 {color: rgb(139, 53, 58);}
+    #product-area h6 {color: rgb(139, 53, 58);}
 
     .img_box{
         border-radius: 6px;
@@ -255,9 +172,7 @@
     }
     .img_box p{font-size: .9rem; letter-spacing: 2px; line-height: 1rem; margin: 5px 5px 0;}
 
-    #news_list_area .section_body, #news_list_area ul{padding-left: 0rem;}
-    /*#news_list_area .date{width: 110px;}*/
-    #news_list_area .label{/*width:calc(100% - 230px);*/padding-left: 22px;}
+
     #news_page_area .date, #news_page_area .label{font-size: 1.4rem; margin-bottom: 1rem; color: rgba(58, 29, 1, .9); text-align: center;}
     #news_page_area .label{font-size: 1.2rem; margin-bottom: 2rem;}
     #news_page_area .content{margin: 0 2rem;}
@@ -321,7 +236,7 @@
         border-bottom: 1px solid rgb(192, 192, 192);
         因為有align-items: flex-start 所以線的寬度會對齊h1這個容器 
     }*/
-/*
+
     .banner1.siteNav{
         background: linear-gradient(115deg, #022d41 10%, transparent 80%) center center / 100% 100%,
         url("../img/banner/digital-map-1140975.jpg") right center / 100% auto;
@@ -341,7 +256,7 @@
     .banner1.careers{
         background: linear-gradient(115deg, #022d41 10%, transparent 80%) center center / 100% 100%,
         url("../img/banner/handshake-1237743.jpg") right center /100% auto;
-    }*/
+    }
     .banner1.contactus{
         background: linear-gradient(115deg, #022d41 10%, transparent 80%) center center / 100% 100%,
         url("../img/banner/contactus.jpg") right center / 100% auto;
@@ -407,65 +322,46 @@
     /* 如果不要固定上方選單要註銷這個區塊 起始*/
     /*固定選單*/
     .navFixed {
+        z-index: 10;
         position: fixed;
-        z-index: 99; 
         top: 0;
         left: 0;
         margin-top: 0;
         min-width: 100%;
-        transition: opacity .3s ease-out; 
-    }/*opacity: .99;*/
+        /*opacity: .99;*/
+        transition: opacity .3s ease-out;
+    }
 
 
-    .carousel, .banner1{margin-top: 85px;}/**/
+
+
+    .carousel, .banner1{margin-top: 63px;}/**/
     /*補上選單空間*/
     /*.mt-add80 {margin-top: 75px;} 
     .new-body-mt{margin-top: 60px;} 補上選單空間*/
     /*如果不要固定上方選單要註銷這個區塊 結束*/
 
-    @media (min-width: 320px){.carousel, .banner1{margin-top:106px;}}
-    @media (min-width: 411px){.carousel, .banner1{margin-top:85px;}}
+    @media (min-width: 1080px) {
+        #carouselExampleCaptions .carousel-item.bg1, #carouselExampleCaptions .carousel-item.bg2, #carouselExampleCaptions .carousel-item.bg3{
+            height: 480px;}
 
+    }
 
-    @media (min-width: 768px){
-        *{letter-spacing: .15rem;}
+    @media (min-width: 768px) {
+        *{letter-spacing: .2rem;}
 
-        :root{
-            /*--carousel_item_height1:300px;*/
-            --carousel_item_height1:380px;
-        }
-
-        #carouselExampleCaptions .carousel-item{height: var(--carousel_item_height1);}
-
-        #carouselExampleCaptions .carousel-item.bg1::after, 
-        #carouselExampleCaptions .carousel-item.bg2::after,
-        #carouselExampleCaptions .carousel-item.bg3::after, 
-        #carouselExampleCaptions .carousel-item.bg4::after, 
-        #carouselExampleCaptions .carousel-item.bg5::after, 
-        #carouselExampleCaptions .carousel-item.bg6::after{background-size: auto var(--carousel_item_height1);} 
-
-        /*
-        #carouselExampleCaptions .carousel-item.bg1,
-        #carouselExampleCaptions .carousel-item.bg2,
-        #carouselExampleCaptions .carousel-item.bg3,
-        #carouselExampleCaptions .carousel-item.bg4,
-        #carouselExampleCaptions .carousel-item.bg5,
-        #carouselExampleCaptions .carousel-item.bg6{height: 380px;background-size: auto 100%;}
-        */
-        
+        #carouselExampleCaptions .carousel-item.bg1{background-size: 100% auto;}
+        #carouselExampleCaptions .carousel-item.bg2{background-size: 100% auto;}
+        #carouselExampleCaptions .carousel-item.bg3{background-size: 100% auto;}
 
 
         #home_area .item, #news_area .item,#home_area a, #news_area a{display: inline-flex;}
         #product_list_area .card-img-top{width: 130px;}
         #product_list_area .card-img-top img {width: 100%;}
         .col-md-9{padding-right: 25px;}
-
-        #product_area .card-img, #product-area .card-img{width: 20%;}
-        #product_area .card-img img, #product-area .card-img img{width: 100%;} 
-        #product_area .card-text, #product-area .card-text{width: 40%;}        
-        #product_area .row .mb-3, #product-area .row .mb-3{width: 49%;}
+        
        
-        /*#about_area .wrap ~ .row{ padding-right: 1rem; padding-left: 1rem;}*/
+        #about_area .wrap ~ .row{ padding-right: 1rem; padding-left: 1rem;}/**/
         #about_area .left, #about_area .right{padding: 0;}/**/
         #about_area .left{width: 118px;}
         #about_area .right{width:calc(100% - 118px); margin: 0 0 0 0;}
@@ -475,34 +371,16 @@
         #contactus_area .right{width:calc(100% - 300px)}
         #contactus_area label {border-bottom: 1px solid rgba(0,0,0,0.12);}
 
-
+        .team{margin-right: 1rem;margin-left: 1rem;}
         #members_area .col_photo{order: 1; width: 120px; display: flex; align-items: center; justify-content: center;}
         #members_area .col_photo img{width: 100%;}
-        #members_area .wrap_name{width: 230px; text-align: right;}
-        #members_area .wrap_name p{display: block;}
-        #members_area .col_experience{order: 2; width:calc(100% - 230px);}/**/
-        #members_area .col_experience {border-left: 1px dotted rgb(90, 90, 90); border-top: 0px;}
-        #members_area .position{padding: 0;}
-    }        
+        #members_area .name{text-align: left;}
+        #members_area .col_experience{order: 2;width:calc(100% - 120px);}
 
         /*.justify {text-align: justify; text-justify: inter-ideograph;}
         .justify::after {content: ''; display: inline-block; width: 100%;}*/
 
-        @media (min-width: 1100px){.carousel, .banner1{margin-top:63px;}}   
-
-        /*
-        @media (min-width: 1513px) {
-            #carouselExampleCaptions .carousel-item.bg1,
-            #carouselExampleCaptions .carousel-item.bg2,
-            #carouselExampleCaptions .carousel-item.bg3,
-            #carouselExampleCaptions .carousel-item.bg4,
-            #carouselExampleCaptions .carousel-item.bg5,
-            #carouselExampleCaptions .carousel-item.bg6{height: 380px;background-size: auto 100%;}
-        }*/
-    
-
-    
-    
 
 
 
+    }
