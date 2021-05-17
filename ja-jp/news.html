@@ -23,7 +23,7 @@
   <div id="load-nav"></div>
   <!-- 選單 -->
 
-  <div id="news_list_area" class="area">
+  <div id="news_list_area" class="area"><!-- -->
   
     <div class="container">
       <div class="section_wrap">
@@ -95,10 +95,11 @@
   <!--<script src="Bootstrap5/js/bootstrap.min.js"></script>
      Option 2: Separate Popper and Bootstrap JS -->
   <script src="../js/popper.min.js"></script>
-
+  
   <script src="../js/jquery-3.5.1.js"></script>
-  <div class="page_name" style="display: none;"></div> <!--塞數據-->
- 
+  <div class="page_name" style="display: none;"></div>
+  <!--塞數據-->
+  
   <script type="text/javascript">
     $(document).ready(function () {
       $("#load-nav").load("nav.html");
@@ -109,8 +110,8 @@
 
       $(".Back_to_list_btn").hide();
 
-      $(".item>a").click(function(){
-        var pagedata = "news/" + $(this).attr('href').replace('#', '') +".html";
+      $(".item>a").click(function () {
+        var pagedata = "news/" + $(this).attr('href').replace('#', '') + ".html";
         //var pagedata = "news/" + $(this).attr('class') +".html";
         $("#load-news").load(pagedata);
         $("#news_list_area").hide();
@@ -123,27 +124,19 @@
       //   $("#news_list_area").show();
       // });
 
-      
+
       $(function () {
         var getnextpagehash = "news/" + location.hash.replace('#', '') + ".html";
-        if ( getnextpagehash != "news/.html"){
+        if (getnextpagehash != "news/.html") {
           $("#load-news").load(getnextpagehash);
           $("#news_list_area").hide();
-          $(".Back_to_list_btn").show();}
-        });
+          $(".Back_to_list_btn").show();
+        }
+      });
 
-     /* window.addEventListener('popstate', (event) => {
+      /* window.addEventListener('popstate', (event) => {window.location.reload();}) */
 
-          window.location.reload(); 
-      }) */
-
-  });
-
-
-
-
-
-
+    });
 
   </script>
 
