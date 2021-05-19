@@ -28,7 +28,7 @@
   <div class="banner1 contactus">
     <div class="container1">
       <div class="banner1-txt">
-        <h1>CONTACT</h1>お問い合わせフォーム
+        <h1>聯絡我們</h1>Inquiry form
       </div>
     </div>
   </div>
@@ -45,8 +45,8 @@
           <iframe class="map_area" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3269.194415139048!2d135.68032831523956!3d34.97679468036453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600106d6c8d25469%3A0x4aa8bb8b15799aed!2z5pel5pys44CSNjE1LTgyNDUgS3lvdG8sIE5pc2hpa3lvIFdhcmQsIEdvcnnFjcWNaGFyYSwgMS0zOSDkuqzlpKfmoYLjg5njg7Pjg4Hjg6Pjg7zjg5fjg6njgrbljZfppKg!5e0!3m2!1szh-TW!2stw!4v1615193528453!5m2!1szh-TW!2stw" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
           <div class="setsumei">
-            <p>必要事項にご記入後、弊社<a href="policy.html">プライバシーポリシー</a>にご同意の上、確認ボタンを押して下さい。</p>
-            <p>お急ぎの場合・お電話でのお問い合わせは、Tel: 075-393-2565までお願いいたします。</p>
+            <p>填寫必填項後，請同意我們的<a href="policy.html">隱私政策</a>，然後按確認按鈕。</p>
+            <p>如果您有較為緊急的需求・也可通過電話詢問，請致電：02-8501-2370。</p>
           </div>
 
   <!-- Google Tag Manager (noscript)-->
@@ -58,43 +58,43 @@
             <div class="form-group row mb-2">
               <label for="inputname" class="col-md-3 col-form-label">
                 <span class="badge bg-danger">必須</span>
-                お名前
+                姓名
               </label>
               <div class="col-md-9">
-                <input class="form-control" type="text" placeholder="お名前" id="name" value=""><!--required 必填-->
+                <input class="form-control" type="text" placeholder="姓名" id="name" value=""><!--required 必填-->
               </div>
             </div>
             <div class="form-group row mb-2">
               <label for="inputcompany" class="col-md-3 col-form-label">
                 <span class="badge bg-danger">必須</span>
-                会社名及び所属先
+                公司名稱跟職務
               </label>
               <div class="col-md-9">
-                <input class="form-control" type="text" placeholder="会社名及び所属先" id="company" value="">
+                <input class="form-control" type="text" placeholder="公司名稱跟職務" id="company" value="">
               </div>
             </div>
             <div class="form-group row mb-2">
               <label for="inputEmail" class="col-md-3 col-form-label">
                 <span class="badge bg-danger">必須</span>
-                メールアドレス
+                E-mail
               </label>
               <div class="col-md-9">
-                <input class="form-control" type="email" placeholder="メールアドレス" id="email" value="">
+                <input class="form-control" type="email" placeholder="E-mail" id="email" value="">
               </div>
             </div>
             <div class="form-group row mb-2">
               <label for="inputtextarea" class="col-md-3 col-form-label">
                 <span class="badge bg-danger">必須</span>
-                お問い合わせ内容
+                查詢的內容
               </label>
               <div class="col-md-9">
-                <textarea class="form-control" type="text" rows="3" placeholder="お問い合わせ内容" id="textarea" value=""></textarea>
+                <textarea class="form-control" type="text" rows="3" placeholder="查詢的內容" id="textarea" value=""></textarea>
               </div>
             </div>
             <div class="form-group">
               <div class="col text-center">
                 <!--<button type="submit" class="btn">Submit</button>-->
-                <button type="button" id="submit" class="btn">Submit</button>
+                <button type="button" id="submit" class="btn">提交</button>
               </div>
             </div>
           </form>
@@ -141,19 +141,19 @@
         emailRule = /^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z]+$/;  
 
         if($("#name").val()==""){ /*如果尚未填寫*/
-          alert("お名前を入力してください");
+          alert("請輸入姓名");
           eval("document.form1['name'].focus()");       
         }else if($("#company").val()==""){
-          alert("会社名及び所属先を入力してください");
+          alert("請輸入公司名稱跟職務");
           eval("document.form1['company'].focus()");    
         }else if($("#email").val()==""){
-          alert("メールアドレスを入力してください");
+          alert("請輸入E-mail");
           eval("document.form1['email'].focus()");
         }else if(strEmail.search(emailRule)== -1){/*如果Email格式錯誤*/
-          alert("正しいメールアドレスを入力してください");
+          alert("請輸入完整的E-mail");
           eval("document.form1['email'].focus()");
         }else if($("#textarea").val()==""){
-          alert("お問い合わせ内容を入力してください");
+          alert("請輸入查詢的內容");
           eval("document.form1['textarea'].focus()");   
         }else{
           /*document.form1.submit();*/
