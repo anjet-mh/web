@@ -49,12 +49,8 @@
             <p>如果您有較為緊急的需求・也可通過電話詢問，請致電：02-8501-2370。</p>
           </div>
 
-  <!-- Google Tag Manager (noscript)-->
-  <noscript>
-    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGQ9WQT" height="0" width="0" style="display:none;visibility:hidden"></iframe>
-  </noscript>
 
-<form id="form1" name="form1" method="post" action="" onclick="return false">
+          <form id="form1" name="form1" method="post" action="" onclick="return false">
             <div class="form-group row mb-2">
               <label for="inputname" class="col-md-3 col-form-label">
                 <span class="badge bg-danger">必填</span>
@@ -122,91 +118,14 @@
  
   <script type="text/javascript">
     $(document).ready(function () {
-
       $("#load-nav").load("nav.html");
       $("#load-footer").load("footer.html");
       $(".page_name").data("namedata", "contactus");/* 要修改成"contactus" */
       /*在.page_name的div裡面添加namedata=contactus數據 給選單判斷加入.active用*/
-
-      
-  });
-  </script>
-
-<script>
- $(document).ready(function(){
-
-    $("#submit").click(function(){
-
-        var strEmail = $("#email").val();
-        emailRule = /^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z]+$/;  
-
-        if($("#name").val()==""){ /*如果尚未填寫*/
-          alert("請輸入姓名");
-          eval("document.form1['name'].focus()");       
-        }else if($("#company").val()==""){
-          alert("請輸入公司名稱跟職務");
-          eval("document.form1['company'].focus()");    
-        }else if($("#email").val()==""){
-          alert("請輸入E-mail");
-          eval("document.form1['email'].focus()");
-        }else if(strEmail.search(emailRule)== -1){/*如果Email格式錯誤*/
-          alert("請輸入完整的E-mail");
-          eval("document.form1['email'].focus()");
-        }else if($("#textarea").val()==""){
-          alert("請輸入查詢的內容");
-          eval("document.form1['textarea'].focus()");   
-        }else{
-          /*document.form1.submit();*/
-          var name = $('#name').val();
-          var company = $('#company').val();
-          var email = $('#email').val();
-          var msg = $('#textarea').val();
-          var data = {
-              'entry.836309681': name,
-              'entry.1412993864': company,
-              'entry.609688704': email,
-              'entry.1961171879': msg
-          };/**/
-          $.ajax({
-              type: 'POST',
-              url: 'https://docs.google.com/forms/u/0/d/e/1FAIpQLSclKNIM2Oo-DIAAPmlE4Ou33tobAR_KkL_84zpE0tQuKoEixg/formResponse',
-              data: data,
-              contentType: 'application/json',
-              dataType: 'jsonp',
-              complete: function() {alert('查詢的內容傳送完成');
-              $('#form1')[0].reset();} /*送出後清空*/
-          });
-        }
-    })
- })
-
-/*
-    $(function() {
-      $('#submit').on('click', function() {
-        var name = $('#name').val() || '記入されていません';
-        var company = $('#company').val() || '記入されていません';
-        var email = $('#email').val() || '記入されていません';
-        var msg = $('#textarea').val() || '記入されていません';
-        var data = {
-          'entry.836309681': name,
-          'entry.1412993864': company,
-          'entry.609688704': email,
-          'entry.1961171879': msg
-        };
-        $.ajax({
-          type: 'POST',
-          url: 'https://docs.google.com/forms/u/0/d/e/1FAIpQLSclKNIM2Oo-DIAAPmlE4Ou33tobAR_KkL_84zpE0tQuKoEixg/formResponse',
-          data: data,
-          contentType: 'application/json',
-          dataType: 'jsonp',
-          complete: function() {
-            alert('お問い合わせ内容が送信されました！');
-          }
-        });        
-      });
     });
-*/
   </script>
+<script src="../js/smtp.js"></script>
+<script src="../js/contactus.js"></script>
 
 </body>
 
