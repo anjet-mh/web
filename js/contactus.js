@@ -1,4 +1,4 @@
- $(".Sending").hide(); /**/
+/*$(".Sending").hide(); */
 $("#submit").click(function(){
 
     var strEmail = $("#email").val();
