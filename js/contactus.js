@@ -29,8 +29,8 @@ $("#submit").click(function(){
           From : email,
           Subject : "來自【聯絡我們】的通知",
           Body : "姓名：" & name & "<br>公司名稱跟職務：" & company & "<br>E-mail：" & email & "<br>詢問內容：" & msg,
-          message = alert('查詢的內容 傳送中'),
       }).then(
+        message => alert('查詢的內容 傳送中'),
         message => alert('查詢的內容 傳送完成') & $('#form1')[0].reset()/*送出後清空*/,
       );
 
