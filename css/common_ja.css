@@ -216,6 +216,10 @@
     #contactus_area .badge{padding: .35em .8em;font-weight: 300;font-size: .4em;margin-right: .5em;letter-spacing: 0rem;}
     #contactus_area p > a, #policy_area p > a{text-decoration: underline;}
 
+    .Sending{position: fixed;background-color: rgba(0, 0, 0, .5); width: 100vw; height: 100vh;top: 0;left: 0; z-index: 999;}
+    .msgbox{position: fixed;top: 0;bottom: 0;left: 0;right: 0;margin: auto; width: 200px;height: 100px;background-color: rgb(255, 255, 255);text-align: center;line-height:100px;border-radius: 10px;}
+
+
     #policy_area h4{margin: 2rem 1rem .5rem;}
     #policy_area .section_body p, #policy_area ul{margin: 0 2rem 0; font-size: .88rem;line-height: 1.8rem;}
 
