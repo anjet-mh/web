@@ -1,4 +1,3 @@
-/*$(".Sending").hide(); */
 $("#submit").click(function(){
 
     var strEmail = $("#email").val();
@@ -27,33 +26,12 @@ $("#submit").click(function(){
       var msg = $('#textarea').val();
       Email.send({
           SecureToken : "2fb0cb33-c0d0-4868-9228-0f622b351d80",
-          To : 'service.tw@anjet.com',
+          To : 'service.tw@anjet.com , mhcheng@anjet.com',
           From : email,
           Subject : "來自【聯絡我們】的通知",
           Body : "姓名：" + name + "<br>公司名稱跟職務：" + company + "<br>E-mail：" + email + "<br>詢問內容：" + msg,
       }).then(
         message => alert('詢問的內容 提交完成') & $('#form1')[0].reset()/*送出後清空*/ & $(".Sending").hide(),
       );
-
-      /*GOOGLE表單用 document.form1.submit();*/
-      /*var name = $('#name').val();
-      var company = $('#company').val();
-      var email = $('#email').val();
-      var msg = $('#textarea').val();
-      var data = {
-          'entry.836309681': name,
-          'entry.1412993864': company,
-          'entry.609688704': email,
-          'entry.1961171879': msg
-      };
-      $.ajax({
-          type: 'POST',
-          url: 'https://docs.google.com/forms/u/0/d/e/1FAIpQLSclKNIM2Oo-DIAAPmlE4Ou33tobAR_KkL_84zpE0tQuKoEixg/formResponse',
-          data: data,
-          contentType: 'application/json',
-          dataType: 'jsonp',*/
-          /*complete: function() {alert('查詢的內容傳送完成');
-          $('#form1')[0].reset();} 送出後清空*/
-      /*});*/
     }
 })
