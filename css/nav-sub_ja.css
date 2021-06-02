@@ -88,7 +88,7 @@
 
 
 /*.header {position: relative;}*/
-.menu_btn{
+.header button.menu_btn{
     /*display: block;*/
     position: absolute;
     right: 1rem;
@@ -101,7 +101,7 @@
     z-index: 99;
 }
 .fa-bars{font-size: 1.8rem;}
-.menu_btn:active{color: #ffffff;border: 2px solid #ffffff;/**/}
+.header button.menu_btn:active{color: #ffffff;border: 2px solid #ffffff;/**/}
 
 
 /* 隱藏 .header_nav 選單 S */
@@ -140,7 +140,7 @@
     .header_nav ul li ul{position: absolute; top: 100%; left:-40%;} /*第二層定位*/
     .header_nav ul li .langu_list{top: 100%; left:-150%; padding: 5px;}
 
-    .menu_btn{display: none;}
+    .header button.menu_btn{display: none;}
     .header_nav_Open_Close{height: auto; transform:translateY(0px);}
 }
 
