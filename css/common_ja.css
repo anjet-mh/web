@@ -385,7 +385,6 @@
     }*/
    
 
-    @media (max-width: 576px) {.carousel-item, .banner1  {height: 180px;} }
 
       /*回到最上按鈕 起始*/
       #gotop {
@@ -427,9 +426,10 @@
     .new-body-mt{margin-top: 60px;} 補上選單空間*/
     /*如果不要固定上方選單要註銷這個區塊 結束*/
 
+
     @media (min-width: 320px){.carousel, .banner1{margin-top:106px;}}
     @media (min-width: 411px){.carousel, .banner1{margin-top:85px;}}
-
+    @media (max-width: 576px) {.carousel-item, .banner1  {height: 180px;} #contactus_area .map_area{ margin-top: -3rem; }}
 
     @media (min-width: 768px){
         *{letter-spacing: .15rem;}
