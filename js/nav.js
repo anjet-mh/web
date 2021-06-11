@@ -70,20 +70,10 @@
 
       //抓取網址列最後面的#部分 然後換頁後自動移到該位置
        $(function () {
-         var gethash = location.hash + "_area";
+         var gethash = location.hash+ "_area";
+
           $("html, body").animate({scrollTop: $(gethash).offset().top-97 }, {duration: 10,easing: "swing"});
           $(".header_nav  a").removeClass("active");
           $(location.hash).addClass("active");
           location.hash = "";//更改#標籤後方字串
        });
-
-
-       $(".langu_list > li > #zh-cht").click(function() {
-        var url = window.location.pathname;
-        var idC = $(this).attr('id');
-          if(url.indexOf("ja-jp") >= 0 ){ //判斷url物件檔名中是否有包含 idC (ja-jp 或 zh-cht)
-            alert('準備跳頁');/**/
-            /*alert(location.pathname);
-            window.location= url.replace("ja-jp", $(this).attr('id'));*/
-          };
-      });
