@@ -139,6 +139,7 @@
 
     .header_nav ul li ul{position: absolute; top: 100%; left:-40%;} /*第二層定位*/
     .header_nav ul li .langu_list{top: 100%; left:-60%; padding: 5px;}
+    .header_nav ul li .langu_list.en{left:0;}
 
     .header button.menu_btn{display: none;}
     .header_nav_Open_Close{height: auto; transform:translateY(0px);}
