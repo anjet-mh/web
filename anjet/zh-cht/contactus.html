@@ -120,8 +120,6 @@
                     <!-- <div id="page" class="site">    
                     <a class="skip-link screen-reader-text" href="#content">跳至主要內容</a> -->
 
-
-
                     <div id="content" class="site-content">
 
                         <section id="primary" class="content-area">
@@ -167,9 +165,9 @@
                                                     <div class="form-group row mb-2">
                                                         <label class="col-md-3 col-form-label"><span class="badge bg-danger">必填</span>E-mail</label>
                                                             <div class="col-md-9" >
-                                                            <span class="wpcf7-form-control-wrap your-email">
-                                                                <input type="email" name="your-email" value="" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email form-control" aria-required="true" aria-invalid="false" placeholder="E-mail" />
-                                                            </span>
+                                                                <span class="wpcf7-form-control-wrap your-email">
+                                                                    <input type="email" name="your-email" value="" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email form-control" aria-required="true" aria-invalid="false" placeholder="E-mail" />
+                                                                </span>
                                                         </div>
                                                     </div>
 
@@ -184,7 +182,7 @@
 
                                                     <div class="form-group">
                                                         <div class="col text-center">
-                                                            <input type="submit" value="傳送" class=" btn " />
+                                                            <input type="submit" value="傳送" class="wpcf7-form-control wpcf7-submit btn" /><!--<span class="ajax-loader"></span>-->                                                            
                                                         </div>
                                                     </div>
 
@@ -199,8 +197,6 @@
 
                             </main><!-- #main -->
                         </section><!-- #primary -->
-
-
 
                     </div><!-- #content -->
 
@@ -223,8 +219,8 @@
         var wpcf7 = { "api": { "root": "https:\/\/anjet.com\/ajtcontact\/index.php?rest_route=\/", "namespace": "contact-form-7\/v1" } };
     </script>
     <script src='https://anjet.com/ajtcontact/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.4.1' id='contact-form-7-js'></script>
-    <script src='https://anjet.com/ajtcontact/wp-includes/js/wp-embed.min.js?ver=5.7.2' id='wp-embed-js'></script>
-<!--     <script>
+<!--     <script src='https://anjet.com/ajtcontact/wp-includes/js/wp-embed.min.js?ver=5.7.2' id='wp-embed-js'></script>
+    <script>
         /(trident|msie)/i.test(navigator.userAgent) && document.getElementById && window.addEventListener && window.addEventListener("hashchange", function () { var t, e = location.hash.substring(1); /^[A-z0-9_-]+$/.test(e) && (t = document.getElementById(e)) && (/^(?:a|select|input|button|textarea)$/i.test(t.tagName) || (t.tabIndex = -1), t.focus()) }, !1);
     </script> -->
 
