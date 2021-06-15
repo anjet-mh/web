@@ -112,7 +112,7 @@
             <div class="section_wrap">
 
                 <div class="section_body">
-                    <iframe class="map_area" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1806.8072618265078!2d121.56140835840297!3d25.081051136557242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442ac6d427c2e53%3A0x6caed0a13380444!2zMTA0OTHlj7DljJfluILkuK3lsbHljYDmpI3npo_ot68zMDjomZ8!5e0!3m2!1szh-TW!2stw!4v1621403038496!5m2!1szh-TW!2stw" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.618186711465!2d121.5587432507408!3d25.08092704248358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442ac6d427c2e53%3A0x6caed0a13380444!2sNo.%20308%2C%20Zhifu%20Road%2C%20Zhongshan%20District%2C%20Taipei%20City%2C%2010491!5e0!3m2!1sen!2stw!4v1623744055026!5m2!1sen!2stw" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
                     <div class="setsumei">
                         <p>填寫必填項後，請同意我們的<a href="policy.html">隱私政策</a>，然後按確認按鈕。</p>
@@ -237,14 +237,16 @@
     <script src="./js/popper.min.js"></script>
 
     <script src="./js/jquery-3.5.1.js"></script>
-    <div class="page_name" style="display: none;"></div>
-    <!--塞數據-->
+
+    <!--塞data-數據-->
+    <div class="page_name" data-namedata="contactus" style="display: none;"></div><!--data-namedata= 要修改成"contactus" 給選單判斷加入.active用-->
+    
 
     <script type="text/javascript">
         $(document).ready(function () {
             $("#load-nav").load("nav.html");
             $("#load-footer").load("footer.html");
-            $(".page_name").data("namedata", "contactus");/* 要修改成"contactus" */
+            /*$(".page_name").data("namedata", "contactus"); 要修改成"contactus" 塞data-數據 */
             /*在.page_name的div裡面添加namedata=contactus數據 給選單判斷加入.active用*/
         });
     </script>

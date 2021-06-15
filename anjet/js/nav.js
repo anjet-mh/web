@@ -77,3 +77,9 @@
           $(location.hash).addClass("active");
           location.hash = "";//更改#標籤後方字串
        });
+
+       /*$(".langu_list li a").click(function(){
+         var languid = $(this).attr('id');
+         var nav_link = $(".page_name").data("namedata");
+         alert(languid+"/"+nav_link);
+       })*/
