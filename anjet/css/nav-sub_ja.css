@@ -113,7 +113,7 @@
 /* width>936px 866px 768px 時 多層選單的定位*/
 
 
-@media (min-width: 1100px) {
+@media (min-width: 1198px){
     .header{
         display: flex;
         justify-content:space-between;/**/
@@ -144,7 +144,6 @@
     .header button.menu_btn{display: none;}
     .header_nav_Open_Close{height: auto; transform:translateY(0px);}
 }
-
 
 ::-webkit-scrollbar {width: 15px; height: 6px;}/* 卷軸整體/寬度設定 */
 ::-webkit-scrollbar-track {background: rgb(208, 208, 208);}/* Track 卷軸整條背景色 */
