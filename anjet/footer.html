@@ -1,6 +1,62 @@
 <html>
 
-<head></head>
+<head>
+  <script>
+    var sys = "";
+
+    /*sys = (navigator.language||navigator.userLanguage||navigator.browserLanguage||navigator.systemLanguage).toLowerCase();*/
+    sys = document.getElementsByTagName('html')[0].getAttribute('lang'); /*抓網頁 <html lang=" ">*/
+
+    L_en = new Array(); 
+    L_en[0] = "Anjet Corporation（Headquarters）";
+    L_en[1] = "5F-6, No. 308, Zhifu Rd., Zhongshan Dist., <br />Taipei City 10466, Taiwan R.O.C. <br />TEL : +886-2-8501-2370 <br />FAX : +886-2-8501-2876";
+    L_en[2] = "Anjet Research Lab Co., Ltd.（kyoto）";
+    L_en[3] =  "2203 South Building, Kyodai-katsura Venture Plaza,<br />1-39 Goryo Ohara, Nishikyo-ku, Kyoto-city, kyoto-prif., 615-8245, Japan<br />Tel : +81-75-393-2565";
+    L_en[4] = "HOME / MISSION";
+    L_en[5] = "ABOUT US";
+    L_en[6] = "PRODUCT";
+    L_en[7] = "NEWS";
+    L_en[8] = "RECRUIT";
+    L_en[9] = "CONTACT US";
+    L_en[10] = "Privacy Policy";
+    L_en[11] = "Language";
+
+
+    L_zhcht = new Array();
+    L_zhcht[0] = "安傑特科技股份有限公司 (總部)";
+    L_zhcht[1] = "10466 台北市中山區植福路308號5樓之6 <br />TEL : 02-8501-2370 <br />FAX : 02-8501-2876";
+    L_zhcht[2] = "アンジェットリサーチラボ 株式会社（京都）";
+    L_zhcht[3] = "〒６１５－８２４５ 京都府京都市西京区御陵大原１－３９<br />京大桂ベンチャープラザ南館 2203号室<br />Tel : +81-75-393-2565";
+    L_zhcht[4] = "HOME / MISSION";
+    L_zhcht[5] = "關於我們";
+    L_zhcht[6] = "產品";
+    L_zhcht[7] = "NEWS";
+    L_zhcht[8] = "招募資訊";
+    L_zhcht[9] = "聯絡我們";
+    L_zhcht[10] = "隱私政策";
+    L_zhcht[11] = "語言";
+
+    L_ja = new Array(); 
+    L_ja[0] = "Anjet Corporation（Headquarters）";
+    L_ja[1] = "5F-6, No. 308, Zhifu Rd., Zhongshan Dist., <br />Taipei City 10466, Taiwan R.O.C. <br />TEL : +886-2-8501-2370 <br />FAX : +886-2-8501-2876";
+    L_ja[2] = "アンジェットリサーチラボ 株式会社（京都）";
+    L_ja[3] = "〒６１５－８２４５ 京都府京都市西京区御陵大原１－３９<br />京大桂ベンチャープラザ南館 2203号室<br />Tel : 075-393-2565";
+    L_ja[4] = "HOME / MISSION";
+    L_ja[5] = "事業概要";
+    L_ja[6] = "製品";
+    L_ja[7] = "NEWS";
+    L_ja[8] = "採用情報";
+    L_ja[9] = "お問い合わせ";
+    L_ja[10] = "プライバシーポリシー";
+    L_ja[11] = "言語";
+
+    L_zhchs = new Array();
+    L_zhchs[0] = "浏览器";
+    L_zhchs[1] = "语系 : ";
+
+
+</script>
+</head>
 
 <body>
   <footer id="footer">
@@ -8,31 +64,24 @@
       <div class="row">
       
         <div class="col-md-4 copyright text-md-start text-center mb-4 mt-4">
-          <p>Anjet Corporation（Headquarters）</p>
-          <p>5F-6, No. 308, Zhifu Rd., Zhongshan Dist., <br />
-            Taipei City 10466, Taiwan R.O.C.<br />
-            TEL:+886-2-8501-2370<br />
-            FAX:+886-2-8501-2876
-          </p>
+          <p id="cop-tw">Anjet Corporation（Headquarters）</p>
+          <p id="add-tw">5F-6, No. 308, Zhifu Rd., Zhongshan Dist., <br />Taipei City 10466, Taiwan R.O.C. <br />TEL : +886-2-8501-2370 <br />FAX : +886-2-8501-2876</p>
         </div>
 
         <div class="col-md-4 copyright text-md-start text-center mb-4 mt-md-4">
-          <p>アンジェットリサーチラボ 株式会社（京都）</p>
-          <p>〒６１５－８２４５ 京都府京都市西京区御陵大原１－３９<br />
-            京大桂ベンチャープラザ南館 2203号室<br />
-            Tel:075-393-2565
-          </p>
+          <p id="cop-jp">アンジェットリサーチラボ 株式会社（京都）</p>
+          <p id="add-jp">〒６１５－８２４５ 京都府京都市西京区御陵大原１－３９<br />京大桂ベンチャープラザ南館 2203号室<br />Tel:075-393-2565</p>
         </div>
 
         <div class="col-md-4 copyright text-md-start text-center mb-4 mt-md-4 footer_nav">
           <ul class="level_1">
-            <li class=""><a id="mission" class="" href="index.html#mission">HOME / MISSION</a></li>
-            <li class=""><a id="about" class="" href="index.html#about">事業概要</a></li>
-            <li class=""><a id="product" class="" href="index.html#product">製品</a></li><!--product.html-->
-            <li class=""><a id="newspage" class="" href="news.html">NEWS</a></li><!--product.html-->
-            <li class=""><a id="recruit" class="" href="index.html#recruit">採用情報</a></li>
-            <li class=""><a id="contactus" class="" href="contactus.html">お問い合わせ</a></li><!---->
-            <li class=""><a id="" class="" href="policy.html">プライバシーポリシー</a></li>
+            <li class=""><a id="mission" class="" href="index.html#mission"><span id ="footer-mission">HOME / MISSION</span></a></li>
+            <li class=""><a id="about" class="" href="index.html#about"><span id="footer-about">事業概要</span></a></li>
+            <li class=""><a id="product" class="" href="index.html#product"><span id="footer-product">製品</span></a></li><!--product.html-->
+            <li class=""><a id="newspage" class="" href="news.html"><span id="footer-news">NEWS</span></a></li><!--product.html-->
+            <li class=""><a id="recruit" class="" href="index.html#recruit"><span id="footer-recruit">採用情報</span></a></li>
+            <li class=""><a id="contactus" class="" href="contactus.html"><span id="footer-contactus">お問い合わせ</span></a></li><!---->
+            <li class=""><a id="policy" class="" href="policy.html"><span id="footer-policy">プライバシーポリシー</span></a></li>
           </ul>
         </div>
         
@@ -40,9 +89,51 @@
 
       <div class="text-center">Copyright (C) Anjet Corporation. All Rights Reserved.</div><!--Anjet Research Lab 株式会社-->
     </div>
+    <span id = "lang-1-head">Language : </span><span id = "sysinfo"></span> <!-- -->
   </footer>
 
-  <script src="./js/nav-footer.js"></script>
+
+  <script>
+    var sysinfo = document.getElementById("sysinfo");
+    sysinfo.innerHTML = sys;
+
+    var LangArray;
+
+    if (sys == "en" || sys == "en-usen-gb" || sys == "en-au" || sys == "en-ca" || sys == "en-nz" || sys == "en-ie" || sys == "en-za" || sys == "en-jm" || sys == "en-bz" || sys == "en-tt") {
+      LangArray = L_en;}
+      else if (sys == "zh-tw" || sys == "zh-Hant-TW") {LangArray = L_zhcht;}
+      else if (sys == "zh-cn" || sys == "zh-sg") {LangArray = L_zhchs;}
+      else if (sys == "ja" || sys == "ja-jp") {LangArray = L_ja;}
+
+    /* 將各個文字, 填入指定位置 */
+    document.getElementById('cop-tw').innerHTML = LangArray[0];
+    document.getElementById('add-tw').innerHTML = LangArray[1];
+    document.getElementById('cop-jp').innerHTML = LangArray[2];
+    document.getElementById('add-jp').innerHTML = LangArray[3];
+
+    document.getElementById('mission').innerHTML = LangArray[4];
+    document.getElementById('about').innerHTML = LangArray[5];
+    document.getElementById('product').innerHTML = LangArray[6];
+    document.getElementById('newspage').innerHTML = LangArray[7];
+    document.getElementById('recruit').innerHTML = LangArray[8];
+    document.getElementById('contactus').innerHTML = LangArray[9];
+    document.getElementById('policy').innerHTML = LangArray[10];
+    document.getElementById('langu').innerHTML = LangArray[11];
+
+    document.getElementById('footer-mission').innerHTML = LangArray[4];
+    document.getElementById('footer-about').innerHTML = LangArray[5];
+    document.getElementById('footer-product').innerHTML = LangArray[6];
+    document.getElementById('footer-news').innerHTML = LangArray[7];
+    document.getElementById('footer-recruit').innerHTML = LangArray[8];
+    document.getElementById('footer-contactus').innerHTML = LangArray[9];
+    document.getElementById('footer-policy').innerHTML = LangArray[10];
+
+    
+
+  </script>
+
+  <script src="../js/nav-footer.js"></script>
+
   
 </body>
 
