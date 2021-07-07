@@ -26,10 +26,10 @@ $("#submit").click(function(){
       var msg = $('#textarea').val();
       Email.send({
           SecureToken : "2fb0cb33-c0d0-4868-9228-0f622b351d80",
-          To : 'service.tw@anjet.com , mhcheng@anjet.com',
+          To : 'mhcheng@anjet.com',
           From : email,
           Subject : "來自【聯絡我們】的通知",
-          Body : "姓名：" + name + "<br>公司名稱跟職務：" + company + "<br>E-mail：" + email + "<br>詢問內容：" + msg,
+          Body : "姓名：" + name + "<br><br>公司名稱跟職務：" + company + "<br><br>E-mail：" + email + "<br><br>詢問內容：" + msg,
       }).then(
         message => alert('詢問的內容 提交完成') & $('#form1')[0].reset()/*送出後清空*/ & $(".Sending").hide(),
       );
