@@ -142,9 +142,10 @@
     }); 
     */
 
-    $(".header_nav > ul > li > a").click(ClickHandler);
-    $(".footer_nav > .level_1 > li > a").click(ClickHandler);
-    function ClickHandler() {
+    $(".header_nav > ul > li > a").click(getID);
+    $(".footer_nav > .level_1 > li > a").click(getID);
+    //取得ID
+    function getID() {
       var scrolltarget = "#" + $(this).attr('id') + "_area";
       $("html, body").animate({ scrollTop: $(scrolltarget).offset().top - 97 }, { duration: 10, easing: "swing" });
       $(".header_nav").addClass("header_nav_Open_Close");
