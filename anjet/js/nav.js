@@ -55,7 +55,7 @@
 
 
 
-      $(".header_nav > ul > li > a").click(function() {
+/*       $(".header_nav > ul > li > a").click(function() {
         var scrolltarget = "#" + $(this).attr('id') + "_area";
 
         $("html, body").animate({scrollTop: $(scrolltarget).offset().top-97 }, {duration: 10,easing: "swing"});        
@@ -76,7 +76,7 @@
           $(".header_nav  a").removeClass("active");
           $(location.hash).addClass("active");
           location.hash = "";//更改#標籤後方字串
-       });
+       }); */
 
        /*$(".langu_list li a").click(function(){
          var languid = $(this).attr('id');
