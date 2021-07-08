@@ -131,7 +131,7 @@
   </script>
 
   <script>
-/*     $(".footer_nav > .level_1 > li > a").click(function () {
+    /*$(".footer_nav > .level_1 > li > a").click(function () {
       var scrolltarget = "#" + $(this).attr('id') + "_area";
       $("html, body").animate({ scrollTop: $(scrolltarget).offset().top - 97 }, { duration: 10, easing: "swing" });
       $(".header_nav").addClass("header_nav_Open_Close");
@@ -140,12 +140,12 @@
       $(tagactive).addClass("active");
       return false;
     }); 
-*/
+    */
 
-$(".header_nav > ul > li > a").click( ClickHandler);
-$(".footer_nav > .level_1 > li > a").click( ClickHandler);
-function ClickHandler() {
-  var scrolltarget = "#" + $(this).attr('id') + "_area";
+    $(".header_nav > ul > li > a").click(ClickHandler);
+    $(".footer_nav > .level_1 > li > a").click(ClickHandler);
+    function ClickHandler() {
+      var scrolltarget = "#" + $(this).attr('id') + "_area";
       $("html, body").animate({ scrollTop: $(scrolltarget).offset().top - 97 }, { duration: 10, easing: "swing" });
       $(".header_nav").addClass("header_nav_Open_Close");
       var tagactive = "#" + $(this).attr('id');
