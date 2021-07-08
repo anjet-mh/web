@@ -41,8 +41,8 @@
 
   <script>
 
+$(document).ready(function () {
     var sys = "";
-
     /*sys = (navigator.language||navigator.userLanguage||navigator.browserLanguage||navigator.systemLanguage).toLowerCase();*/
     sys = document.getElementsByTagName('html')[0].getAttribute('lang'); /*抓網頁 <html lang=" ">*/
 
@@ -59,7 +59,6 @@
     L_en[9] = "CONTACT US";
     L_en[10] = "PRIVACY POLICY";
     L_en[11] = "Language";
-
 
     L_zhcht = new Array();
     L_zhcht[0] = "安傑特科技股份有限公司 (總部)";
@@ -95,15 +94,15 @@
 
 
     var sysinfo = document.getElementById("sysinfo");
+
     sysinfo.innerHTML = sys;
 
     var LangArray;
 
-    if (sys == "en" || sys == "en-usen-gb" || sys == "en-au" || sys == "en-ca" || sys == "en-nz" || sys == "en-ie" || sys == "en-za" || sys == "en-jm" || sys == "en-bz" || sys == "en-tt") {
-      LangArray = L_en;}
-      else if (sys == "zh-tw" || sys == "zh-Hant-TW") {LangArray = L_zhcht;}
-      else if (sys == "zh-cn" || sys == "zh-sg") {LangArray = L_zhchs;}
-      else if (sys == "ja" || sys == "ja-jp") {LangArray = L_ja;}
+    if (sys == "en" || sys == "en-usen-gb" || sys == "en-au" || sys == "en-ca" || sys == "en-nz" || sys == "en-ie" || sys == "en-za" || sys == "en-jm" || sys == "en-bz" || sys == "en-tt") {LangArray = L_en; $(".langu_list").addClass("en"); }//
+      else if (sys == "zh-tw" || sys == "zh-Hant-TW") {LangArray = L_zhcht; $(".langu_list").removeClass("en");}
+      else if (sys == "zh-cn" || sys == "zh-sg") {LangArray = L_zhchs; $(".langu_list").removeClass("en");}
+      else if (sys == "ja" || sys == "ja-jp") {LangArray = L_ja; $(".langu_list").removeClass("en");}
 
     /* 將各個文字, 填入指定位置 */
     document.getElementById('cop-tw').innerHTML = LangArray[0];
@@ -111,14 +110,14 @@
     document.getElementById('cop-jp').innerHTML = LangArray[2];
     document.getElementById('add-jp').innerHTML = LangArray[3];
 
-    /*document.getElementById('mission').innerHTML = LangArray[4];
+    document.getElementById('mission').innerHTML = LangArray[4];
     document.getElementById('about').innerHTML = LangArray[5];
     document.getElementById('product').innerHTML = LangArray[6];
     document.getElementById('newspage').innerHTML = LangArray[7];
     document.getElementById('recruit').innerHTML = LangArray[8];
     document.getElementById('contactus').innerHTML = LangArray[9];
     //document.getElementById('policy').innerHTML = LangArray[10];
-    document.getElementById('langu').innerHTML = LangArray[11];*/
+    document.getElementById('langu').innerHTML = LangArray[11];/**/
 
     document.getElementById('footer-mission').innerHTML = LangArray[4];
     document.getElementById('footer-about').innerHTML = LangArray[5];
@@ -127,6 +126,8 @@
     document.getElementById('footer-recruit').innerHTML = LangArray[8];
     document.getElementById('footer-contactus').innerHTML = LangArray[9];
     document.getElementById('footer-policy').innerHTML = LangArray[10];
+
+  });
 
   </script>
 
