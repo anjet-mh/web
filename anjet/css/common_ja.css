@@ -29,7 +29,7 @@
 
     #footer {width: 100%; font-size: 0.8rem;padding: 2px 0 20px; background-color: rgb(1, 64, 80, 1); }
     #footer, #footer a {color: #dfdfdf;}
-    #footer a:hover {color: #ffffff; border-bottom: 1px solid #ffffff;}
+    #footer a:hover,  #footer a span:hover{color: #ffffff; border-bottom: 1px solid #ffffff;}
     /*.copyright {border-top: 1px solid #bdbdbd; padding-top: 8px;}*/
     #footer p{ line-height: 1.2rem; margin: 0; letter-spacing: 1px;}
 
