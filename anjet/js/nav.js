@@ -13,10 +13,10 @@
           }
       });
       $(".level_1 > li > a").click(function () { //點擊.level_1下的a ()
-                $( ".level_1" ).find( "*" ).removeClass("show");
-                $(this).next("ul").addClass("show").slideToggle(200);//先在當前(.level_1 > a)的下一個(.next)兄弟層"ul" (.level_2) 加上Class .show 然後再開啟或關閉"ul" (.level_2)
-                $(".level_1 ul").not(".show").slideUp(); //關閉在.level_1下全部的ul class中沒有.show 的選單
-            });
+          $( ".level_1" ).find( "*" ).removeClass("show");
+          $(this).next("ul").addClass("show").slideToggle(200);//先在當前(.level_1 > a)的下一個(.next)兄弟層"ul" (.level_2) 加上Class .show 然後再開啟或關閉"ul" (.level_2)
+          $(".level_1 ul").not(".show").slideUp(); //關閉在.level_1下全部的ul class中沒有.show 的選單
+      });
       $(".level_2 > li > a").click(function () { //點擊.level_2下的a ()
           $( ".level_2" ).find( "*" ).removeClass("show");
           $(this).next("ul").addClass("show").slideToggle(200);//先在當前(.level_2 > a)的下一個(.next)兄弟層"ul" (.level_3) 加上Class .show 然後再開啟或關閉"ul" (.level_3)
@@ -55,7 +55,7 @@
 
 
 
-      $(".header_nav > ul > li > a").click(function() {
+       $(".header_nav > ul > li > a").click(function() {
         var scrolltarget = "#" + $(this).attr('id') + "_area";
 
         $("html, body").animate({scrollTop: $(scrolltarget).offset().top-97 }, {duration: 10,easing: "swing"});        
@@ -76,7 +76,7 @@
           $(".header_nav  a").removeClass("active");
           $(location.hash).addClass("active");
           location.hash = "";//更改#標籤後方字串
-       });
+       }); /**/
 
        /*$(".langu_list li a").click(function(){
          var languid = $(this).attr('id');
