@@ -20,7 +20,7 @@
         </div>
 
         <div class="col-md-4 copyright text-md-start text-center mb-4 mt-md-4 footer_nav">
-          <ul class="level_1">
+          <ul class="footer-level_1">
             <li class=""><a id="mission" class="" href="index.html#mission"><span id ="footer-mission">HOME / MISSION</span></a></li>
             <li class=""><a id="about" class="" href="index.html#about"><span id="footer-about">事業概要</span></a></li>
             <li class=""><a id="product" class="" href="index.html#product"><span id="footer-product">製品</span></a></li>
@@ -115,8 +115,9 @@
         LangArray = L_zhcht;
         $(".langu_list").removeClass("en");
         $("#ja-jp").attr({"href":"../ja-jp"});
-        $("#zh-cht").attr({"href":"../zh-cht"});
+        $("#zh-cht").attr({"href":"../zh-cht"});        
         $.getScript("../js/nav.js");
+        
 
       } else if (sys == "zh-cn") {//簡中
         LangArray = L_zhchs;
@@ -174,8 +175,8 @@
     }); 
     */
 
-    $(".header_nav > ul > li > a").click(getID);
-    $(".footer_nav > .level_1 > li > a").click(getID);
+    //$(".header_nav > .level_1 > li > a").click(getID);
+    $(".footer_nav > .footer-level_1 > li > a").click(getID);
     //取得ID
     function getID() {
       var scrolltarget = "#" + $(this).attr('id') + "_area";

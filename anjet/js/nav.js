@@ -1,3 +1,4 @@
+//alert("OK");
 //------抓取 各頁 塞在.page_name下的namedata數據 然後在此取得該數據後 再組成 #數據 當變數用
       var nav_link_active = "#" + $(".page_name").data("namedata");
       $(nav_link_active).addClass("active");//找到與nav_link_active變數相同的id 加入 .active
@@ -10,6 +11,7 @@
               $(".level_1 ul").not(".show").slideUp();
           }
       });
+
       $(".level_1 > li > a").click(function () { //點擊.level_1下的a ()
           $( ".level_1" ).find( "*" ).removeClass("show");
           $(this).next("ul").addClass("show").slideToggle(200);//先在當前(.level_1 > a)的下一個(.next)兄弟層"ul" (.level_2) 加上Class .show 然後再開啟或關閉"ul" (.level_2)
@@ -51,9 +53,9 @@
 //------固定選單
       $('.navbar-top').addClass('navFixed');   // 幫選單加上固定效果 
 
-/*
+/**/
 //------按下選單後移到該ID位置 並 加上 active CSS
-       $(".header_nav > ul > li > a").click(function() {
+       $(".header_nav > .level_1 > li > a").click(function() {
         var scrolltarget = "#" + $(this).attr('id') + "_area";
 
         $("html, body").animate({scrollTop: $(scrolltarget).offset().top-97 }, {duration: 10,easing: "swing"});        
@@ -73,7 +75,7 @@
           $(location.hash).addClass("active");
           location.hash = "";//更改#標籤後方字串
        }); 
-*/
+
 
        /*$(".langu_list li a").click(function(){
          var languid = $(this).attr('id');
