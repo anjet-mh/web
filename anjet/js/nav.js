@@ -1,10 +1,8 @@
-      /*抓取 各頁 塞在.page_name下的namedata數據 然後在此取得該數據後 再組成 #數據 當變數用*/
+//------抓取 各頁 塞在.page_name下的namedata數據 然後在此取得該數據後 再組成 #數據 當變數用
       var nav_link_active = "#" + $(".page_name").data("namedata");
-      /*alert(nav_link_active);*/
-      /*找到與nav_link_active變數相同的id 加入 .active*/
-      $(nav_link_active).addClass("active");
+      $(nav_link_active).addClass("active");//找到與nav_link_active變數相同的id 加入 .active
       
-      /* 下拉選單 區塊 開始 */
+//------下拉選單 區塊 開始 
       $(".menu_btn").click(function () { //點漢堡選單icon               
           $(".header_nav").toggleClass("header_nav_Open_Close");
           if($(".header_nav_Open_Close").length != 0){ //當有.header_nav_Open_Close的時侯才執行
@@ -22,25 +20,25 @@
           $(this).next("ul").addClass("show").slideToggle(200);//先在當前(.level_2 > a)的下一個(.next)兄弟層"ul" (.level_3) 加上Class .show 然後再開啟或關閉"ul" (.level_3)
           $(".level_1 ul").not(".show").slideUp(); //關閉在.level_1下全部的ul class中只要沒有.show 的選單
       });
-      /* 下拉選單 區塊 結束 */
+//------ 下拉選單 區塊 結束 
 
-      /* nav.html被載入後 隱藏 & 變更 導覽頁中.main-container 的 網站導覽 與 下拉選單 class */
+//------ nav.html被載入後 隱藏 & 變更 導覽頁中.main-container 的 網站導覽 與 下拉選單 class 
       $("#load-nav2 .navbar-top").removeClass("navbar-top")
-      /*$("#load-nav2 .angle_down").removeClass("angle_down").addClass("angle_down1");*/
+      //$("#load-nav2 .angle_down").removeClass("angle_down").addClass("angle_down1");
       $("#load-nav2 .level_1").removeClass("level_1").addClass("L1");
       $("#load-nav2 .level_2").removeClass("level_2").addClass("L2");
       $("#load-nav2 .level_3").removeClass("level_3").addClass("L3");
       $(".main-container .sitenav_hide").hide(); //隱藏sitenav_hide的LINK
 
-      /*回到頂端*/
+//------回到頂端按鈕
       $(function () {
-        /* 按下GoTop按鈕時的事件 */
+        // 按下GoTop按鈕時的事件 
         $('#gotop').click(function () {
-          $('html,body').animate({ scrollTop: 0 }, .1);   /* 返回到最頂上 */
+          $('html,body').animate({ scrollTop: 0 }, .1);   // 返回到最頂上 
           return false;
         });
 
-        /* 偵測卷軸滑動時，往下滑超過200px就讓GoTop按鈕出現 */
+        // 偵測卷軸滑動時，往下滑超過200px就讓GoTop按鈕出現 
         $(window).scroll(function () {
           if ($(this).scrollTop() > 200) {
             $('#gotop').fadeIn();
@@ -50,11 +48,11 @@
         });
       });
 
-      /*固定選單*/
-      $('.navbar-top').addClass('navFixed');   /* 幫選單加上固定效果 */
+//------固定選單
+      $('.navbar-top').addClass('navFixed');   // 幫選單加上固定效果 
 
 
-
+//------按下選單後移到該ID位置 並 加上 active CSS
        $(".header_nav > ul > li > a").click(function() {
         var scrolltarget = "#" + $(this).attr('id') + "_area";
 
@@ -76,7 +74,7 @@
           $(".header_nav  a").removeClass("active");
           $(location.hash).addClass("active");
           location.hash = "";//更改#標籤後方字串
-       }); /**/
+       }); //
 
        /*$(".langu_list li a").click(function(){
          var languid = $(this).attr('id');
