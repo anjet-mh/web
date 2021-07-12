@@ -51,7 +51,7 @@
 //------固定選單
       $('.navbar-top').addClass('navFixed');   // 幫選單加上固定效果 
 
-
+/*
 //------按下選單後移到該ID位置 並 加上 active CSS
        $(".header_nav > ul > li > a").click(function() {
         var scrolltarget = "#" + $(this).attr('id') + "_area";
@@ -64,8 +64,6 @@
         return false;
       });
 
-      
-
       //抓取網址列最後面的#部分 然後換頁後自動移到該位置
        $(function () {
          var gethash = location.hash+ "_area";
@@ -74,7 +72,8 @@
           $(".header_nav  a").removeClass("active");
           $(location.hash).addClass("active");
           location.hash = "";//更改#標籤後方字串
-       }); //
+       }); 
+*/
 
        /*$(".langu_list li a").click(function(){
          var languid = $(this).attr('id');

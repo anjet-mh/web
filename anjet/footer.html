@@ -43,8 +43,8 @@
 
     $(document).ready(function () {
       var sys = "";
-      /*sys = (navigator.language||navigator.userLanguage||navigator.browserLanguage||navigator.systemLanguage).toLowerCase();*/
-      sys = document.getElementsByTagName('html')[0].getAttribute('lang'); /*抓網頁 <html lang=" ">*/
+      //sys = (navigator.language||navigator.userLanguage||navigator.browserLanguage||navigator.systemLanguage).toLowerCase();
+      sys = document.getElementsByTagName('html')[0].getAttribute('lang'); //抓網頁 <html lang=" ">
 
       L_en = new Array();
       L_en[0] = "Anjet Corporation（Headquarters）";
@@ -109,33 +109,33 @@
         $(".langu_list").addClass("en");
         $("#ja-jp").attr({"href":"./ja-jp"});
         $("#zh-cht").attr({"href":"./zh-cht"});
-        //$.getScript("./js/nav.js");
+        $.getScript("./js/nav.js");
 
       } else if (sys == "zh-Hant-TW") {//繁中
         LangArray = L_zhcht;
         $(".langu_list").removeClass("en");
         $("#ja-jp").attr({"href":"../ja-jp"});
         $("#zh-cht").attr({"href":"../zh-cht"});
-        //$.getScript("../js/nav.js");
+        $.getScript("../js/nav.js");
 
       } else if (sys == "zh-cn") {//簡中
         LangArray = L_zhchs;
         $(".langu_list").removeClass("en");
         $("#ja-jp").attr({"href":"../ja-jp"});
         $("#zh-cht").attr({"href":"../zh-cht"});
-        //$.getScript("../js/nav.js");
+        $.getScript("../js/nav.js");
         
       } else if (sys == "ja") {//日文
         LangArray = L_ja;
         $(".langu_list").removeClass("en");
         $("#ja-jp").attr({"href":"../ja-jp"});
         $("#zh-cht").attr({"href":"../zh-cht"});
-        //$.getScript("../js/nav.js");
+        $.getScript("../js/nav.js");
         
       }
 
 
-      /* 將各個文字, 填入指定位置 */
+      // 將各個文字, 填入指定位置
       document.getElementById('cop-tw').innerHTML = LangArray[0];
       document.getElementById('add-tw').innerHTML = LangArray[1];
       document.getElementById('cop-jp').innerHTML = LangArray[2];
@@ -174,7 +174,7 @@
     }); 
     */
 
-    /*$(".header_nav > ul > li > a").click(getID);*/
+    $(".header_nav > ul > li > a").click(getID);
     $(".footer_nav > .level_1 > li > a").click(getID);
     //取得ID
     function getID() {
