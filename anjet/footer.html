@@ -16,15 +16,15 @@
 
         <div class="col-md-4 copyright text-md-start text-center mb-4 mt-md-4">
           <p id="cop-jp">アンジェットリサーチラボ 株式会社（京都）</p>
-          <p id="add-jp">〒６１５－８２４５ 京都府京都市西京区御陵大原１－３９<br />京大桂ベンチャープラザ南館 2203号室<br />Tel:075-393-2565</p>
-        </div>
+          <p id="add-jp">〒615-8245 京都府京都市西京区御陵大原1-39<br />京大桂ベンチャープラザ南館 2203号室<br />Tel:075-393-2565</p>
+        </div><!--〒６１５－８２４５ 京都府京都市西京区御陵大原１－３９-->
 
         <div class="col-md-4 copyright text-md-start text-center mb-4 mt-md-4 footer_nav">
           <ul class="footer-level_1">
             <li class=""><a id="mission" class="" href="index.html#mission"><span id ="footer-mission">HOME / MISSION</span></a></li>
             <li class=""><a id="about" class="" href="index.html#about"><span id="footer-about">事業概要</span></a></li>
             <li class=""><a id="product" class="" href="index.html#product"><span id="footer-product">製品</span></a></li>
-            <li class=""><a id="newspage" class="" href="news.html"><span id="footer-newspage">NEWS</span></a></li>
+            <li class=""><a id="news" class="" href="news.html"><span id="footer-news">NEWS</span></a></li>
             <li class=""><a id="recruit" class="" href="index.html#recruit"><span id="footer-recruit">採用情報</span></a></li>
             <li class=""><a id="contactus" class="" href="contactus.html"><span id="footer-contactus">お問い合わせ</span></a></li>
             <li class=""><a id="policy" class="" href="policy.html"><span id="footer-policy">プライバシーポリシー</span></a></li>
@@ -35,16 +35,16 @@
 
       <div class="text-center">Copyright (C) Anjet Corporation. All Rights Reserved.</div><!--Anjet Research Lab 株式会社-->
     </div>
-    <span id = "lang-1-head">Language : </span><span id = "sysinfo"></span> <!-- -->
+    <span id = "lang-1-head">Language : </span><span id = "html_lang_info"></span> <!-- -->
   </footer>
 
 
   <script type="text/javascript">
 
     $(document).ready(function () {
-      var sys = "";
-      //sys = (navigator.language||navigator.userLanguage||navigator.browserLanguage||navigator.systemLanguage).toLowerCase();
-      sys = document.getElementsByTagName('html')[0].getAttribute('lang'); //抓網頁 <html lang=" ">
+      var html_lang = "";
+      //html_lang = (navigator.language||navigator.userLanguage||navigator.browserLanguage||navigator.systemLanguage).toLowerCase();
+      html_lang = document.getElementsByTagName('html')[0].getAttribute('lang'); //抓網頁 <html lang=" ">
 
       L_en = new Array();
       L_en[0] = "Anjet Corporation（Headquarters）";
@@ -64,7 +64,7 @@
       L_zhcht[0] = "安傑特科技股份有限公司 (總部)";
       L_zhcht[1] = "10466 台北市中山區植福路308號5樓之6 <br />TEL : 02-8501-2370 <br />FAX : 02-8501-2876";
       L_zhcht[2] = "アンジェットリサーチラボ 株式会社（京都）";
-      L_zhcht[3] = "〒６１５－８２４５ 京都府京都市西京区御陵大原１－３９<br />京大桂ベンチャープラザ南館 2203号室<br />Tel : +81-75-393-2565";
+      L_zhcht[3] = "〒615-8245 京都府京都市西京区御陵大原1-39<br />京大桂ベンチャープラザ南館 2203号室<br />Tel : +81-75-393-2565";
       L_zhcht[4] = "HOME / MISSION";
       L_zhcht[5] = "關於我們";
       L_zhcht[6] = "產品";
@@ -78,7 +78,7 @@
       L_ja[0] = "Anjet Corporation（Headquarters）";
       L_ja[1] = "5F-6, No. 308, Zhifu Rd., Zhongshan Dist., <br />Taipei City 10466, Taiwan R.O.C. <br />TEL : +886-2-8501-2370 <br />FAX : +886-2-8501-2876";
       L_ja[2] = "アンジェットリサーチラボ 株式会社（京都）";
-      L_ja[3] = "〒６１５－８２４５ 京都府京都市西京区御陵大原１－３９<br />京大桂ベンチャープラザ南館 2203号室<br />Tel : 075-393-2565";
+      L_ja[3] = "〒615-8245 京都府京都市西京区御陵大原1-39<br />京大桂ベンチャープラザ南館 2203号室<br />Tel : 075-393-2565";
       L_ja[4] = "HOME / MISSION";
       L_ja[5] = "事業概要";
       L_ja[6] = "製品";
@@ -93,25 +93,24 @@
       L_zhchs[1] = "语系 : ";
 
 
-      var sysinfo = document.getElementById("sysinfo");
-
-      sysinfo.innerHTML = sys;
+      //var html_lang_info = document.getElementById("html_lang_info");
+      document.getElementById("html_lang_info").innerHTML = html_lang; //用 innerHTML 的方式渲染網頁
 
       var LangArray;
 
-      /*if (sys == "en" || sys == "en-usen-gb" || sys == "en-au" || sys == "en-ca" || sys == "en-nz" || sys == "en-ie" || sys == "en-za" || sys == "en-jm" || sys == "en-bz" || sys == "en-tt") {LangArray = L_en; $(".langu_list").addClass("en"); }//
-        else if (sys == "zh-Hant-TW" || sys == "zh-tw") {LangArray = L_zhcht; $(".langu_list").removeClass("en"); }
-        else if (sys == "zh-cn" || sys == "zh-sg") {LangArray = L_zhchs; $(".langu_list").removeClass("en"); }
-        else if (sys == "ja-jp" || sys == "ja") {LangArray = L_ja; $(".langu_list").removeClass("en"); }*/
+      /*if (html_lang == "en" || html_lang == "en-usen-gb" || html_lang == "en-au" || html_lang == "en-ca" || html_lang == "en-nz" || html_lang == "en-ie" || html_lang == "en-za" || html_lang == "en-jm" || html_lang == "en-bz" || html_lang == "en-tt") {LangArray = L_en; $(".langu_list").addClass("en"); }//
+        else if (html_lang == "zh-Hant-TW" || html_lang == "zh-tw") {LangArray = L_zhcht; $(".langu_list").removeClass("en"); }
+        else if (html_lang == "zh-cn" || html_lang == "zh-sg") {LangArray = L_zhchs; $(".langu_list").removeClass("en"); }
+        else if (html_lang == "ja-jp" || html_lang == "ja") {LangArray = L_ja; $(".langu_list").removeClass("en"); }*/
 
-      if (sys == "en") {//英文
+      if (html_lang == "en") {//英文
         LangArray = L_en;
         $(".langu_list").addClass("en");
         $("#ja-jp").attr({"href":"./ja-jp"});
         $("#zh-cht").attr({"href":"./zh-cht"});
         $.getScript("./js/nav.js");
 
-      } else if (sys == "zh-Hant-TW") {//繁中
+      } else if (html_lang == "zh-Hant-TW") {//繁中
         LangArray = L_zhcht;
         $(".langu_list").removeClass("en");
         $("#ja-jp").attr({"href":"../ja-jp"});
@@ -119,14 +118,14 @@
         $.getScript("../js/nav.js");
         
 
-      } else if (sys == "zh-cn") {//簡中
+      } else if (html_lang == "zh-cn") {//簡中
         LangArray = L_zhchs;
         $(".langu_list").removeClass("en");
         $("#ja-jp").attr({"href":"../ja-jp"});
         $("#zh-cht").attr({"href":"../zh-cht"});
         $.getScript("../js/nav.js");
         
-      } else if (sys == "ja") {//日文
+      } else if (html_lang == "ja") {//日文
         LangArray = L_ja;
         $(".langu_list").removeClass("en");
         $("#ja-jp").attr({"href":"../ja-jp"});
@@ -145,7 +144,7 @@
       document.getElementById('mission').innerHTML = LangArray[4];
       document.getElementById('about').innerHTML = LangArray[5];
       document.getElementById('product').innerHTML = LangArray[6];
-      document.getElementById('newspage').innerHTML = LangArray[7];
+      document.getElementById('news').innerHTML = LangArray[7];
       document.getElementById('recruit').innerHTML = LangArray[8];
       document.getElementById('contactus').innerHTML = LangArray[9];
       //document.getElementById('policy').innerHTML = LangArray[10];
@@ -154,7 +153,7 @@
       document.getElementById('footer-mission').innerHTML = LangArray[4];
       document.getElementById('footer-about').innerHTML = LangArray[5];
       document.getElementById('footer-product').innerHTML = LangArray[6];
-      document.getElementById('footer-newspage').innerHTML = LangArray[7];
+      document.getElementById('footer-news').innerHTML = LangArray[7];
       document.getElementById('footer-recruit').innerHTML = LangArray[8];
       document.getElementById('footer-contactus').innerHTML = LangArray[9];
       document.getElementById('footer-policy').innerHTML = LangArray[10];
@@ -175,7 +174,7 @@
     }); 
     */
 
-    //$(".header_nav > .level_1 > li > a").click(getID);
+
     $(".footer_nav > .footer-level_1 > li > a").click(getID);
     //取得ID
     function getID() {
