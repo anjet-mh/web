@@ -1,18 +1,16 @@
 $(".langu_list li a").click(function () {
   //alert('location.pathname: '+location.pathname);
   var thisHREF = $(this).attr("href"); //取得a的href
-  var page_name_ck = $(".page_name").data("namedata")//取得.page_name 的 data-namedata的data
-  if (page_name_ck == "home") {
+  var namedata_checking = $(".page_name").data("namedata")//取得.page_name 的 data-namedata的data
+  if (namedata_checking == "home") {
     var appHREF = thisHREF;
   } else {
-    var appHREF = thisHREF + "/" + page_name_ck + ".html";
+    var appHREF = thisHREF + "/" + namedata_checking + ".html";
   }
-
   $("#" + $(this).attr('id')).attr({ "href": appHREF });
-
 });
 
-//alert("OK");
+
 //------抓取 各頁 塞在.page_name下的namedata數據 然後在此取得該數據後 再組成 #數據 當變數用
       var nav_link_active = "#" + $(".page_name").data("namedata");
       $(nav_link_active).addClass("active");//找到與nav_link_active變數相同的id 加入 .active
