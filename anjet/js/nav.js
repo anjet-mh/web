@@ -1,14 +1,14 @@
-$(".langu_list li a").click(function(){
+$(".langu_list li a").click(function () {
   //alert('location.pathname: '+location.pathname);
   var thisHREF = $(this).attr("href"); //取得a的href
   var page_name_ck = $(".page_name").data("namedata")//取得.page_name 的 data-namedata的data
-  if(page_name_ck == "home"){
-    var appHREF = thisHREF; 
-  }else {var appHREF = thisHREF +"/" + page_name_ck + ".html";
-}
-  
-  
-  $("#" + $(this).attr('id')).attr({"href":appHREF});
+  if (page_name_ck == "home") {
+    var appHREF = thisHREF;
+  } else {
+    var appHREF = thisHREF + "/" + page_name_ck + ".html";
+  }
+
+  $("#" + $(this).attr('id')).attr({ "href": appHREF });
 
 });
 
