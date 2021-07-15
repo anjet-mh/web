@@ -10,8 +10,8 @@
     --mezasu_background-color_0:rgba(188, 255, 211, 0);
   }
 
-#load-nav .header{background-color: var(--mezasu_background-color_85);}/*rgba(1, 64, 80, .85)*/
-.header_nav{background-color: var(--mezasu_background-color_95);} /*0.95*/
+#load-nav .header{background-color: var(--mezasu_background-color_85);}
+.header_nav{background-color: var(--mezasu_background-color_95);}
 .mezasu{
     min-width: 320px;
     font-size: .95rem;
