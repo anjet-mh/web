@@ -3,14 +3,21 @@
     border-bottom: .15rem solid #bdbdbd;
 }*/
 
-#load-nav .header{background-color: rgba(188, 255, 211, 0.85);}/*rgba(1, 64, 80, .85)*/
-.header_nav{background-color: rgba(188, 255, 211,0.95);}
+:root {
+    --li_hover_active-color: rgb(32, 143, 18);
+    --mezasu_background-color_95:rgba(188, 255, 211, 0.95);
+    --mezasu_background-color_85:rgba(188, 255, 211, 0.85);
+    --mezasu_background-color_0:rgba(188, 255, 211, 0);
+  }
+
+#load-nav .header{background-color: var(--mezasu_background-color_85);}/*rgba(1, 64, 80, .85)*/
+.header_nav{background-color: var(--mezasu_background-color_95);} /*0.95*/
 .mezasu{
     min-width: 320px;
     font-size: .95rem;
     font-weight: 900;
     padding: 0 5px;
-    background-color: rgba(188, 255, 211,0.85);
+    background-color: var(--mezasu_background-color_85);
     color: rgb(255, 123, 0) ;
     text-align: center;
 }
@@ -33,11 +40,11 @@
 
 .header_nav a{font-size: .95rem; color:#929292;  }/*color:#b9b9b9;*/
 .header_nav li{padding: 15px 10px; position: relative;}
-.header_nav li:hover a, .header_nav li:hover .fas{color: rgb(32, 143, 18);}/*rgb(254, 223, 225)*/
+.header_nav li:hover a, .header_nav li:hover .fas{color: var(--li_hover_active-color);}/*rgb(254, 223, 225)*/
 .header_nav li::after {position: absolute; content: ''; width: 0%; height: 5px;bottom: 0;left: 40%;transition: .3s;}
-.header_nav li:hover::after {width: 60%;left: 20%;background-color: rgb(32, 143, 18);}/*rgb(254, 223, 225)*/
+.header_nav li:hover::after {width: 60%;left: 20%;background-color: var(--li_hover_active-color);}/*rgb(254, 223, 225)*/
 
-.header_nav a.active{color:rgb(32, 143, 18);}/*color:#ffffff;*/
+.header_nav a.active{color:var(--li_hover_active-color);}/*color:#ffffff;*/
 
 .header_nav .test{display: none;}/*隱藏橫向選單中調整空間用的li*/
 
@@ -113,7 +120,7 @@
 /* width>936px 866px 768px 時 多層選單的定位*/
 
 
-@media (min-width: 1198px){
+@media (min-width: 1198px){ /* TW1037 JP1072 EN1198 */
     .header{
         display: flex;
         justify-content:space-between;/**/
@@ -121,11 +128,12 @@
     }/**/
 
     .mezasu{
-        background-color: rgba(188, 255, 211,0);
+        background-color: var(--mezasu_background-color_0);
         min-width: 230px;max-width: 410px;/**/
         text-align: left;
     }
 
+    .test.en{display: block; width:calc(100% - 1550px); padding: 0; z-index: -99;}/*橫向選單中調整英文空間用的li*/
     .test{display: block; width:calc(100% - 1350px); padding: 0; z-index: -99;}/*橫向選單中調整空間用的li*/
     .header_nav {background-color: rgba(0, 0, 0, 0);}/* width: 68vw;*/
     .header_nav>ul{display: flex; white-space:nowrap; padding-right: 16px;} /*主選單 橫向排列*/

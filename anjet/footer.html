@@ -105,6 +105,7 @@
 
       if (html_lang == "en") {//英文
         LangArray = L_en;
+        $(".test").addClass("en");
         $(".langu_list").addClass("en");
         $("#ja-jp").attr({"href":"./ja-jp"});
         $("#zh-cht").attr({"href":"./zh-cht"});
@@ -112,7 +113,7 @@
 
       } else if (html_lang == "zh-Hant-TW") {//繁中
         LangArray = L_zhcht;
-        $(".langu_list").removeClass("en");
+        //$(".langu_list").removeClass("en");
         $("#ja-jp").attr({"href":"../ja-jp"});
         $("#zh-cht").attr({"href":"../zh-cht"});        
         $.getScript("../js/nav.js");
@@ -120,14 +121,14 @@
 
       } else if (html_lang == "zh-cn") {//簡中
         LangArray = L_zhchs;
-        $(".langu_list").removeClass("en");
+        //$(".langu_list").removeClass("en");
         $("#ja-jp").attr({"href":"../ja-jp"});
         $("#zh-cht").attr({"href":"../zh-cht"});
         $.getScript("../js/nav.js");
         
       } else if (html_lang == "ja") {//日文
         LangArray = L_ja;
-        $(".langu_list").removeClass("en");
+        //$(".langu_list").removeClass("en");
         $("#ja-jp").attr({"href":"../ja-jp"});
         $("#zh-cht").attr({"href":"../zh-cht"});
         $.getScript("../js/nav.js");

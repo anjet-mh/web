@@ -492,7 +492,8 @@
         /*.justify {text-align: justify; text-justify: inter-ideograph;}
         .justify::after {content: ''; display: inline-block; width: 100%;}*/
 
-        @media (min-width: 1198px){.carousel, .banner1{margin-top:63px;}}
+        @media (min-width: 1198px){/* TW1037 JP1072 EN1198 */
+            .carousel, .banner1{margin-top:63px;}}
         /*@media (max-width: 1198px){.carousel.en, .banner1.en{margin-top:85px;}}*/
 
         /*
