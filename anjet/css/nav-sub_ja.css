@@ -5,19 +5,19 @@
 
 :root {
     --li_hover_active-color: rgb(32, 143, 18);
-    --mezasu_background-color_95:rgba(188, 255, 211, 0.95);
-    --mezasu_background-color_85:rgba(188, 255, 211, 0.85);
-    --mezasu_background-color_0:rgba(188, 255, 211, 0);
+    --mezasu_navbackground-color_95:rgba(188, 255, 211, 0.95);
+    --mezasu_navbackground-color_85:rgba(188, 255, 211, 0.85);
+    --mezasu_navbackground-color_0:rgba(188, 255, 211, 0);
   }
 
-#load-nav .header{background-color: var(--mezasu_background-color_85);}
-.header_nav{background-color: var(--mezasu_background-color_95);}
+#load-nav .header{background-color: var(--mezasu_navbackground-color_85);}
+.header_nav{background-color: var(--mezasu_navbackground-color_95);}
 .mezasu{
     min-width: 320px;
     font-size: .95rem;
     font-weight: 900;
     padding: 0 5px;
-    background-color: var(--mezasu_background-color_85);
+    background-color: var(--mezasu_navbackground-color_85);
     color: rgb(255, 123, 0) ;
     text-align: center;
 }
@@ -128,7 +128,7 @@
     }/**/
 
     .mezasu{
-        background-color: var(--mezasu_background-color_0);
+        background-color: var(--mezasu_navbackground-color_0);
         min-width: 230px;max-width: 410px;/**/
         text-align: left;
     }
