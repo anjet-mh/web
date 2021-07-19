@@ -42,7 +42,7 @@
 .header_nav li{padding: 15px 10px; position: relative;}
 .header_nav li:hover a, .header_nav li:hover .fas{color: var(--li_hover_active-color);}/*rgb(254, 223, 225)*/
 .header_nav li::after {position: absolute; content: ''; width: 0%; height: 5px;bottom: 0;left: 40%;transition: .3s;}
-.header_nav li:hover::after {width: 60%;left: 20%;background-color: var(--li_hover_active-color);}/*rgb(254, 223, 225)*/
+.header_nav li:hover::after {width: 50%;left: 25%;background-color: var(--li_hover_active-color);}/*rgb(254, 223, 225)*/
 
 .header_nav a.active{color:var(--li_hover_active-color);}/*color:#ffffff;*/
 

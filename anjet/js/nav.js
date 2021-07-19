@@ -93,8 +93,8 @@ $(".langu_list li a").click(function () {
       //(.header_nav .footer_nav 用function) 取得ID 然後換頁後自動移到該位置 
       function getID() {
         var scrolltarget = "#" + $(this).attr('id') + "_area";
-        $(".header_nav").addClass("header_nav_Open_Close");
         $("html, body").animate({ scrollTop: $(scrolltarget).offset().top-97 }, { duration: 10, easing: "swing" });
+        $(".header_nav").addClass("header_nav_Open_Close");
         var tagactive = "#" + $(this).attr('id');
         $(".header_nav  a").removeClass("active");
         $(tagactive).addClass("active");
