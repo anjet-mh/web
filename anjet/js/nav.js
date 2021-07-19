@@ -16,7 +16,9 @@ $(".langu_list li a").click(function () {
 
 //------抓取 各頁 塞在.page_name下的namedata數據 然後在此取得該數據後 再組成 #數據 當變數用
       var nav_link_active = "#" + get_namedata ; //"#" + $(".page_name").data("namedata")
-      $(nav_link_active).addClass("active");//找到與nav_link_active變數相同的id 加入 .active
+      $(nav_link_active).addClass("active");//找到在header_nav中與nav_link_active變數相同的id 加入 .active
+
+
 
 
 //------下拉選單 區塊 開始 
@@ -91,11 +93,12 @@ $(".langu_list li a").click(function () {
       //(.header_nav .footer_nav 用function) 取得ID 然後換頁後自動移到該位置 
       function getID() {
         var scrolltarget = "#" + $(this).attr('id') + "_area";
-        $("html, body").animate({ scrollTop: $(scrolltarget).offset().top-97 }, { duration: 10, easing: "swing" });
         $(".header_nav").addClass("header_nav_Open_Close");
+        $("html, body").animate({ scrollTop: $(scrolltarget).offset().top-97 }, { duration: 10, easing: "swing" });
         var tagactive = "#" + $(this).attr('id');
         $(".header_nav  a").removeClass("active");
         $(tagactive).addClass("active");
+        location.hash = $(this).attr('id');//更改網址列中#標籤後方字串
         return false;
       }
 
@@ -104,10 +107,7 @@ $(".langu_list li a").click(function () {
         var gethash = location.hash+ "_area";
         var getscrollTop = $(this).scrollTop();
         $(this).scrollTop(getscrollTop-63);
-
         $("html, body").animate({scrollTop: $(gethash).offset().top-97 }, {duration: 10,easing: "swing"});
         $(".header_nav  a").removeClass("active");
         $(location.hash).addClass("active");
-        location.hash = "";//更改#標籤後方字串
-
        }); 

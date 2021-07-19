@@ -207,16 +207,16 @@
 
 
 
-    #contactus_area .map_area{
+    #contactus_area_no_hash .map_area{
         box-shadow: 0 0 10px 5px rgba(153, 107, 7, 0.3);
         border-radius: 10px;
         margin-top: -5rem;
         margin-bottom: 2rem;
     }
-    #contactus_area p{font-size: .9rem; margin: .2rem 0; letter-spacing: .1rem;}
-    #contactus_area .setsumei{margin-bottom: 3rem;}
-    #contactus_area .badge{padding: .35em .8em;font-weight: 300;font-size: .4em;margin-right: .5em;letter-spacing: 0rem;}
-    #contactus_area p > a, #policy_area p > a{text-decoration: underline;}
+    #contactus_area_no_hash p{font-size: .9rem; margin: .2rem 0; letter-spacing: .1rem;}
+    #contactus_area_no_hash .setsumei{margin-bottom: 3rem;}
+    #contactus_area_no_hash .badge{padding: .35em .8em;font-weight: 300;font-size: .4em;margin-right: .5em;letter-spacing: 0rem;}
+    #contactus_area_no_hash p > a, #policy_area p > a{text-decoration: underline;}
 
     .Sending{position: fixed;background-color: rgba(0, 0, 0, .5); width: 100vw; height: 100vh;top: 0;left: 0; z-index: 999;}
     .msgbox{position: fixed;top: 0;bottom: 0;left: 0;right: 0;margin: auto; width: 200px;height: 80px;background-color: rgb(255, 255, 255);text-align: center;line-height:75px;border-radius: 10px;border: 2px solid rgb(209, 209, 209);}
@@ -431,7 +431,7 @@
 
     @media (min-width: 320px){.carousel, .banner1{margin-top:106px;}}
     @media (min-width: 411px){.carousel, .banner1{margin-top:85px;}}
-    @media (max-width: 576px) {.carousel-item, .banner1  {height: 180px;} #contactus_area .map_area{ margin-top: -3rem; }}
+    @media (max-width: 576px) {.carousel-item, .banner1  {height: 180px;} #contactus_area_no_hash .map_area{ margin-top: -3rem; }}
 
     @media (min-width: 768px){
         *{letter-spacing: .15rem;}
@@ -477,9 +477,9 @@
         #about_area .right{width:calc(100% - 118px); margin: 0 0 0 0;}
         .map_img{padding: 10px 0 10px 20px;}
 
-        #contactus_area .left{width: 300px;}
-        #contactus_area .right{width:calc(100% - 300px)}
-        #contactus_area label {border-bottom: 1px solid rgba(0,0,0,0.12);}
+        #contactus_area_no_hash .left{width: 300px;}
+        #contactus_area_no_hash .right{width:calc(100% - 300px)}
+        #contactus_area_no_hash label {border-bottom: 1px solid rgba(0, 0, 0, 0.12);}
 
 
         #members_area .col_photo{order: 1; width: 120px; display: flex; align-items: center; justify-content: center;}
