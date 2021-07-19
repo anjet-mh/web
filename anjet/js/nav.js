@@ -72,7 +72,7 @@ $(".langu_list li a").click(function () {
       });
 
 //------固定選單
-      $('.navbar-top').addClass('navFixed');   // 幫選單加上固定效果 
+      $('.navbar-top').addClass('navFixed');   // 在.navbar-top 加入.navFixed 產生固定效果 
 
 /**/
 //------按下選單後移到該ID位置 並 加上 active CSS
