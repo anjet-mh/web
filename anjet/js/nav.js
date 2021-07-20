@@ -6,7 +6,7 @@ $(".langu_list li a").click(function () {
   /*var get_namedata = $(".page_name").data("namedata")//取得.page_name 的 data-namedata的data*/
   
   if (get_namedata == "home") {
-    var appHREF = thisHREF;
+    var appHREF = thisHREF  + "/" + location.hash;
   } else {
     var appHREF = thisHREF + "/" + get_namedata + ".html";
   }
