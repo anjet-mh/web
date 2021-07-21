@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+     <!--<link rel="stylesheet" href="css/all.css"> -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+    <title>ANJET - HOME</title>
+
+    <style>
+     /*@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500,700,900&display=swap");*/
+     @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+      body{background-color: #195E87;}
+      *{margin: 0;padding: 0;list-style: none; font-family: 'Noto Sans TC', sans-serif;}
+      a{text-decoration: none;}
+      p{font-weight: 300;}
+      
+
+      /*.navbar{font-size: 1.2rem;}*/
+      .navbar img{height: 36px;}
+      .navbar-expand-lg .navbar-nav .nav-link{padding: 0.8rem 0.8rem;}
+      .carousel-item{height: 300px; position: relative;}
+      .carousel-item img{position: absolute; top: 0; bottom: 0;margin: auto;}
+      /*.navbar{background-color: #195E87;}*/
+
+      .home-about{
+        background-color: #bfe6f8;
+        text-align: center;
+        padding: 20px 0 ;
+        margin: 30px 0;
+        border-radius: 5px;
+      }
+
+      .white-title{color: #ffffff;text-align: center;}
+      .text-muted{color:#dddddd!important;}
+
+      footer{background-color: #313131;
+        width: 100%;
+        font-size: 0.8rem;
+        /*position: absolute;
+        bottom: 0;
+        z-index: -1000;
+        */
+      }
+      footer, footer a{ color: #bdbdbd;}
+
+      .copyright{position: relative;}
+      .copyright::after{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        background-color: #bdbdbd;
+        top: -8px;
+        left: 0;/**/
+      } 
+    </style>
+
+  </head>
+  <body>
+      
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="img/LOGO.png" alt="">
+          ANJET</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown"> <!--justify-content-center 置中-->
+          <ul class="navbar-nav">
+
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">關於安傑特</a>
+            </li>
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                產品資訊
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"> <!--class加 dropdown-menu-end 選單靠右-->
+                <li><a class="dropdown-item" href="#">TO-220AB-3L POD</a></li>
+                <li><a class="dropdown-item" href="#">TO-220AB-D POD</a></li>
+                <li><a class="dropdown-item" href="#">TO-220AC POD</a></li>
+                <li><a class="dropdown-item" href="#">TO220FP-3L POD</a></li>
+                <li><a class="dropdown-item" href="#">TO247AD 3L POD</a></li>
+                <li><a class="dropdown-item" href="#">TO247AD DS</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">應用領域</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">技術支援</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="#">人才招募</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">聯絡我們</a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <!-- <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button> -->
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://picsum.photos/id/1/5616/3744" class="d-block w-100 overflow-hidden" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <!--<h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>  -->
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://picsum.photos/id/2/5616/3744" class="d-block w-100 overflow-hidden" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+             <!--<h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>--> 
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://picsum.photos/id/0/5616/3744" class="d-block w-100 overflow-hidden" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <!-- <h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>--> 
+          </div>
+        </div>
+      </div>
+      <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"  data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"  data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button> -->
+    </div>
+
+
+
+<!--container為定寬容器(根據容器變固定寬度 且有最大寬的限制) 加上-fluid後 變寬為100%-->
+    <div class="container mt-3">
+      <h2 class="white-title">新產品資訊</h2>
+    
+      <div class="row row-cols-1 row-cols-md-4 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="https://picsum.photos/id/96/500/300" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">標題 (型號)</h5>
+              <p class="card-text">產品說明簡介--運用我們最先進的解決方案創建未來化，提高效率和靈活性。</p>
+            </div>
+            <div class="card-footer text-end">
+              <small class="text-muted"><a href="#">... 了解更多</a></small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="https://picsum.photos/id/160/500/300" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">標題 (型號)</h5>
+              <p class="card-text">產品說明簡介--運用我們最先進的解決方案創建未來化，提高效率和靈活性。</p>
+            </div>
+            <div class="card-footer text-end">
+              <small class="text-muted"><a href="#">... 了解更多</a></small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="https://picsum.photos/id/119/500/300" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">標題 (型號)</h5>
+              <p class="card-text">產品說明簡介--運用我們最先進的解決方案創建未來化，提高效率和靈活性。</p>
+            </div>
+            <div class="card-footer text-end">
+              <small class="text-muted"><a href="#">... 了解更多</a></small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="https://picsum.photos/id/30/500/300" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">標題 (型號)</h5>
+              <p class="card-text">產品說明簡介--運用我們最先進的解決方案創建未來化，提高效率和靈活性。</p>
+            </div>
+            <div class="card-footer text-end">
+              <small class="text-muted"><a href="#">... 了解更多</a></small>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    </div>
+
+
+
+
+
+<!-- 頁尾-->
+<div id="footer"> 這裡是 load footer.html</div>
+    <footer id="footer"></footer>
+
+    <script>
+
+      
+    </script>
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!--<script src="Bootstrap5/js/bootstrap.min.js"></script>
+     Option 2: Separate Popper and Bootstrap JS -->    
+    <script src="js/popper.min.js"></script>
+    <script src="js/jquery-3.5.1.js"></script>
+    
+    <div class="page_name" style="display: none;"></div><!--用來塞數據的-->
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $("#header").load("header.html");
+        $("#footer").load("footer.html");
+        $(".page_name").data("namedata", "home"); /*在.page_name的div裡面添加namedata=home數據 給選單判斷加入.active用*/
+      })
+    </script>
+
+  </body>
+</html>

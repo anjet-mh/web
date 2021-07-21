@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+     <!--<link rel="stylesheet" href="css/all.css"> -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/common.css" rel="stylesheet" type="text/css">
+    <link href="css/nav-sub.css" rel="stylesheet" type="text/css">
+    <link href="css/sitenav.css" rel="stylesheet" type="text/css">
+
+    <script src="https://kit.fontawesome.com/4e45cb4cc4.js" crossorigin="anonymous"></script>
+
+    <title>ANJET - Site Navigator</title>
+
+    <style>
+
+    </style>
+
+  </head>
+  <body>
+<!-- 選單 -->
+    <div id="load-nav"></div>
+<!-- 選單 -->
+
+<!--banner-->
+<div class="banner1 siteNav">
+  <div class="container1">
+    <div class="banner1-txt">
+      <h1>網站地圖</h1>
+    </div>
+  </div>
+</div>
+
+    <div class="container mt-3 main-container">
+
+      <div id="load-nav2">
+
+      </div><!---->
+ 
+    </div>
+
+
+<!-- 頁尾-->
+<div id="load-footer"></div>
+<!-- 頁尾-->
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!--<script src="Bootstrap5/js/bootstrap.min.js"></script>
+     Option 2: Separate Popper and Bootstrap JS -->    
+    <script src="js/popper.min.js"></script>
+
+    <script src="js/jquery-3.5.1.js"></script>
+
+    <div class="page_name" style="display: none;"></div><!--用來塞數據的-->
+    
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $("#load-nav").load("nav.html");
+        $("#load-nav2").load("nav.html .header_nav");/**/
+        $("#load-footer").load("footer.html");
+
+        $(".page_name").data("namedata", "sitenav");/* 要修改成"sitenav" */
+        /*在.page_name的div裡面添加namedata=sitenav數據 給選單判斷加入.active用*/
+
+        
+      })
+     </script>
+
+
+  </body>
+</html>

@@ -71,6 +71,7 @@
 
 /* width>936px時 多層選單的定位 */
 @media (min-width: 936px) {
+    .header_nav_Open_Close{height: 0px; transform:translateY(0px);}/**/
     .header{height: 65px;
         display: flex;
         justify-content:space-between;
