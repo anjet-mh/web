@@ -112,12 +112,12 @@
             var level = $(this).parent().parent(); //變數 arr = 當下按下的.angle_down 的 父層(li)的父層(ul)
             $( level ).find( "*" ).removeClass("show");//
 
-
             $(this).next("ul").addClass("show");//.slideToggle(200)先在當前(.angle_down)的下一個(.next)兄弟層"ul" 加上Class .show 然後再開啟或關閉"ul"
+            
             //$(".level_1 ul").not(".show").slideUp(); 關閉在.level_1下全部的ul class中沒有.show 的選單     
-        }else{
-          var level = $(this).parent().parent();
-          $( level ).find( "*" ).removeClass("show")
+        //}else{
+          //var level = $(this).parent().parent();
+          //$( level ).find( "*" ).removeClass("show")
         };
 
     });
@@ -128,10 +128,10 @@
       };
     });
 
-    $(".banner1,.carousel,.container").click(function () { //點class .container 的區塊 關閉選單    
+    /*$(".banner1,.carousel,.container").click(function () { //點class .container 的區塊 關閉選單    
             $(".level_1" ).find( "*" ).removeClass("show");
             //$(".level_1 ul").not(".show").slideUp();
-    });      
+    }); */     
 
     $(".menu_btn").click(function () { //點漢堡選單icon
         $(".header_nav").toggleClass("header_nav_Open_Close");
