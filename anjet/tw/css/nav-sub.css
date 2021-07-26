@@ -86,7 +86,7 @@
     .header_nav{height: 100%; }
     .header_nav > ul{display: flex; white-space:nowrap; } /*margin-top: -.45rem;主選單 橫向排列*/
     .header_nav > ul > li{position: relative;}/*讓第二層定位*/
-    .header_nav > ul > li > ul{left: 0; position: absolute;width: 25vw;} /*第二層定位*/
+    .header_nav > ul > li > ul{left: 0; position: absolute;width: 250px;} /*第二層定位*/
 
     
     .header_nav li:hover > ul
