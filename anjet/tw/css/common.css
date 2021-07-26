@@ -1,7 +1,11 @@
     /*@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500,700,900&display=swap");*/
     @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
 
-    body {background-color: #195E87;}
+    :root{
+        --body_background-color:#ffffff;/*#195E87*/
+    }
+
+    body {background-color: var(--body_background-color);}/**/
 
     * {margin: 0; padding: 0; list-style: none; font-family: 'Noto Sans TC', sans-serif;}
     a {text-decoration: none;}
@@ -37,9 +41,10 @@
 */
 
 
-
+    
     /*輪播img定位*/
-    .carousel-item {height: 300px; position: relative; }
+    #carouselExampleCaptions {margin-top: 200px; }
+    .carousel-item { height: 300px; position: relative;}
     .carousel-item img {position: absolute; top: 0; bottom: 0; margin: auto;}
 
 

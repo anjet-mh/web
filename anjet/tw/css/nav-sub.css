@@ -1,34 +1,37 @@
-.header{padding: .8rem 0 .5rem;background-color: #195E87; border-bottom: .15rem solid #bdbdbd;}
+:root{
+    --header_background-color:rgb(247, 247, 247);
+
+}
+
+.header{padding: .8rem 0 .5rem; background-color: var(--header_background-color); /*border-bottom: .15rem solid #bdbdbd;*/}
 
 .logo, .header_nav {padding: 0 .8rem;}
 .logo img {height: 36px;/*transform:scale(0.5, 0.5);*/}
 .header_nav ol, ul{margin: 0; padding: 0;z-index: 99;}
-.header_nav a{color:#bbbbbb; padding: 3px 10px; border: 1px solid rgba(255,255,255,.0);/* 預先做出有框的大小 border-radius: 5px; */}
+.header_nav a{color:rgb(180, 180, 180); padding: 3px 10px; border: 1px solid rgba(255,255,255,.0);/* 預先做出有框的大小 border-radius: 5px; */}
 .header_nav li{margin: 5px 0; padding: 3px 0 0 0; width: 100%;} 
-.header_nav ul li ul {padding-left:.5rem;}/*第二層開始的ul*/
+.header_nav ul li ul {padding-left:1rem;}/*第二層開始的ul*/
 
-.header_nav a.active{color:#ffffff;}
+.header_nav a.active{color:rgba(0, 167, 234, 1);}
 
-.header_nav ul li ul a{color:#999999;} /*第二層開始的a*/
+.header_nav ul li ul a{color:rgb(180, 180, 180);} /*第二層開始的a*/
 .header_nav > ul > li > ul{/*第二層ui的白底*/
     margin-top:.5rem;/**/
-    padding: .1rem .25rem;
-    background-color: rgb(255, 255, 255);
+    padding: 0rem .25rem .5rem;
+    background-color: rgb(250, 250, 250);
     box-shadow:0px 4px 6px 2px rgba( 0, 0, 0, .3);
     border-radius: 5px;
+    width: 25vw;
 }
     
-.header_nav li:hover > a,.header_nav .angle_down:hover{
-    color:#eeeeee;
-    /*background-color: rgb(168, 168, 168);*/
-    /*border: 1px solid rgba(255,255,255,.5);*/
-    border-bottom: 1px solid rgba(255,255,255,.5);
+.header_nav li:hover > a, .header_nav .angle_down:hover,
+.header_nav ul li ul li:hover > a, .header_nav ul li ul .angle_down:hover
+{
+    color:rgba(0, 167, 234, 1);
+    border-bottom: 2px solid rgba(0, 167, 234, 1);
 }
-.header_nav ul li ul li:hover > a,.header_nav ul li ul .angle_down:hover{
-    color:rgb(58, 58, 58, .8);
+.header_nav ul li ul li:hover > a, .header_nav ul li ul .angle_down:hover{
     background-color: transparent;
-    /*border: 1px solid rgba(58, 58, 58,.5);*/
-    border-bottom: 1px solid rgba(58, 58, 58,.5);
 }
 
 /* 利用::after 加上向下或向右的符號 S */
@@ -79,7 +82,7 @@
     }
     .header_nav > ul{display: flex; white-space:nowrap;margin-top: -.45rem;} /*主選單 橫向排列*/
     .header_nav > ul > li{position: relative;}/*讓第二層定位*/
-    .header_nav > ul > li > ul{top: 70%;left: -.5rem; position: absolute;} /*第二層定位*/
+    .header_nav > ul > li > ul{left: 0; position: absolute;} /*第二層定位*/
 
     .menu_btn{display: none;}
     .header_nav_Open_Close{height: auto;}
