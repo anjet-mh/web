@@ -93,32 +93,57 @@
       /*alert(nav_link_active);*/
       /*找到與nav_link_active變數相同的id 加入 .active*/
       $(nav_link_active).addClass("active");
+
+
       
+
 /* 下拉選單 區塊 開始 */
-      if($("ul").prev("a").length != 0){ //判斷ul的上個兄弟層是不是有a
-          $("ul").prev("a").addClass("angle_down"); //有的話a加上Class angle_down (按鈕不獨立出來用)
-          //$("ul").prev("a").after("<a class='angle_down' href='#' ></a>");//按鈕獨立出來用
-      }
+    if($("ul").prev("a").length != 0){ //判斷ul的上個兄弟層是不是有a
+        $("ul").prev("a").addClass("angle_down"); //有的話a加上Class angle_down (按鈕不獨立出來用)
+        //$("ul").prev("a").after("<a class='angle_down' href='#' ></a>");//按鈕獨立出來用
+    }
 
-      $(".level_1 li .angle_down").click(function () {
-        var level = $(this).parent().parent(); //變數 arr = 當下按下的.angle_down 的 父層(li)的父層(ul)
-        $( level ).find( "*" ).removeClass("show");
-        $(this).next("ul").addClass("show").slideToggle(200);//先在當前(.angle_down)的下一個(.next)兄弟層"ul" 加上Class .show 然後再開啟或關閉"ul"
-        $(".level_1 ul").not(".show").slideUp(); //關閉在.level_1下全部的ul class中沒有.show 的選單
-      });
+       
+    $(".level_1 li .angle_down").click(function () {
+ 
+        var w =document.body.scrollWidth;
+        if( w <= "918"){   
 
-      $(".banner1,.carousel,.container").click(function () { //點class .container 的區塊 關閉選單    
-              $(".level_1" ).find( "*" ).removeClass("show");
-              $(".level_1 ul").not(".show").slideUp();
-      });      
+            var level = $(this).parent().parent(); //變數 arr = 當下按下的.angle_down 的 父層(li)的父層(ul)
+            $( level ).find( "*" ).removeClass("show");//
 
-      $(".menu_btn").click(function () { //點漢堡選單icon               
-          $(".header_nav").toggleClass("header_nav_Open_Close");
-          if($(".header_nav_Open_Close").length != 0){ //當有.header_nav_Open_Close的時侯才執行
-              $(".level_1" ).find( "*" ).removeClass("show");
-              $(".level_1 ul").not(".show").slideUp();
-          }
-      });
+
+            $(this).next("ul").addClass("show");//.slideToggle(200)先在當前(.angle_down)的下一個(.next)兄弟層"ul" 加上Class .show 然後再開啟或關閉"ul"
+            //$(".level_1 ul").not(".show").slideUp(); 關閉在.level_1下全部的ul class中沒有.show 的選單     
+        }else{
+          var level = $(this).parent().parent();
+          $( level ).find( "*" ).removeClass("show")
+        };
+
+    });
+    $(".level_1").hover(function(){
+      var w =document.body.scrollWidth;
+      if( w > "918"){
+        $(".level_1" ).find( "*" ).removeClass("show");
+      };
+    });
+
+    $(".banner1,.carousel,.container").click(function () { //點class .container 的區塊 關閉選單    
+            $(".level_1" ).find( "*" ).removeClass("show");
+            //$(".level_1 ul").not(".show").slideUp();
+    });      
+
+    $(".menu_btn").click(function () { //點漢堡選單icon
+        $(".header_nav").toggleClass("header_nav_Open_Close");
+        if($(".header_nav_Open_Close").length != 0){ //當有.header_nav_Open_Close的時侯才執行
+            $(".level_1" ).find( "*" ).removeClass("show");
+            //$(".level_1 ul").not(".show").slideUp();
+        }
+    });
+
+
+
+
 /* 下拉選單 區塊 結束 */
 
       /* nav.html被載入後 隱藏 & 變更 導覽頁中.main-container 的 網站導覽 與 下拉選單 class */
@@ -128,6 +153,7 @@
       $("#load-nav2 .level_2").removeClass("level_2").addClass("L2");
       $("#load-nav2 .level_3").removeClass("level_3").addClass("L3");
       $(".main-container .sitenav_hide").hide(); //隱藏sitenav_hide的LINK
+      
 
       /*回到頂端*/
       $(function () {
