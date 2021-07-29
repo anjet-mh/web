@@ -67,20 +67,36 @@
     float: left;
     position: relative;
     min-height: 1px;
-    margin-top: 65px;
+    margin-top: 61.8px;
     height: 160px;
     background-color: rgba(5, 81, 119, .3);
 
 }
 [dir='rtl'] .slick-slide{float: right;}
-.slick-slide img{display: block; height: 100%; margin-right: 0px;/*margin:auto;*/ /*width: 100%; position: absolute; top: calc(-19%);*/}
-
+/*.slick-slide img{height: 100%; margin:auto;*/ /*width: 100%; position: absolute; top: calc(-19%);}*/
+.slick-slide img{height: 100%; float: right;}
 .slick-slide.slick-loading img{display: none; }
 .slick-slide.dragging img{pointer-events: none; }
 .slick-initialized .slick-slide{display: block;}
 .slick-loading .slick-slide{visibility: hidden;}
 .slick-vertical .slick-slide{display: block; height: auto; border: 1px solid transparent;}
 .slick-arrow.slick-hidden {display: none;}
+
+.slider_box{
+    position: absolute;
+    top: 0;
+    left: 100px;
+    width: 500px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slider_box_content{
+    background-color: rgba(255,255,255,.5);
+    padding:20px;
+    border-radius: 10px
+}
 
 @media (min-width: 320px) {
     .slick-slide{height: 160px;}

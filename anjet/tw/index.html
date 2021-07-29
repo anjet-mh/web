@@ -31,16 +31,34 @@
   <!-- 選單 -->
 
 <div>
-      <div class="slider_autoplay" >
-        <div><img src="img/index-E.jpg" alt="..." >
-          <div style="position: absolute; color: #000;top: 20%;right: 100px;">
-            <h1>Environment</h1>
-            <div>安傑特致力於提升對環境的保護力</div>
-            </div>
+      <div class="slider_index" >
+        <div><img src="img/index-E-r.jpg" alt="..."  >
+          <div class="slider_box">
+            <div class="slider_box_content">
+              <h1>友善環境 <small>(Environment)</small></h1>
+                <div>安傑特公司以發展綠色能源科技為重要課題。
+                  並致力於提升對環境的保護力。</div>
+              </div>
+          </div>  
         </div>
-        <!--<div><img src="../img/banner/HOME-taipei1.jpg" alt="..."></div>
-        <div><img src="../img/banner/HOME-Smiconductor1.jpg" alt="..."></div>
-        <div><img src="../img/banner/HOME-Arashiyama1.jpg" alt="..."></div>
+        <div><img src="../img/banner/HOME-taipei1.jpg" alt="...">
+          <div class="slider_box">
+            <div class="slider_box_content">
+              <h1>社會關懷 <small>(Social)</small></h1>
+                <div>安傑特公司以研究開發可顯著提高電能轉換效率的功率半導體，努力為社會做出貢獻。</div>
+              </div>
+          </div> 
+        </div>
+        <div><img src="../img/banner/HOME-Smiconductor1.jpg" alt="...">
+          <div class="slider_box">
+            <div class="slider_box_content">
+              <h1>企業管治 <small>(Governance)</small></h1>
+                <div>與日本，台灣，美國的晶圓代工廠進行跨國合作，一起設計出最適合各種應用的功率器件（Si，SiC，GaN等）。</div>
+              </div>
+          </div> 
+        </div>
+        </div>
+        <!--<div><img src="../img/banner/HOME-Arashiyama1.jpg" alt="..."></div>
         <div><img src="../img/banner/HOME-Kinkakuji1.jpg" alt="..."></div>-->
       </div>
 </div>
@@ -137,7 +155,7 @@
       /*在.page_name的div裡面添加namedata=home數據 給選單判斷加入.active用*/
 
 
-      $('.slider_autoplay').slick({
+      $('.slider_index').slick({
 
         dots: true,
         infinite: true,
@@ -146,7 +164,7 @@
         cssEase: 'linear',
 
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 3000,
       });
     });
   </script>
