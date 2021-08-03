@@ -93,7 +93,7 @@
     /*justify-content: center;*/
 }
 .slider_box_content{
-    background-color: rgba(255,255,255,.5);
+    background-color: rgba(255, 255, 255, .9);
     padding:20px;
     border-radius: 10px
 }
