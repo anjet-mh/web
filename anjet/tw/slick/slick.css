@@ -73,14 +73,25 @@
 
 }
 [dir='rtl'] .slick-slide{float: right;}
-/*.slick-slide img{height: 100%; margin:auto;*/ /*width: 100%; position: absolute; top: calc(-19%);}*/
-.slick-slide img{height: 100%; float: right;}
+.slick-slide img{height: 100%; /*width: 100%;*/ position: absolute; left: 0; right: 0; margin:auto; /*top: calc(-19%);*/}/*照片置中*/
+/*.slick-slide img{height: 100%; float: right;}照片靠右*/
 .slick-slide.slick-loading img{display: none; }
 .slick-slide.dragging img{pointer-events: none; }
 .slick-initialized .slick-slide{display: block;}
 .slick-loading .slick-slide{visibility: hidden;}
 .slick-vertical .slick-slide{display: block; height: auto; border: 1px solid transparent;}
 .slick-arrow.slick-hidden {display: none;}
+.imgMask{background-color: #74d140;}
+.imgMask::before{
+    position: absolute;
+    content: '';
+    width: 50%;
+    height: 100%;
+    /*background-color: rgb(165, 255, 113);*/
+    /*background: linear-gradient(115deg, #c8ed74 50%, transparent 50%) center center/100% 100%, url() right center/auto 100%;*/
+}
+
+
 
 .slider_box{
     position: absolute;
@@ -93,7 +104,9 @@
     /*justify-content: center;*/
 }
 .slider_box_content{
-    background-color: rgba(255,255,255,.5);
+    color: rgb(255, 149, 11);
+    background-color: rgba(255,255,255,.75);
+    /*background-color: rgb(165, 255, 113, 1);*/
     padding:20px;
     border-radius: 10px
 }
