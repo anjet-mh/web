@@ -68,13 +68,13 @@
     position: relative;
     min-height: 1px;
     margin-top: 61.8px;
-    height: 350px;/*160px*/
+    height: 400px;/*160px*/
     width: 100%;
     background-color: #d1ffb6;/**/
  overflow: hidden;
 }
 [dir='rtl'] .slick-slide{float: right;}
-.slick-slide img{position: absolute; height: 100%; left:50%; transform:translateX(-50%); /*width: 100%; top: calc(-19%);*/}/*照片置中*/
+.slick-slide img{position: absolute; width: 100%; top:70%; transform:translateY(-70%);/*top: calc(-50%);*/}/*照片左右置中 height: 100%; left:50%; transform:translateX(-50%); */
 /*.slick-slide img{height: 100%; float: right;} 照片靠右*/
 .slick-slide.slick-loading img{display: none; }
 .slick-slide.dragging img{pointer-events: none; }
@@ -94,7 +94,7 @@
     align-items: center;/**/
     /*justify-content: center;*/
 }
-.slider_box.main{
+.slider_box.maehe{
     top: 40%;
     height: 0;
     justify-content: center;/**/
@@ -103,7 +103,7 @@
 
 .slider_box_content{
     background-color: rgba(255, 255, 255, .65);
-    padding:20px;
+    padding:30px;
     border-radius: 10px;
     text-align: center;
     
@@ -116,9 +116,8 @@
     /*.slick-slide{height: 260px; width: 100%;}
     .slick-slide img{top: 0;}*/
 }
-@media (min-width: 567px) {
-    /*.slick-slide{height: 300px; width: 100%;}
-    .slick-slide img{top: 0;}*/
+@media (max-width: 580px) {
+    .slick-slide img{width: auto; top:0; transform:translateY(0%);height: 100%; left:50%; transform:translateX(-50%);}/*照片左右置中  */
 }
 
 @media (min-width: 768px) {
