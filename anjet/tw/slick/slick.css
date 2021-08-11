@@ -94,21 +94,19 @@
     align-items: center;/**/
     /*justify-content: center;*/
 }
-.slider_box.maehe{
-    top: 40%;
-    height: 0;
-    justify-content: center;/**/
-}
-.slider_box_content.Green_shadow{box-shadow: 0px 3px 15px 2px #1a4700;}
+
 
 .slider_box_content{
     background-color: rgba(255, 255, 255, .65);
     padding:30px;
     border-radius: 10px;
-    text-align: center;
+    
     
 }
+.slider_box.maehe{top: 40%; height: 0; justify-content: center;text-align: center;}
+.slider_box_content.green_shadow{box-shadow: 0px 3px 15px 2px #1a4700;}
 .slider_box_content .Orange{color: rgb(255, 123, 0);}
+.slider_box_content.black_shadow{box-shadow: 0px 3px 15px 2px #414141;}
 
 
 

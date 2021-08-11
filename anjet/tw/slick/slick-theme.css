@@ -23,7 +23,7 @@
     line-height: 0;
 
     position: absolute;
-    top: 58%;
+    top: 103%;/*上下頁按鈕位置 */
 
     display: block;
 
@@ -40,6 +40,7 @@
     border: none;
     outline: none;
     background: transparent;
+
 }
 .slick-prev:hover,
 .slick-prev:focus,
@@ -69,18 +70,18 @@
     line-height: 1;
 
     opacity: .75;
-    color: white;
+    color: rgb(168, 168, 168); /*上下頁按鈕顏色 */
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
-.slick-prev{left: 25px; z-index: 2; }
+.slick-prev{left: 25px; z-index: 4; }
 [dir='rtl'] .slick-prev{right: 25px; left: auto;}
 .slick-prev:before{content: '←';}
 [dir='rtl'] .slick-prev:before{content: '→';}
 
-.slick-next{right: 25px; z-index: 2;}
+.slick-next{right: 25px; z-index: 4;}
 [dir='rtl'] .slick-next{right: auto; left: 25px;}
 .slick-next:before{content: '→';}
 [dir='rtl'] .slick-next:before{content: '←';}
