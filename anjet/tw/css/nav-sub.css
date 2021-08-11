@@ -78,10 +78,13 @@
 /* width>936px時 多層選單的定位 */
 @media (min-width: 936px) {
     .header_nav_Open_Close{height: 0px; transform:translateY(0px);}/**/
-    .header{height: 65px;
+    .header{
+        height: 65px;
         display: flex;
         justify-content:space-between;
+        /*justify-content: center;*/
         align-items: center;
+
     }
     .header_nav{height: 100%; }
     .header_nav > ul{display: flex; white-space:nowrap; } /*margin-top: -.45rem;主選單 橫向排列*/
