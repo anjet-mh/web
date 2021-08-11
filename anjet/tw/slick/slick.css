@@ -97,17 +97,18 @@
 .slider_box.main{
     top: 40%;
     height: 0;
-    /*align-items: center;*/
     justify-content: center;/**/
 }
 
 .slider_box_content{
-    color: rgb(255, 153, 0);
     background-color: rgba(255, 255, 255, .85);
     padding:20px;
     border-radius: 10px;
     text-align: center;    
 }
+.slider_box_content .main{color: rgb(255, 123, 0);}
+
+
 
 @media (min-width: 380px) {
     /*.slick-slide{height: 260px; width: 100%;}
