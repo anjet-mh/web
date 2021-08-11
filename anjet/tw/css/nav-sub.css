@@ -9,13 +9,13 @@
 .header_nav{height: 80vh; }
 .logo img {height: 36px;/*transform:scale(0.5, 0.5);*/}
 .header_nav ol, ul{margin: 0; padding: 0;z-index: 99;}
-.header_nav a{color:rgb(180, 180, 180); padding: 3px 10px; border: 1px solid rgba(255,255,255,.0);/* 預先做出有框的大小 border-radius: 5px; */}
+.header_nav a{color:rgb(80, 80, 80); padding: 3px 10px; border: 1px solid rgba(255,255,255,.0);/* 預先做出有框的大小 border-radius: 5px; */}
 .header_nav li{margin: 5px 0; padding: 3px 0 0 0; width: 100%;} 
 .header_nav ul li ul {padding-left:1rem;}/*第二層開始的ul*/
 
 .header_nav a.active{color:rgba(0, 167, 234, 1);}
 
-.header_nav ul li ul a{color:rgb(187, 187, 187);} /*第二層開始的a*/
+.header_nav ul li ul a{color:rgb(80, 80, 80);} /*第二層開始的a*/
 .header_nav > ul > li > ul{/*第二層ui的白底*/
     margin-top:0rem;/**/
     padding: 0rem .25rem .5rem;

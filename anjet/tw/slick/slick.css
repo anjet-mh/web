@@ -68,13 +68,14 @@
     position: relative;
     min-height: 1px;
     margin-top: 61.8px;
-    height: 160px;
-    background-color: rgba(5, 81, 119, .3);
-
+    height: 350px;/*160px*/
+    width: 100%;
+    background-color: #d1ffb6;/**/
+ overflow: hidden;
 }
 [dir='rtl'] .slick-slide{float: right;}
-/*.slick-slide img{height: 100%; margin:auto;*/ /*width: 100%; position: absolute; top: calc(-19%);}*/
-.slick-slide img{height: 100%; float: right;}
+.slick-slide img{position: absolute; height: 100%; left:50%; transform:translateX(-50%); /*width: 100%; top: calc(-19%);*/}/*照片置中*/
+/*.slick-slide img{height: 100%; float: right;} 照片靠右*/
 .slick-slide.slick-loading img{display: none; }
 .slick-slide.dragging img{pointer-events: none; }
 .slick-initialized .slick-slide{display: block;}
@@ -85,30 +86,44 @@
 .slider_box{
     position: absolute;
     top: 0;
-    margin-left: 100px;
-    width: 500px;
-    height: 100%;
+    left: 5%;
+    /*margin-left: 100px;*/
+    width: 90%;
+    height: 100%;/**/
     display: flex;
-    align-items: center;
+    align-items: center;/**/
     /*justify-content: center;*/
 }
-.slider_box_content{
-    background-color: rgba(255, 255, 255, .9);
-    padding:20px;
-    border-radius: 10px
+.slider_box.main{
+    top: 40%;
+    height: 0;
+    /*align-items: center;*/
+    justify-content: center;/**/
 }
 
-@media (min-width: 320px) {
-    .slick-slide{height: 160px;}
-    .slick-slide img{top: 0;}
+.slider_box_content{
+    color: rgb(255, 153, 0);
+    background-color: rgba(255, 255, 255, .85);
+    padding:20px;
+    border-radius: 10px;
+    text-align: center;    
+}
+
+@media (min-width: 380px) {
+    /*.slick-slide{height: 260px; width: 100%;}
+    .slick-slide img{top: 0;}*/
+}
+@media (min-width: 567px) {
+    /*.slick-slide{height: 300px; width: 100%;}
+    .slick-slide img{top: 0;}*/
 }
 
 @media (min-width: 768px) {
-    .slick-slide{height: 300px;}
-    .slick-slide img{top: 0;}
+    /*.slick-slide{height: 400px;}
+    .slick-slide img{top: 0;}*/
 }
 
 @media (min-width: 1024px) {
-    .slick-slide{height: 400px;}
-    .slick-slide img{top: 0;}
+    /*.slick-slide{height: 400px;}
+    .slick-slide img{top: 0;}*/
 }
