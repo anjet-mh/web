@@ -95,7 +95,7 @@
 .slick-dots
 {
     position: absolute;
-    bottom: -20px;
+    bottom: -23px;
     z-index: 3;
     /*background-color: rgba(204, 231, 247, .1);*/
 
@@ -162,12 +162,14 @@
 
     width: 20px;
     height: 20px;
-
-    content: '•';
+    background-color:rgba(106, 171, 113, 1) ;
+    border-radius: 20px;
+    content: '';
     text-align: center;
 
     opacity: .15;
-    color: rgba(106, 171, 113, 1);
+    /*content: '•';
+    color: rgba(106, 171, 113, 1);*/
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -175,5 +177,6 @@
 .slick-dots li.slick-active button:before
 {
     opacity: .85;
-    color: rgba(106, 171, 113, 1);
+    /*color: rgba(106, 171, 113, 1);*/
+
 }
