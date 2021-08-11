@@ -99,14 +99,16 @@
     height: 0;
     justify-content: center;/**/
 }
+.slider_box_content.Green_shadow{box-shadow: 0px 3px 15px 2px #1a4700;}
 
 .slider_box_content{
-    background-color: rgba(255, 255, 255, .85);
+    background-color: rgba(255, 255, 255, .65);
     padding:20px;
     border-radius: 10px;
-    text-align: center;    
+    text-align: center;
+    
 }
-.slider_box_content .main{color: rgb(255, 123, 0);}
+.slider_box_content .Orange{color: rgb(255, 123, 0);}
 
 
 
