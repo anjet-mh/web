@@ -3,20 +3,21 @@
 
     :root{
         --body_background-color:#ffffff;/*#195E87*/
+
     }
 
     body {background-color: var(--body_background-color);}/**/
 
     * {margin: 0; padding: 0; list-style: none; font-family: 'Noto Sans TC', sans-serif;}
     a {text-decoration: none;}
-    p {font-weight: 300;line-height: 2rem;}
+    p {font-weight: 300;line-height: 0.8rem;}
     ol li {
         list-style-type: square;
         font-weight: 300;
         line-height: 2rem;
       }
     .container.main-container{color: #ffffff;}
-    .row{--bs-gutter-x: 0.8rem;}
+    .row{--bs-gutter-x: 2rem;}
 
     .pdfdl {text-align: center; margin-top: -10px ; position: relative;}
     .pdfdl a {color: #bbbbbb; border-radius: .25rem; transition: .3s; padding: .2rem 2rem .3rem;
@@ -41,66 +42,14 @@
 */
 
 
-    
-    /*輪播img定位*/
-    #carouselExampleCaptions {margin-top: 200px; }
-    .carousel-item { height: 300px; position: relative;}
-    .carousel-item img {position: absolute; top: 0; bottom: 0; margin: auto;}
-
-
-    .banner1 {margin-bottom: 15px; width: 100%;height: 300px; background-color: #000000;}
-    .container1 {width: 90%; height: 100%; margin: auto;}
-    .banner1-txt {
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        color: #ffffff;
-    }
-    /*.banner1-txt h1 {font-weight: 700;
-        border-bottom: 1px solid rgb(192, 192, 192);
-        因為有align-items: flex-start 所以線的寬度會對齊h1這個容器 
-    }*/
-
-    .banner1.siteNav{
-        background: linear-gradient(115deg, #022d41 10%, transparent 80%) center center / 100% 100%,
-        url("../img/digital-map-1140975.jpg") right center / 100% auto;
-    }
-    .banner1.about{
-        background: linear-gradient(115deg, #022d41 10%, transparent 80%) center center / 100% 100%,
-        url("https://picsum.photos/id/2/2048/1024") right center / 100% auto;
-    }
-    .banner1.applications{
-        background: linear-gradient(115deg, #022d41 10%, transparent 80%) center center / 100% 100%,
-        url("../img/itsupport-1635938.jpg") right center / 100% auto;
-    }
-    .banner1.support{
-        background: linear-gradient(115deg, #022d41 10%, transparent 80%) center center / 100% 100%,
-        url("../img/technology-background.jpg") right center / 100% auto;
-    }    
-    .banner1.careers{
-        background: linear-gradient(115deg, #022d41 10%, transparent 80%) center center / 100% 100%,
-        url("../img/handshake-1237743.jpg") right center /100% auto;
-    }
-    .banner1.contactus{
-        background: linear-gradient(115deg, #022d41 10%, transparent 80%) center center / 100% 100%,
-        url("https://picsum.photos/id/3/2048/1024") right center / 100% auto;
-    }
-    .banner1.siteNav, .banner1.about, .banner1.applications, .banner1.support, .banner1.careers, .banner1.contactus{
-        background-repeat  :no-repeat,no-repeat;
-    }
 
 
 
-
-    .card-img-top{padding: 2px; border-radius: 5px;}
     .card img{
-        width: 100%;
-        height: 100%;
-        object-fit: cover; /*填滿元素的寬度及高度(維持原比例)，通常會剪掉超出部分的物件。*/
-        
-    }/**/
+        width: 50%;
+        height: 50%;
+        /*object-fit: cover; 填滿元素的寬度及高度(維持原比例)，通常會剪掉超出部分的物件。*/
+    }
     .card.about{
         background-color: rgba(255, 255, 255, 0.2);
         color:#ffffff;
@@ -128,9 +77,6 @@
     #footer, #footer a {color: #bdbdbd;}
     .copyright {border-top: 1px solid #bdbdbd; padding-top: 8px;}
 
-    @media (max-width: 576px) {
-        .carousel-item, .banner1  {height: 180px;}
-      }
 
       /*回到最上按鈕 起始*/
     
@@ -173,3 +119,21 @@
     /*.mt-add80 {margin-top: 75px;} 
     .new-body-mt{margin-top: 60px;} 補上選單空間*/
     /*如果要固定上方選單要註銷這個區塊的註解 結束*/
+
+    @media (max-width: 576px) {
+        .carousel-item, .banner1  {height: 180px;}
+      }
+    @media (min-width: 768px) {
+        .card img{
+            width: 100%;
+            height: 100%;
+            /*object-fit: cover; 填滿元素的寬度及高度(維持原比例)，通常會剪掉超出部分的物件。*/
+        }
+    }
+    @media (min-width: 1200px) {
+        .card img{
+            width: 90%;
+            height: 90%;
+            /*object-fit: cover; 填滿元素的寬度及高度(維持原比例)，通常會剪掉超出部分的物件。*/
+        } 
+    }
