@@ -46,8 +46,8 @@
 
 
     .card img{
-        width: 50%;
-        height: 50%;
+        width: 150px;
+        height: auto;
         /*object-fit: cover; 填滿元素的寬度及高度(維持原比例)，通常會剪掉超出部分的物件。*/
     }
     .card.about{
@@ -122,19 +122,63 @@
     /*如果要固定上方選單要註銷這個區塊的註解 結束*/
 
     @media (max-width: 576px) {
-        .carousel-item, .banner1  {height: 180px;}
+        /*.carousel-item, .banner1  {height: 180px;}*/
       }
     @media (min-width: 768px) {
         .card img{
-            width: 100%;
-            height: 100%;
-            /*object-fit: cover; 填滿元素的寬度及高度(維持原比例)，通常會剪掉超出部分的物件。*/
+                        /*width: 50%;
+            height: 50%;
+object-fit: cover; 填滿元素的寬度及高度(維持原比例)，通常會剪掉超出部分的物件。*/
         }
     }
+
+
     @media (min-width: 1200px) {
         .card img{
-            width: 90%;
+            /*width: 90%;
             height: 90%;
-            /*object-fit: cover; 填滿元素的寬度及高度(維持原比例)，通常會剪掉超出部分的物件。*/
+            object-fit: cover; 填滿元素的寬度及高度(維持原比例)，通常會剪掉超出部分的物件。*/
         } 
+    }
+    .top_space{margin-top: 65px;}
+    .mezasu{
+        height: 500px;
+        background: url(../img/index-maehe2.jpg) center 70% no-repeat;
+        background-size: cover;
+    }
+    .mezasu_box{
+        display: flex;
+        height: 100%;
+        align-items: center;/*垂直置中*/
+        justify-content: center;/*左右置中*/
+    }
+    .mezasu_box_content{
+        /*width: 90%;*/
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.75);
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0px 3px 15px 2px #1a4700;        
+    }
+    .mezasu .Orange{color: rgb(255, 123, 0);}
+    .wrap{padding: 0 20px;}
+    .BG_Green{background-color: rgb(230, 255, 219);}
+    .BG_Blue{background-color: rgb(210, 241, 255);}  
+    .item{padding: 30px 0;}
+    .content_box{padding: 20px 0 20px 0;}
+    .img_box{text-align: center;}
+    .img_box img{width: 80%; height: 80%;}
+
+    /*.content{padding: 30px;}*/
+
+
+    @media (min-width: 992px) {
+        .wrap {width: 992px; display: flex; left: 0;right: 0;margin: auto;}
+        .item{display: flex; height: 400px;}
+        .img_box img{width: auto; height: 80%;}
+        .content_box{display: flex; align-items: center; padding: 0 0 0 20px;}
+        /*.content{position: absolute; left: -20px;}*/
+        .Left .img_box{order: 2;}
+        .Left .content_box{order: 1; text-align: right; padding: 0 20px 0 0;}
+        /*.content_box.Left .content{left: 0; right: -20px;}*/
     }
