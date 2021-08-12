@@ -171,18 +171,18 @@
     .content_box{padding: 20px 0 20px 0;}
     .content h3{margin-bottom: 30px; padding-bottom: 10px; border-bottom: 1px solid rgb(255, 123, 0);}
     .img_box{text-align: center;}
-    .img_box img{width: 80%; height: 80%; border-radius: 10px;}
+    .img_box img{width: 90%; border-radius: 10px;}
 
     /*.content{padding: 30px;}*/
 
 
     @media (min-width: 992px) {
-        .wrap {width: 992px; display: flex; left: 0;right: 0;margin: auto;}
-        .item{display: flex; height: 400px;}
-        .content_box{display: flex; align-items: center; padding: 0 0 0 50px;}
-        .img_box{display: flex; align-items: center; }
-        .img_box img{width: auto; height: 80%;}
-        .Left .item{margin-left: 40px;}
+        .wrap {width: 992px; display: flex; left: 0;right: 0;margin: auto;height: 400px;}
+        .item{display: flex; align-items: center; }
+        .content_box{width: 60%; padding: 0 0 0 50px; }
+        .img_box{width: 40%;}
+        .img_box img{width: 100%;}
+
         .Left .content_box{order: 1; text-align: right; padding: 0 50px 0 0;}
         .Left .img_box{order: 2;}
         
