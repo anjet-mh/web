@@ -192,7 +192,8 @@
 
 
     @media (min-width: 992px) {
-        .wrap {width: 992px; display: flex; left: 0;right: 0;margin: auto;height: 400px;}
+        .wrap {width: 992px; display: flex; left: 0;right: 0;margin: auto; height: 400px;}
+        .wrap.mt-3{height: auto;}
         .mezasu_box_content{width: 580px;}
         .item{display: flex; align-items: center; }
         .content_box{width: 60%; margin: 0 0 0 50px; }
