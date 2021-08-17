@@ -140,15 +140,15 @@
     }
 
 
-    .top_space{margin-top: 65px;}
+    .top_space{margin-top: 0px;}/*65px*/
     .mezasu{
-        height: 500px;
+        height: 100vh;/*500px*/
         background: url(../img/index-maehe2.jpg) center 70% no-repeat;
         background-size: cover;
     }
     .mezasu_box{
-        display: flex;
         height: 100%;
+        display: flex;        
         align-items: center;/*垂直置中*/
         justify-content: center;/*左右置中*/
     }
@@ -162,10 +162,11 @@
     }
     .mezasu .Orange{color: rgb(255, 123, 0);}
 
-    .wrap{padding: 0 30px;}
+    .area{display: flex;justify-content: center;}
+
+    .wrap{margin: 30px 25px;}
     .BG_Green{background-color: rgb(230, 255, 219);}
     .BG_Blue{background-color: rgb(210, 241, 255);}  
-    .item{padding: 30px 0;}
     .content_box{margin: 20px 0 20px 0;}
     .content h2{margin-bottom: 30px; padding-bottom: 10px; border-bottom: 1px solid rgb(255, 123, 0);}
     .img_box{text-align: center; overflow: hidden; border-radius: 10px;}
@@ -175,15 +176,14 @@
 
     .img_Fixed{
         background: url(../img/Semiconductor_Probing.jpg) 57% 50% no-repeat;
-        height: 450px;
         /* 背景自動縮放/固定 */
         background-attachment: fixed;
         background-size: cover;
     }
-    
+    .img_Fixed .wrap{height: 70vh;}
     .img_Fixed .content_box{background-color: rgba(255, 255, 255, 0.75);padding: 30px; border-radius: 10px;}
-    .img_box.itikawaru{height: 235px; position: relative;}
-    .img_box.itikawaru img{width: 150%; position: absolute;left: 0;top: -45%;}
+    .img_box.itikawaru{height: 216px; position: relative;}
+    .img_box.itikawaru img{width: 150%; position: absolute; left: 0; bottom: 0;}
     /*.content{padding: 30px;}*/
     .BG_img{
         background: url(../img/AS1220AC-08.png) 50% 90% no-repeat;
@@ -192,12 +192,14 @@
 
 
     @media (min-width: 992px) {
-        .wrap {width: 992px; display: flex; left: 0;right: 0;margin: auto; height: 400px;}
+
+        .wrap {width: 992px; height: 450px; margin: 30px 0px; display: flex;}/**/
         .wrap.mt-3{height: auto;}
         .mezasu_box_content{width: 580px;}
         .item{display: flex; align-items: center; }
         .content_box{width: 60%; margin: 0 0 0 50px; }
         .img_box{width: 40%;}
+        .img_box.itikawaru{height: 235px;}
         .img_box img{width: 100%;}
 
         .img_Fixed .content_box{ width: 90%; margin: 0 50px 0 50px;}

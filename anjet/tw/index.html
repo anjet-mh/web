@@ -31,38 +31,7 @@
     <div id="load-nav"></div>
     <!-- 選單 -->
 
-  <!-- 
-  <div>
-      <div class="slider_index" >
-        <div class="imgMask"><img src="img/index-maehe2.jpg" alt="...">
-          <div class="slider_box maehe">
-            <div class="slider_box_content green_shadow">
-              <h3 class="Orange">Make Difference in Green Technologies</h3>
-              <div>安傑特公司以ESG為永續經營的指標，並持續發展綠色能源科技。</div>
-              </div>
-          </div> 
-        </div>
 
-        <div><img src="../img/product/Semiconductor Probing.jpg" alt="..."  >
-          <div class="slider_box">
-            <div class="slider_box_content black_shadow">
-              <h3>半導體開發</h3>
-                <div>研究開發可顯著提高電能轉換效率的功率半導體，努力為社會做出貢獻。</div>
-              </div>
-          </div>  
-        </div>
-
-        <div><img src="../img/product/Semiconductor Probing.jpg" alt="..."  >
-          <div class="slider_box">
-            <div class="slider_box_content">
-              <h1>友善環境 <small>(Environment)</small>社會關懷 <small>(Social)</small>企業管治 <small>(Governance)</small></h1>
-                <div>友善環境社會關懷企業管治</div>
-              </div>
-          </div>  
-        </div> 
-      </div>
-  </div>
-  -->
 <div class="top_space"></div>
 
   <div class="mezasu">
@@ -75,7 +44,7 @@
   </div>
 
 
-  <div class="info BG_Blue">
+  <div class="area BG_Blue">
     <div class="wrap"><!--container-->
       <div class="item">
         <div class="img_box Shadow">
@@ -91,7 +60,7 @@
     </div>
   </div>
 
-  <div class="info img_Fixed"> <!-- Left -->
+  <div class="area img_Fixed"> <!-- Left -->
     <div class="wrap"><!--container-->
       <div class="item">
         <!--<div class="img_box">
@@ -107,11 +76,11 @@
     </div>
   </div>
 
-  <div class="info BG_Green">
+  <div class="area BG_Green">
     <div class="wrap"><!-- BG_img-->
       <div class="item">
-        <div class="img_box itikawaru Shadow"><!-- itikawaru-->
-          <img src="./img/electric_car0.jpg " alt="...">
+        <div class="img_box Shadow"><!-- itikawaru-->
+          <img src="./img/electric_car2.png " alt="...">
         </div>
         <div class="content_box">
           <div class="content">
@@ -252,6 +221,93 @@
       </div>
   
     </div>
+
+
+  </div>
+
+
+
+
+
+  <!-- 頁尾-->
+  <div id="load-footer"></div>
+  <!-- 頁尾-->
+
+
+  <!-- Optional JavaScript; choose one of the two! -->
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <!--<script src="Bootstrap5/js/bootstrap.min.js"></script>
+     Option 2: Separate Popper and Bootstrap JS -->
+  <script src="js/popper.min.js"></script>
+  <script src="js/jquery-3.5.1.js"></script>
+
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+
+
+  <div class="page_name" style="display: none;"></div> <!--塞數據-->
+ 
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $("#load-nav").load("nav.html");
+      $("#load-footer").load("footer.html");
+      $(".page_name").data("namedata", "home");/* 要修改成"home" */
+      /*在.page_name的div裡面添加namedata=home數據 給選單判斷加入.active用*/
+
+
+      $('.slider_index').slick({
+
+        dots: true,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear',
+
+        autoplay: true,
+        autoplaySpeed: 4000,
+      });
+    });
+  </script>
+
+</body>
+
+</html>
+
+  <!-- 
+  <div>
+      <div class="slider_index" >
+        <div class="imgMask"><img src="img/index-maehe2.jpg" alt="...">
+          <div class="slider_box maehe">
+            <div class="slider_box_content green_shadow">
+              <h3 class="Orange">Make Difference in Green Technologies</h3>
+              <div>安傑特公司以ESG為永續經營的指標，並持續發展綠色能源科技。</div>
+              </div>
+          </div> 
+        </div>
+
+        <div><img src="../img/product/Semiconductor Probing.jpg" alt="..."  >
+          <div class="slider_box">
+            <div class="slider_box_content black_shadow">
+              <h3>半導體開發</h3>
+                <div>研究開發可顯著提高電能轉換效率的功率半導體，努力為社會做出貢獻。</div>
+              </div>
+          </div>  
+        </div>
+
+        <div><img src="../img/product/Semiconductor Probing.jpg" alt="..."  >
+          <div class="slider_box">
+            <div class="slider_box_content">
+              <h1>友善環境 <small>(Environment)</small>社會關懷 <small>(Social)</small>企業管治 <small>(Governance)</small></h1>
+                <div>友善環境社會關懷企業管治</div>
+              </div>
+          </div>  
+        </div> 
+      </div>
+  </div>
+  -->
+
     <!-- PRODUCT - 製品 E -->
   
     <!-- <h2 class="white-title">產品資訊</h2>
@@ -306,55 +362,3 @@
       </div>
     </div>
       -->
-
-  </div>
-
-
-
-
-
-  <!-- 頁尾-->
-  <div id="load-footer"></div>
-  <!-- 頁尾-->
-
-
-  <!-- Optional JavaScript; choose one of the two! -->
-  <!-- Option 1: Bootstrap Bundle with Popper -->
-  <script src="js/bootstrap.bundle.min.js"></script>
-  <!--<script src="Bootstrap5/js/bootstrap.min.js"></script>
-     Option 2: Separate Popper and Bootstrap JS -->
-  <script src="js/popper.min.js"></script>
-  <script src="js/jquery-3.5.1.js"></script>
-
-  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script type="text/javascript" src="slick/slick.min.js"></script>
-
-
-  <div class="page_name" style="display: none;"></div> <!--塞數據-->
- 
-  <script type="text/javascript">
-    $(document).ready(function () {
-      $("#load-nav").load("nav.html");
-      $("#load-footer").load("footer.html");
-      $(".page_name").data("namedata", "home");/* 要修改成"home" */
-      /*在.page_name的div裡面添加namedata=home數據 給選單判斷加入.active用*/
-
-
-      $('.slider_index').slick({
-
-        dots: true,
-        infinite: true,
-        speed: 500,
-        fade: true,
-        cssEase: 'linear',
-
-        autoplay: true,
-        autoplaySpeed: 4000,
-      });
-    });
-  </script>
-
-</body>
-
-</html>
