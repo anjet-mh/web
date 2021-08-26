@@ -12,59 +12,66 @@
 
 
     <nav class="header_nav header_nav_Open_Close">
-      <ul class="level_1">
+      <ul class="layer_1">
         <!-- <li class="sitenav_hide"><a id="sitenav" class="" href="sitenav.html">網站地圖</a></li>
         <li class=""><a id="home" class="" href="index.html">首頁</a></li> -->
         <li class=""><a id="about" class="" href="about.html">關於安傑特</a></li>
     
     
         <li class="">
-          <a id="product" class="" href="#">產品分類</a></a>
-          <ul class="level_2">
+          <a id="product" class="" href="#">產品資訊</a></a>
+          <ul class="layer_2 "><!--multi-->
             <li class="">
-              <a class="" href="#">650v</a>
-              <ul class=" level_3">
-                <li class=""><a class="" href="#">AS6510AC</a></li>
-                <li class=""><a class="" href="#">AS6520AC</a></li>
+              <a class="" href="#">MOSFET 650V</a>
+              <ul class=" layer_3">
+                <li class=""><a class="" href="#">100mΩ</a></li>
               </ul>
             </li>
             <li class="">
-              <a class="" href="#">1200V</a>
-              <ul class=" level_3">
-                <li class=""><a class="" href="#">AJD1210AC</a></li>
-                <li class=""><a class="" href="#">AJD1220AC</a></li>
+              <a class="" href="#">SBD 650V</a>
+              <ul class=" layer_3">
+                <li class=""><a class="" href="#">2A</a></li>
+                <li class=""><a class="" href="#">10A</a></li>
+                <li class=""><a class="" href="#">20A</a></li>
+              </ul>
+            </li>
+            <li class="">
+              <a class="" href="#">SBD 1200V</a>
+              <ul class=" layer_3">
+                <li class=""><a class="" href="#">10A</a></li>
+                <li class=""><a class="" href="#">20A</a></li>
               </ul>
             </li>
           </ul>
         </li>
         <li class="">
-          <a id="applications" class="" href="#">應用領域</a><!--applications.html-->
-          <ul class=" level_2">
-            <li class=""><a class="" href="#">低壓變頻器應用</a></li>
+          <a id="applications" class="" href="#">市場應用</a><!--applications.html-->
+          <ul class=" layer_2">
+            <li class=""><a class="" href="#">電源（包括用於電信、計算、消費和其他應用的 PSU）</a></li>
             <li class=""><a class="" href="#">中高壓變頻器應用</a>
               <!--
-              <ul class=" level_3">
+              <ul class=" layer_3">
                 <li class="">
-                  <a class="" href="#">應用 level_3......</a>
-                  <ul class=" level_4">
-                    <li class=""><a class="" href="#">應用 level_4</a></li>
-                    <li class=""><a class="" href="#">應用 level_4</a></li>
+                  <a class="" href="#">應用 layer_3......</a>
+                  <ul class=" layer_4">
+                    <li class=""><a class="" href="#">應用 layer_4</a></li>
+                    <li class=""><a class="" href="#">應用 layer_4</a></li>
                   </ul>
                 </li>
                 <li class="">
-                  <a class="" href="#">應用 level_3......</a>
-                  <ul class=" level_4">
-                    <li class=""><a class="" href="#">應用 level_4</a></li>
-                    <li class=""><a class="" href="#">應用 level_4......</a>
-                      <ul class=" level_5">
-                        <li class=""><a class="" href="#">應用 level_5......</a>
-                          <ul class=" level_6">
-                            <li class=""><a class="" href="#">應用 level_6</a></li>
+                  <a class="" href="#">應用 layer_3......</a>
+                  <ul class=" layer_4">
+                    <li class=""><a class="" href="#">應用 layer_4</a></li>
+                    <li class=""><a class="" href="#">應用 layer_4......</a>
+                      <ul class=" layer_5">
+                        <li class=""><a class="" href="#">應用 layer_5......</a>
+                          <ul class=" layer_6">
+                            <li class=""><a class="" href="#">應用 layer_6</a></li>
                           </ul>
                         </li>
                       </ul>
                     </li>
-                    <li class=""><a class="" href="#">應用  level_4</a></li>
+                    <li class=""><a class="" href="#">應用  layer_4</a></li>
                   </ul>
                 </li>
               </ul>
@@ -108,40 +115,40 @@
     }
 
        
-    $(".level_1 li .angle_down").click(function () {
+    $(".layer_1 li .angle_down").click(function () {
  
         var w =document.body.scrollWidth;
         if( w <= "918"){   
 
-            var level = $(this).parent().parent(); //變數 arr = 當下按下的.angle_down 的 父層(li)的父層(ul)
-            $( level ).find( "*" ).removeClass("show");//
+            var layer = $(this).parent().parent(); //變數 arr = 當下按下的.angle_down 的 父層(li)的父層(ul)
+            $( layer ).find( "*" ).removeClass("show");//
 
             $(this).next("ul").addClass("show");//.slideToggle(200)先在當前(.angle_down)的下一個(.next)兄弟層"ul" 加上Class .show 然後再開啟或關閉"ul"
             
-            //$(".level_1 ul").not(".show").slideUp(); 關閉在.level_1下全部的ul class中沒有.show 的選單     
+            //$(".layer_1 ul").not(".show").slideUp(); 關閉在.layer_1下全部的ul class中沒有.show 的選單     
         //}else{
-          //var level = $(this).parent().parent();
-          //$( level ).find( "*" ).removeClass("show")
+          //var layer = $(this).parent().parent();
+          //$( layer ).find( "*" ).removeClass("show")
         };
 
     });
-    $(".level_1").hover(function(){
+    $(".layer_1").hover(function(){
       var w =document.body.scrollWidth;
       if( w > "918"){
-        $(".level_1" ).find( "*" ).removeClass("show");
+        $(".layer_1" ).find( "*" ).removeClass("show");
       };
     });
 
     /*$(".banner1,.carousel,.container").click(function () { //點class .container 的區塊 關閉選單    
-            $(".level_1" ).find( "*" ).removeClass("show");
-            //$(".level_1 ul").not(".show").slideUp();
+            $(".layer_1" ).find( "*" ).removeClass("show");
+            //$(".layer_1 ul").not(".show").slideUp();
     }); */     
 
     $(".menu_btn").click(function () { //點漢堡選單icon
         $(".header_nav").toggleClass("header_nav_Open_Close");
         if($(".header_nav_Open_Close").length != 0){ //當有.header_nav_Open_Close的時侯才執行
-            $(".level_1" ).find( "*" ).removeClass("show");
-            //$(".level_1 ul").not(".show").slideUp();
+            $(".layer_1" ).find( "*" ).removeClass("show");
+            //$(".layer_1 ul").not(".show").slideUp();
         }
     });
 
@@ -153,9 +160,9 @@
       /* nav.html被載入後 隱藏 & 變更 導覽頁中.main-container 的 網站導覽 與 下拉選單 class */
       $("#load-nav2 .navbar-top").removeClass("navbar-top")
       /*$("#load-nav2 .angle_down").removeClass("angle_down").addClass("angle_down1");*/
-      $("#load-nav2 .level_1").removeClass("level_1").addClass("L1");
-      $("#load-nav2 .level_2").removeClass("level_2").addClass("L2");
-      $("#load-nav2 .level_3").removeClass("level_3").addClass("L3");
+      $("#load-nav2 .layer_1").removeClass("layer_1").addClass("L1");
+      $("#load-nav2 .layer_2").removeClass("layer_2").addClass("L2");
+      $("#load-nav2 .layer_3").removeClass("layer_3").addClass("L3");
       $(".main-container .sitenav_hide").hide(); //隱藏sitenav_hide的LINK
       
 
