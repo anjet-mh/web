@@ -141,7 +141,7 @@
         .content{width: 60%; margin-top: 0rem; margin-left: 2rem;}
 
         .product-card {display: flex; flex-wrap: wrap; /*justify-content:space-between;*/}
-        .product-card .item{width: 123px; margin: 0 1rem 1rem;}
+        .product-card .item{width: 154px; margin: 0 1rem 1rem;}
 
         /*.wrap {width: 992px; margin: 140px  0px; display: flex;}
         .wrap.mt-3{height: auto;}*/
