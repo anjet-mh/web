@@ -15,58 +15,15 @@
         list-style-type: square;
         font-weight: 300;
         line-height: 2rem;
-      }
-    .container.main-container{color: #ffffff;}
-    .row{--bs-gutter-x: 2rem;}
-
-    .pdfdl {text-align: center; margin-top: -10px ; position: relative;}
-    .pdfdl a {color: #bbbbbb; border-radius: .25rem; transition: .3s; padding: .2rem 2rem .3rem;
     }
-    .pdfdl a:hover {border: 1px solid #ffffff;color: #ffffff;}
-    .pdfdl i{margin-left: 0.5rem;}/**/
-
-/*    
-    .pdfdl a {
-        padding: .2rem 2.2rem .4rem .8rem;
-        position: relative;
-    }
-    .pdfdl a::after {
-        position: absolute;
-        font-family: "Font Awesome 5 Free";
-        font-weight: 900;
-        content: "\f1c1";
-        font-size: 1.2rem;
-        margin-top: .1rem;
-        margin-left: 0.5rem;
-    }
-*/
-
-
-
 
 
     .card img{
-        width: 150px;
+        width: 120px;
         height: auto;
         /*object-fit: cover; 填滿元素的寬度及高度(維持原比例)，通常會剪掉超出部分的物件。*/
     }
-    .card.about{
-        background-color: rgba(255, 255, 255, 0.2);
-        color:#ffffff;
-        border: 0px;
-        /*border-left:1px solid #ffffff;*/
-    }
 
-    .white-title {
-        color: #000000;
-        text-align: center;
-        margin-bottom: 20px;
-    }
-
-    h6.work-content-title{border-bottom: 1px solid #000;padding-bottom: 3px; margin-bottom: 3px;}
-    .work-content-wrap small{font-size: 0.8rem;}
-
-    /*.text-muted{color:#dddddd!important;}*/
 
     footer {
         background-color: #313131;
@@ -114,95 +71,151 @@
         transition: opacity .3s ease-out;
     }
     
-    .change-mt3{margin-top: 6rem!important;}
-    .carousel, .banner1{margin-top: 65px;}
+    /*.change-mt3{margin-top: 6rem!important;}*/
+    /*.carousel, .banner1{margin-top: 65px;}*/
     /*補上選單空間*/
     /*.mt-add80 {margin-top: 75px;} 
     .new-body-mt{margin-top: 60px;} 補上選單空間*/
     /*如果要固定上方選單要註銷這個區塊的註解 結束*/
 
-    @media (max-width: 576px) {
-        /*.carousel-item, .banner1  {height: 180px;}*/
-      }
-    @media (min-width: 768px) {
-        /*.card img{
-                        width: 50%;
-            height: 50%;
-            object-fit: cover; 填滿元素的寬度及高度(維持原比例)，通常會剪掉超出部分的物件。
-        }*/
-    }
-    @media (min-width: 1200px) {
-        /*.card img{
-            width: 90%;
-            height: 90%;
-            object-fit: cover; 填滿元素的寬度及高度(維持原比例)，通常會剪掉超出部分的物件。
-        } */
-    }
 
 
-    .top_space{margin-top: 0px;}/*65px*/
+
+    .top_space{margin-top: 65px;}/*65px*/
+    .area{padding: 2rem 0;}
+    .area.banner{display: flex; align-items: center;/*垂直置中*/}
+    .container{display: flex; justify-content: center;/*左右置中*/ padding: 0;}
+    .wrap{width: 100%; padding: 30px;}
+    .content{ margin-top: 2rem;}
+
+    .banner .wrap{
+        width: 90%;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.75);        
+        border-radius: 10px;
+    }
+
     .mezasu{
         height: 100vh;/*500px*/
-        background: url(../img/index-maehe2.jpg) center 70% no-repeat;
-        background-size: cover;
+        background: url(../img/banner/index-maehe2.jpg) center 70% no-repeat;
+        background-size: cover;/* 背景自動縮放 */
     }
-    .mezasu_box{
-        height: 100%;
-        display: flex;        
-        align-items: center;/*垂直置中*/
-        justify-content: center;/*左右置中*/
-    }
-    .mezasu_box_content{
-        width: 90%;/**/
-        text-align: center;
-        background-color: rgba(255, 255, 255, 0.75);
-        padding: 30px;
-        border-radius: 10px;
-        box-shadow: 0px 3px 15px 2px #1a4700;        
-    }
-    .mezasu .Orange{color: rgb(255, 123, 0);}
 
-    .area{display: flex;justify-content: center;}
-
-    .wrap{margin: 30px 25px;}
-    .BG_Green{background-color: rgb(230, 255, 219);}
-    .BG_Blue{background-color: rgb(210, 241, 255);}  
-    .content_box{margin: 20px 0 20px 0;}
-    .content h2{margin-bottom: 30px; padding-bottom: 10px; border-bottom: 1px solid rgb(255, 123, 0);}
-    .img_box{text-align: center; overflow: hidden; border-radius: 10px;}
-    .img_box img{width: 100%;}
-    .Shadow{box-shadow: 0px 3px 10px 1px rgba(0, 0, 0, 0.45);}
-
-
-    .img_Fixed{
-        background: url(../img/Semiconductor_Probing.jpg) 57% 50% no-repeat;
+    .syaikai{
+        height: 70vh;
+        background: url(../img/banner/Semiconductor_Probing.jpg) 50% 50% no-repeat;
         /* 背景自動縮放/固定 */
-        background-attachment: fixed;
-        background-size: cover;
+        background-size: cover;/* 背景自動縮放 */
+        background-attachment: fixed;/* 背景固定 */
+        border-top: 1rem #1a4700 solid;
     }
-    .img_Fixed .wrap{height: 70vh;}
-    .img_Fixed .content_box{background-color: rgba(255, 255, 255, 0.75);padding: 30px; border-radius: 10px;}
 
-    .BG_img{
-        background: url(../img/AS1220AC-08.png) 50% 90% no-repeat;
-        background-size: 100% ;
-    }
+    .Shadow{box-shadow: 0px 3px 10px 1px rgba(0, 0, 0, 0.45);}
+    .mezasu .Shadow{box-shadow: 0px 3px 15px 2px #113000;}
+  
+    .Orange{color: rgb(255, 123, 0);}
+    .container h2{margin-bottom: 1rem; border-bottom: 1px solid rgb(255, 123, 0); padding-bottom: .8rem;}
+    .BG_Green{background-color: rgb(230, 255, 219);}
+    .BG_Blue{background-color: rgb(210, 241, 255);}
+    
+    .img_box{width: 100%; text-align: center; overflow: hidden; border-radius: 10px;}
+    .img_box img{width: 100%;}
+
+    .product-card {align-items: center; text-align: center;}
+    .product-card .heand{width: 100%; background-color: #a7edff; margin-bottom: 1rem;}    
+    .product-card .item{border: 1px solid #cfcfcf; border-radius: 5px; margin-bottom: 1rem; padding: 0.5rem;}
+    .product-card img{width: 150px;}
+    .product-card .text{margin-top: 0.8rem;}
+
+
+
 
 
     @media (min-width: 992px) {
 
-        .wrap {width: 992px; margin: 140px  0px; display: flex;}
-        .wrap.mt-3{height: auto;}
-        .mezasu_box_content{width: 580px;}
-        .item{display: flex; align-items: center; }
-        .content_box{width: 60%; margin: 0 0 0 50px; }
+        .container{max-width: 992px;}
+        .banner .container{width: 580px;}
+        .banner .wrap{width: 100%;}
+        .BG_Green .item{display: flex; align-items: center; }
         .img_box{width: 40%;}
+        .content{width: 60%; margin-top: 0rem; margin-left: 2rem;}
 
+        .product-card {display: inline-flex;}
+        .product-card .item{width: 25%; margin: 0 1rem;}
 
+        /*.wrap {width: 992px; margin: 140px  0px; display: flex;}
+        .wrap.mt-3{height: auto;}*/
+        
 
-        .img_Fixed .content_box{ width: 90%; margin: 0 50px 0 50px;}
+        
+        /*.content_box{width: 60%; margin: 0 0 0 50px; }*/
+        
 
-        .Left .content_box{order: 1; text-align: right; margin: 0 50px 0 0;}
-        .Left .img_box{order: 2;}
+        /*.img_Fixed .content_box{ width: 90%; margin: 0 50px 0 50px;}*/
+
+        /*.Left .content_box{order: 1; text-align: right; margin: 0 50px 0 0;}
+        .Left .img_box{order: 2;}*/
 
     }
+
+
+/* 測試區 */
+
+    /*.container.main-container{color: #ffffff;}
+    .row{--bs-gutter-x: 2rem;}*/
+
+    /*.pdfdl {text-align: center; margin-top: -10px ; position: relative;}
+    .pdfdl a {color: #bbbbbb; border-radius: .25rem; transition: .3s; padding: .2rem 2rem .3rem;
+    }
+    .pdfdl a:hover {border: 1px solid #ffffff;color: #ffffff;}
+    .pdfdl i{margin-left: 0.5rem;}*/
+
+    /*    
+    .pdfdl a {
+        padding: .2rem 2.2rem .4rem .8rem;
+        position: relative;
+    }
+    .pdfdl a::after {
+        position: absolute;
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        content: "\f1c1";
+        font-size: 1.2rem;
+        margin-top: .1rem;
+        margin-left: 0.5rem;
+    }
+    */
+
+    
+    /*.card.about{
+        background-color: rgba(255, 255, 255, 0.2);
+        color:#ffffff;
+        border: 0px;
+        border-left:1px solid #ffffff;
+    }
+
+    .white-title {
+        color: #000000;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    h6.work-content-title{border-bottom: 1px solid #000;padding-bottom: 3px; margin-bottom: 3px;}
+    .work-content-wrap small{font-size: 0.8rem;}*/
+
+    /*.text-muted{color:#dddddd!important;}*/
+
+    @media (max-width: 576px) {
+        /*.carousel-item, .banner1  {height: 180px;}*/
+      }
+    @media (min-width: 768px) {
+        /*.card img{width: 50%; height: 50%; 
+            object-fit: cover; 填滿元素的寬度及高度(維持原比例)，通常會剪掉超出部分的物件。
+        }*/
+    }
+    @media (min-width: 1200px) {
+        /*.card img{ width: 90%; height: 90%;
+            object-fit: cover; 填滿元素的寬度及高度(維持原比例)，通常會剪掉超出部分的物件。
+        } */
+    }
+/* 測試區 */
