@@ -42,6 +42,14 @@
     background: transparent;
 
 }
+
+/*產品區上下頁按鈕位置調整 S */
+.carousel-card .slick-prev, .carousel-card .slick-next {width: 30px; height: 30px; top: 50%;}
+.carousel-card .slick-prev{left: -30px;}
+.carousel-card .slick-next{right: -30px;}
+.carousel-card .slick-prev:before, .carousel-card .slick-next:before{font-size: 30px;}
+/*產品區上下頁按鈕位置調整 E */
+
 .slick-prev:hover,
 .slick-prev:focus,
 .slick-next:hover,
@@ -87,17 +95,18 @@
 [dir='rtl'] .slick-next:before{content: '←';}
 
 /* Dots */
-.slick-dotted.slick-slider
-{
-    margin-bottom: 40px;/**/
-}
+.slick-dotted.slick-slider{margin-bottom: 40px;/**/}
+
+/* 產品區下方圓點調整 S */
+.carousel-card .slick-dotted.slick-slider{margin-bottom: 20px;/**/}
+/* 產品區下方圓點調整 E */
 
 .slick-dots
 {
     position: absolute;
     bottom: -23px;
     z-index: 3;
-    /*background-color: rgba(204, 231, 247, .1);*/
+    /*background-color: rgba(204, 231, 247, 1);*/
 
     display: block;
 
@@ -109,6 +118,8 @@
 
     text-align: center;
 }
+
+
 .slick-dots li
 {
     position: relative;
@@ -180,3 +191,9 @@
     /*color: rgba(106, 171, 113, 1);*/
 
 }
+
+
+.carousel-card .slick-dots{bottom: -10px;}
+.carousel-card .slick-dots li button:before{background-color:rgb(114, 114, 114) ;}
+
+

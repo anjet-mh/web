@@ -13,9 +13,9 @@
   <link href="css/common.css" rel="stylesheet" type="text/css">
   <link href="css/nav-sub.css" rel="stylesheet" type="text/css">
 
-  <!-- <link rel="stylesheet" type="text/css" href="slick/slick.css"/>  -->
+  <link rel="stylesheet" type="text/css" href="slick/slick.css"/><!--   -->
   <!-- Add the new slick-theme.css if you want the default styling -->
-  <!-- <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/> -->
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/><!--  -->
 
 
 
@@ -94,39 +94,43 @@
       <div class="wrap">
         <!--wrap-->
         <h2 class="title">產品資訊</h2><!--<span class="sub_title">PRODUCT</span><a class="title_btn" href="product.html">more</a>-->
-        <div class="product-card">
-          <div class="heand">SBD</div><!---->
-          <div class="item">
-            <img src="./img/product/SiC_SBD.png" alt="">
-            <div class="text">650V / 2A</div>
-          </div>
-          <div class="item">
-            <img src="./img/product/SiC_SBD.png" alt="">
-            <div class="text">650V / 10A</div>
-          </div>
-          <div class="item">
-            <img src="./img/product/SiC_SBD.png" alt="">
-            <div class="text">650V / 2A</div>
-          </div>
-          <div class="item">
-            <img src="./img/product/SiC_SBD.png" alt="">
-            <div class="text">650V / 10A</div>
-          </div>
-          <div class="item">
-            <img src="./img/product/SiC_SBD.png" alt="">
-            <div class="text">650V / 2A</div>
-          </div>
-        </div>
-
-        <div class="product-card">
-          <div class="heand">MOSFET</div><!---->
-          <div class="item">
-            <img src="./img/product/SiC_SBD.png" alt="">
-            <div class="text">650V / 2A</div>
+        <div class="product-card carousel-card ">
+          <div class="heand">SBD</div>
+          <div class="multiple-items">
+        
+            <div class="item">
+              <img src="./img/product/SiC_SBD.png" alt="">
+              <div class="text">650V<br/>2A</div>
+            </div>
+            <div class="item">
+              <img src="./img/product/SiC_SBD.png" alt="">
+              <div class="text">650V<br/>10A</div>
+            </div>
+            <div class="item">
+              <img src="./img/product/SiC_SBD.png" alt="">
+              <div class="text">650V<br/>20A</div>
+            </div>
+            <div class="item">
+              <img src="./img/product/SiC_SBD.png" alt="">
+              <div class="text">1200V<br/>10A</div>
+            </div>
+            <div class="item">
+              <img src="./img/product/SiC_SBD.png" alt="">
+              <div class="text">1200V<br/>20A</div>
+            </div>
           </div>
         </div>
-
-    </div>
+        
+        <div class="product-card carousel-card">
+          <div class="heand">MOSFET</div>
+          <div class="multiple-items">
+            <div class="item">
+              <img src="./img/product/SiC_SBD.png" alt="">
+              <div class="text">650V<br/>100mΩ</div>
+            </div>
+          </div>
+        </div>
+        </div>
   </div>
 
 
@@ -286,6 +290,15 @@
         autoplaySpeed: 4000,
       });
     });
+/* 產品輪播 S */
+$('.multiple-items').slick({
+  infinite: true,
+  dots: true,
+  slidesToShow: 3,
+  slidesToScroll: 3,
+});
+/* 產品輪播 E */
+
   </script>
 
 </body>
