@@ -35,7 +35,7 @@
 <!-- <div class="top_space"></div>調整上方空間用 -->
 
   <div class="area banner mezasu">
-    <div class="container">
+    <div class="container"><!--container為定寬容器(根據容器變固定寬度 且有最大寬的限制) 加上-fluid後 變寬為100%-->
       <div class="wrap Shadow">
           <h3 class="Orange">Make Difference in Green Technologies</h3>
           <div>安傑特公司以ESG為永續經營的指標，並持續發展綠色能源科技。</div>
@@ -141,23 +141,126 @@
 
 
 
-  <!--container為定寬容器(根據容器變固定寬度 且有最大寬的限制) 加上-fluid後 變寬為100%-->
-  <div class="wrap mt-3">
-    <!--container-->
   
   
-  
-  
-  
-    <!-- PRODUCT - 製品 S -->
-    <div id="product_area" class="area">
-      <!--product-area-->
+
+
+
+
+
+
+
+
+  <!-- 頁尾-->
+  <div id="load-footer"></div>
+  <!-- 頁尾-->
+
+
+  <!-- Optional JavaScript; choose one of the two! -->
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <!--<script src="Bootstrap5/js/bootstrap.min.js"></script>
+     Option 2: Separate Popper and Bootstrap JS -->
+  <script src="js/popper.min.js"></script>
+  <script src="js/jquery-3.5.1.js"></script>
+
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+
+
+  <div class="page_name" style="display: none;"></div> <!--塞數據-->
+ 
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $("#load-nav").load("nav.html");
+      $("#load-footer").load("footer.html");
+      $(".page_name").data("namedata", "home");/* 要修改成"home" */
+      /*在.page_name的div裡面添加namedata=home數據 給選單判斷加入.active用*/
+
+
+      $('.slider_index').slick({
+
+        dots: true,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear',
+
+        autoplay: true,
+        autoplaySpeed: 4000,
+      });
+    });
+
+    /* 產品輪播 S */
+    var $window = $(window);
+    var Toss;
+      function checkWidth() {/**/
+        
+        var windowsize = $window.width() + 17;
+        if (windowsize > 992) {
+          Toss = 3 ;
+        } else {
+          Toss = 2 ;
+        };
+        $('.multiple-items').slick({
+              infinite: true,
+              dots: true,
+              slidesToShow: Toss,
+              slidesToScroll: Toss,
+        });       
+      }/**/
+
+    checkWidth();
+    /*$(window).resize(checkWidth);  當視窗改變大小時執行 function checkWidth()
+    $(window).on('resize', checkWidth); */
+    /* 產品輪播 E */
+
+  </script>
+
+</body>
+
+</html>
+
+  <!-- 
+  <div>
+      <div class="slider_index" >
+        <div class="imgMask"><img src="img/index-maehe2.jpg" alt="...">
+          <div class="slider_box maehe">
+            <div class="slider_box_content green_shadow">
+              <h3 class="Orange">Make Difference in Green Technologies</h3>
+              <div>安傑特公司以ESG為永續經營的指標，並持續發展綠色能源科技。</div>
+              </div>
+          </div> 
+        </div>
+
+        <div><img src="../img/product/Semiconductor Probing.jpg" alt="..."  >
+          <div class="slider_box">
+            <div class="slider_box_content black_shadow">
+              <h3>半導體開發</h3>
+                <div>研究開發可顯著提高電能轉換效率的功率半導體，努力為社會做出貢獻。</div>
+              </div>
+          </div>  
+        </div>
+
+        <div><img src="../img/product/Semiconductor Probing.jpg" alt="..."  >
+          <div class="slider_box">
+            <div class="slider_box_content">
+              <h1>友善環境 <small>(Environment)</small>社會關懷 <small>(Social)</small>企業管治 <small>(Governance)</small></h1>
+                <div>友善環境社會關懷企業管治</div>
+              </div>
+          </div>  
+        </div> 
+      </div>
+  </div>
+  -->
+
+      <!-- PRODUCT - 製品 S -->
+    <!--<div id="product_area" class="area">
+
       <div class="section_wrap">
         <div class="section_header">
-          <h2 class="title">PRODUCT
-            <!--<a class="title_btn" href="product.html">more</a>
-              <span class="sub_title">製品</span>-->
-          </h2>
+          <h2 class="title">PRODUCT</h2>
         </div>
   
         <div class="section_body">
@@ -179,7 +282,6 @@
                       <h6>Key features</h6>
                       <ol class="mb-lg-0">
                         <li>Best-in-class low VF:1.35V</li>
-                        <!--li>No reverse recovery charges</li-->
                         <li>High surge ruggedness</li>
                         <li>Temperature independent switching behavior</li>
                         <li>Low cost</li>
@@ -190,7 +292,6 @@
                       <h6>Key technologies</h6>
                       <ol class="mb-lg-0">
                         <li>Advanced junction barrier schottky structure</li>
-                        <!--li>Optimum CELL</li-->
                         <li>Advanced termination structure</li>
                         <li>thin Wafer</li>
                       </ol>
@@ -241,119 +342,7 @@
         </div>
       </div>
   
-    </div>
-
-
-  </div>
-
-
-
-
-
-  <!-- 頁尾-->
-  <div id="load-footer"></div>
-  <!-- 頁尾-->
-
-
-  <!-- Optional JavaScript; choose one of the two! -->
-  <!-- Option 1: Bootstrap Bundle with Popper -->
-  <script src="js/bootstrap.bundle.min.js"></script>
-  <!--<script src="Bootstrap5/js/bootstrap.min.js"></script>
-     Option 2: Separate Popper and Bootstrap JS -->
-  <script src="js/popper.min.js"></script>
-  <script src="js/jquery-3.5.1.js"></script>
-
-  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script type="text/javascript" src="slick/slick.min.js"></script>
-
-
-  <div class="page_name" style="display: none;"></div> <!--塞數據-->
- 
-  <script type="text/javascript">
-    $(document).ready(function () {
-      $("#load-nav").load("nav.html");
-      $("#load-footer").load("footer.html");
-      $(".page_name").data("namedata", "home");/* 要修改成"home" */
-      /*在.page_name的div裡面添加namedata=home數據 給選單判斷加入.active用*/
-
-
-      $('.slider_index').slick({
-
-        dots: true,
-        infinite: true,
-        speed: 500,
-        fade: true,
-        cssEase: 'linear',
-
-        autoplay: true,
-        autoplaySpeed: 4000,
-      });
-    });
-/* 產品輪播 S */
-var $window = $(window);
-  function checkWidth() {
-    var windowsize = $window.width();
-    if (windowsize > 992) {
-      $('.multiple-items').slick({
-        infinite: true,
-        dots: true,
-        slidesToShow: 3,
-        slidesToScroll: 3,
-      });
-    } else {
-          $('.multiple-items').slick({
-        infinite: true,
-        dots: true,
-        slidesToShow: 2,
-        slidesToScroll: 2,
-      });
-        }
-      
-    }
-
-  checkWidth();
-  $(window).resize(checkWidth);
-/* 產品輪播 E */
-
-  </script>
-
-</body>
-
-</html>
-
-  <!-- 
-  <div>
-      <div class="slider_index" >
-        <div class="imgMask"><img src="img/index-maehe2.jpg" alt="...">
-          <div class="slider_box maehe">
-            <div class="slider_box_content green_shadow">
-              <h3 class="Orange">Make Difference in Green Technologies</h3>
-              <div>安傑特公司以ESG為永續經營的指標，並持續發展綠色能源科技。</div>
-              </div>
-          </div> 
-        </div>
-
-        <div><img src="../img/product/Semiconductor Probing.jpg" alt="..."  >
-          <div class="slider_box">
-            <div class="slider_box_content black_shadow">
-              <h3>半導體開發</h3>
-                <div>研究開發可顯著提高電能轉換效率的功率半導體，努力為社會做出貢獻。</div>
-              </div>
-          </div>  
-        </div>
-
-        <div><img src="../img/product/Semiconductor Probing.jpg" alt="..."  >
-          <div class="slider_box">
-            <div class="slider_box_content">
-              <h1>友善環境 <small>(Environment)</small>社會關懷 <small>(Social)</small>企業管治 <small>(Governance)</small></h1>
-                <div>友善環境社會關懷企業管治</div>
-              </div>
-          </div>  
-        </div> 
-      </div>
-  </div>
-  -->
+    </div>-->
 
     <!-- PRODUCT - 製品 E -->
   
