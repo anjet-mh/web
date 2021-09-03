@@ -15,6 +15,8 @@
     src: url('./fonts/slick.eot');
     src: url('./fonts/slick.eot?#iefix') format('embedded-opentype'), url('./fonts/slick.woff') format('woff'), url('./fonts/slick.ttf') format('truetype'), url('./fonts/slick.svg#slick') format('svg');
 }
+
+
 /* Arrows */
 .slick-prev,
 .slick-next
@@ -44,9 +46,9 @@
 }
 
 /*產品區上下頁按鈕位置調整 S */
-.carousel-card .slick-prev, .carousel-card .slick-next {width: 30px; height: 30px; top: 50%;}
-.carousel-card .slick-prev{left: -30px;}
-.carousel-card .slick-next{right: -30px;}
+.carousel-card .slick-prev, .carousel-card .slick-next {width: 30px; height: 30px; top: 102%;}
+.carousel-card .slick-prev{left: 0.5rem;}
+.carousel-card .slick-next{right: 0.5rem;}
 .carousel-card .slick-prev:before, .carousel-card .slick-next:before{font-size: 30px;}
 /*產品區上下頁按鈕位置調整 E */
 
@@ -93,6 +95,8 @@
 [dir='rtl'] .slick-next{right: auto; left: 25px;}
 .slick-next:before{content: '→';}
 [dir='rtl'] .slick-next:before{content: '←';}
+
+
 
 /* Dots */
 .slick-dotted.slick-slider{margin-bottom: 40px;/**/}
