@@ -25,7 +25,7 @@
     line-height: 0;
 
     position: absolute;
-    top: 103%;/*上下頁按鈕位置 */
+    bottom: -13px;/*top: 103%;上下頁按鈕位置 */
 
     display: block;
 

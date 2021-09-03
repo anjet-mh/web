@@ -10,7 +10,7 @@
     body {background-color: var(--body_background-color);}/**/
 
     * {margin: 0; padding: 0; list-style: none; font-family: 'Noto Sans TC', sans-serif;}
-    a {text-decoration: none;color: #000;}
+    a, a:hover {text-decoration: none;color: #000;}
     p {font-weight: 300;line-height: 0.8rem;}
     ol li {
         list-style-type: square;
@@ -124,44 +124,73 @@
 
 
 /* ----- multiple-items 設定區S ----- */
-    .carousel-card{margin-bottom: 50px; border: 1px solid var(--logo_blue);}
+    .carousel-card{margin-bottom: 20px; /*border-left: 1px solid var(--logo_blue);*/}
+    .carousel-card .slick-list{padding-bottom: 20px; border-top: 1px solid var(--logo_blue);}
+    /*.multiple-items{border-top: 1px solid var(--logo_blue);}*/
+
+    
+
     .carousel-card .heand{    
-        width: 100%;
+        width: 130px;
+        height: 40px;
+        line-height: 40px;
         background-color: var(--logo_blue);
         color: #fff;
         font-size: 1.5rem;
-        padding-left: .6rem;
+        text-align: center;
+        padding-left: 1.2rem;
+        position: relative;
     }
-    .carousel-card .slick-slide{
-        margin:1rem 0.5rem;
-        padding: 0.5rem;
-        height: auto;
-        text-align: center;    
-        background-color: #ffffff;
-        /*border: 1px solid #cfcfcf;*/
-        border-radius: 0px;    
+    /* 斜角 */
+    .carousel-card .heand::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 100%;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 40px 0 0 60px;
+        border-color: transparent transparent transparent var(--logo_blue)  ;
     }
 
+    .carousel-card .slick-slide{
+        margin:1rem 0.5rem;
+        padding: 0.5rem 0;
+        height: auto;
+        text-align: center;
+        background-color: #ffffff00;
+        border: 1px solid #cfcfcf;
+    }
+    
+    .multiple-items a{font-size: 1.1rem; font-weight: 700;}
+    .multiple-items a:hover {color: var(--logo_blue);}
+    .multiple-items .item{font-size: 1rem; /*border: 1px solid rgba(255, 255, 255, 0);*/}
+    /*.multiple-items a:hover .item{border-bottom: 1px solid var(--logo_blue); border-radius: 0rem;}*/
+    
     /* img還原定位 S */
-    .multiple-items .slick-slide img{position: unset; width: 50%; transform:translateY(0%); margin: 20px 0;}
+    .multiple-items .slick-slide img{position: unset; width: 50%; transform:translateY(0%); margin:0px 0px 10px;}
     /* img還原定位 E */
 
     /* 產品區上下頁按鈕位置調整 S */
-    .multiple-items .slick-prev, .multiple-items .slick-next {width: 30px; height: 30px; top: 101%;}
+    .multiple-items .slick-prev, .multiple-items .slick-next {width: 30px; height: 30px; bottom: -13px;}
     .multiple-items .slick-prev{left: 0.5rem;}
     .multiple-items .slick-next{right: 0.5rem;}
     .multiple-items .slick-prev:before, .multiple-items .slick-next:before{font-size: 30px;}
-    .multiple-items .slick-prev:before, .multiple-items .slick-next:before{color:var(--logo_blue) }
+    .multiple-items .slick-prev:before, .multiple-items .slick-next:before{color:var(--logo_blue) ;}
     /* 產品區上下頁按鈕位置調整 E */
 
     /* 產品區分頁按鈕位置調整 E */
-    .multiple-items .slick-dots{bottom: -10px;}
+    .multiple-items .slick-dots{bottom: 8px;}
     .multiple-items .slick-dots li button:before{background-color:var(--logo_blue) ;}
     /* 產品區分頁按鈕位置調整 E */
 
 /* ----- multiple-items 設定區E ----- */
 
-
+@media (max-width: 500px) {
+    .carousel-card .heand{font-size: 1.1rem; padding-left: 1rem; width: 95px;}
+    .multiple-items a{font-size: 0.85rem;}
+}
 
 
     @media (min-width: 992px) {
@@ -173,21 +202,11 @@
         .img_box{width: 40%;}
         .content{width: 60%; margin-top: 0rem; margin-left: 2rem;}
 
-        
-        .multiple-items .item{position: relative;}
-        .multiple-items .text{position: absolute; width: 70%; top: 38%; left: 0; right: 0; margin: auto; font-size: 1.2rem; font-weight: 700; color: #006366; background-color: rgba(255, 255, 255, 0.85); transform: scaleX(0); z-index: 6;}
+        /* 斜角 
+        .carousel-card .heand::after{left: 100%;}*/
 
-        .multiple-items .item:hover .serial_number{font-weight: 700; color:#006366; transition: .5s;}/* z-index: 6;*/
-        .multiple-items .item:hover .text{display: block; transform: scaleX(1); transition: .5s;}
 
-        .item::after{content: ''; position: absolute; width: 80%; height: 90%; top: 2.5%; left: 0; right: 0; margin: auto; border-radius: 10px; background-color: var(--logo_blue); opacity: 0; z-index: 5; }
-        .multiple-items .item:hover::after{opacity: .35; transition: .5s;}
-
-        
-
-        
         /*.content_box{width: 60%; margin: 0 0 0 50px; }*/
-        
 
         /*.img_Fixed .content_box{ width: 90%; margin: 0 50px 0 50px;}*/
 
