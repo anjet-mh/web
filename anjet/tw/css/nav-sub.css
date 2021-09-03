@@ -25,12 +25,12 @@
 
 .header_nav .layer_2_title {margin: 0.1rem 0 0.4rem;}
 
-.header_nav a.active{color:rgba(0, 167, 234, 1);}    
+.header_nav a.active{color:var(--logo_blue);}    
 .header_nav li:hover > a, .header_nav .angle_down:hover,
 .header_nav ul li ul li:hover > a, .header_nav ul li ul .angle_down:hover
 {
-    color:rgba(0, 167, 234, 1);
-    border-bottom: 2px solid rgba(0, 167, 234, 1);
+    color:var(--logo_blue);
+    border-bottom: 2px solid var(--logo_blue);
 }
 .header_nav ul li ul li:hover > a, .header_nav ul li ul .angle_down:hover{
     background-color: transparent;

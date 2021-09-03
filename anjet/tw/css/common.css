@@ -3,6 +3,7 @@
 
     :root{
         --body_background-color:#ffffff;/*#195E87*/
+        --logo_blue:rgba(0, 167, 234, 1);/*#00A7EA*/
 
     }
 
@@ -121,10 +122,44 @@
     .img_box{width: 100%; text-align: center; overflow: hidden; border-radius: 10px;}
     .img_box img{width: 100%;}
 
-    .carousel-card img{margin: 20px 0;}
 
+/* ----- multiple-items 設定區S ----- */
+    .carousel-card{margin-bottom: 50px; border: 1px solid var(--logo_blue);}
+    .carousel-card .heand{    
+        width: 100%;
+        background-color: var(--logo_blue);
+        color: #fff;
+        font-size: 1.5rem;
+        padding-left: .6rem;
+    }
+    .carousel-card .slick-slide{
+        margin:1rem 0.5rem;
+        padding: 0.5rem;
+        height: auto;
+        text-align: center;    
+        background-color: #ffffff;
+        /*border: 1px solid #cfcfcf;*/
+        border-radius: 0px;    
+    }
 
+    /* img還原定位 S */
+    .multiple-items .slick-slide img{position: unset; width: 50%; transform:translateY(0%); margin: 20px 0;}
+    /* img還原定位 E */
 
+    /* 產品區上下頁按鈕位置調整 S */
+    .multiple-items .slick-prev, .multiple-items .slick-next {width: 30px; height: 30px; top: 101%;}
+    .multiple-items .slick-prev{left: 0.5rem;}
+    .multiple-items .slick-next{right: 0.5rem;}
+    .multiple-items .slick-prev:before, .multiple-items .slick-next:before{font-size: 30px;}
+    .multiple-items .slick-prev:before, .multiple-items .slick-next:before{color:var(--logo_blue) }
+    /* 產品區上下頁按鈕位置調整 E */
+
+    /* 產品區分頁按鈕位置調整 E */
+    .multiple-items .slick-dots{bottom: -10px;}
+    .multiple-items .slick-dots li button:before{background-color:var(--logo_blue) ;}
+    /* 產品區分頁按鈕位置調整 E */
+
+/* ----- multiple-items 設定區E ----- */
 
 
 
@@ -139,14 +174,15 @@
         .content{width: 60%; margin-top: 0rem; margin-left: 2rem;}
 
         
-        .carousel-card .item{position: relative;}
-        .carousel-card .text{position: absolute; top: 38%; left: 0; right: 0; margin: auto; font-size: 1.5rem; font-weight: 700; color: #fff; transform: scaleX(0); z-index: 6;}
-        .item::after{content: ''; position: absolute; width: 100%; height: 100%; top: 0;left: 0; background-color: rgba(0, 0, 0, 0); z-index: 5; }
-        .carousel-card .item:hover::after{background-color: rgba(0, 0, 0, 0.65); transition: .5s;}
-        .carousel-card .item:hover .text{display: block; transform: scaleX(1); transition: .5s;}
-        .carousel-card .item:hover .serial_number{position: absolute; left: 0; right: 0; margin: auto; color:#fff; z-index: 6; transition: .5s;}
-        /*.wrap {width: 992px; margin: 140px  0px; display: flex;}
-        .wrap.mt-3{height: auto;}*/
+        .multiple-items .item{position: relative;}
+        .multiple-items .text{position: absolute; width: 70%; top: 38%; left: 0; right: 0; margin: auto; font-size: 1.2rem; font-weight: 700; color: #006366; background-color: rgba(255, 255, 255, 0.85); transform: scaleX(0); z-index: 6;}
+
+        .multiple-items .item:hover .serial_number{font-weight: 700; color:#006366; transition: .5s;}/* z-index: 6;*/
+        .multiple-items .item:hover .text{display: block; transform: scaleX(1); transition: .5s;}
+
+        .item::after{content: ''; position: absolute; width: 80%; height: 90%; top: 2.5%; left: 0; right: 0; margin: auto; border-radius: 10px; background-color: var(--logo_blue); opacity: 0; z-index: 5; }
+        .multiple-items .item:hover::after{opacity: .35; transition: .5s;}
+
         
 
         

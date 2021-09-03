@@ -191,17 +191,6 @@
 
 }
 
-/* 個別調整區 */
-/*產品區上下頁按鈕位置調整 S */
-.carousel-card .slick-prev, .carousel-card .slick-next {width: 30px; height: 30px; top: 101%;}
-.carousel-card .slick-prev{left: 0.5rem;}
-.carousel-card .slick-next{right: 0.5rem;}
-.carousel-card .slick-prev:before, .carousel-card .slick-next:before{font-size: 30px;}
-.slick-prev:before, .slick-next:before{color:rgb(0, 167, 234) }
-/*產品區上下頁按鈕位置調整 E */
 
-/*產品區分頁按鈕位置調整 E */
-.carousel-card .slick-dots{bottom: -10px;}
-.carousel-card .slick-dots li button:before{background-color:rgb(0, 167, 234) ;}
-/*產品區分頁按鈕位置調整 E */
+
 
