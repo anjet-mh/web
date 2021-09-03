@@ -291,12 +291,29 @@
       });
     });
 /* 產品輪播 S */
-$('.multiple-items').slick({
-  infinite: true,
-  dots: true,
-  slidesToShow: 3,
-  slidesToScroll: 3,
-});
+var $window = $(window);
+  function checkWidth() {
+    var windowsize = $window.width();
+    if (windowsize > 992) {
+      $('.multiple-items').slick({
+        infinite: true,
+        dots: true,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+      });
+    } else {
+          $('.multiple-items').slick({
+        infinite: true,
+        dots: true,
+        slidesToShow: 2,
+        slidesToScroll: 2,
+      });
+        }
+      
+    }
+
+  checkWidth();
+  $(window).resize(checkWidth);
 /* 產品輪播 E */
 
   </script>
