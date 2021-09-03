@@ -130,17 +130,21 @@
 
     
 
-    .carousel-card .heand{    
-        width: 130px;
+    .carousel-card .heand{ 
+        width: 85px;
         height: 40px;
         line-height: 40px;
         background-color: var(--logo_blue);
         color: #fff;
-        font-size: 1.5rem;
+        font-size: 1.1rem;
+        padding-left: 1rem;
         text-align: center;
-        padding-left: 1.2rem;
         position: relative;
     }
+    .carousel-card a{font-weight: 700;}
+    .carousel-card .serial_number{font-size: 0.9rem;}
+    .carousel-card .text{font-size: 0.85rem;}
+
     /* 斜角 */
     .carousel-card .heand::after{
         content: '';
@@ -150,7 +154,7 @@
         width: 0;
         height: 0;
         border-style: solid;
-        border-width: 40px 0 0 60px;
+        border-width: 40px 0 0 50px;
         border-color: transparent transparent transparent var(--logo_blue)  ;
     }
 
@@ -163,7 +167,7 @@
         border: 1px solid #cfcfcf;
     }
     
-    .multiple-items a{font-size: 1.1rem; font-weight: 700;}
+    
     .multiple-items a:hover {color: var(--logo_blue);}
     .multiple-items .item{font-size: 1rem; /*border: 1px solid rgba(255, 255, 255, 0);*/}
     /*.multiple-items a:hover .item{border-bottom: 1px solid var(--logo_blue); border-radius: 0rem;}*/
@@ -188,8 +192,7 @@
 /* ----- multiple-items 設定區E ----- */
 
 @media (max-width: 500px) {
-    .carousel-card .heand{font-size: 1.1rem; padding-left: 1rem; width: 95px;}
-    .multiple-items a{font-size: 0.85rem;}
+
 }
 
 
@@ -202,8 +205,14 @@
         .img_box{width: 40%;}
         .content{width: 60%; margin-top: 0rem; margin-left: 2rem;}
 
-        /* 斜角 
-        .carousel-card .heand::after{left: 100%;}*/
+        .carousel-card .heand{    
+            width: 130px;
+            font-size: 1.5rem;
+            padding-left: 1.2rem;
+        }
+        .carousel-card .serial_number{font-size: 1.2rem;}
+        .carousel-card .text{font-size: 1rem;}
+
 
 
         /*.content_box{width: 60%; margin: 0 0 0 50px; }*/
