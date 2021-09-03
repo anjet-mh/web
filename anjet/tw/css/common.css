@@ -121,7 +121,7 @@
     .img_box{width: 100%; text-align: center; overflow: hidden; border-radius: 10px;}
     .img_box img{width: 100%;}
 
-
+    .carousel-card .item:hover{background-color: rgba(0, 167, 234, 0.15);}
 
 
 

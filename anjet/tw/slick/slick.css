@@ -113,17 +113,26 @@
 .slider_box_content.black_shadow{box-shadow: 0px 3px 15px 2px #414141;}
 
 
+.carousel-card{margin-bottom: 50px;}
 .carousel-card .slick-slide{
     margin:1rem 0.5rem;
     padding: 0.5rem;
     height: auto;
     text-align: center;    
     background-color: #ffffff;
-    border: 1px solid #cfcfcf;
+    /*border: 1px solid #cfcfcf;*/
     border-radius: 0px;    
 }
 .carousel-card .slick-slide img{position: unset; width: 50%; transform:translateY(0%);}/*還原定位*/
-.carousel-card .heand{width: 100%; background-color: rgb(0, 167, 234); color: #fff;}/*rgb(0, 167, 234) #00A7EA*/
+.carousel-card {border: 1px solid rgb(0, 167, 234);}
+.carousel-card .heand{    
+    width: 100%;
+    background-color: rgb(0, 167, 234);/*#00A7EA*/
+    
+    color: #fff;
+    font-size: 1.5rem;
+    padding-left: .6rem;
+}
 
 
 
