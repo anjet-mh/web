@@ -154,18 +154,16 @@
         width: 0;
         height: 0;
         border-style: solid;
-        border-width: 40px 0 0 50px;
+        border-width: 40px 0 0 40px;
         border-color: transparent transparent transparent var(--logo_blue)  ;
     }*/
     /* 斜角 (平行四邊形畫法) */
     .carousel-card .heand::after{
         content: "";
-        display: block;
-        background-color: var(--logo_blue);
-        border-left: 0;
-        width: 40px;
-        height: 40px;
         position: absolute;
+        background-color: var(--logo_blue);
+        width: 40px;
+        height: 40px;        
         z-index: -1;
         top: 0px;
         right: -20px; /* 40px / 2 */
