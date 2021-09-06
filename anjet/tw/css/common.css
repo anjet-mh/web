@@ -2,7 +2,7 @@
     @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
 
     :root{
-        --body_background-color:#ffffff;/*#195E87*/
+        --body_background-color:#f2fdff;/*#195E87*/
         --logo_blue:rgba(0, 167, 234, 1);/*#00A7EA*/
 
     }
