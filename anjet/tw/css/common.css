@@ -10,20 +10,18 @@
     body {background-color: var(--body_background-color);}/**/
 
     * {margin: 0; padding: 0; list-style: none; font-family: 'Noto Sans TC', sans-serif;}
-    a, a:hover {text-decoration: none;color: #000;}
+    h2{color: #916a4b; margin-bottom: 1rem; border-bottom: 1px solid #916a4b; padding-bottom: .8rem;}
+    a{text-decoration: none; color: #000;}
+    a:hover {color: var(--logo_blue)}
     p {font-weight: 300;line-height: 0.8rem;}
     ol li {
         list-style-type: square;
         font-weight: 300;
         line-height: 2rem;
     }
+    .item {margin: 1rem 0;}
 
 
-    .card img{
-        width: 120px;
-        height: auto;
-        /*object-fit: cover; 填滿元素的寬度及高度(維持原比例)，通常會剪掉超出部分的物件。*/
-    }
 
 
     footer {
@@ -31,6 +29,7 @@
         width: 100%;
         font-size: 0.8rem;
     }
+    footer p{line-height:unset;}
 
     #footer, #footer a {color: #bdbdbd;}
     .copyright {border-top: 1px solid #bdbdbd; padding-top: 8px;}
@@ -38,7 +37,7 @@
 
       /*回到最上按鈕 起始*/
     
-      #gotop {
+    #gotop {
         position:fixed;
         z-index:90;
         right:30px;
@@ -82,8 +81,9 @@
 
 
 
-    .top_space{margin-top: 65px;}/*65px*/
-    .area{padding: 2rem 0;}
+    .top_space{margin-top: 58px;}/*65px*/
+
+    .index .area{padding: 2rem 0;}
     .area.banner{display: flex; align-items: center;/*垂直置中*/}
     .container{display: flex; justify-content: center;/*左右置中*/ padding: 0;}
     .wrap{width: 100%; padding: 30px;}
@@ -114,8 +114,8 @@
     .Shadow{box-shadow: 0px 3px 10px 1px rgba(0, 0, 0, 0.45);}
     .mezasu .Shadow{box-shadow: 0px 3px 15px 2px #113000;}
   
-    .Orange{color: rgb(255, 123, 0);}
-    .container h2{margin-bottom: 1rem; border-bottom: 1px solid rgb(255, 123, 0); padding-bottom: .8rem;}
+    .Orange{color: #ff8800;/*rgb(255, 123, 0)*/}
+    .banner h2{padding-bottom: .8rem;}/*color: #000; margin-bottom: 1rem; border-bottom: 1px solid #ff8800; */
     .BG_Green{background-color: rgb(230, 255, 219);}
     .BG_Blue{background-color: rgb(210, 241, 255);}
     
@@ -184,7 +184,7 @@
     }
     
     
-    .multiple-items a:hover {color: var(--logo_blue);}
+    /*.multiple-items a:hover {color: var(--logo_blue);}*/
     .multiple-items .item{font-size: 1rem; /*border: 1px solid rgba(255, 255, 255, 0);*/}
     /*.multiple-items a:hover .item{border-bottom: 1px solid var(--logo_blue); border-radius: 0rem;}*/
     
@@ -205,10 +205,44 @@
     .multiple-items .slick-dots li button:before{background-color:var(--logo_blue) ;}
     /* 產品區分頁按鈕位置調整 E */
 
+
+
+
+    .banner1 { width: 100%;height: 200px; background-color: #000000;}/*margin-bottom: 15px;*/
+    .container1 {width: 90%; height: 100%; margin: auto;}
+    .banner1-txt {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        color: #ffffff;
+    }
+    .banner1-txt h1{border-bottom: 1px solid #ffffff; padding-bottom: 10px;}
+
+    .banner1.news{
+        background: linear-gradient(115deg, #022d41 10%, transparent 80%) center center / 100% 100%,
+        url("../img/banner/NEWS.jpg")no-repeat left 35% / 100% auto;
+    }
+
+    #news_list_area .item {margin-bottom: 3.5rem;}
+    #news_list_area .date{font-weight: 600; margin-bottom: 0.3rem; padding-bottom: 0.3rem; border-bottom:1px solid #ff8800;}/*#news_list_area */
+
+    #news_list_area .text{padding-left: 2.7rem; padding-right: 0.5rem;}/*width:calc(100% - 230px);*/
+    
+    #news_page_area .text{font-size: 1.4rem; margin-bottom: 1rem; color: rgba(58, 29, 1, .9); text-align: center;}
+    #news_page_area .text{font-size: 1.2rem; margin-bottom: 2rem;}
+    #news_page_area .content{margin: 0 2rem;}
+
+
+
+
+
 /* ----- multiple-items 設定區E ----- */
 
 
     @media (min-width: 992px) {
+        .top_space{margin-top: 65px;}/*65px*/
 
         .container{max-width: 992px;}
         .banner .container{width: 580px;}
@@ -225,7 +259,7 @@
         .carousel-card .serial_number{font-size: 1.2rem;}
         .carousel-card .text{font-size: 1rem;}
 
-
+        .banner1 {height: 300px;}
 
         /*.content_box{width: 60%; margin: 0 0 0 50px; }*/
 
