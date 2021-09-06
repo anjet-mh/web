@@ -145,7 +145,7 @@
     .carousel-card .serial_number{font-size: 0.9rem;}
     .carousel-card .text{font-size: 0.85rem;}
 
-    /* 斜角 
+    /* 斜角 (三角形畫法)
     .carousel-card .heand::after{
         content: '';
         position: absolute;
@@ -157,7 +157,7 @@
         border-width: 40px 0 0 50px;
         border-color: transparent transparent transparent var(--logo_blue)  ;
     }*/
-    /* 斜角 */
+    /* 斜角 (平行四邊形畫法) */
     .carousel-card .heand::after{
         content: "";
         display: block;
