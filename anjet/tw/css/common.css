@@ -124,13 +124,13 @@
 
 
 /* ----- multiple-items 設定區S ----- */
-    .carousel-card{margin-bottom: 20px; /*border-left: 1px solid var(--logo_blue);*/}
-    .carousel-card .slick-list{padding-bottom: 20px; border-top: 1px solid var(--logo_blue);}
-    /*.multiple-items{border-top: 1px solid var(--logo_blue);}*/
+    .carousel-card{margin-bottom: 20px;}
+    .carousel-card .slick-list{padding-bottom: 20px; border-top: 1px solid var(--logo_blue); margin-top: -1px;}
+
 
     
 
-    .carousel-card .heand{ 
+    .carousel-card .category{ 
         width: 85px;
         height: 40px;
         line-height: 40px;
@@ -146,7 +146,7 @@
     .carousel-card .text{font-size: 0.85rem;}
 
     /* 斜角 (三角形畫法)
-    .carousel-card .heand::after{
+    .carousel-card .category::after{
         content: '';
         position: absolute;
         top: 0;
@@ -158,7 +158,7 @@
         border-color: transparent transparent transparent var(--logo_blue)  ;
     }*/
     /* 斜角 (平行四邊形畫法) */
-    .carousel-card .heand::after{
+    .carousel-card .category::after{
         content: "";
         position: absolute;
         background-color: var(--logo_blue);
@@ -207,10 +207,6 @@
 
 /* ----- multiple-items 設定區E ----- */
 
-@media (max-width: 500px) {
-
-}
-
 
     @media (min-width: 992px) {
 
@@ -221,7 +217,7 @@
         .img_box{width: 40%;}
         .content{width: 60%; margin-top: 0rem; margin-left: 2rem;}
 
-        .carousel-card .heand{    
+        .carousel-card .category{    
             width: 130px;
             font-size: 1.5rem;
             padding-left: 1.2rem;
