@@ -145,7 +145,7 @@
     .carousel-card .serial_number{font-size: 0.9rem;}
     .carousel-card .text{font-size: 0.85rem;}
 
-    /* 斜角 */
+    /* 斜角 
     .carousel-card .heand::after{
         content: '';
         position: absolute;
@@ -156,7 +156,25 @@
         border-style: solid;
         border-width: 40px 0 0 50px;
         border-color: transparent transparent transparent var(--logo_blue)  ;
+    }*/
+    /* 斜角 */
+    .carousel-card .heand::after{
+        content: "";
+        display: block;
+        background-color: var(--logo_blue);
+        border-left: 0;
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        z-index: -1;
+        top: 0px;
+        right: -20px; /* 40px / 2 */
+        transform: skew(45deg);
+        -o-transform: skew(45deg);
+        -moz-transform: skew(45deg);
+        -webkit-transform: skew(45deg);
     }
+
 
     .carousel-card .slick-slide{
         margin:1rem 0.5rem;
