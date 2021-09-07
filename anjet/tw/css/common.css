@@ -10,10 +10,11 @@
     body {background-color: var(--body_background-color);}/**/
 
     * {margin: 0; padding: 0; list-style: none; font-family: 'Noto Sans TC', sans-serif; letter-spacing:.05rem;}
-    h2{color: #916a4b; margin-bottom: 1rem; border-bottom: 1px solid #916a4b; padding-bottom: .8rem;}
+    h2{color: var(--logo_blue)/*#916a4b*/; margin-bottom: 1rem; border-bottom: 1px solid var(--logo_blue); padding-bottom: .8rem;}
     a{text-decoration: none; color: #000;}
     a:hover {color: var(--logo_blue)}
     p {font-weight: 300;line-height: 0.8rem;}
+    ol, ul {padding: 0rem; margin: 0rem;}
     ol li {
         list-style-type: square;
         font-weight: 300;
@@ -48,15 +49,15 @@
         width:50px;
         height:50px;
         color:#fff;
-        background:#33b5e5;
+        background:#33b6e58e;
         line-height:50px;
         border-radius:50%;
         /*transition:all 0.5s;*/
         text-align: center;
         box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
     }
-    #gotop :hover{
-        background:#0099CC;
+    #gotop:hover{
+        background:var(--logo_blue);
     }
       /*回到最上按鈕 結束*/
 
@@ -127,16 +128,16 @@
 
 /* ----- multiple-items 設定區S ----- */
     .carousel-card{margin-bottom: 20px;}
-    .carousel-card .slick-list{padding-bottom: 20px; border-top: 1px solid var(--logo_blue);/**/ margin-top: -1px;}
+    .carousel-card .slick-list{padding-bottom: 20px; /*border-top: 1px solid var(--logo_blue);*/ margin-top: -1px;}
 
 
     
 
     .carousel-card .category{ 
-        width: 85px;
+        /*width: 85px;*/
         height: 40px;
         line-height: 40px;
-        background-color: var(--logo_blue);
+        background-color: #a0a0a0;/*var(--logo_blue)*/
         color: #fff;
         font-size: 1.1rem;
         padding-left: 1rem;
@@ -159,7 +160,7 @@
         border-width: 40px 0 0 40px;
         border-color: transparent transparent transparent var(--logo_blue)  ;
     }*/
-    /* 斜角 (平行四邊形畫法) */
+    /* 斜角 (平行四邊形畫法) 
     .carousel-card .category::after{
         content: "";
         position: absolute;
@@ -168,12 +169,12 @@
         height: 40px;        
         z-index: -1;
         top: 0px;
-        right: -20px; /* 40px / 2 */
+        right: -20px;
         transform: skew(45deg);
         -o-transform: skew(45deg);
         -moz-transform: skew(45deg);
         -webkit-transform: skew(45deg);
-    }
+    }*/
 
 
     .carousel-card .slick-slide{
@@ -226,9 +227,20 @@
         background: linear-gradient(115deg, #022d41 10%, transparent 80%) center center / 100% 100%,
         url("../img/banner/NEWS.jpg")no-repeat left 35% / 100% auto;
     }
+    .banner1.about{
+        background: linear-gradient(115deg, #022d41 10%, transparent 80%) center center / 100% 100%,
+        url("../img/banner/index-co-1.jpg")no-repeat left 35% / 100% auto;
+    }
+
+/* -----------------*/   
+    .ul-reset li{list-style: disc; }
+    .ul-reset li ul li{list-style: circle;}
+    .ul-reset, .ul-pl0 ul{padding-left: 20px;}
+    .item.right img{width: 100%;}
+/* -----------------*/  
 
     #news_list_area .item {margin-bottom: 3.5rem;}
-    #news_list_area .date{font-weight: 600; margin-bottom: 0.3rem; padding-bottom: 0.3rem; border-bottom:1px solid #005983; color: #005983;}/*#news_list_area */
+    #news_list_area .date, .title{font-weight: 600; margin-bottom: 0.3rem; padding-bottom: 0.3rem; border-bottom:1px solid #005983; color: #005983;}/*#news_list_area */
 
     #news_list_area .text{padding-left: 2.7rem; padding-right: 0.5rem;}/*width:calc(100% - 230px);*/
     
@@ -242,7 +254,6 @@
 
 /* ----- multiple-items 設定區E ----- */
 
-
     @media (min-width: 992px) {
         .top_space{margin-top: 65px;}/*65px*/
         #footer .card-body {text-align: center;}
@@ -255,7 +266,7 @@
         .content{width: 60%; margin-top: 0rem; margin-left: 2rem;}
 
         .carousel-card .category{    
-            width: 130px;
+            /*width: 130px;*/
             font-size: 1.5rem;
             padding-left: 1.2rem;
         }
@@ -263,6 +274,12 @@
         .carousel-card .text{font-size: 1rem;}
 
         .banner1 {height: 300px;}
+        .half-box{display: flex;}
+        .left, .right{width: 50%;}
+        .left{padding-right: 20px;}
+        .right{padding-left: 20px;}
+        .item.right img{width: 80%;}
+
 
         /*.content_box{width: 60%; margin: 0 0 0 50px; }*/
 
