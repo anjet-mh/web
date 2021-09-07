@@ -235,7 +235,7 @@
 /* -----------------*/   
     .ul-reset li{list-style: disc; }
     .ul-reset li ul li{list-style: circle;}
-    .ul-reset, .ul-pl0 ul{padding-left: 20px;}
+    .ul-reset, .ul-reset ul{padding-left: 20px;}
     .item.right img{width: 100%;}
 /* -----------------*/  
 
