@@ -127,7 +127,7 @@
 
 /* ----- multiple-items 設定區S ----- */
     .carousel-card{margin-bottom: 20px;}
-    .carousel-card .slick-list{padding-bottom: 20px; border-top: 1px solid var(--logo_blue); margin-top: -1px;}
+    .carousel-card .slick-list{padding-bottom: 20px; border-top: 1px solid var(--logo_blue);/**/ margin-top: -1px;}
 
 
     
