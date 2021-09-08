@@ -121,7 +121,7 @@
   
     .Orange{color: #ff8800;/*rgb(255, 123, 0)*/}
     .banner h2{padding-bottom: .8rem;}/*color: #000; margin-bottom: 1rem; border-bottom: 1px solid #ff8800; */
-    .BG_Green{background-color: rgb(230, 255, 219);}
+    .BG_Green{background-color: rgb(230, 255, 219);/* height: 70vh;display: flex; align-items: center; background:url(./img/banner/green_mos.jpg) center 70% no-repeat;background-size: cover;*//* 背景自動縮放 */}
     .BG_Blue{background-color: rgb(210, 241, 255);}
     
     .img_box{width: 100%; text-align: center; overflow: hidden; border-radius: 10px;}
@@ -239,7 +239,7 @@
         url("../img/banner/handshake-1237743.jpg") right center /100% auto;
     }
 
-    
+
 /* -----------------*/   
     .ul-reset li{list-style: disc; }
     .ul-reset li ul li{list-style: circle;}
