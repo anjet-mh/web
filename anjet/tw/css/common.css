@@ -2,18 +2,20 @@
     @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
 
     :root{
-        --body_background-color:#f2fdff;/*#195E87*/
+        --body_bg-color:#f2fdff;/*#195E87*/
         --logo_blue:rgba(0, 167, 234, 1);/*#00A7EA*/
+        --h2_color:#0c69c0;/*#1d5a5c*/
+        --category_bg-color:#0c69c0;
 
     }
 
-    body {background-color: var(--body_background-color);}/**/
+    body {background-color: var(--body_bg-color);}/**/
 
     * {margin: 0; padding: 0; list-style: none; font-family: 'Noto Sans TC', sans-serif; letter-spacing:.05rem;}
-    h2{color: var(--logo_blue)/*#916a4b*/; margin-bottom: 1rem; border-bottom: 1px solid var(--logo_blue); padding-bottom: .8rem;}
+    h2{margin-bottom: 1rem; color:var(--h2_color) /*var(--logo_blue)*/; border-bottom: 1px solid var(--h2_color); padding-bottom: .8rem;}
     a{text-decoration: none; color: #000;}
     a:hover {color: var(--logo_blue)}
-    p {font-weight: 300;line-height: 0.8rem;}
+    p {font-weight: 300; line-height: 0.8rem;}
     ol, ul {padding: 0rem; margin: 0rem;}
     ol li {
         list-style-type: square;
@@ -134,22 +136,22 @@
     
 
     .carousel-card .category, .category{ 
-        /*width: 85px;*/
+        width: 85px;/**/
         height: 40px;
         line-height: 40px;
-        background-color: #a0a0a0;/*var(--logo_blue)*/
+        background-color: var(--category_bg-color);/*#a0a0a0*/
         color: #fff;
         font-size: 1.1rem;
-        /*padding-left: 1rem;*/
-        text-align: center;
+        /*text-align: center;*/
         position: relative;
+        padding-left: 10px;
     }
     .carousel-card a{font-weight: 700;}
     .carousel-card .serial_number{font-size: 0.9rem;}
     .carousel-card .text{font-size: 0.85rem;}
 
     /* 斜角 (三角形畫法)
-    .carousel-card .category::after{
+    .carousel-card .category::after, .category::after{
         content: '';
         position: absolute;
         top: 0;
@@ -158,13 +160,14 @@
         height: 0;
         border-style: solid;
         border-width: 40px 0 0 40px;
-        border-color: transparent transparent transparent var(--logo_blue)  ;
+        border-color: transparent transparent transparent var(--category_bg-color);
     }*/
-    /* 斜角 (平行四邊形畫法) 
-    .carousel-card .category::after{
+    
+    /* 斜角 (平行四邊形畫法) */
+    .carousel-card .category::after, .category::after{
         content: "";
         position: absolute;
-        background-color: var(--logo_blue);
+        background-color: var(--category_bg-color);
         width: 40px;
         height: 40px;        
         z-index: -1;
@@ -174,7 +177,7 @@
         -o-transform: skew(45deg);
         -moz-transform: skew(45deg);
         -webkit-transform: skew(45deg);
-    }*/
+    }
 
 
     .carousel-card .slick-slide{
@@ -265,9 +268,9 @@
         .content{width: 60%; margin-top: 0rem; margin-left: 2rem;}
 
         .carousel-card .category, .category{    
-            /*width: 130px;*/
+            width: 130px;
             font-size: 1.5rem;
-            padding-left: 1.2rem;
+            /*padding-left: 1.2rem;*/
         }
         .carousel-card .serial_number{font-size: 1.2rem;}
         .carousel-card .text{font-size: 1rem;}
