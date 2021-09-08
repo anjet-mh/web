@@ -15,7 +15,7 @@
     h2{margin-bottom: 1rem; color:var(--h2_color) /*var(--logo_blue)*/; border-bottom: 1px solid var(--h2_color); padding-bottom: .8rem;}
     a{text-decoration: none; color: #000;}
     a:hover {color: var(--logo_blue)}
-    p {font-weight: 300; line-height: 0.8rem;}
+    p {font-weight: 300; /*line-height: 0.8rem;*/}
     ol, ul {padding: 0rem; margin: 0rem;}
     ol li {
         list-style-type: square;
@@ -234,7 +234,12 @@
         background: linear-gradient(115deg, #022d41 10%, transparent 80%) center center / 100% 100%,
         url("../img/banner/index-co-1.jpg")no-repeat left 35% / 100% auto;
     }
+    .banner1.careers{
+        background: linear-gradient(115deg, #022d41 10%, transparent 80%) center center / 100% 100%,
+        url("../img/banner/handshake-1237743.jpg") right center /100% auto;
+    }
 
+    
 /* -----------------*/   
     .ul-reset li{list-style: disc; }
     .ul-reset li ul li{list-style: circle;}
