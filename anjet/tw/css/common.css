@@ -289,7 +289,7 @@
     #policy_area h4{margin: 2rem 1rem .5rem;}
     #policy_area .section_body p, #policy_area ul{margin: 0 2.5rem 0;}/* font-size: .88rem;line-height: 1.8rem;*/
     #policy_area .section_body p.t0{margin-left: 1.4rem;}
-    #policy_area ul li{margin-left: 1.4rem; padding-left: 1.8rem;}
+    #policy_area ul li{margin-left: 1.4rem; padding-left: 1.8rem;font-weight: 300;}
     #policy_area ul{counter-reset: li;}
     #policy_area ul li{position: relative;}
     #policy_area ul li::before{
