@@ -4,6 +4,8 @@
     :root{
         --body_bg-color:#f2fdff;/*#195E87*/
         --logo_blue:rgba(0, 167, 234, 1);/*#00A7EA*/
+        --logo_blue_03:rgba(0, 167, 234, 0.3);/*#00A7EA*/
+        --logo_blue_0125:rgba(0, 167, 234, 0.125);/*#00A7EA*/
         --h2_color:#0c69c0;/*#1d5a5c*/
         --category_bg-color:#0c69c0;
 
@@ -20,7 +22,8 @@
     ol li {list-style-type: square; font-weight: 300; line-height: 2rem; }
     .item {margin: 1rem 0;}
 
-
+    .card, .card-footer{border-color:var(--logo_blue_03) ;}
+    .card-footer{background-color:var(--logo_blue_0125) ;}
 
 
     #footer {
@@ -193,7 +196,7 @@
         height: auto;
         text-align: center;
         background-color: #ffffff00;
-        border: 1px solid #cfcfcf;
+        border: 1px solid var(--logo_blue_03);/*#cfcfcf*/
     }
     
     
