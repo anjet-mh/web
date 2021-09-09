@@ -286,6 +286,20 @@
     #contactus_area_no_hash .badge{padding: .35em .8em;font-weight: 300;font-size: .4em;margin-right: .5em;letter-spacing: 0rem;}
     #contactus_area_no_hash p > a, #policy_area p > a{text-decoration: underline;}
 
+    #policy_area h4{margin: 2rem 1rem .5rem;}
+    #policy_area .section_body p, #policy_area ul{margin: 0 2.5rem 0;}/* font-size: .88rem;line-height: 1.8rem;*/
+    #policy_area .section_body p.t0{margin-left: 1.4rem;}
+    #policy_area ul li{margin-left: 1.4rem; padding-left: 1.8rem;}
+    #policy_area ul{counter-reset: li;}
+    #policy_area ul li{position: relative;}
+    #policy_area ul li::before{
+        content: counter(li)'. ';
+        counter-increment: li;
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
 
 /* ----- multiple-items 設定區E ----- */
 
