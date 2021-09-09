@@ -8,6 +8,7 @@
         --logo_blue_0125:rgba(0, 167, 234, 0.125);/*#00A7EA*/
         --h2_color:#0c69c0;/*#1d5a5c*/
         --category_bg-color:#0c69c0;
+        --btn-color_background-color:rgba(1, 64, 80, 1);
 
     }
 
@@ -248,7 +249,14 @@
         background: linear-gradient(115deg, #022d41 10%, transparent 80%) center center / 100% 100%,
         url("../img/banner/handshake-1237743.jpg") right center /100% auto;
     }
-
+    .banner1.contactus{
+        background: linear-gradient(115deg, #022d41 10%, transparent 80%) center center / 100% 100%,
+        url("../img/banner/contactus.jpg") right center / 100% auto;
+    }
+    .banner1.policy{
+        background: linear-gradient(115deg, #022d41 10%, transparent 80%) center center / 100% 100%,
+        url("../img/banner/policy.png")no-repeat right center / 100% auto;
+    }
 
 /* -----------------*/   
     .ul-reset li{list-style: disc; }
@@ -259,7 +267,7 @@
     #about_area .item {margin-bottom: 3rem;}    
     #about_area .text{padding-left: 2.7rem; padding-right: 0.5rem;}/*width:calc(100% - 230px);*/
     #history_area {background-color: #dff6ff;}
-    /* -----------------*/  
+/* -----------------*/  
 
     #news_list_area .item {margin-bottom: 3.5rem;}
     #news_page_area .text{font-size: 1.4rem; margin-bottom: 1rem; color: rgba(58, 29, 1, .9); text-align: center;}
@@ -267,7 +275,16 @@
     #news_page_area .content{margin: 0 2rem;}
 
 
-
+    #contactus_area_no_hash .map_area{
+        box-shadow: 0 0 10px 5px rgba(153, 107, 7, 0.3);
+        border-radius: 10px;
+        margin-top: -5rem;
+        margin-bottom: 2rem;
+    }
+    #contactus_area_no_hash p{font-size: .9rem; margin: .2rem 0; letter-spacing: .1rem;}
+    #contactus_area_no_hash .setsumei{margin-bottom: 3rem;}
+    #contactus_area_no_hash .badge{padding: .35em .8em;font-weight: 300;font-size: .4em;margin-right: .5em;letter-spacing: 0rem;}
+    #contactus_area_no_hash p > a, #policy_area p > a{text-decoration: underline;}
 
 
 /* ----- multiple-items 設定區E ----- */
@@ -300,6 +317,12 @@
         .right{padding-left: 20px;}
         .item.right img{width: 80%;}
 
+        #contactus_area_no_hash .left{width: 300px;}
+        #contactus_area_no_hash .right{width:calc(100% - 300px)}
+        #contactus_area_no_hash label {border-bottom: 1px solid rgba(0, 0, 0, 0.12);}
+        .btn{letter-spacing: .1rem; border: 1px solid var(--btn-color_background-color); color: var(--btn-color_background-color);}
+        .btn:hover{background-color: var(--btn-color_background-color); color: rgba(255, 255, 255, 1);}
+        .btn:hover a{color: rgba(255, 255, 255, 1);}
 
         /*.content_box{width: 60%; margin: 0 0 0 50px; }*/
 
