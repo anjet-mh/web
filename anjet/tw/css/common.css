@@ -23,7 +23,7 @@
     ol li {list-style-type: square; font-weight: 300; line-height: 2rem; }
     .item {margin: 1rem 0;}
 
-    .card, .card-footer{border-color:var(--logo_blue_03) ;}
+    .card, .card-header, .card-footer{border-color:var(--logo_blue_03) ;}
     .card-header, .card-footer{background-color:var(--logo_blue_0125) ;}
 
 
@@ -181,7 +181,7 @@
         background-color: var(--category_bg-color);
         width: 40px;
         height: 40px;        
-        z-index: -1;
+        z-index: 0;
         top: 0px;
         right: -20px;
         transform: skew(45deg);
