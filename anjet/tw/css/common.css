@@ -268,8 +268,11 @@
     #about_area .text, #history_area .text{padding-left: 2.7rem; padding-right: 0.5rem;}/*width:calc(100% - 230px);*/
     #history_area {background-color: #dff6ff;}
 /* -----------------*/  
-#product_area .card-img {text-align: center;}
+    #product_area .card-img {text-align: center;}
     #product_area img{width: 50%;}
+    .card-text h6{margin: 1rem 0rem 0.2rem;}
+    .card-text ol{margin-left: 2rem;}
+
 
     #news_list_area .item {margin-bottom: 3.5rem;}
     #news_page_area .text{font-size: 1.4rem; margin-bottom: 1rem; color: rgba(58, 29, 1, .9); text-align: center;}
