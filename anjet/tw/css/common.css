@@ -271,7 +271,7 @@
 
 
     #product_area .card-img {text-align: center;}
-    #product_area img{width: 50%;}
+    #product_area img{width: 40%;}
     .card-text h6{margin: 1rem 0rem 0.2rem;}
     .card-text ol{margin-left: 2.15rem;}
 
@@ -332,6 +332,7 @@
         .carousel-card .text{font-size: 1rem;}
 
         .banner1 {height: 300px;}
+        .BG_Green{height: 50vh;}
         .half-box{display: flex;}
         .left, .right{width: 50%;}
         .left{padding-right: 20px;}
