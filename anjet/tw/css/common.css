@@ -265,7 +265,7 @@
     .item.right img{width: 100%;}
     .date, .title{font-weight: 600; margin-bottom: 0.3rem; padding-bottom: 0.3rem; border-bottom:1px solid #005983; color: #005983;}/*#news_list_area */
     #about_area .item {margin-bottom: 3rem;}    
-    #about_area .text{padding-left: 2.7rem; padding-right: 0.5rem;}/*width:calc(100% - 230px);*/
+    #about_area .text, #history_area .text{padding-left: 2.7rem; padding-right: 0.5rem;}/*width:calc(100% - 230px);*/
     #history_area {background-color: #dff6ff;}
 /* -----------------*/  
 
