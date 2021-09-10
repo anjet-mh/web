@@ -15,10 +15,10 @@
     body {background-color: var(--body_bg-color);}/**/
 
     * {margin: 0; padding: 0; list-style: none; font-family: 'Noto Sans TC', sans-serif; letter-spacing:.05rem;}
-    h2{margin-bottom: 1rem; color:var(--h2_color) /*var(--logo_blue)*/; border-bottom: 1px solid var(--h2_color); padding-bottom: .8rem;}
+    h2{margin-bottom: 1rem; color:var(--h2_color); border-bottom: 1px solid var(--h2_color); padding-bottom: .8rem;}
     a{text-decoration: none; color: #000;}
     a:hover {color: var(--logo_blue)}
-    p {font-weight: 300; /*line-height: 0.8rem;*/}
+    p {font-weight: 300; margin-bottom: 0rem; /*line-height: 0.8rem;*/}
     ol, ul {padding: 0rem; margin: 0rem;}
     ol li {list-style-type: square; font-weight: 300; line-height: 2rem; }
     .item {margin: 1rem 0;}
@@ -31,6 +31,7 @@
         background-color: #313131;
         width: 100%;
         font-size: 0.8rem;
+        padding-top: 1rem;
     }
     #footer p{line-height:unset; letter-spacing:0.02rem;}
     #footer ul{padding-left: 0rem;}
@@ -108,12 +109,12 @@
     }
 
     .syaikai{
-        height: 70vh;
+        height: 90vh;
         background: url(../img/banner/Semiconductor_Probing.jpg) 50% 50% no-repeat;
         /* 背景自動縮放/固定 */
         background-size: cover;/* 背景自動縮放 */
         background-attachment: fixed;/* 背景固定 */
-        border-top: 1rem #1a4700 solid;
+        /*border-top: 1rem #0000005e solid;*/
     }
 
     .Shadow{box-shadow: 0px 3px 10px 1px rgba(0, 0, 0, 0.45);}
@@ -263,14 +264,14 @@
     .ul-reset li ul li{list-style: circle;}
     .ul-reset, .ul-reset ul{padding-left: 20px;margin-bottom: 20px;}
     .item.right img{width: 100%;}
-    /* .date, .title{font-weight: 600;}margin-bottom: 0.3rem; padding-bottom: 0.3rem; border-bottom:1px solid var(--h2_color); color: var(--h2_color)#005983 #news_list_area */
+    #about_area .date, #about_area .title, #history_area .date, #history_area .title{font-weight: 600; margin-bottom: 0.3rem; padding-bottom: 0.3rem; border-bottom:1px solid var(--h2_color); color: var(--h2_color);}/*#005983 #news_list_area */
     #about_area .item {margin-bottom: 3rem;}    
     #about_area .text, #history_area .text{padding-left: 2.7rem; padding-right: 0.5rem;}/*width:calc(100% - 230px);*/
     #history_area {background-color: #dff6ff;}
 /* -----------------*/  
 
 
-    #product_area .card-img {text-align: center;}
+    #product_area .card-img {text-align: center;margin-bottom: 1rem;}
     #product_area img{width: 30%;}
     .card-text h6{margin: 0.8rem 0rem 0.2rem;}
     .card-text ol{margin-left: 2.15rem;}
