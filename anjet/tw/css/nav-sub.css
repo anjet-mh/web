@@ -84,7 +84,7 @@
         padding: 0rem; 
         height: 65px;
         display: flex;
-        justify-content:space-between;/*justify-content: center;*/
+        /*justify-content:space-between;*/justify-content: center;
         align-items: center;
     }
     /*.header_nav li{padding:0px 10px 15px;}*/
