@@ -331,7 +331,8 @@
 
     }
     .app-body .title-imgbox img{ width: AUTO; height: 65%;}
-    .app-text {margin-bottom: 1rem;}
+    .app-text {margin-bottom: 1rem;height: 50px;}
+    .app-apn{background-color: #e0e0e0;}
     .app-apn ul{display: flex; justify-content: center;}
     .app-apn a{padding: 0 0.5rem;}
 
