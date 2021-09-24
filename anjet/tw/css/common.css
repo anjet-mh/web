@@ -329,7 +329,7 @@
         justify-content:center;
     }
     .app-body .title-imgbox img{ width: AUTO; height: 65%;}
-    .app-apn{background-color: #e0e0e0;}
+    .app-apn{background-color: #e0e0e0; padding: 0.2rem;} 
     .app-apn ul{display: flex; justify-content: center;}
     .app-apn a{padding: 0 0.5rem;}
 
