@@ -261,7 +261,7 @@
     }
     .banner1.applications{
         background: linear-gradient(0deg, #022d41 10%, transparent 80%) center center / 100% 100%,
-        url("../img/banner/applications.jpg")no-repeat right 40% / 100% auto;
+        url("../img/banner/applications.jpg")no-repeat right 5% / 100% auto;
     }
 
 /* -----------------*/   
