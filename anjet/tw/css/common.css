@@ -16,7 +16,7 @@
 
     * {margin: 0; padding: 0; list-style: none; font-family: 'Noto Sans TC', sans-serif; letter-spacing:.05rem;}
     h2{margin-bottom: 1rem; color:var(--h2_color); border-bottom: 1px solid var(--h2_color); padding-bottom: .8rem;}
-    h4, h5{margin: 0.5rem 0rem;}
+    h4, h5{margin: 0.5rem 0rem 1rem;}
     a{text-decoration: none; color: #000;}
     a:hover {color: var(--logo_blue)}
     p {font-weight: 300; margin-bottom: 0rem; /*line-height: 0.8rem;*/}
@@ -278,6 +278,7 @@
 
     #product_area .card-img {text-align: center;margin-bottom: 1rem;}
     #product_area img{width: 30%;}
+    .card-title{margin-bottom: 1rem;}
     .card-text h6{margin: 0.8rem 0rem 0.2rem;}
     .card-text ol{margin-left: 2.15rem;}
 
@@ -315,12 +316,12 @@
     }
 
     
-    .app-body{text-align: center;margin-top: 2rem; margin-bottom:5rem;}
-    .app-body .title { margin-bottom: 2rem;}
+    .app-body{text-align: center; margin-top: 2rem; margin-bottom:5rem;}
+    .app-body .title { margin-bottom: 2.5rem;}
     .app-body .title-imgbox{
         width: 120px;
         height: 120px;
-        background-color: #215e97;
+        background-color: #265179;
         border-radius: 50%;
         margin: auto;
         margin-bottom: 1rem;
