@@ -315,7 +315,7 @@
     }
 
     
-    .app-body{text-align: center; margin-bottom:5rem;}
+    .app-body{text-align: center;margin-top: 2rem; margin-bottom:5rem;}
     .app-body .title { margin-bottom: 2rem;}
     .app-body .title-imgbox{
         width: 120px;
