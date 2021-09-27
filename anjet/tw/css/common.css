@@ -40,7 +40,7 @@
     #footer a:hover{color: #ffffff; border-bottom: 1px solid #ffffff;}
 
     .copyright {border-top: 1px solid #bdbdbd; padding-top: 8px;}
-
+    .copyright p{margin:1rem 0;}
 
       /*回到最上按鈕 起始*/
     
