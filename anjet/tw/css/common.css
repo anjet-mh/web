@@ -94,13 +94,13 @@
     /*.index .area{padding: 2rem 0;}*/
     .area.banner{display: flex; align-items: center;/*垂直置中*/}
     .container{display: flex; justify-content: center;/*左右置中*/ padding: 0;}
-    .wrap{width: 100%; padding: 30px;}
+    .wrap{width: 100%; padding: 40px;}
     .content{ margin-top: 2rem;}
 
     .banner .wrap{
         width: 90%;
         text-align: center;
-        background-color: rgba(255, 255, 255, 0.8);        
+        background-color: rgba(255, 255, 255, 0.6);        
         border-radius: 5px;/**/
     }
 
@@ -109,9 +109,8 @@
         background: url(../img/banner/index-maehe2.jpg) center 70% no-repeat;
         background-size: cover;/* 背景自動縮放 */
     }
-    .mezasu .container{width: 100vw;}
-
-    .mezasu .wrap{width: 100%; }
+    /*.mezasu .container{width: 100vw;}*/
+    .mezasu .wrap{width: 90%; }
 
     .focus{
         height: 90vh;
@@ -137,7 +136,7 @@
         background-size:100%
         background-size: cover;背景自動縮放 
     }*/
-    .BG_Green .item{width: 100%; margin: 0rem; padding: 5rem 2rem;}
+    .BG_Green .item{width: 100%; margin: 0rem; padding: 4rem 2rem;}
     .BG_Green .item:nth-child(2){padding-top: 0rem; }/*第二個item*/
     .BG_Blue{background-color: rgb(210, 241, 255);}
     
@@ -351,16 +350,16 @@
         #footer .card-body {text-align: center;}
 
         .container{max-width: 992px;}
-        .banner .container{width: 580px;}
+        /*.banner .container{width: 580px;}*/
 
         .Orange-title{font-size: 2.5rem;}
 
         /*.banner .wrap{width: 100%;}*/
         .BG_Green{display: flex; align-items: center; }
-        .BG_Green .item{width: 50%; }
+        .BG_Green .item{width: 50%; padding-top: 8rem; padding-bottom: 8rem;}
         .BG_Green .img_box{height: 100%;}
 
-        .BG_Green .item:nth-child(2){padding-top: 2rem; padding-left: 0rem;}/*第二個item*/
+        .BG_Green .item:nth-child(2){padding-top: 8rem; padding-left: 0rem;}/*第二個item*/
         /*.img_box{width: 40%;}
         .content{width: 60%; margin-top: 0rem; margin-left: 2rem;}*/
 
