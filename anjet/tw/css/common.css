@@ -27,7 +27,8 @@
     .btn{letter-spacing: .1rem; border: 1px solid var(--btn-color_background-color); color: var(--btn-color_background-color);}
     .btn:hover{background-color: var(--btn-color_background-color); color: rgba(255, 255, 255, 1);}
     .btn:hover a{color: rgba(255, 255, 255, 1);}
-    .BG_Green .btndiv{display: flex; justify-content: end;}
+    .BG_Green .btndiv{display: flex; justify-content: center;}
+    
 
     .card, .card-header, .card-footer{border-color:var(--logo_blue_03) ;}
     .card-header, .card-footer{background-color:var(--logo_blue_0125) ;}
@@ -348,7 +349,7 @@
     }
     .app-body .title-imgbox img{ width: AUTO; height: 65%;}
     .app-apn{background-color: #e0e0e0; padding: 0.2rem;} 
-    .app-apn ul{display: flex; justify-content: center;}
+    /*.app-apn ul{display: flex; justify-content: center;}*/
     .app-apn a{padding: 0 0.5rem;}
 
 
@@ -366,6 +367,7 @@
         .BG_Green .item{width: 50%;}
         .BG_Green .item:nth-child(2){margin-top: 0rem; margin-left: 2rem;}/*第二個item*/        
         .BG_Green .img_box{height: 100%;}
+        .BG_Green .btndiv{display: flex; justify-content: start;}
 
 
         .carousel-card .category, .category{    
