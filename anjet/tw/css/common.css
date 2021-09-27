@@ -11,6 +11,7 @@
         --btn-color_background-color:rgba(1, 64, 80, 1);
 
     }
+    .container-fluid{padding-right: var(--bs-gutter-x,0rem); padding-left: var(--bs-gutter-x,0rem);}
 
     body {background-color: var(--body_bg-color);}/**/
 
@@ -108,8 +109,11 @@
         background: url(../img/banner/index-maehe2.jpg) center 70% no-repeat;
         background-size: cover;/* 背景自動縮放 */
     }
+    .mezasu .container{width: 100vw;}
 
-    .syaikai{
+    .mezasu .wrap{width: 100%; border-radius: 0px;}
+
+    .focus{
         height: 90vh;
         background: url(../img/banner/Semiconductor_Probing.jpg) 50% 50% no-repeat;
         /* 背景自動縮放/固定 */
@@ -121,7 +125,7 @@
     .Shadow{box-shadow: 0px 3px 10px 1px rgba(0, 0, 0, 0.45);}
     .mezasu .Shadow{box-shadow: 0px 3px 15px 2px #113000;}
   
-    .Orange{color: #ff8800;/*rgb(255, 123, 0)*/}
+    .Orange-title{font-size: 2rem; color: #ff8800;/*rgb(255, 123, 0)*/ }
     .banner h2{padding-bottom: .8rem;}/*color: #000; margin-bottom: 1rem; border-bottom: 1px solid #ff8800; */
     
     .BG_Green{
@@ -341,7 +345,10 @@
 
         .container{max-width: 992px;}
         .banner .container{width: 580px;}
-        .banner .wrap{width: 100%;}
+
+        .Orange-title{font-size: 3rem;}
+
+        /*.banner .wrap{width: 100%;}*/
         .BG_Green{display: flex; align-items: center; }/* .item*/
         .BG_Green .item{width: 50%;}
         .BG_Green .item:nth-child(2){padding-top: 2rem;}/*第二個item*/
