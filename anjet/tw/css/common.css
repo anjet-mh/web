@@ -352,6 +352,9 @@
     /*.app-apn ul{display: flex; justify-content: center;}*/
     .app-apn a{padding: 0 0.5rem;}
 
+    #recruit_area .card-footer{ display: flex; justify-content: end;}
+    #recruit_area .card-footer a{margin-left: 0.5rem;}
+
 
     @media (min-width: 992px) {
         .top_space{margin-top: 65px;}/*65px*/
