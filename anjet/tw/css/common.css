@@ -30,8 +30,8 @@
     .BG_Green .btndiv{display: flex; justify-content: center;}
     
 
-    .card, .card-header, .card-footer{border-color:var(--logo_blue_03) ;}
-    .card-header, .card-footer{background-color:var(--logo_blue_0125) ;}
+    .card, .card-header, .card-footer{border-color: var(--logo_blue_03);}/*var(--btn-color_background-color)*/
+    .card-header, .card-footer{background-color:transparent; border-top: 0px;}/*var(--logo_blue_0125)*/
     .card-body{padding: 0rem 1rem 1rem;}
 
     #footer {
