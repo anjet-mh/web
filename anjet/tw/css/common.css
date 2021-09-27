@@ -353,7 +353,9 @@
     .app-apn a{padding: 0 0.5rem;}
 
     #recruit_area .card-footer{ display: flex; justify-content: end;}
-    #recruit_area .card-footer a{margin-left: 0.5rem;}
+
+    #recruit_area .card-footer .btn{margin-left: 0.5rem; border: 1px solid var(--logo_blue_03); color: var(--logo_blue);}
+    #recruit_area .card-footer .btn:hover{background-color: var(--logo_blue_03);}
 
 
     @media (min-width: 992px) {
