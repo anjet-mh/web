@@ -23,7 +23,11 @@
     p {font-weight: 300; margin-bottom: 0rem; /*line-height: 0.8rem;*/}
     ol, ul {padding: 0rem; margin: 0rem;}
     ol li {list-style-type: square; font-weight: 300; line-height: 2rem; }
-    
+
+    .btn{letter-spacing: .1rem; border: 1px solid var(--btn-color_background-color); color: var(--btn-color_background-color);}
+    .btn:hover{background-color: var(--btn-color_background-color); color: rgba(255, 255, 255, 1);}
+    .btn:hover a{color: rgba(255, 255, 255, 1);}
+    .BG_Green .btndiv{display: flex; justify-content: end;}
 
     .card, .card-header, .card-footer{border-color:var(--logo_blue_03) ;}
     .card-header, .card-footer{background-color:var(--logo_blue_0125) ;}
@@ -141,7 +145,7 @@
     .BG_Green .item:nth-child(2){margin-top: 1rem; }/*第二個item*/
     .BG_Blue{background-color: rgb(210, 241, 255);}
     .BG_Green p, .focus p{font-size: 1.2rem;}
-    .BG_Green .btn{margin-top: 2rem; margin-right: 0rem;}
+    .BG_Green .btn{margin-top: 2rem;}
     
     .img_box{width: 100%; text-align: center; overflow: hidden;}
     .img_box img{width: 100%;}
@@ -385,9 +389,7 @@
         #contactus_area_no_hash .left{width: 300px;}
         #contactus_area_no_hash .right{width:calc(100% - 300px)}
         #contactus_area_no_hash label {border-bottom: 1px solid rgba(0, 0, 0, 0.12);}
-        .btn{letter-spacing: .1rem; border: 1px solid var(--btn-color_background-color); color: var(--btn-color_background-color);}
-        .btn:hover{background-color: var(--btn-color_background-color); color: rgba(255, 255, 255, 1);}
-        .btn:hover a{color: rgba(255, 255, 255, 1);}
+
 
         .app-BOX{display: flex; flex-wrap: wrap; }
         .app-height{height: 100%; display: flex; flex-direction: column; justify-content: space-between;}
