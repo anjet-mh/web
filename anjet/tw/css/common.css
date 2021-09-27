@@ -141,6 +141,7 @@
     .BG_Green .item:nth-child(2){margin-top: 1rem; }/*第二個item*/
     .BG_Blue{background-color: rgb(210, 241, 255);}
     .BG_Green p, .focus p{font-size: 1.2rem;}
+    .BG_Green .btn{margin-top: 2rem; margin-right: 0rem;}
     
     .img_box{width: 100%; text-align: center; overflow: hidden;}
     .img_box img{width: 100%;}
@@ -361,7 +362,7 @@
         .BG_Green .item{width: 50%;}
         .BG_Green .item:nth-child(2){margin-top: 0rem; margin-left: 2rem;}/*第二個item*/        
         .BG_Green .img_box{height: 100%;}
-        
+
 
         .carousel-card .category, .category{    
             width: 130px;
