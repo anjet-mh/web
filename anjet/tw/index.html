@@ -33,7 +33,7 @@
 <!-- <div class="top_space"></div>調整上方空間用 -->
 
   <div class="area banner mezasu">
-    <div class="container-fluid">
+    <div class="container">
       <!--container為定寬容器(根據容器變固定寬度 且有最大寬的限制) 加上-fluid後 變寬為100%-->
       <div class="wrap Shadow">
         <h3 class="Orange-title">Make Difference in<br>Green Technologies</h3>
@@ -41,12 +41,10 @@
       </div>
     </div>
   </div>
-
-  <!--<div class="area">
-    <div class="wrap">
-      <div class="vision">
-        <div class="title">願景</div>
-        <p>成為性價比最高的碳化矽/氮化鎵功率器件供應商</p>
+<!--
+  <div id="vision_area" class="area ">
+        <div class="item"><div class="title">願景</div></div>
+        <div class="item"><p>成為性價比最高的碳化矽/氮化鎵功率器件供應商</p></div>
       </div>
     </div>
   </div>
@@ -66,8 +64,23 @@
         </div>
       </div>
     </div> 
-  -->
-  
+-->
+
+  <div class="area">
+    <div class="BG_Green">
+      <div class="item">
+        <div class="img_box">
+          <img src="./img/banner/green_mos.jpg" alt="...">
+        </div>
+      </div>
+      <div class="item">
+        <h2>節能減碳</h2>
+        <div>功率半導體能夠為相關的電力設備（如：電動車、電力儲存設備...）提供更高的電能轉換效率，以達到節能減碳的目的。
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="area banner focus">
     <div class="container">
       <div class="wrap Shadow">
@@ -93,102 +106,82 @@
     </div>
   </div>
   -->
-  <div class="area">
-    <div class="BG_Green">
+
 
   
-        <div class="item">
-          <div class="img_box">
-            <img src="./img/banner/green_mos.jpg" alt="...">
-          </div>
-        </div>
-
-        <div class="item">
-          
-            <h2>節能減碳</h2>
-            <div>至今研發出的功率半導體能夠為相關的電力設備（如：電動車、電力儲存設備...）提供更高的電能轉換效率，不只能達到節能減碳的目的。亦可使其設備的體積變小，創造出更多有效空間。</div>
-          
-        </div>
-
-      
-    </div>
-  </div>
-  </div>
   
+  <!-- PRODUCT - 製品 S -->
+  <div id="product_area" class="area">
+    <!--product-area-->
+    <div class="container">
+      <!--mt-4*/-->
   
-    <!-- PRODUCT - 製品 S -->
-    <div id="product_area" class="area">
-      <!--product-area-->
-      <div class="container">
-        <!--mt-4*/-->
-    
-        <div class="wrap">
-          <h2 class="title">功率半導體元件
-            <!--<span class="sub_title">PRODUCT</span><a class="title_btn" href="product.html">more</a>-->
-          </h2>
-          <div class="card_box">
-            <div class="card mb-3">
-              <div class="card-header">
-                <div class="card-img">
-                    <img src="../img/product/TO-220-AC1-0.png" alt="...">
-                  </div>
-                <h5 class="card-title text-center">SiC SBD 650V-1200V (2A～20A)</h5>                
+      <div class="wrap">
+        <h2 class="title">產品
+          <!--<span class="sub_title">PRODUCT</span><a class="title_btn" href="product.html">more</a>-->
+        </h2>
+        <div class="card_box">
+          <div class="card mb-3">
+            <div class="card-header">
+              <div class="card-img">
+                <img src="../img/product/TO-220-AC1-0.png" alt="...">
               </div>
-              <div class="card-body">
-                <div class="row">
-                  
-                  <div class="card-text">
-                    
-                    <h6>Key features</h6>
-                    <ol>
-                      <li>Best-in-class low VF:1.35V</li>
-                      <li>High surge ruggedness</li>
-                      <li>Temperature independent switching behavior</li>
-                      <li>Low cost</li>
-                      <li>High reliability</li>
-                    </ol>
-                  </div>
-                  <div class="card-text">
-                    <h6>Key technologies</h6>
-                    <ol>
-                      <li>Advanced junction barrier schottky structure</li>
-                      <li>Advanced termination structure</li>
-                      <li>thin Wafer</li>
-                    </ol>
-                  </div>
+              <h5 class="card-title text-center">SiC SBD 650V-1200V (2A～20A)</h5>
+            </div>
+            <div class="card-body">
+              <div class="row">
+  
+                <div class="card-text">
+  
+                  <h6>Key features</h6>
+                  <ol>
+                    <li>Best-in-class low VF:1.35V</li>
+                    <li>High surge ruggedness</li>
+                    <li>Temperature independent switching behavior</li>
+                    <li>Low cost</li>
+                    <li>High reliability</li>
+                  </ol>
+                </div>
+                <div class="card-text">
+                  <h6>Key technologies</h6>
+                  <ol>
+                    <li>Advanced junction barrier schottky structure</li>
+                    <li>Advanced termination structure</li>
+                    <li>thin Wafer</li>
+                  </ol>
                 </div>
               </div>
             </div>
-    
-            <div class="card mb-3">
-              <div class="card-header">
-                <div class="card-img">
-                    <img src="../img/product/TO-220-AC1-1.png" alt="...">
-                </div>
-                <h5 class="card-title text-center">SiC DMOS 650V/1200V (100mΩ～20mΩ)</h5>
+          </div>
+  
+          <div class="card mb-3">
+            <div class="card-header">
+              <div class="card-img">
+                <img src="../img/product/TO-220-AC1-1.png" alt="...">
               </div>
-              <div class="card-body">
-                <div class="row">
-                  
-                  <div class="card-text">
-                    <h6>Key features</h6>
-                    <ol>
-                      <li>Best-in-class low Rsp:≒3.3mΩ･cm<sup>2</sup> </li>
-                      <li>Enough break down voltage</li>
-                      <li>Low Cgd</li>
-                      <li>Low cost</li>
-                      <li>High reliability</li>
-                    </ol>
-                  </div>
-                  <div style="margin-bottom: 32px;"></div>
-                  <div class="card-text">
-                    <h6>Key technologies</h6>
-                    <ol>
-                      <li>Advanced DMOS self-align structure</li>
-                      <li>Advanced termination structure</li>
-                      <li>thin Wafer</li>
-                    </ol>
-                  </div>
+              <h5 class="card-title text-center">SiC DMOS 650V/1200V (100mΩ～20mΩ)</h5>
+            </div>
+            <div class="card-body">
+              <div class="row">
+  
+                <div class="card-text">
+                  <h6>Key features</h6>
+                  <ol>
+                    <li>Best-in-class low Rsp:≒3.3mΩ･cm<sup>2</sup> </li>
+                    <li>Enough break down voltage</li>
+                    <li>Low Cgd</li>
+                    <li>Low cost</li>
+                    <li>High reliability</li>
+                  </ol>
+                </div>
+                <div style="margin-bottom: 32px;"></div>
+                <div class="card-text">
+                  <h6>Key technologies</h6>
+                  <ol>
+                    <li>Advanced DMOS self-align structure</li>
+                    <li>Advanced termination structure</li>
+                    <li>thin Wafer</li>
+                  </ol>
                 </div>
               </div>
             </div>
@@ -196,9 +189,8 @@
         </div>
       </div>
     </div>
-    
-  
-    <!-- PRODUCT - 製品 E -->
+  </div>
+  <!-- PRODUCT - 製品 E -->
 
 
   <!-- 頁尾-->
