@@ -139,6 +139,7 @@
     .BG_Green .item{width: 100%; margin: 0rem; padding: 4rem 2rem;}
     .BG_Green .item:nth-child(2){padding-top: 0rem; }/*第二個item*/
     .BG_Blue{background-color: rgb(210, 241, 255);}
+    .BG_Green p, .focus p{font-size: 1.5rem;}
     
     .img_box{width: 100%; text-align: center; overflow: hidden;}
     .img_box img{width: 100%;}
