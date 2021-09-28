@@ -99,7 +99,7 @@
     /*.index .area{padding: 2rem 0;}*/
     .area.banner{display: flex; align-items: center;/*垂直置中*/}
     .container{display: flex; justify-content: center;/*左右置中*/ padding: 0;}
-    .wrap{width: 100%; padding: 40px;}
+    .wrap{width: 100%; padding: 20px;}
     .content{ margin-top: 2rem;}
 
     .banner .wrap{
@@ -160,15 +160,16 @@
     
 
     .carousel-card .category, .category{ 
-        width: 85px;/**/
-        height: 40px;
-        line-height: 40px;
+        width: 150px;/**/
+        height: 40px;/**/
+        line-height: 40px;/**/
         background-color: var(--category_bg-color);/*#a0a0a0*/
         color: #fff;
         font-size: 1.1rem;
         /*text-align: center;*/
         position: relative;
-        padding-left: 10px;
+        padding: 0px 10px;
+        margin-bottom: 1rem;
     }
     .carousel-card a{font-weight: 700;}
     .carousel-card .serial_number{font-size: 0.9rem;}
@@ -360,6 +361,7 @@
 
 
     @media (min-width: 992px) {
+        .wrap{padding: 40px;}
         .top_space{margin-top: 65px;}/*65px*/
         #footer .card-body {text-align: center;}
 
@@ -377,7 +379,7 @@
 
 
         .carousel-card .category, .category{    
-            width: 130px;
+            width: 200px;/**/
             font-size: 1.5rem;
             /*padding-left: 1.2rem;*/
         }
