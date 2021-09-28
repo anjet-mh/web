@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <!--<link rel="stylesheet" href="../css/all.css"> -->
+  <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="./css/common.css" rel="stylesheet" type="text/css">
+  <link href="./css/nav-sub.css" rel="stylesheet" type="text/css">
+
+  <script src="https://kit.fontawesome.com/4e45cb4cc4.js" crossorigin="anonymous"></script>
+
+  <title>ANJET - Product-650V/2A</title>
+
+</head>
+
+<body class="div-gradient">
+
+  <!-- 選單 -->
+  <div id="load-nav"></div>
+  <!-- 選單 -->
+
+  <div class="top_space"></div><!-- 調整上方空間用 -->
+
+  <!--banner-->
+  <div class="banner1 product">
+    <div class="container1">
+      <div class="banner1-txt">
+        <h1>SBD</h1>650V/2A
+      </div>
+    </div>
+  </div>
+  <!--banner-->
+
+  <div id="product_area" class="area">
+    <div class="container">
+  
+      <div class="wrap">
+        <div class="Package">
+          <div class="item">
+            <div class="photo">
+              <div class="title">Package</div>
+              <div class="img"><img src="./img/product/to-220ac-2l-1.png" alt=""></div>
+              <div class="text">TO-220AC</div>
+            </div>
+            <div class="photo">
+              <div class="title">Pin Configuration</div>
+              <div class="img"><img src="./img/product/to-220ac-2l-3.png" alt=""></div>
+            </div>
+            <div class="photo">
+              <div class="title">Circuit Diagram</div>
+              <div class="img">
+                <img src="./img/product/to-220ac-2l-4.png" alt="">
+                <div class="text">
+                  <ol>
+                    <li>Cathode</li>
+                    <li>Anode</li>
+                    <li>Cathode</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="content">
+          <div class="item">
+            <div class="title">Features</div>
+            <div class="text">
+              <ol>
+                <li>Low Forward Voltage (VF)</li>
+                <li>Shorter recovery time</li>
+                <li>High speed switching</li>
+                <li>High surge current capability</li>
+                <li>Enabling higher frequency and increased power density</li>
+                <li>System efficiency improvement</li>
+                <li>System cost and size savings due to the reduced cooling requirements</li>
+              </ol>
+            </div>
+          </div>
+  
+          <div class="item">
+            <div class="title">Applications</div>
+            <div class="text">
+              <ol>
+                <li>Power Factor Correction in SMPS</li>
+                <li>Solar inverter</li>
+                <li>Uninterruptible Power Supply</li>
+                <li>EV Charging Stations</li>
+                <li>Data Center</li>
+              </ol>
+            </div>
+          </div>
+  
+          <div class="item">
+            <div class="title">Mechanical Characteristics</div>
+            <div class="text">
+              <ol>
+                <li>TO-220-2L package</li>
+                <li>Pb-Free, Halogen Free, RoHS Compliant</li>
+                <li>Packaging: Tube</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- 頁尾-->
+  <div id="load-footer"></div>
+  <!-- 頁尾-->
+
+
+
+  <!-- Optional JavaScript; choose one of the two! -->
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="../js/bootstrap.bundle.min.js"></script>
+  <!--<script src="Bootstrap5/js/bootstrap.min.js"></script>
+     Option 2: Separate Popper and Bootstrap JS -->
+  <script src="../js/popper.min.js"></script>
+
+  <script src="../js/jquery-3.5.1.js"></script>
+  <div class="page_name" style="display: none;"></div>
+  <!--塞數據-->
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $("#load-nav").load("nav.html");
+      $("#load-footer").load("footer.html");
+      $(".page_name").data("namedata", "product");/* 要修改成"product" */
+      /*在.page_name的div裡面添加namedata=newspage數據 給選單判斷加入.active用*/
+
+
+      $(".Back_to_list_btn").hide();
+
+      $(".item>a").click(function () {
+        var pagedata = "news/" + $(this).attr('href').replace('#', '') + ".html";
+        //var pagedata = "news/" + $(this).attr('class') +".html";
+        $("#load-news").load(pagedata);
+        $("#news_list_area").hide();
+        $(".Back_to_list_btn").show();
+      });
+
+      // $(".Back_to_list_btn").click(function(){
+      //   $(".Back_to_list_btn").hide();
+      //   $("#news_page_area").hide();
+      //   $("#news_list_area").show();
+      // });
+
+
+      $(function () {
+        var getnextpagehash = "news/" + location.hash.replace('#', '') + ".html";
+        if (getnextpagehash != "news/.html") {
+          $("#load-news").load(getnextpagehash);
+          $("#news_list_area").hide();
+          $(".Back_to_list_btn").show();
+        }
+      });
+
+      /* window.addEventListener('popstate', (event) => {window.location.reload();}) */
+
+    });
+
+  </script>
+
+</body>
+
+</html>
