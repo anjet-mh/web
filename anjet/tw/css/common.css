@@ -17,6 +17,7 @@
 
     * {margin: 0; padding: 0; list-style: none; font-family: 'Noto Sans TC', sans-serif; letter-spacing:.05rem;}
     h2{margin-bottom: 1rem; color:var(--h2_color); border-bottom: 1px solid var(--h2_color); padding-bottom: .8rem;}
+    h4{font-size: 1.27rem;}
     h4, h5{margin: 0.5rem 0rem 1rem;}
     a{text-decoration: none; color: #000;}
     a:hover {color: var(--logo_blue)}
