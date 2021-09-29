@@ -451,8 +451,8 @@
 
         #product_area .item{/*width: 48.5%;*/margin-bottom: 2%; padding: 0 0 0.5rem; display: flex;}
         #product_area .Package .item { justify-content: space-between;}
-        #product_area .photo{width: 30%; margin-bottom: 0rem;}
-        #product_area img{width: 120px;}
+        #product_area .photo{width: 32%; margin-bottom: 0rem;}
+        #product_area img{width: 135px;}
         #product_area .content .title{width: 20%; padding-right: 1rem; margin-bottom: 0rem; padding-bottom: 0rem; border-right:  1px solid var(--logo_blue2); border-bottom: 0px;}/*var(--logo_blue_03)*/
         #product_area .text{width: auto; padding-left: 1rem;}
         #product_area ol{margin-left: 1.2rem;}
