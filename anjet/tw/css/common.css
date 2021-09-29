@@ -263,7 +263,7 @@
     }
     .banner1.recruit{
         background: linear-gradient(115deg, #022d41 10%, transparent 80%) center center / 100% 100%,
-        url("../img/banner/handshake-1237743.jpg") right center /100% auto;
+        url("../img/banner/handshake-1237743.jpg") right 48% /100% auto;
     }
     .banner1.contactus{
         background: linear-gradient(115deg, #022d41 10%, transparent 80%) center center / 100% 100%,
@@ -275,7 +275,7 @@
     }
     .banner1.applications{
         background: linear-gradient(0deg, #022d41 10%, transparent 80%) center center / 100% 100%,
-        url("../img/banner/applications.jpg")no-repeat right 5% / 100% auto;
+        url("../img/banner/applications.jpg")no-repeat right 15% / 100% auto;
     }
 
 /* -----------------*/   
