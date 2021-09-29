@@ -356,7 +356,7 @@
     }
     .app-body .title-imgbox img{ width: AUTO; height: 65%;}
     /*.app-body .app-text{font-size: 1rem; font-weight: 300;}*/
-    .app-apn{background-color: #e0e0e0; padding: 0.2rem; font-weight: 300;} 
+    .app-apn{background-color: #e0e0e0; padding: 0.2rem 0.2rem; font-weight: 300;} 
     /*.app-apn ul{display: flex; justify-content: center;}*/
     .app-apn a{padding: 0 0.5rem;}
 
