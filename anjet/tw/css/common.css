@@ -49,8 +49,8 @@
     #footer, #footer a {color: #bdbdbd;}
     #footer a:hover{color: #ffffff; border-bottom: 1px solid #ffffff;}
 
-    .copyright {border-top: 1px solid #bdbdbd; padding-top: 8px;}
-    .copyright p{margin:1rem 0;}
+    .copyright {border-top: 1px solid #bdbdbd;}
+    .copyright p{margin:1.5rem 0;}
 
       /*回到最上按鈕 起始*/
     
@@ -298,9 +298,9 @@
     #vision_area .title{margin: 35px 0; font-size: 2rem; font-weight: 600; color: #00b6b6;}
     #vision_area p{margin:0 0 35px; font-size: 1.5rem;}
 
-
+    #product_card_area .card{border: unset; background-color: unset;}
     #product_card_area .card-header{text-align: center;}
-    #product_card_area .card-img {text-align: center;margin-bottom: 1rem;}
+    #product_card_area .card-img {text-align: center; margin-bottom: 1rem;}
     #product_card_area img{width: 30%;}
     /*.card-title{margin-bottom: 1rem;}*/
     .card-text h6{margin: 0.8rem 0rem 0.2rem;}
