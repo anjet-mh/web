@@ -385,6 +385,18 @@
     /*#product_area .item:nth-child(odd){background-color: #dbf1ff;}
     #product_area .item:nth-child(even){background-color: #fff4db;}*/
 
+    .nav-tabs{margin-bottom: 1rem; border-color: var(--logo_blue2);}
+    .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+        color: var(--logo_blue2);
+        background-color: unset;
+        border-color: var(--logo_blue2) var(--logo_blue2) var(--body_bg-color);
+    }
+    .nav-tabs .nav-link:hover {
+        border-color: var(--logo_blue_03) var(--logo_blue_03) var(--logo_blue_03);
+        isolation: isolate;
+    }
+
+
     @media (min-width: 992px) {
         .wrap{padding: 40px;}
         .top_space{margin-top: 65px;}/*65px*/
