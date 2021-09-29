@@ -362,12 +362,12 @@
     #recruit_area .link1104 .btn{z-index: 1; margin:-1px 0px -1px -1px; border: 1px solid var(--logo_blue_03); border-top: white; background-color: #ffffff; color: var(--logo_blue); border-radius: 0px 0px 2px 2px;}
     #recruit_area .link1104 .btn:hover{background-color: var(--logo_blue_03);}
 
-    #product_area .item{margin: 2% 0% 8%; padding: 1rem; border: 1px solid var(--logo_blue_03);}
+    #product_area .item{margin: 2% 0% 4%; padding: 1rem; border: 1px solid var(--logo_blue_03);}
     #product_area .title{ font-size: 1.2rem; padding-bottom: 0.5rem; margin-bottom: 0.5rem; border-bottom: 1px solid var(--logo_blue_03);}
-    #product_area .packing-style{}
+
     #product_area .part-item {display: flex; margin-bottom: 1rem;}
-    #product_area .part-spec-detail{padding-right: 0.5rem; }
-    #product_area .part-spec-val{}
+    #product_area .part-spec-detail{padding-right: 0.3rem; }
+
     #product_area ol{margin-left: 1.5rem; text-align: left;}
     #product_area .photo{text-align: center; margin-bottom: 2rem;}
     #product_area .photo .text{padding-left: 0rem;}
@@ -427,8 +427,8 @@
         .app-apn{width: 100%;}
         /*.clear{clear: both;}*/
 
-            
-        #product_area .item{/*width: 48.5%;*/ padding: 0.5rem; display: flex;}
+
+        #product_area .item{/*width: 48.5%;*/margin-bottom: 2%; padding: 0.5rem; display: flex;}
         #product_area .Package .item { justify-content: space-between;}
         #product_area .photo{width: 30%; margin-bottom: 0rem;}
         
