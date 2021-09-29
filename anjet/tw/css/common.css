@@ -25,8 +25,8 @@
     p {font-weight: 300; margin-bottom: 0rem; /*line-height: 0.8rem;*/}
     ol, ul {padding: 0rem; margin: 0rem;}
     ol li {list-style-type: square; font-weight: 300; line-height: 2rem; }
-    .form-control{border-color: var(--logo_blue2);}/*var(--logo_blue_03)*/
-    
+    .form-control{border-color: var(--logo_blue2); }/*var(--logo_blue_03)*/
+    .form-control::placeholder{color: #acacac;}
     .btn{letter-spacing: .1rem; border: 1px solid var(--logo_blue2); color: var(--logo_blue2);}/*--btn-color_background-color*/
     .btn:hover{background-color: var(--logo_blue2); color: rgba(255, 255, 255, 1);}/*--btn-color_background-color*/
     .btn:hover a{color: rgba(255, 255, 255, 1);}
