@@ -35,7 +35,7 @@
     .card{padding: 0 8px;}
     .card, .card-header, .card-footer{border-color: var(--h2_color);}/*var(--logo_blue_03) var(--btn-color_background-color)*/
     .card-header, .card-footer{background-color:unset; border-top: 5px;}/*var(--logo_blue_0125)*/
-    .card-body{padding: 0rem 0.8rem 1rem;}
+    .card-body{padding: 0rem 0.3rem 1rem;}
 
     #footer {
         background-color: #313131;
