@@ -24,7 +24,7 @@
     p {font-weight: 300; margin-bottom: 0rem; /*line-height: 0.8rem;*/}
     ol, ul {padding: 0rem; margin: 0rem;}
     ol li {list-style-type: square; font-weight: 300; line-height: 2rem; }
-
+    .form-control{border-color: var(--logo_blue_03);}
     .btn{letter-spacing: .1rem; border: 1px solid var(--btn-color_background-color); color: var(--btn-color_background-color);}
     .btn:hover{background-color: var(--btn-color_background-color); color: rgba(255, 255, 255, 1);}
     .btn:hover a{color: rgba(255, 255, 255, 1);}
@@ -33,7 +33,7 @@
 
     .card, .card-header, .card-footer{border-color: var(--logo_blue_03);}/*var(--btn-color_background-color)*/
     .card-header, .card-footer{background-color:transparent; border-top: 0px;}/*var(--logo_blue_0125)*/
-    .card-body{padding: 0rem 1rem 1rem;}
+    .card-body{padding: 0rem 0.8rem 1rem;}
 
     #footer {
         background-color: #313131;
@@ -412,7 +412,7 @@
 
         #contactus_area_no_hash .left{width: 300px;}
         #contactus_area_no_hash .right{width:calc(100% - 300px)}
-        #contactus_area_no_hash label {border-bottom: 1px solid rgba(0, 0, 0, 0.12);}
+        #contactus_area_no_hash label {border-bottom: 1px solid var(--logo_blue_03);}
 
 
         .app-BOX{display: flex; flex-wrap: wrap; }
