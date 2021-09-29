@@ -44,7 +44,7 @@
         <div class="Package">
           <div class="item">
             <div class="photo">
-              <div class="title">Package</div>
+              <div class="title">封裝</div><!--Package-->
               <div class="img">
                 <img src="./img/product/to-220ac-2l-1.png" alt="">
                 <img src="./img/product/to-220ac-2l-2.png" alt="">
@@ -52,11 +52,11 @@
               <!--<div class="text">TO-220AC-2L</div>-->
             </div>
             <div class="photo">
-              <div class="title">Pin Configuration</div>
+              <div class="title">引腳配置</div><!--Pin Configuration-->
               <div class="img"><img src="./img/product/to-220ac-2l-3.png" alt=""></div>
             </div>
             <div class="photo">
-              <div class="title">Circuit Diagram</div>
+              <div class="title">電路圖</div><!--Circuit Diagram-->
               <div class="img">
                 <img src="./img/product/to-220ac-2l-4.png" alt="">
                 <div class="text">
@@ -157,36 +157,6 @@
       $("#load-footer").load("footer.html");
       $(".page_name").data("namedata", "product");/* 要修改成"product" */
       /*在.page_name的div裡面添加namedata=newspage數據 給選單判斷加入.active用*/
-
-
-      $(".Back_to_list_btn").hide();
-
-      $(".item>a").click(function () {
-        var pagedata = "news/" + $(this).attr('href').replace('#', '') + ".html";
-        //var pagedata = "news/" + $(this).attr('class') +".html";
-        $("#load-news").load(pagedata);
-        $("#news_list_area").hide();
-        $(".Back_to_list_btn").show();
-      });
-
-      // $(".Back_to_list_btn").click(function(){
-      //   $(".Back_to_list_btn").hide();
-      //   $("#news_page_area").hide();
-      //   $("#news_list_area").show();
-      // });
-
-
-      $(function () {
-        var getnextpagehash = "news/" + location.hash.replace('#', '') + ".html";
-        if (getnextpagehash != "news/.html") {
-          $("#load-news").load(getnextpagehash);
-          $("#news_list_area").hide();
-          $(".Back_to_list_btn").show();
-        }
-      });
-
-      /* window.addEventListener('popstate', (event) => {window.location.reload();}) */
-
     });
 
   </script>
