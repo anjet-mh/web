@@ -25,14 +25,16 @@
     ol, ul {padding: 0rem; margin: 0rem;}
     ol li {list-style-type: square; font-weight: 300; line-height: 2rem; }
     .form-control{border-color: var(--h2_color);}/*var(--logo_blue_03)*/
-    .btn{letter-spacing: .1rem; border: 1px solid var(--btn-color_background-color); color: var(--btn-color_background-color);}
-    .btn:hover{background-color: var(--btn-color_background-color); color: rgba(255, 255, 255, 1);}
+    
+    .btn{letter-spacing: .1rem; border: 1px solid var(--h2_color); color: var(--h2_color);}/*--btn-color_background-color*/
+    .btn:hover{background-color: var(--h2_color); color: rgba(255, 255, 255, 1);}/*--btn-color_background-color*/
     .btn:hover a{color: rgba(255, 255, 255, 1);}
+    
     .BG_Green .btndiv{display: flex; justify-content: center;}
     
     .card{padding: 0 8px;}
     .card, .card-header, .card-footer{border-color: var(--h2_color);}/*var(--logo_blue_03) var(--btn-color_background-color)*/
-    .card-header, .card-footer{background-color:transparent; border-top: 0px;}/*var(--logo_blue_0125)*/
+    .card-header, .card-footer{background-color:unset; border-top: 5px;}/*var(--logo_blue_0125)*/
     .card-body{padding: 0rem 0.8rem 1rem;}
 
     #footer {
@@ -318,14 +320,15 @@
     }
     #contactus_area_no_hash p{font-size: .9rem; margin: .2rem 0; letter-spacing: .1rem;}
     #contactus_area_no_hash .setsumei{margin-bottom: 3rem;}
-    #contactus_area_no_hash .badge{padding: .35em .8em;font-weight: 300;font-size: .4em;margin-right: .5em;letter-spacing: 0rem;}
+    #contactus_area_no_hash .bg-danger{background-color: #e26060!important;}
+    #contactus_area_no_hash .badge{padding: 0rem .35rem;font-size: 10pt; font-weight: 300; margin-right: .5rem; letter-spacing: 0.1rem; line-height: unset;}
     #contactus_area_no_hash p > a, #policy_area p > a{text-decoration: underline;}
     #contactus_area_no_hash label {color:var(--h2_color);}
 
     #policy_area h4{margin: 2rem 1rem .5rem;}
     #policy_area .section_body p, #policy_area ul{margin: 0 2.5rem 0;}/* font-size: .88rem;line-height: 1.8rem;*/
     #policy_area .section_body p.t0{margin-left: 1.4rem;}
-    #policy_area ul li{margin-left: 1.4rem; padding-left: 1.8rem;font-weight: 300;}
+    #policy_area ul li{margin-left: 1.4rem; padding-left: 1.8rem; font-weight: 300;}
     #policy_area ul{counter-reset: li;}
     #policy_area ul li{position: relative;}
     #policy_area ul li::before{
@@ -343,7 +346,7 @@
     .app-body .title-imgbox{
         width: 120px;
         height: 120px;
-        background-color: #265179;
+        background-color: var(--h2_color);
         border-radius: 50%;
         margin: auto;
         margin-bottom: 1rem;
@@ -360,7 +363,7 @@
     #recruit_area .col {margin-bottom: 3rem;}
     #recruit_area .card{border-radius: 2px 0px 2px 2px;}
     #recruit_area .link1104{display: flex; justify-content: end;}
-    #recruit_area .link1104 .btn{z-index: 1; margin:-1px 0px -1px -1px; background-color: #ffffff; border: 1px solid var(--h2_color); color: var(--h2_color); border-top: white; border-radius: 0px 0px 2px 2px;}
+    #recruit_area .link1104 .btn{z-index: 1; margin:-1px 0px -1px -1px; background-color: #ffffff; border-top: white; border-radius: 0px 0px 2px 2px;}
     #recruit_area .link1104 .btn:hover{background-color: var(--h2_color); color: #ffffff;}
 
     #product_area .item{margin: 2% 0% 4%; padding: 1rem; }/*border: 1px solid var(--logo_blue_03);*/
@@ -419,7 +422,7 @@
 
         #contactus_area_no_hash .left{width: 300px;}
         #contactus_area_no_hash .right{width:calc(100% - 300px);}
-        #contactus_area_no_hash label {border-bottom: 1px solid var(--h2_color);}/*var(--logo_blue_03)*/
+        /*#contactus_area_no_hash label {border-bottom: 1px solid var(--h2_color);}var(--logo_blue_03)*/
 
 
         .app-BOX{display: flex; flex-wrap: wrap; }
