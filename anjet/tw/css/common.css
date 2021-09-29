@@ -163,7 +163,7 @@
 
     
 
-    .carousel-card .category, .category{ 
+    .carousel-card .category, .category, #product_area .apn{ 
         width: 170px;/**/
         height: 40px;/**/
         line-height: 40px;/**/
@@ -367,7 +367,8 @@
     #recruit_area .link1104 .btn{z-index: 1; margin:-1px 0px -1px -1px; background-color: #ffffff; border-top: white; border-radius: 0px 0px 2px 2px;}
     #recruit_area .link1104 .btn:hover{background-color: var(--logo_blue2); color: #ffffff;}
 
-    #product_area .item{margin: 2% 0% 4%; padding: 1rem; }/*border: 1px solid var(--logo_blue_03);*/
+    #product_area .apn{width: 100%; font-size: 1.8rem; text-align: center; margin-bottom: 2rem;}
+    #product_area .item{margin: 0% 0% 4%; padding: 1rem; }/*border: 1px solid var(--logo_blue_03);*/
     #product_area .title{ font-size: 1.2rem; padding-bottom: 0.5rem; margin-bottom: 0.5rem; color: var(--logo_blue2) ; border-bottom: 1px solid var(--logo_blue2);}/*--logo_blue_03*/
     #product_area .packing-style{font-weight: 300;}
     #product_area .part-item {display: flex; margin-bottom: 1rem;}
@@ -391,11 +392,12 @@
         /*background-color: unset;*/
         border-color: var(--logo_blue2) var(--logo_blue2) #ffffff;
     }
+    .nav-tabs .nav-link {color: rgb(80, 80,80);}
     .nav-tabs .nav-link:hover {
         border-color: var(--logo_blue_03) var(--logo_blue_03) var(--logo_blue_03);
         isolation: isolate;
     }
-    #nav-tabContent{padding: 2rem 0; background-color: #ffffff;}
+    #nav-tabContent{padding: 0.8rem 0 2rem; background-color: #ffffff;}
     #nav-tabContent .img-data{text-align: center; }
     #nav-tabContent .img-data img{width: 98%;}
 
@@ -447,7 +449,7 @@
         /*.clear{clear: both;}*/
 
 
-        #product_area .item{/*width: 48.5%;*/margin-bottom: 2%; padding: 0.5rem; display: flex;}
+        #product_area .item{/*width: 48.5%;*/margin-bottom: 2%; padding: 0 0 0.5rem; display: flex;}
         #product_area .Package .item { justify-content: space-between;}
         #product_area .photo{width: 30%; margin-bottom: 0rem;}
         #product_area img{width: 120px;}
