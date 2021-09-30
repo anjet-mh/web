@@ -368,7 +368,7 @@
     #recruit_area .link1104 .btn{z-index: 1; margin:-1px 0px -1px -1px; background-color: #ffffff; border-top: white; border-radius: 0px 0px 2px 2px;}
     #recruit_area .link1104 .btn:hover{background-color: var(--logo_blue2); color: #ffffff;}
 
-    #product_area .apn{width: 100%; font-size: 1.8rem; text-align: center; margin-bottom: 2rem;}
+    #product_area .apn{width: 100%;height: auto; font-size: 1.8rem; text-align: center; margin-bottom: 2rem; padding: 0.5rem;}
     #product_area .item{margin: 0% 0% 4%; padding: 1rem; }/*border: 1px solid var(--logo_blue_03);*/
     #product_area .title{ font-size: 1.2rem; padding-bottom: 0.5rem; margin-bottom: 0.5rem; color: var(--logo_blue2) ; border-bottom: 1px solid var(--logo_blue2);}/*--logo_blue_03*/
     #product_area .packing-style{font-weight: 300;}
@@ -382,6 +382,11 @@
     #product_area img{width: 130px;}
     #product_area .photo li{list-style-type: decimal;} 
     #product_area .content{margin-top: 0rem; }
+    
+    #product_area .nav-link.pdf_dl{background-color: var(--logo_blue2);border: 0px;}
+    #product_area .nav-link.pdf_dl a{color: #ffffff; }
+    #product_area .nav-link.pdf_dl img{width: auto; height: 40px;margin-right: 0.5rem;}
+    #product_area .nav-link.pdf_dl:hover{background-color: #55b8df;}/*#00A7EA*/
 
     #product_area .certification_mark img{width: 80px; margin-right: 10px;}
     /*#product_area .item:nth-child(odd){background-color: #dbf1ff;}
@@ -401,6 +406,8 @@
     #nav-tabContent{padding: 0.8rem 0 2rem; background-color: #ffffff;}
     #nav-tabContent .img-data{text-align: center; }
     #nav-tabContent .img-data img{width: 98%;}
+
+
 
     @media (min-width: 992px) {
         .wrap{padding: 40px;}
@@ -451,7 +458,7 @@
 
 
         #product_area .item{/*width: 48.5%;*/margin-bottom: 2%; padding-bottom: 0.5rem; display: flex;}
-        #product_area .Package .item { justify-content: space-between;}
+        #product_area .Package .item { justify-content: space-between;margin-bottom: 6%;}
         #product_area .photo{width: 32%; margin-bottom: 0rem;}
         #product_area img{width: 135px;}
         #product_area .content .title{width: 20%; padding-right: 1rem; margin-bottom: 0rem; padding-bottom: 0rem; border-right:  1px solid var(--logo_blue2); border-bottom: 0px;}/*var(--logo_blue_03)*/
