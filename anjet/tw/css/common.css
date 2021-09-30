@@ -357,9 +357,9 @@
     }
     .app-body .title-imgbox img{ width: AUTO; height: 65%;}
     /*.app-body .app-text{font-size: 1rem; font-weight: 300;}*/
-    .app-apn{background-color: #e0e0e0; padding: 0.2rem 0.2rem; font-weight: 300;} 
-    /*.app-apn ul{display: flex; justify-content: center;}*/
-    .app-apn a{padding: 0 0.5rem;}
+    .app-info{background-color: #e0e0e0; padding: 0.2rem 0.2rem; font-weight: 300;} 
+    /*.app-info ul{display: flex; justify-content: center;}*/
+    .app-info a{padding: 0 0.5rem;}
 
     #recruit_area .col {margin-bottom: 3rem;}
     #recruit_area .card{border-radius: 2px 0px 2px 2px;}
@@ -445,7 +445,7 @@
         .app-BOX{display: flex; flex-wrap: wrap; }
         .app-height{height: 100%; display: flex; flex-direction: column; justify-content: space-between;}
         .app-body{width: 33.33%; padding: 0 1rem; }
-        .app-apn{width: 100%;}
+        .app-info{width: 100%;}
         /*.clear{clear: both;}*/
 
 
