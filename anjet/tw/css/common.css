@@ -385,7 +385,7 @@
     
     #product_area .nav-link.pdf_dl{background-color: var(--logo_blue2);border: 0px;}
     #product_area .nav-link.pdf_dl a{color: #ffffff; }
-    #product_area .nav-link.pdf_dl img{width: auto; height: 40px;}/*margin-right: 0.5rem;*/
+    #product_area .nav-link.pdf_dl img{width: auto; height: 30px; margin-right: 0.5rem;}/**/
     #product_area .nav-link.pdf_dl:hover{background-color: #55b8df;}/*#00A7EA*/
 
     #product_area .certification_mark img{width: 80px; margin-right: 10px;}
