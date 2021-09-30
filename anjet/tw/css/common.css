@@ -449,7 +449,7 @@
         /*.clear{clear: both;}*/
 
 
-        #product_area .item{/*width: 48.5%;*/margin-bottom: 2%; padding: 0 0 0.5rem; display: flex;}
+        #product_area .item{/*width: 48.5%;*/margin-bottom: 2%; padding-bottom: 0.5rem; display: flex;}
         #product_area .Package .item { justify-content: space-between;}
         #product_area .photo{width: 32%; margin-bottom: 0rem;}
         #product_area img{width: 135px;}
