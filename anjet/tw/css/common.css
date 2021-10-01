@@ -172,7 +172,6 @@
         /*text-align: center;*/
         position: relative;
         padding: 0px 10px;
-
         margin: 0rem 0rem 1rem;
     }
     .carousel-card a{font-weight: 700;}
@@ -368,7 +367,9 @@
     #recruit_area .link1104 .btn{z-index: 1; margin:-1px 0px -1px -1px; background-color: #ffffff; border-top: white; border-radius: 0px 0px 2px 2px;}
     #recruit_area .link1104 .btn:hover{background-color: var(--logo_blue2); color: #ffffff;}
 
-    #product_area .apn{width: 100%;height: auto; font-size: 1.8rem; text-align: center; margin-bottom: 2rem; padding: 0.5rem;}
+    #product_area .product_title{margin-bottom: 2rem;}
+    #product_area .apn{width: 100%;height: auto; font-size: 1.8rem; text-align: center; padding: 0.5rem;margin-bottom: 0rem;}
+    #product_area samp{display: block; text-align: center; font-size: 1.2rem; font-family: unset;}
     #product_area .item{margin: 0% 0% 4%; padding: 1rem; }/*border: 1px solid var(--logo_blue_03);*/
     #product_area .title{ font-size: 1.2rem; padding-bottom: 0.5rem; margin-bottom: 0.5rem; color: var(--logo_blue2) ; border-bottom: 1px solid var(--logo_blue2);}/*--logo_blue_03*/
     #product_area .packing-style{font-weight: 300;}
@@ -382,11 +383,14 @@
     #product_area img{width: 130px;}
     #product_area .photo li{list-style-type: decimal;} 
     #product_area .content{margin-top: 0rem; }
+
+    #product_area .dl_area{display: flex; justify-content: center; background-color:#ffffff; }
+    #product_area .dl_area .dl_btn{display: flex; align-items: center; background-color: var(--logo_blue2); border: 0px; margin-top: 1px; padding: 0.25rem 0.3rem; border-radius: 0 0 5px 5px;}
+    #product_area .dl_area .dl_btn:hover{background-color: #55b8df;}/*#00A7EA*/
+    #product_area .dl_area .dl_btn p{color: #ffffff;}    
+    #product_area .dl_area .dl_btn img{width: auto; height: 30px; margin-right: 0.5rem;}/**/
     
-    #product_area .nav-link.pdf_dl{background-color: var(--logo_blue2);border: 0px;}
-    #product_area .nav-link.pdf_dl a{color: #ffffff; }
-    #product_area .nav-link.pdf_dl img{width: auto; height: 30px; margin-right: 0.5rem;}/**/
-    #product_area .nav-link.pdf_dl:hover{background-color: #55b8df;}/*#00A7EA*/
+
 
     #product_area .certification_mark img{width: 80px; margin-right: 10px;}
     /*#product_area .item:nth-child(odd){background-color: #dbf1ff;}
@@ -398,7 +402,7 @@
         /*background-color: unset;*/
         border-color: var(--logo_blue2) var(--logo_blue2) #ffffff;
     }
-    .nav-tabs .nav-link {color: rgb(80, 80,80);}
+    .nav-tabs .nav-link {color: rgb(80, 80,80); padding: 0.5rem 0.8rem;}
     .nav-tabs .nav-link:hover {
         border-color: var(--logo_blue_03) var(--logo_blue_03) var(--logo_blue_03);
         isolation: isolate;
@@ -457,6 +461,7 @@
         /*.clear{clear: both;}*/
 
 
+        #product_area .dl_area{justify-content: end;}
         #product_area .item{/*width: 48.5%;*/margin-bottom: 2%; padding-bottom: 0.5rem; display: flex;}
         #product_area .Package .item { justify-content: space-between;margin-bottom: 6%;}
         #product_area .photo{width: 32%; margin-bottom: 0rem;}
