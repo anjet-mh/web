@@ -108,7 +108,7 @@
     .banner .wrap{
         width: 90%;
         text-align: center;
-        background-color: rgba(255, 255, 255, 0.8);        
+        background-color: rgba(255, 255, 255, 0.7);/*rgba(255, 255, 255, 0.65)*/
         border-radius: 5px;/**/
     }
 
@@ -132,7 +132,7 @@
     .Shadow{box-shadow: 0px 3px 10px 1px rgba(0, 0, 0, 0.45);}
     .mezasu .Shadow{box-shadow: 0px 3px 15px 2px #113000;}
   
-    .Orange-title{font-size: 2rem; color: #ff8800;/*rgb(255, 123, 0)*/ }
+    .Orange-title{font-size: 2rem; color: #ff8800;/*ff8800*/ }
     .banner h2{padding-bottom: .8rem;}/*color: #000; margin-bottom: 1rem; border-bottom: 1px solid #ff8800; */
     
     .BG_Green{
@@ -462,8 +462,8 @@
 
         .container{max-width: 992px;}
         /*.banner .container{width: 580px;}*/
-
-        .Orange-title{font-size: 2.5rem;}
+.mezasu .wrap{padding: 30px;}
+        .Orange-title{font-size: 3.5rem; font-weight: 700; letter-spacing:0.25rem; }
 
         /*.banner .wrap{width: 100%;}*/
         .BG_Green{display: flex; align-items: center; padding:8rem 2rem;}
