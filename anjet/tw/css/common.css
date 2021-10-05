@@ -454,6 +454,7 @@
     #nav-tabContent .img-data img{width: 98%;}
 
     #contactus-index{background-color: #8b8b8b; text-align: center;}/*rgba(0, 167, 234, 0.05)*/
+    #contactus-index .wrap{ padding: 67px 0;}
     #contactus-index .text{font-size: 2rem; margin-bottom: 2rem; color: #ffffff;}
     #contactus-index .white{border-color: white; color: white;}
 
