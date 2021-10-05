@@ -453,9 +453,9 @@
     #nav-tabContent .img-data{text-align: center; }
     #nav-tabContent .img-data img{width: 98%;}
 
-    #contactus{background-color: #8b8b8b; text-align: center;}/*rgba(0, 167, 234, 0.05)*/
-    #contactus .text{font-size: 2rem; margin-bottom: 2rem; color: #ffffff;}
-    #contactus .white{border-color: white; color: white;}
+    #contactus-index{background-color: #8b8b8b; text-align: center;}/*rgba(0, 167, 234, 0.05)*/
+    #contactus-index .text{font-size: 2rem; margin-bottom: 2rem; color: #ffffff;}
+    #contactus-index .white{border-color: white; color: white;}
 
 
     @media (min-width: 992px) {
