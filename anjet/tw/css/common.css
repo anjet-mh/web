@@ -291,8 +291,8 @@
     #company_area .date, #company_area .title, #history_area .date, #history_area .title{font-weight: 600; margin-bottom: 0.3rem; padding-bottom: 0.3rem; border-bottom:1px solid var(--logo_blue2); color: var(--logo_blue2);}/*#005983 #news_list_area */
     #company_area .text, #history_area .text{padding-left: 2.7rem; padding-right: 0.5rem;}/*width:calc(100% - 230px);*/
 
-    .globe-map{width: 100%; margin-bottom: 0.5rem;}
-    .globe-map img{width: 100%;}
+    .globe-map{width: 100%; height: 300px; margin-bottom: 0.5rem;overflow: hidden; position: relative;}
+    .globe-map img{width: 250%; position: absolute; top: -35%; left: -90%;}
     .globe-title{background-color: var(--logo_blue_0125); text-align: center; font-weight: 600; padding: 0.5rem; letter-spacing:0.5rem;}
     .globe-text{padding: 1rem;}
 
@@ -513,7 +513,8 @@
 
         .globe{display: flex; justify-content: space-between;}
         .globe .item{width: 32%;}
-
+        .globe-map{height: 500px;}
+        .globe-map img{width: 100%; top: 0; left: 0;}
 
 
         #product_area .dl_area{justify-content: end;}
@@ -594,17 +595,40 @@
 
     /*.text-muted{color:#dddddd!important;}*/
 
-    @media (max-width: 576px) {
-        /*.carousel-item, .banner1  {height: 180px;}*/
-      }
-    @media (min-width: 768px) {
+
+
+
+    @media (max-width: 768px) {
         /*.card img{width: 50%; height: 50%; 
             object-fit: cover; 填滿元素的寬度及高度(維持原比例)，通常會剪掉超出部分的物件。
         }*/
+        .globe-map img {
+            width: 127%;
+            top: -30%;
+            left: -15%;
+        }
     }
-    @media (min-width: 1200px) {
-        /*.card img{ width: 90%; height: 90%;
-            object-fit: cover; 填滿元素的寬度及高度(維持原比例)，通常會剪掉超出部分的物件。
-        } */
+    @media (max-width: 576px) {
+        /*.carousel-item, .banner1  {height: 180px;}*/
+        .globe-map img {
+            width: 180%;
+            top: -36%;
+            left: -48%;
+        }
+      }
+   @media (max-width: 414px) {
+    .globe-map img {
+        width: 180%;
+        top: -5%;
+        left: -48%;
     }
+   }      
+   @media (max-width: 320px) {
+    .globe-map img {
+        width: 250%;
+        top: -15%;
+        left: -90%;
+    }
+   }    
+
 /* 測試區 */
