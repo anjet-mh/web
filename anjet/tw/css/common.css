@@ -288,7 +288,7 @@
     #about_area .area:nth-child(even){background-color: #dff6ff;}
     #about_area .item{margin-bottom: 3rem;} 
 
-    #company_area .date, #company_area .title, #history_area .date, #history_area .title{font-weight: 600; margin-bottom: 0.3rem; padding-bottom: 0.3rem; border-bottom:1px solid var(--logo_blue2); color: var(--logo_blue2);}/*#005983 #news_list_area */
+    #company_area .date, #company_area .title, #advantage_area .title, #history_area .date, #history_area .title{font-weight: 600; margin-bottom: 0.3rem; padding-bottom: 0.3rem; border-bottom:1px solid var(--logo_blue2); color: var(--logo_blue2);}/*#005983 #news_list_area */
     #company_area .text, #history_area .text{padding-left: 2.7rem; padding-right: 0.5rem;}/*width:calc(100% - 230px);*/
 
     .globe-map{width: 100%; height: 300px; margin-bottom: 0.5rem;overflow: hidden; position: relative;}
