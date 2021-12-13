@@ -37,14 +37,9 @@
           if ($(this).scrollTop() > ScrollTopHeight) {          /* 要滑動到選單的距離 */
             $('#product-tab').addClass('tabnavFixed');   /* 幫選單加上固定效果 .nav-tabs*/
             $("#nav-tabContent").addClass('tabContentaddHeight');
-            /*$('body').addClass('new-body-mt');調整高度
-            $('.change-mt3').removeClass('mt-3').addClass('mt-add80');*/
           } else {
             $('#product-tab').removeClass('tabnavFixed'); /* 移除選單固定效果 .nav-tabs*/
             $('#nav-tabContent').removeClass('tabContentaddHeight');
-            /*$('body').removeClass('new-body-mt');調整高度*/
-            /*$('.carousel').removeClass('new-mt');調整高度*/
-            /*$('.change-mt3').addClass('mt-3').removeClass('mt-add80');調整高度*/
           }
         });
       });
