@@ -1,0 +1,46 @@
+<html>
+
+<head></head>
+
+<body>
+  <nav class="">
+    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+
+      <button class="nav-link active" id="nav-info-tab" data-bs-toggle="tab" data-bs-target="#nav-info" type="button"
+        role="tab" aria-controls="nav-info" aria-selected="true">介紹</button>
+      <button class="nav-link" id="nav-data-tab" data-bs-toggle="tab" data-bs-target="#nav-data" type="button"
+        role="tab" aria-controls="nav-data" aria-selected="false">數據</button>
+      <button class="nav-link" id="nav-outline-tab" data-bs-toggle="tab" data-bs-target="#nav-outline" type="button"
+        role="tab" aria-controls="nav-outline" aria-selected="false">封裝規格</button>
+    </div>
+  </nav>
+  <div class="dl_area">
+    <a class="dl_btn" href="./img/product/pdf/AS6502A.pdf">
+      <img src="./img/product/PDF_icon.png" alt="">
+      <p>Data sheet</p>
+    </a>
+  </div>
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      /*固定選單*/
+      $(function () {
+        $(window).scroll(function () {
+          if ($(this).scrollTop() > 200) {          /* 要滑動到選單的距離 */
+            $('.navbar-top').addClass('navFixed');   /* 幫選單加上固定效果 */
+            $('body').addClass('new-body-mt');/*調整高度*/
+            $('.change-mt3').removeClass('mt-3').addClass('mt-add80');
+          } else {
+            $('.navbar-top').removeClass('navFixed'); /* 移除選單固定效果 */
+            $('body').removeClass('new-body-mt');/*調整高度*/ 
+            $('.carousel').removeClass('new-mt');/*調整高度*/
+            $('.change-mt3').addClass('mt-3').removeClass('mt-add80');/*調整高度*/  
+          }
+        });
+      });
+    })
+
+  </script>
+</body>
+
+</html>

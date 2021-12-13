@@ -40,15 +40,15 @@
     <div class="container">
   
       <div class="wrap">
-        <div class="product_nav">
+        
           <div class="product_title">
             <div class="apn">AS6502A<samp>(650V / 2A)</samp></div>
             
           </div>
         
           <!--category-->
-        
-          <nav class="">
+        <div id="product-tab">
+<!--           <nav class="">
             <div class="nav nav-tabs" id="nav-tab" role="tablist">
         
               <button class="nav-link active" id="nav-info-tab" data-bs-toggle="tab" data-bs-target="#nav-info" type="button"
@@ -64,7 +64,7 @@
               <img src="./img/product/PDF_icon.png" alt="">
               <p>Data sheet</p>
             </a>
-          </div>
+          </div> -->
         </div>
 
         <div class="tab-content" id="nav-tabContent">
@@ -211,6 +211,7 @@
   <script type="text/javascript">
     $(document).ready(function () {
       $("#load-nav").load("nav.html");
+      $("#product-tab").load("product_tab.html");
       $("#load-footer").load("footer.html");
       $(".page_name").data("namedata", "product");/* 要修改成"product" */
       /*在.page_name的div裡面添加namedata=newspage數據 給選單判斷加入.active用*/
