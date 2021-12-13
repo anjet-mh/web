@@ -528,7 +528,7 @@
 
         .app-BOX{display: flex; flex-wrap: wrap; }
         .app-height{height: 100%; display: flex; flex-direction: column; justify-content: space-between;}
-        .app-body{width: 33.33%; padding: 0 1rem; }
+        .app-body{width: 33.33%; padding: 0 1rem; margin-top: 0rem;}
         .app-info{width: 100%;}
         /*.clear{clear: both;}*/
 
