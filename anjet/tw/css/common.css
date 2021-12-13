@@ -88,6 +88,19 @@
         /*opacity: .99;*/
         transition: opacity .3s ease-out;
     }
+
+        /*固定產品選單*/
+        .tabnavFixed {
+            z-index: 9;
+            position: fixed;
+            top: 57px;
+            left: 20px;
+            right: 20px;
+            margin-top: 0;
+            background-color: #f2fdff;
+            opacity: .99;
+            transition: opacity .3s ease-out;
+        }
     
     /*.change-mt3{margin-top: 6rem!important;}*/
     /*.carousel, .banner1{margin-top: 65px;}*/
@@ -465,9 +478,10 @@
         border-color: var(--logo_blue_03) var(--logo_blue_03) var(--logo_blue_03);
         isolation: isolate;
     }
-    #nav-tabContent{padding: 0.8rem 0 2rem; background-color: #ffffff;}
+    .tab-content{padding: 0.8rem 0 2rem; background-color: #ffffff;}
     #nav-tabContent .img-data{text-align: center; }
     #nav-tabContent .img-data img{width: 98%;}
+    .tabContentaddHeight{padding: 5.9rem 0 2rem;}
 
     #contactus-index{background-color: #8b8b8b; text-align: center;}/*rgba(0, 167, 234, 0.05)*/
     #contactus-index .wrap{ padding: 67px 0;}
@@ -540,6 +554,21 @@
         #vision_area .item .text{width: 50%;}
         #vision_area .item .img-box{position: absolute; width: 60%; height: 300px; top: 0;right: -76px;}
         #vision_area .item img{width: auto; height: 100%;}
+
+        /*固定產品選單*/
+        .tabnavFixed {
+            z-index: 9;
+            position: fixed;
+           /* max-width: 912px;*/
+            top: 65px;
+            left: calc((100vw - 929px)/2);
+            right: calc((100vw - 929px)/2);
+            margin-top: 0;
+            background-color: #f2fdff;
+            opacity: .99;
+            transition: opacity .3s ease-out;
+        }
+
 
 
 
