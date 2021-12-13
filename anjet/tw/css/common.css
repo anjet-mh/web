@@ -432,7 +432,7 @@
     #recruit_area .card{border-radius: 2px 0px 2px 2px;z-index: -1;}
     #recruit_area 
     #recruit_area .link1104{display: flex; justify-content: end;}
-    #recruit_area .link1104 .btn{z-index: 1; margin:-1px -1px -1px -0px; background-color: #ffffff; border-top: white; border-radius: 0px 0px 2px 2px;}
+    #recruit_area .link1104 .btn{z-index: 1; margin:-1px -1px -1px -0px; background-color: #ffffff; border-top: #ffffff; border-radius: 0px 0px 2px 2px;}
     #recruit_area .link1104 .btn:hover{background-color: var(--logo_blue2); color: #ffffff;}
     
     #product_card_area .card-header{margin: 0rem; padding: 0rem;}
