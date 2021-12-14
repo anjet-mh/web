@@ -32,8 +32,6 @@
     .btn:hover{background-color: var(--logo_blue2); color: rgba(255, 255, 255, 1);}/*--btn-color_background-color*/
     .btn:hover a{color: rgba(255, 255, 255, 1);}
     
-    .BG_Green .btndiv{display: flex; justify-content: center;}
-    
     .card{padding: 0 8px;}
     .card, .card-header, .card-footer{border-color: var(--logo_blue2);}/*var(--logo_blue_03) var(--btn-color_background-color)*/
     .card-header, .card-footer{background-color:unset; border-top: 5px; border-bottom:0px}/*var(--logo_blue_0125)*/
@@ -149,7 +147,9 @@
   
     .Orange-title{font-size: 2rem; color: #ff8800;/*ff8800*/ }
     .banner h2{padding-bottom: .8rem;}/*color: #000; margin-bottom: 1rem; border-bottom: 1px solid #ff8800; */
-    
+
+
+    .BG_Green .btndiv{display: flex; justify-content: center;}
     .BG_Green{
         padding: 4rem 2rem;
         /*background-color: rgb(230, 255, 219);
@@ -163,8 +163,10 @@
     .BG_Green .item{width: 100%; margin: 0rem;}
     .BG_Green .item:nth-child(2){margin-top: 1rem; }/*第二個item*/
     .BG_Blue{background-color: rgb(210, 241, 255);}
-    .BG_Green p, .focus p{font-size: 1.2rem;}
+    .BG_Green p, .focus p{font-size: 1.2rem; padding-bottom: 1.2rem; line-height: 2.2rem;}
     .BG_Green .btn{margin-top: 2rem;}
+
+
     
     .img_box{width: 100%; text-align: center; overflow: hidden;}
     .img_box img{width: 100%;}
@@ -496,16 +498,21 @@
 
         .container{max-width: 992px;}
         /*.banner .container{width: 580px;}*/
-     .mezasu .wrap{padding: 30px;}
+        .mezasu .wrap{padding: 30px;}
         .Orange-title{font-size: 3.5rem; font-weight: 500; letter-spacing:0.25rem; }
 
+
+        .BG_Green p, .focus p{font-size: 1.3rem; padding-bottom: 1.5rem; line-height: 2.5rem;}
         /*.banner .wrap{width: 100%;}*/
         .BG_Green{display: flex; align-items: center; padding:8rem 2rem;}
         .BG_Green .item{width: 50%;}
-        .BG_Green .item:nth-child(2){margin-top: 0rem; margin-left: 2rem;}/*第二個item*/        
+        .BG_Green .item:nth-child(2){margin-top: 0rem; /*margin-left: 2rem;*/ padding-left: 2rem;}/*第二個item*/        
         .BG_Green .img_box{height: 100%;}
         .BG_Green .btndiv{display: flex; justify-content: start;}
 
+        .BG_Green.company h2{ border-bottom: 0px; margin-bottom: 0; padding-bottom: 0; color: #ffffff; text-align: center;}
+        .BG_Green.company .item:nth-child(1){ background-color:var(--logo_blue); padding: 1rem 0;}
+        .BG_Green.company .item:nth-child(2){ border-left: 1px solid var(--logo_blue); }
 
         /*.carousel-card .category, .category{font-size: 1.5rem;}*/
         .carousel-card .serial_number{font-size: 1.2rem;}
