@@ -161,18 +161,25 @@
         background-size: cover;背景自動縮放*/ 
     }
     .BG_Green .item{width: 100%; margin: 0rem;}
-    .BG_Green .item:nth-child(2){margin-top: 1rem; }/*第二個item*/
+    .BG_Green .item:nth-child(2){margin-top: 1rem; padding-left: 1.6rem;}/*第二個item*/
     .BG_Blue{background-color: rgb(210, 241, 255);}
     .BG_Green p, .focus p{font-size: 1.2rem; padding-bottom: 1.2rem; line-height: 2.2rem;}
     .BG_Green .btn{margin-top: 2rem;}
 
 
-    .area{position: relative;}
-    .BG_Green.area_BGimg h2,.BG_Green.area_BGimg{color: #ffffff;}
-    .BG_Green.area_BGimg h2{border-bottom: 1px solid #ffffff;}
-    .BG_Green.area_BGimg::after{position: absolute; content: ""; height: 103%; width: 138%;}
-    .BG_Green.area_BGimg::after{ top: 0%; left: -5%; z-index: -2; background-image: url(../img/BG_001-1.png) ; background-size: Auto 100% /*寬高*/;background-repeat: repeat-y; background-color: #17a2d3; filter: blur(1px);}
-    
+    .area.leftBGimg{position: relative; overflow: hidden;}
+    .leftBGimg .BG_Green h2, .leftBGimg .BG_Green{color: #ffffff;}
+    .leftBGimg .BG_Green h2{border-bottom: 1px solid #ffffff;}
+    .leftBGimg .BG_Green::after{position: absolute; content: ""; z-index: -1;
+        background-image: url(../img/BG_001-1.png) ;
+        background-size: Auto 100% /*寬高*/;
+        background-repeat: repeat-y;
+        height: 105%; width: 140%;;
+        top: 0%; left: -5%;
+        filter: blur(1px);
+        background-color: #17a2d3;
+    }
+
     .img_box{width: 100%; text-align: center; overflow: hidden;}
     .img_box img{width: 100%;}
 
@@ -554,18 +561,21 @@
 
     .BG_Green p, .focus p{font-size: 1.3rem; padding-bottom: 1.5rem; line-height: 2.5rem;}
     /*.banner .wrap{width: 100%;}*/
-    .BG_Green{display: flex; align-items: center; padding:8rem 2rem;}
-    .BG_Green .item{width: 45%;}
-    .BG_Green .item:nth-child(2){margin-top: 0rem; /*margin-left: 2rem;*/ padding-left: 2rem;}/*第二個item*/        
+    .BG_Green{display: flex; padding:8rem 2rem; align-items: center;}/* */
+    .BG_Green .item{width: 50%;}
+    .BG_Green .item:nth-child(2){margin-top: 0rem; padding-left: 2rem;}/*第二個item  margin-left: 2rem;*/        
     .BG_Green .img_box{height: 100%;}
     .BG_Green .btndiv{display: flex; justify-content: start;}
 
-    .BG_Green.company h2{ border-bottom: 0px; margin-bottom: 0; padding-bottom: 0; color: #ffffff; text-align: center;}
+
+    .leftBGimg .BG_Green {display: block; align-items: unset; padding:8rem 8rem;}
+    .leftBGimg .BG_Green .item{width: 100%;}
+    /*.leftBGimg .BG_Green h2{ margin-bottom: 0; padding-bottom: 0; } border-bottom: 0px;*/
     /*.BG_Green.company .item:nth-child(1){ background-color:var(--logo_blue); padding: 1rem 0;}
     .BG_Green.company .item:nth-child(2){ border-left: 1px solid var(--logo_blue); }*/
 
-    .BG_Green.area_BGimg::after{height: 100%; width: 100%;}
-    .BG_Green.area_BGimg::after{ top: 0%; left: 0%;}
+    .leftBGimg .BG_Green::after{height: 100%; width: 100%;}
+    .leftBGimg .BG_Green::after{ top: 0%; left: 0%;}
     
 
     /*.carousel-card .category, .category{font-size: 1.5rem;}*/
