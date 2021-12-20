@@ -171,7 +171,7 @@
     .BG_Green.area_BGimg h2,.BG_Green.area_BGimg{color: #ffffff;}
     .BG_Green.area_BGimg h2{border-bottom: 1px solid #ffffff;}
     .BG_Green.area_BGimg::after{position: absolute; content: ""; height: 103%; width: 138%;}
-    .BG_Green.area_BGimg::after{ top: -3%; left: -38%; z-index: -2; background-image: url(../img/BG_001-1.png) ; background-size: Auto 100% /*寬高*/;background-repeat: repeat-y; background-color: #17a2d3;}
+    .BG_Green.area_BGimg::after{ top: 0%; left: -5%; z-index: -2; background-image: url(../img/BG_001-1.png) ; background-size: Auto 100% /*寬高*/;background-repeat: repeat-y; background-color: #17a2d3; filter: blur(1px);}
     
     .img_box{width: 100%; text-align: center; overflow: hidden;}
     .img_box img{width: 100%;}
@@ -319,7 +319,7 @@
     #company_area .text, #history_area .text{padding-left: 2.7rem; padding-right: 0.5rem;}/*width:calc(100% - 230px);*/
 
     .globe-map{width: 100%; height: 300px; margin-bottom: 0.5rem;overflow: hidden; position: relative;}
-    .globe-map img{width: 250%; position: absolute; top: -35%; left: -90%;}
+    .globe-map img{width: 250%; position: absolute; top: -15%; left: -90%;}
     .globe-title, .card-sub-title{background-color: var(--logo_blue_0125); text-align: center; font-weight: 600; padding: 0.5rem; letter-spacing:0.5rem;}
     .globe-text{padding: 1rem;}
 
@@ -496,109 +496,154 @@
     #contactus-index .white{border-color: white; color: white;}
 
 /* ---------------------------------------------------------- */
-    @media (min-width: 992px) {
-        .wrap{padding: 40px;}
-        .top_space{margin-top: 65px;}/*65px*/
-        #footer .card-body {text-align: center;}
 
-        .container{max-width: 992px;}
-        /*.banner .container{width: 580px;}*/
-        .mezasu .wrap{padding: 30px;}
-        .Orange-title{font-size: 3.5rem; font-weight: 500; letter-spacing:0.25rem; }
-
-
-        .BG_Green p, .focus p{font-size: 1.3rem; padding-bottom: 1.5rem; line-height: 2.5rem;}
-        /*.banner .wrap{width: 100%;}*/
-        .BG_Green{display: flex; align-items: center; padding:8rem 2rem;}
-        .BG_Green .item{width: 45%;}
-        .BG_Green .item:nth-child(2){margin-top: 0rem; /*margin-left: 2rem;*/ padding-left: 2rem;}/*第二個item*/        
-        .BG_Green .img_box{height: 100%;}
-        .BG_Green .btndiv{display: flex; justify-content: start;}
-
-        .BG_Green.company h2{ border-bottom: 0px; margin-bottom: 0; padding-bottom: 0; color: #ffffff; text-align: center;}
-        /*.BG_Green.company .item:nth-child(1){ background-color:var(--logo_blue); padding: 1rem 0;}
-        .BG_Green.company .item:nth-child(2){ border-left: 1px solid var(--logo_blue); }*/
-
-        .BG_Green.area_BGimg::after{height: 100%; width: 100%;}
-        .BG_Green.area_BGimg::after{ top: 0%; left: 0%;}
-        
-
-        /*.carousel-card .category, .category{font-size: 1.5rem;}*/
-        .carousel-card .serial_number{font-size: 1.2rem;}
-        .carousel-card .text{font-size: 1rem;}
-
-        .banner1 {height: 350px;}
-        .half-box{display: flex;}
-        .left, .right{width: 50%;}
-        .left{padding-right: 20px;}
-        .right{padding-left: 20px;}
-        .item.right img{width: 80%;}
-
-        #product_card_area .card_box{display: flex;}
-        #product_card_area .card{width: 50%; margin: 10px;}
-
-        #contactus_area_no_hash .left{width: 300px;}
-        #contactus_area_no_hash .right{width:calc(100% - 300px);}
-        /*#contactus_area_no_hash label {border-bottom: 1px solid var(--logo_blue2);}var(--logo_blue_03)*/
-
-
-        .app-BOX{display: flex; flex-wrap: wrap; }
-        .app-height{height: 100%; display: flex; flex-direction: column; justify-content: space-between;}
-        .app-body{width: 33.33%; padding: 0 1rem; margin-top: 0rem;}
-        .app-info{width: 100%;}
-        /*.clear{clear: both;}*/
-
-        .globe{display: flex; justify-content: space-between;}
-        .globe .item{width: 32%;}
-        .globe-map{height: 500px;}
-        .globe-map img{width: 100%; top: 0; left: 0;}
-
-
-        #product_area .dl_area{justify-content: end;}
-        #product_area .item{/*width: 48.5%;*/margin-bottom: 2%; padding-bottom: 0.5rem; display: flex;}
-        #product_area .Package .item { justify-content: space-between;margin-bottom: 6%;}
-        #product_area .photo{width: 32%; margin-bottom: 0rem;}
-        #product_area img{width: 135px;}
-        #product_area .content .title{width: 20%; padding-right: 1rem; margin-bottom: 0rem; padding-bottom: 0rem; border-right:  1px solid var(--logo_blue2); border-bottom: 0px;}/*var(--logo_blue_03)*/
-        #product_area .text{width: auto; padding-left: 1rem;}
-        #product_area ol{margin-left: 1.2rem;}
-
-        #nav-tabContent .img-data img{width: 70%;}
-        
-        #vision_area .wrap{position: relative; height: 300px;}
-        #vision_area .item{display: flex; }
-        #vision_area .item .text{width: 50%;}
-        #vision_area .item .img-box{position: absolute; width: 60%; height: 300px; top: 0;right: -76px;}
-        #vision_area .item img{width: auto; height: 100%;}
-
-        /*固定產品選單*/
-        .tabnavFixed {
-            z-index: 9;
-            position: fixed;
-           /* max-width: 912px;*/
-            top: 65px;
-            left: calc((100vw - 929px)/2);
-            right: calc((100vw - 929px)/2);
-            margin-top: 0;
-            background-color: #f2fdff;
-            opacity: .99;
-            transition: opacity .3s ease-out;
-        }
-
-
-
-
-
-
-
-        /*.content_box{width: 60%; margin: 0 0 0 50px; }*/
-
-        /*.img_Fixed .content_box{ width: 90%; margin: 0 50px 0 50px;}*/
-
-        /*.Left .content_box{order: 1; text-align: right; margin: 0 50px 0 0;}
-        .Left .img_box{order: 2;}*/
-
+@media (min-width: 360px) {
+    .globe-map img {
+        width: 250%;
+        top: -30%;
+        left: -90%;
     }
+} 
+
+@media (min-width: 400px) {
+    .globe-map img {
+        width: 200%;
+        top: -30%;
+        left: -70%;
+    }
+} 
+
+@media (min-width: 480px) {
+    .globe-map img {
+        width: 180%;
+        top: -30%;
+        left: -50%;
+    }
+} 
+
+@media (min-width: 540px) {
+    .globe-map img {
+        width: 168%;
+        top: -36%;
+        left: -48%;
+    }
+}
+
+@media (min-width: 768px) {
+    /*.card img{width: 50%; height: 50%; 
+        object-fit: cover; 填滿元素的寬度及高度(維持原比例)，通常會剪掉超出部分的物件。
+    }*/
+    .globe-map img {
+        width: 127%;
+        top: -30%;
+        left: -15%;
+    }
+    
+}
+
+@media (min-width: 992px) {
+    .wrap{padding: 40px;}
+    .top_space{margin-top: 65px;}/*65px*/
+    #footer .card-body {text-align: center;}
+
+    .container{max-width: 992px;}
+    /*.banner .container{width: 580px;}*/
+    .mezasu .wrap{padding: 30px;}
+    .Orange-title{font-size: 3.5rem; font-weight: 500; letter-spacing:0.25rem; }
+
+
+    .BG_Green p, .focus p{font-size: 1.3rem; padding-bottom: 1.5rem; line-height: 2.5rem;}
+    /*.banner .wrap{width: 100%;}*/
+    .BG_Green{display: flex; align-items: center; padding:8rem 2rem;}
+    .BG_Green .item{width: 45%;}
+    .BG_Green .item:nth-child(2){margin-top: 0rem; /*margin-left: 2rem;*/ padding-left: 2rem;}/*第二個item*/        
+    .BG_Green .img_box{height: 100%;}
+    .BG_Green .btndiv{display: flex; justify-content: start;}
+
+    .BG_Green.company h2{ border-bottom: 0px; margin-bottom: 0; padding-bottom: 0; color: #ffffff; text-align: center;}
+    /*.BG_Green.company .item:nth-child(1){ background-color:var(--logo_blue); padding: 1rem 0;}
+    .BG_Green.company .item:nth-child(2){ border-left: 1px solid var(--logo_blue); }*/
+
+    .BG_Green.area_BGimg::after{height: 100%; width: 100%;}
+    .BG_Green.area_BGimg::after{ top: 0%; left: 0%;}
+    
+
+    /*.carousel-card .category, .category{font-size: 1.5rem;}*/
+    .carousel-card .serial_number{font-size: 1.2rem;}
+    .carousel-card .text{font-size: 1rem;}
+
+    .banner1 {height: 350px;}
+    .half-box{display: flex;}
+    .left, .right{width: 50%;}
+    .left{padding-right: 20px;}
+    .right{padding-left: 20px;}
+    .item.right img{width: 80%;}
+
+    #product_card_area .card_box{display: flex;}
+    #product_card_area .card{width: 50%; margin: 10px;}
+
+    #contactus_area_no_hash .left{width: 300px;}
+    #contactus_area_no_hash .right{width:calc(100% - 300px);}
+    /*#contactus_area_no_hash label {border-bottom: 1px solid var(--logo_blue2);}var(--logo_blue_03)*/
+
+
+    .app-BOX{display: flex; flex-wrap: wrap; }
+    .app-height{height: 100%; display: flex; flex-direction: column; justify-content: space-between;}
+    .app-body{width: 33.33%; padding: 0 1rem; margin-top: 0rem;}
+    .app-info{width: 100%;}
+    /*.clear{clear: both;}*/
+
+    .globe{display: flex; justify-content: space-between;}
+    .globe .item{width: 32%;}
+    .globe-map{height: 500px;}
+    .globe-map img{width: 100%; top: 0; left: 0;}
+
+
+    #product_area .dl_area{justify-content: end;}
+    #product_area .item{/*width: 48.5%;*/margin-bottom: 2%; padding-bottom: 0.5rem; display: flex;}
+    #product_area .Package .item { justify-content: space-between;margin-bottom: 6%;}
+    #product_area .photo{width: 32%; margin-bottom: 0rem;}
+    #product_area img{width: 135px;}
+    #product_area .content .title{width: 20%; padding-right: 1rem; margin-bottom: 0rem; padding-bottom: 0rem; border-right:  1px solid var(--logo_blue2); border-bottom: 0px;}/*var(--logo_blue_03)*/
+    #product_area .text{width: auto; padding-left: 1rem;}
+    #product_area ol{margin-left: 1.2rem;}
+
+    #nav-tabContent .img-data img{width: 70%;}
+    
+    #vision_area .wrap{position: relative; height: 300px;}
+    #vision_area .item{display: flex; }
+    #vision_area .item .text{width: 50%;}
+    #vision_area .item .img-box{position: absolute; width: 60%; height: 300px; top: 0;right: -76px;}
+    #vision_area .item img{width: auto; height: 100%;}
+
+    /*固定產品選單*/
+    .tabnavFixed {
+        z-index: 9;
+        position: fixed;
+        /* max-width: 912px;*/
+        top: 65px;
+        left: calc((100vw - 929px)/2);
+        right: calc((100vw - 929px)/2);
+        margin-top: 0;
+        background-color: #f2fdff;
+        opacity: .99;
+        transition: opacity .3s ease-out;
+    }
+
+
+
+
+
+
+
+    /*.content_box{width: 60%; margin: 0 0 0 50px; }*/
+
+    /*.img_Fixed .content_box{ width: 90%; margin: 0 50px 0 50px;}*/
+
+    /*.Left .content_box{order: 1; text-align: right; margin: 0 50px 0 0;}
+    .Left .img_box{order: 2;}*/
+
+}
 
 
 /* 測試區 */
@@ -650,37 +695,9 @@
 
 
 
-    @media (max-width: 768px) {
-        /*.card img{width: 50%; height: 50%; 
-            object-fit: cover; 填滿元素的寬度及高度(維持原比例)，通常會剪掉超出部分的物件。
-        }*/
-        .globe-map img {
-            width: 127%;
-            top: -30%;
-            left: -15%;
-        }
-    }
-    @media (max-width: 576px) {
-        /*.carousel-item, .banner1  {height: 180px;}*/
-        .globe-map img {
-            width: 180%;
-            top: -36%;
-            left: -48%;
-        }
-      }
-   @media (max-width: 414px) {
-    .globe-map img {
-        width: 180%;
-        top: -5%;
-        left: -48%;
-    }
-   }      
-   @media (max-width: 320px) {
-    .globe-map img {
-        width: 250%;
-        top: -15%;
-        left: -90%;
-    }
-   }    
+
+
+     
+  
 
 /* 測試區 */
