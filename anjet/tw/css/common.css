@@ -597,7 +597,7 @@
     .BG_Green .btndiv{display: flex; justify-content: start;}
 
 
-    .mission h2, .leftBGimg h2{text-align: right;}
+    /*.mission h2, .leftBGimg h2{text-align: right;}*/
     .mission .col-md-3, .leftBGimg .col-md-3{width: 29%;}
     .mission .col-md-9, .leftBGimg .col-md-9{width: 71%;}
 
