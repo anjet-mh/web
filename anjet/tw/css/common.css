@@ -13,7 +13,7 @@
 
     }
 
-
+    .row>*{margin: 0; padding: 0;}
 
     .container-fluid{padding-right: var(--bs-gutter-x,0.5rem); padding-left: var(--bs-gutter-x,0.5rem);}
 
@@ -341,7 +341,7 @@
     #about_area .item{margin-bottom: 3rem;} 
 
     #company_area .date, #company_area .title, #history_area .date, #history_area .title, h6.title{font-weight: 600; margin-bottom: 0.3rem; padding-bottom: 0.3rem; border-bottom:1px solid var(--logo_blue2); color: var(--logo_blue2);}/* #advantage_area .title, #005983 #news_list_area */
-    #company_area .text, #history_area .text{padding-left: 2.7rem; padding-right: 0.5rem;}/*width:calc(100% - 230px);*/
+    /*#company_area .text, #history_area .text{padding-left: 2.7rem; padding-right: 0.5rem;}width:calc(100% - 230px);*/
 
     .globe-map{width: 100%; height: 300px; margin-bottom: 0.5rem;overflow: hidden; position: relative;}
     .globe-map img{width: 250%; position: absolute; top: -15%; left: -90%;}
@@ -409,7 +409,7 @@
     #product_card_area img{width: 30%;}
     /*.card-title{margin-bottom: 1rem;}*/
     .card-text h6{margin: 0.8rem 0rem 0.2rem;}
-    .card-text ol{margin-left: 2.15rem;}
+    .card-text ol{margin-left: 1.9rem;}/*2.15rem*/
 
 
     #news_list_area .item {margin-bottom: 3.5rem;}
@@ -468,11 +468,18 @@
     /*.app-info ul{display: flex; justify-content: center;}*/
     .app-info a{padding: 0 0.5rem;}
 
+
+
+    #recruit_area .row>* {
+        padding-right: calc(var(--bs-gutter-x)/ 2);
+        padding-left: calc(var(--bs-gutter-x)/ 2);
+        margin-top: var(--bs-gutter-y);
+    }
     #recruit_area .col {margin-bottom: 3rem;}
-    #recruit_area .card{border-radius: 2px 0px 2px 2px;z-index: -1;}
+    #recruit_area .card{border-radius: 2px 0px 2px 2px; z-index: -1;}
     #recruit_area 
     #recruit_area .link1104{display: flex; justify-content: end;}
-    #recruit_area .link1104 .btn{z-index: 1; margin:-1px -1px -1px -0px; background-color: #ffffff; border-top: #ffffff; border-radius: 0px 0px 2px 2px;}
+    #recruit_area .link1104 .btn{z-index: 1; margin:-1px -1px -1px -0px; background-color: #ffffff; border-top: #ffffff; border-radius: 0px 0px 4px 4px;}
     #recruit_area .link1104 .btn:hover{background-color: var(--logo_blue2); color: #ffffff;}
     
     #product_card_area .card-header{margin: 0rem; padding: 0rem;}
@@ -498,7 +505,7 @@
     #product_area .dl_area{display: flex; justify-content: center; background-color:#ffffff; }
     #product_area .dl_area .dl_btn{display: flex; align-items: center; background-color: var(--logo_blue2); border: 0px; margin-top: 1px; padding: 0.25rem 0.3rem; border-radius: 0 0 5px 5px;}
     #product_area .dl_area .dl_btn:hover{background-color: #55b8df;}/*#00A7EA*/
-    #product_area .dl_area .dl_btn p{color: #ffffff;}    
+    #product_area .dl_area .dl_btn p{color: #ffffff; margin-bottom: 0px;}    
     #product_area .dl_area .dl_btn img{width: auto; height: 30px; margin-right: 0.5rem;}/**/
     
 
