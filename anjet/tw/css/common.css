@@ -179,7 +179,7 @@
     .leftBGimg .item{margin:2rem 0rem;}
     /*.leftBGimg .item{margin-bottom: 4rem; }.mission .item,*/
 
-    .mission .title{font-size: 1.4rem;}
+    .mission .title{font-size: 1.7rem;}
 
     .mission h2, .leftBGimg h2{ font-size: 1.9rem; border-bottom: 0px;margin: 0rem; padding: 0rem; ;}/*white-space:nowrap*/
     .leftBGimg h2, .leftBGimg {letter-spacing: 2rem; color: #ffffff; }
@@ -579,7 +579,7 @@
         left: -15%;
     }
 
-    .mission .item{margin: 5rem 0;}/*, .leftBGimg .item*/
+    .mission .item:nth-child(2){margin: 8rem 0;}/*, .leftBGimg .item*/
     .leftBGimg .item{margin:0rem 0rem 2rem;}
 /*}
 
