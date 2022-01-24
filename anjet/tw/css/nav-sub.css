@@ -1,7 +1,7 @@
 :root{
     --header_background-color:rgba(247, 247, 247, .95);
 }
-.row{margin: 0rem;}
+.row{margin: 0rem;padding: 0px 0.5rem;}/**/
 
 .header{padding: 0.8rem 0 0.5rem; background-color: var(--header_background-color); /*border-bottom: .15rem solid #bdbdbd;*/}
 
@@ -76,13 +76,13 @@
 
 
 
-/* width>936px時 多層選單的定位 */
-@media (min-width: 992px) {
+/* width>936px時 多層選單的定位 992px 860px */
+@media (min-width: 768px) {
 
     .header_nav_Open_Close{height: 0px; transform:translateY(0px);}/**/
     .header{
         padding: 0rem; 
-        height: 65px;
+        height: var(--nav-height);/*65px*/
         display: flex;
         /*justify-content:space-between;*/justify-content: center;
         align-items: center;
