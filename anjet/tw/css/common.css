@@ -584,7 +584,7 @@
     }*/
     .globe-map img {
         width: 127%;
-        top: -30%;
+        top: -15%;
         left: -15%;
     }
 
@@ -673,12 +673,6 @@
     #vision_area .item img{position: absolute; top:0; right: 40px; width: auto; height: 100%;}
 
 
-
-
-
-
-
-
     /*.content_box{width: 60%; margin: 0 0 0 50px; }*/
 
     /*.img_Fixed .content_box{ width: 90%; margin: 0 50px 0 50px;}*/
@@ -687,7 +681,19 @@
     .Left .img_box{order: 2;}*/
 
 }
-@media (min-width: 992px) {      .globe-map{height: 500px;}  .globe-map img{width: 100%; top: 0; left: 0;}}
+@media (min-width: 768px) and (max-width: 991px)  {#vision_area .category{min-width: auto ;}}
+
+@media (min-width: 992px) {
+    .globe-map{height: 500px;}
+    .globe-map img{width: 100%; top: -10%; left: 0;}
+
+    
+}
+@media (min-width: 1400px) {
+    .globe-map img{width: 100%; top: -20%; left: 0;}
+
+    
+}
 
 
 /* 測試區 */
@@ -742,6 +748,3 @@
 
 
      
-  
-
-/* 測試區 */
