@@ -1,13 +1,15 @@
 :root{
     --header_background-color:rgba(247, 247, 247, .95);
+    --logoImgHeight:36px;
+    --headerPadding-TB:calc((var(--nav-height) - var(--logoImgHeight)) / 2);
 }
 .row{margin: 0rem;padding: 0px 0.5rem;}/**/
 
-.header{padding: 0.8rem 0 0.5rem; background-color: var(--header_background-color); /*border-bottom: .15rem solid #bdbdbd;*/}
+.header{padding: var(--headerPadding-TB) 0 ; background-color: var(--header_background-color); /*padding: 0.8rem 0 0.5rem; border-bottom: .15rem solid #bdbdbd;*/}
 
 .logo, .header_nav {padding: 0 0.8rem;}
 /*.header_nav{height: 80vh; }*/
-.logo img {height: 36px;/*transform:scale(0.5, 0.5);*/}
+.logo img {height: var(--logoImgHeight);/*transform:scale(0.5, 0.5);*/}
 .header_nav ol, .header_nav ul{margin: 0; padding: 0; z-index: 99;}
 .header_nav a{color:rgb(80, 80, 80); border: 1px solid rgba(255,255,255,.0);/* 預先做出有框的大小 border-radius: 5px; */}
 .header_nav li{padding: 0px 0.7rem 0.8rem; width: 100%; list-style: none; line-height: 1.5rem;} /*margin: 5px 0; padding: 3px 10px; */
@@ -57,7 +59,7 @@
     /*display: block;*/
     position: absolute;
     right: 1rem;
-    top: .7rem; 
+    top: var(--headerPadding-TB); /*.7rem*/
     color: #bbbbbb;
     background-color: transparent;
     border: 2px solid #bbbbbb;
@@ -91,7 +93,7 @@
     .header_nav{height: 100%;}
     .header_nav > ul{display: flex; white-space:nowrap; height: 100%;} /*margin-top: -.45rem;主選單 橫向排列 white-space:nowrap;強制不換行*/
     .header_nav .layer_1{position: relative;}/*padding-top: 20px;讓第一層之後的定位*/
-    .header_nav .layer_1 > li { line-height: 65px;}
+    .header_nav .layer_1 > li { line-height: var(--nav-height);}/*65px;*/
     .header_nav .layer_2_title { line-height: normal; }
 
     .header_nav .layer_2{position: absolute; left: 0; top: 100%; margin: 0rem; white-space: normal;} /*第一層之後的定位*/

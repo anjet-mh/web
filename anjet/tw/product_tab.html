@@ -1,25 +1,32 @@
 <html>
 
-<head></head>
+
 
 <body>
-  <nav class="">
-    <div class="nav nav-tabs" id="nav-tab" role="tablist">
 
-      <button class="nav-link active" id="nav-info-tab" data-bs-toggle="tab" data-bs-target="#nav-info" type="button"
-        role="tab" aria-controls="nav-info" aria-selected="true">介紹</button>
-      <!-- <button class="nav-link" id="nav-data-tab" data-bs-toggle="tab" data-bs-target="#nav-data" type="button"
-        role="tab" aria-controls="nav-data" aria-selected="false">數據</button> -->
-      <button class="nav-link" id="nav-outline-tab" data-bs-toggle="tab" data-bs-target="#nav-outline" type="button"
-        role="tab" aria-controls="nav-outline" aria-selected="false">封裝規格</button>
+  <div id="addcontainer" class="">
+    <div id="addwrap" class="wrap ">
+      <nav class="">
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+  
+          <button class="nav-link active" id="nav-info-tab" data-bs-toggle="tab" data-bs-target="#nav-info" type="button"
+            role="tab" aria-controls="nav-info" aria-selected="true">介紹</button>
+          <!-- <button class="nav-link" id="nav-data-tab" data-bs-toggle="tab" data-bs-target="#nav-data" type="button"
+          role="tab" aria-controls="nav-data" aria-selected="false">數據</button> -->
+          <button class="nav-link" id="nav-outline-tab" data-bs-toggle="tab" data-bs-target="#nav-outline" type="button"
+            role="tab" aria-controls="nav-outline" aria-selected="false">封裝規格</button>
+        </div>
+      </nav>
+      <div class="dl_area">
+        <a class="dl_btn" href="./img/product/pdf/AS6502A.pdf">
+          <img src="./img/product/PDF_icon.png" alt="">
+          <p>Data sheet</p>
+        </a>
+      </div>
     </div>
-  </nav>
-  <div class="dl_area">
-    <a class="dl_btn" href="./img/product/pdf/AS6502A.pdf">
-      <img src="./img/product/PDF_icon.png" alt="">
-      <p>Data sheet</p>
-    </a>
   </div>
+
+
 
   <script type="text/javascript">
     $(document).ready(function () {
@@ -27,17 +34,23 @@
       $(function () {
         $(window).scroll(function () {
 
-          var w = document.body.scrollWidth;
-          if (w <= "976") {
+          /*var w = document.body.scrollWidth;
+          if (w <= "768") { //976
             var ScrollTopHeight = 90;
           } else {//當沒有的時侯執行
             var ScrollTopHeight = 110;
-          }
-
+          }*/
+          var ScrollTopHeight = 87;
           if ($(this).scrollTop() > ScrollTopHeight) {          /* 要滑動到選單的距離 */
+            $('#addcontainer').addClass('container');
+            $('#addwrap').addClass('wrap');
+            $('#product-tab .wrap').addClass('wrapFixed'); /*調整wrap尺寸*/
             $('#product-tab').addClass('tabnavFixed');   /* 幫選單加上固定效果 .nav-tabs*/
             $("#nav-tabContent").addClass('tabContentaddHeight');
           } else {
+            $('#product-tab .wrap').removeClass('wrapFixed'); /*調整wrap尺寸*/            
+            $('#addwrap').removeClass('wrap');
+            $('#addcontainer').removeClass('container');   
             $('#product-tab').removeClass('tabnavFixed'); /* 移除選單固定效果 .nav-tabs*/
             $('#nav-tabContent').removeClass('tabContentaddHeight');
           }
