@@ -11,6 +11,7 @@
         --category_bg-color:#0c69c0;
         --btn-color_background-color:rgba(1, 64, 80, 1);
         --nav-height:75px;
+        --advantage_area-img:80px;
     }
 
     .row>*{margin: 0; padding: 0;}
@@ -165,7 +166,7 @@
 
     .mission .wrap, .leftBGimg .wrap{margin: 3rem 0rem; }
     .mission .item{margin: 2rem 0rem;}
-    .leftBGimg .item{margin:2rem 0rem;}
+    .leftBGimg .item{margin:1.5rem 0rem;}
     /*.leftBGimg .item{margin-bottom: 4rem; }.mission .item,*/
 
     .mission .title{font-size: 1.7rem;}
@@ -353,9 +354,11 @@
         font-size: 1.5rem; /*font-weight: 600; */
         margin-bottom: 1.8rem; padding-bottom: 0.3rem;
         border-bottom:1px solid #ffffff;
+        /*margin-top: -8px;*/
     }
-    #advantage_area .img-box{ width: 80px; height: 80px; margin-right: 1.8rem; margin-bottom: 1.8rem; background-color: #ffffff;}/*var(--logo_blue2)*/
-    #advantage_area .text{width: calc(100% - 80px - 1.8rem);}
+    #advantage_area .img-box{ margin-right: 1.8rem;}/*margin-bottom: 1.8rem;*/
+    #advantage_area img{ width: var(--advantage_area-img); height: var(--advantage_area-img); background-color: #ffffff;}/*  var(--logo_blue2)*/
+    #advantage_area .text{width: calc(100% - var(--advantage_area-img) - 1.8rem);}
 
     #advantage_area .img01{
         -webkit-mask: url(../img/about/01_core_technology.png) no-repeat;
@@ -612,17 +615,17 @@
     .BG_Green .btndiv{display: flex; justify-content: start;}
 
 
-    .mission h2, .leftBGimg h2{font-size: 2.3rem; }/*text-align: right;*/
+    .mission h2, .leftBGimg h2{font-size: 2.3rem;  }/*text-align: right;*/
 
-    .mission .col-md-3, .leftBGimg .col-md-3{width: 34%; }
-    .mission .col-md-9, .leftBGimg .col-md-9{width: 66%;}
+    .mission .col-md-3, .leftBGimg .col-md-3{width: 20%;}
+    .mission .col-md-9, .leftBGimg .col-md-9{width: 80%;}
 
     .mission .col-md-2, .leftBGimg .col-md-2{width: 35%;}/* text-align: center;*/
     .mission .col-md-10, .leftBGimg .col-md-10{width: 65%;}
 
     .mission .col-md-2{height: 100px; line-height: 100px; padding-left:2rem;}
     
-    /*mission .item:nth-child(2){margin: 8rem 0;}, .leftBGimg .item*/
+    .mission .item:nth-child(2){margin: 6rem 0;}/*, .leftBGimg .item*/
 
     .leftBGimg .item.mTpT0{margin-top:0rem; padding-top: 0;}
     .leftBGimg .item{padding-left:2rem;}
