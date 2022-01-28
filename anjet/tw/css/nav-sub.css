@@ -29,8 +29,7 @@
 
 .header_nav a.active{color:var(--logo_blue);}    
 .header_nav li:hover > a, .header_nav .angle_down:hover,
-.header_nav ul li ul li:hover > a, .header_nav ul li ul .angle_down:hover
-{
+.header_nav ul li ul li:hover > a, .header_nav ul li ul .angle_down:hover{
     color:var(--logo_blue);
     border-bottom: 2px solid var(--logo_blue);
 }
@@ -109,4 +108,6 @@
 
 
     .header_nav ul li > ul.language {width: auto; left: unset; right: 12px; padding: 0 1rem;}
+
+
 }
