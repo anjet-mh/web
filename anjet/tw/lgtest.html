@@ -1,28 +1,41 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<head></head>
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/popper.min.js"></script>
 
+    <link href="css/nav-sub.css" rel="stylesheet" type="text/css">
+    <title>Document</title>
+</head>
 <body>
+  <!-- Header Start -->
+  <script src="js/language.js"></script>
+  <header>
+        <div class="top">
+          <div class="container clearfix position-relative">
+            <div class="menu-toggler position-absolute">
+              <span class="top animate-4"></span>
+              <span class="middle animate-4"></span>
+              <span class="bottom animate-4"></span>
+            </div>
 
-
-
-  <div class="header navbar-top navFixed">
-<!-- 繁簡切換
-    <script src="js/language.js"></script>
-    <header>
-      <div class="top">
-        <div class="container clearfix position-relative">
-          <div class="lang-box float-right">
-            <a href="javascript:" class="s" onclick="zh_tran('s');">简体中文</a>
-            <a href="javascript:" class="t" onclick="zh_tran('t');">繁体中文</a>
-            <a href="/en">ENGLISH</a>
+            <div class="lang-box float-right">
+              <a href="javascript:" class="s" onclick="zh_tran('s');">简体中文</a>
+              <a href="javascript:" class="t" onclick="zh_tran('t');">繁体中文</a>
+              <a href="/en">ENGLISH</a>
+            </div>
           </div>
         </div>
-      </div>
-    </header>
--->
+        </header>
+
+  <div class="header navbar-top navFixed">
     <div class="logo">
-      <a href="index.html"><img src="img/LOGO.png" alt=""></a>
+        <a href="index.html"><img src="img/LOGO.png" alt=""></a>
     </div>
     <button class="menu_btn"><i class="fas fa-bars"></i></button>
 
@@ -32,9 +45,8 @@
         <!-- <li class="sitenav_hide"><a id="sitenav" class="" href="sitenav.html">網站地圖</a></li> -->
         <li class=""><a id="home" class="" href="index.html">首頁</a></li>
         <li class=""><a id="about" class="" href="about.html">關於安傑特</a></li>
-
-        <li class=""><a id="product" class="" href="product.html">產品資訊</a>
-          <!--href="javascript:void(0)"-->
+    
+        <li class=""><a id="product" class="" href="product.html">產品資訊</a><!--href="javascript:void(0)"-->
           <ul class="layer_2">
             <div class="row">
               <div class="col-md-6">
@@ -71,7 +83,7 @@
             </ol>
           </ul>
         </li>
-
+    
       </ul>
     </nav>
 
@@ -91,58 +103,58 @@
       $(nav_link_active).addClass("active");
 
 
+      
 
-
-      /* 下拉選單 區塊 開始 */
-      if ($("ul").prev("a").length != 0) { //判斷ul的上個兄弟層是不是有a
+/* 下拉選單 區塊 開始 */
+    if($("ul").prev("a").length != 0){ //判斷ul的上個兄弟層是不是有a
         //$("ul").prev("a").addClass("angle_down"); //有的話a加上Class angle_down (按鈕不獨立出來用)
         $("ul").prev("a").after("<a class='angle_down' href='javascript:void(0)' ></a>");//按鈕獨立出來用
-      }
+    }
 
-
-      $(".layer_1 li .angle_down").click(function () {
-        var w = document.body.scrollWidth;
-        if (w <= "992") {
-          var layer = $(this).parent().parent(); //變數 arr = 當下按下的.angle_down 的 父層(li)的父層(ul)
-          if ($(this).next("ul").hasClass('show')) {//當下一層的ul有.show的時侯才執行
-            $(layer).find("*").removeClass("show")
-          } else {//當沒有的時侯執行
-            $(layer).find("*").removeClass("show")
-            $(this).next("ul").addClass("show");
-          }
-          /*$( layer ).find( "*" ).removeClass("show");
-          $(this).next("ul").addClass("show");*/ //.slideToggle(200)先在當前(.angle_down)的下一個(.next)兄弟層"ul" 加上Class .show 然後再開啟或關閉"ul"
+       
+    $(".layer_1 li .angle_down").click(function () {
+        var w =document.body.scrollWidth;
+        if( w <= "992"){   
+            var layer = $(this).parent().parent(); //變數 arr = 當下按下的.angle_down 的 父層(li)的父層(ul)
+           if($(this).next("ul").hasClass('show')){//當下一層的ul有.show的時侯才執行
+              $( layer ).find( "*" ).removeClass("show")
+            }else{//當沒有的時侯執行
+              $( layer ).find( "*" ).removeClass("show")
+              $(this).next("ul").addClass("show");
+            }
+            /*$( layer ).find( "*" ).removeClass("show");
+            $(this).next("ul").addClass("show");*/ //.slideToggle(200)先在當前(.angle_down)的下一個(.next)兄弟層"ul" 加上Class .show 然後再開啟或關閉"ul"
         };
-      });
+    });
 
-      $(".layer_1").hover(function () {
-        var w = document.body.scrollWidth;
-        if (w > "992") {
-          $(".layer_1").find("*").removeClass("show");
-        };
-      });
+    $(".layer_1").hover(function(){
+      var w =document.body.scrollWidth;
+      if( w > "992"){
+        $(".layer_1" ).find( "*" ).removeClass("show");
+      };
+    });
 
-      /*$(".banner1, .carousel, .container").click(function () { //點class .container 的區塊 關閉選單    
-             $(".layer_1" ).find( "*" ).removeClass("show");
-             //$(".layer_1 ul").not(".show").slideUp();
-     });*/
-
-
+     /*$(".banner1, .carousel, .container").click(function () { //點class .container 的區塊 關閉選單    
+            $(".layer_1" ).find( "*" ).removeClass("show");
+            //$(".layer_1 ul").not(".show").slideUp();
+    });*/     
 
 
 
-      $(".menu_btn").click(function () { //點漢堡選單icon
+   
+
+    $(".menu_btn").click(function () { //點漢堡選單icon
         $(".header_nav").toggleClass("header_nav_Open_Close");
-        if ($(".header_nav_Open_Close").length != 0) { //當有.header_nav_Open_Close的時侯才執行
-          $(".layer_1").find("*").removeClass("show");
-          //$(".layer_1 ul").not(".show").slideUp();
+        if($(".header_nav_Open_Close").length != 0){ //當有.header_nav_Open_Close的時侯才執行
+            $(".layer_1" ).find( "*" ).removeClass("show");
+            //$(".layer_1 ul").not(".show").slideUp();
         }
-      });
+    });
 
 
 
 
-      /* 下拉選單 區塊 結束 */
+/* 下拉選單 區塊 結束 */
 
       /* nav.html被載入後 隱藏 & 變更 導覽頁中.main-container 的 網站導覽 與 下拉選單 class */
       $("#load-nav2 .navbar-top").removeClass("navbar-top")
@@ -151,7 +163,7 @@
       $("#load-nav2 .layer_2").removeClass("layer_2").addClass("L2");
       $("#load-nav2 .layer_3").removeClass("layer_3").addClass("L3");
       $(".main-container .sitenav_hide").hide(); //隱藏sitenav_hide的LINK
-
+      
 
       /*回到頂端*/
       $(function () {
@@ -173,18 +185,18 @@
 
       /*固定選單*/
       //$(function () {
-      // $(window).scroll(function () {
-      //   if ($(this).scrollTop() > 200) {          /* 要滑動到選單的距離 */
-      //  $('.navbar-top').addClass('navFixed');   /* 幫選單加上固定效果 */
-      //     $('body').addClass('new-body-mt');/*調整高度*/
-      //     $('.change-mt3').removeClass('mt-3').addClass('mt-add80');
-      //   } else {
-      //     $('.navbar-top').removeClass('navFixed'); /* 移除選單固定效果 */
-      //     $('body').removeClass('new-body-mt');/*調整高度*/ 
-      //     $('.carousel').removeClass('new-mt');/*調整高度*/
-      //     $('.change-mt3').addClass('mt-3').removeClass('mt-add80');/*調整高度*/  
-      //   }
-      // });
+        // $(window).scroll(function () {
+        //   if ($(this).scrollTop() > 200) {          /* 要滑動到選單的距離 */
+        //  $('.navbar-top').addClass('navFixed');   /* 幫選單加上固定效果 */
+        //     $('body').addClass('new-body-mt');/*調整高度*/
+        //     $('.change-mt3').removeClass('mt-3').addClass('mt-add80');
+        //   } else {
+        //     $('.navbar-top').removeClass('navFixed'); /* 移除選單固定效果 */
+        //     $('body').removeClass('new-body-mt');/*調整高度*/ 
+        //     $('.carousel').removeClass('new-mt');/*調整高度*/
+        //     $('.change-mt3').addClass('mt-3').removeClass('mt-add80');/*調整高度*/  
+        //   }
+        // });
       //});
 
 
@@ -193,26 +205,20 @@
 
 
   </script>
+
+        <!-- Header End -->
+
+
+        <!-- <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?f808d470c0ce8fb35a7d32f672cd18fa";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script> -->
+  <!-- Footer End -->
+    
 </body>
-
 </html>
-
-<!--<li class=""><a id="applications" class="" href="applications.html">應用領域</a>
-  <ul class="layer_2">
-    <div class="row">
-      <div class="col-12">
-        <ol class="">
-          <li class=""><a class="word_wrap" href="#">Power supply (including PSU for telecommunications, computing, consumer and other applications)
-          </a></li>電源（包括用於電信、計算、消費和其他應用的PSU）
-          <li class=""><a class="" href="#">Electric vehicle charging station</a></li>電動汽車充電站
-          <li class=""><a class="" href="#">Hybrid and electric vehicles (HEV / EV)</a></li>混合動力和純電電動汽車（HEV/EV）
-          <li class=""><a class="" href="#">Photovoltaic inverter</a></li>陽光變頻器(光伏逆變器)
-          <li class=""><a class="" href="#">Base station power (4G/5G)</a></li>無線基地站台（4G/5G）
-          <li class=""><a class="" href="#">Industrial Motor Driver</a></li>工業電機驅動器
-          <li class=""><a class="" href="#">Uninterruptible power supply (UPS)</a></li>不斷電系統（UPS
-          <li class=""><a class="" href="#">Wind turbines/traction</a></li>風力發電
-        </ol>
-      </div>
-    </div>
-  </ul>
-</li>-->
