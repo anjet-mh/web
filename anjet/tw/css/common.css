@@ -5,6 +5,7 @@
         --body_bg-color:#f2fdff;/*#195E87*/
         --logo_blue:rgba(0, 167, 234, 1);/*#00A7EA*/
         --logo_blue2:rgb(0, 167, 234, 1);/*#00A7EA*/
+        --logo_blue2-a:rgb(0, 167, 234, 0.5);/*#00A7EA*/
         --logo_blue_03:rgba(0, 167, 234, 0.3);/*#00A7EA*/
         --logo_blue_0125:rgba(0, 167, 234, 0.125);/*#00A7EA*/
         --h2_color:#0c69c0;/*  #1d5a5c*/
@@ -162,6 +163,9 @@
     .BG_Blue{background-color: rgb(210, 241, 255);}
     .BG_Green p, .focus p{font-size: 1.2rem; padding-bottom: 1.2rem; line-height: 2.2rem;}
     .BG_Green .btn{margin-top: 2rem;}
+
+    .dots{padding-left: 2.2rem; position: relative;}
+    .dots::before{position: absolute; content: ""; left: 0; top: calc((100% - 1rem)/2 + 3%); width: 1rem; height: 1rem;background-color: var(--logo_blue2-a); border-radius: 100%;}
 
 
     .mission .wrap, .leftBGimg .wrap{margin: 3rem 0rem; }
@@ -615,6 +619,7 @@
     .BG_Green .btndiv{display: flex; justify-content: start;}
 
 
+
     .mission h2, .leftBGimg h2{font-size: 2.3rem;  }/*text-align: right;*/
 
     .mission .col-md-3, .leftBGimg .col-md-3{width: 20%;}
@@ -623,12 +628,16 @@
     .mission .col-md-2, .leftBGimg .col-md-2{width: 35%;}/* text-align: center;*/
     .mission .col-md-10, .leftBGimg .col-md-10{width: 65%;}
 
-    .mission .col-md-2{height: 100px; line-height: 100px; padding-left:2rem;}
+    .mission .item{margin: 0rem 0rem;} 
+    .dots::before{top: 0.85rem}
+    /*.mission .col-md-2{height: 100px; line-height: 100px; padding-left:2rem;}*/
     
     .mission .item:nth-child(2){margin: 6rem 0;}/*, .leftBGimg .item*/
 
+
     .leftBGimg .item.mTpT0{margin-top:0rem; padding-top: 0;}
     .leftBGimg .item{padding-left:2rem;}
+
 
 
     .leftBGimg .BG_Green {display: block; align-items: unset;}

@@ -33,8 +33,8 @@
         <li class=""><a id="home" class="" href="index.html">首頁</a></li>
         <li class=""><a id="about" class="" href="about.html">關於安傑特</a></li>
 
-        <li class=""><a id="product" class="" href="product.html">產品資訊</a>
-          <!--href="javascript:void(0)"-->
+        <li class=""><a id="product" class="" href="javascript:void(0)">產品資訊</a>
+          <!--href="product.html"-->
           <ul class="layer_2">
             <div class="row">
               <div class="col-md-6">
@@ -95,14 +95,14 @@
 
       /* 下拉選單 區塊 開始 */
       if ($("ul").prev("a").length != 0) { //判斷ul的上個兄弟層是不是有a
-        //$("ul").prev("a").addClass("angle_down"); //有的話a加上Class angle_down (按鈕不獨立出來用)
-        $("ul").prev("a").after("<a class='angle_down' href='javascript:void(0)' ></a>");//按鈕獨立出來用
+        $("ul").prev("a").addClass("angle_down"); //有的話a加上Class angle_down (按鈕不獨立出來用)
+        //$("ul").prev("a").after("<a class='angle_down' href='javascript:void(0)' ></a>");//按鈕獨立出來用
       }
 
 
       $(".layer_1 li .angle_down").click(function () {
         var w = document.body.scrollWidth;
-        if (w <= "992") {
+        if (w <= "768") { //992
           var layer = $(this).parent().parent(); //變數 arr = 當下按下的.angle_down 的 父層(li)的父層(ul)
           if ($(this).next("ul").hasClass('show')) {//當下一層的ul有.show的時侯才執行
             $(layer).find("*").removeClass("show")
@@ -117,7 +117,7 @@
 
       $(".layer_1").hover(function () {
         var w = document.body.scrollWidth;
-        if (w > "992") {
+        if (w > "768") { //992
           $(".layer_1").find("*").removeClass("show");
         };
       });
