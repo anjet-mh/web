@@ -71,7 +71,7 @@
 
 /* 隱藏 .header_nav 選單 S */
 .header_nav ul li ul.show{display:block;}
-.header_nav ul li ul{ display: none;}/**/
+.header_nav ul li ul{display: none;}/**/
 .header_nav_Open_Close{height: 0px; transform:translateY(-500px);}/**/
 /* 隱藏 .header_nav 選單 E */
 
@@ -99,8 +99,8 @@
     .header_nav .layer_2 ul{margin-top: 0.8rem;}
 
     
-    .header_nav li:hover > ul {display: block;}
-    .header_nav ul li ul.show {display:none;}/**/
+    .header_nav li:hover > ul {display: block;}/* */
+    .header_nav ul li ul.show {display:none;}
 
     .menu_btn{display: none;}
     /*.header_nav_Open_Close{height: auto;}*/

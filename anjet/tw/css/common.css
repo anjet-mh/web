@@ -599,7 +599,7 @@
 /*}
 
 @media (min-width: 992px) {*/
-    .wrap{padding: 40px;}
+    .wrap{padding: 40px 0px;}
     /*.top_space{margin-top: var(--nav-height);}65px*/
     #footer .card-body {text-align: center;}
 
@@ -690,7 +690,7 @@
     
     #vision_area .wrap{ height: 300px;  position: relative;}
     #vision_area .item{display: flex;}
-    #vision_area .item .text{width: calc(100% - 485px);}
+    #vision_area .item .text{width: calc(100% - 540px);}/*485px*/
     /*#vision_area .item .img-box{height: 300px;} top: 0; left: calc( 50% - 24px ) width: 50%; right: -76px;*/
     #vision_area .item img{position: absolute; top:0; right: 40px; width: auto; height: 100%;}
 
