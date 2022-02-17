@@ -3,7 +3,7 @@
     --logoImgHeight:36px;
     --headerPadding-TB:calc((var(--nav-height) - var(--logoImgHeight)) / 2);
 }
-.row{margin: 0rem;padding: 0px 0.5rem;}/**/
+.row{margin: 0rem; padding: 0px 0.5rem;}/**/
 
 .header{padding: var(--headerPadding-TB) 0 ; background-color: var(--header_background-color); /*padding: 0.8rem 0 0.5rem; border-bottom: .15rem solid #bdbdbd;*/}
 
