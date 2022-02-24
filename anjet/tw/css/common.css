@@ -16,8 +16,8 @@
     }
 
     .row>*{margin: 0; padding: 0;}
-
-    .container-fluid{padding-right: var(--bs-gutter-x,0.5rem); padding-left: var(--bs-gutter-x,0.5rem);}
+  
+    .container-fluid{padding-right: var(--bs-gutter-x,0.5rem); padding-left: var(--bs-gutter-x,0.5rem);}/**/
 
     body {background-color: var(--body_bg-color);}/**/
 
@@ -49,7 +49,7 @@
         background-color: #313131;
         width: 100%;
         font-size: 0.8rem;
-        padding-top: 1rem;
+        padding: 5rem 0rem 2rem;
     }
     #footer p{line-height:unset; letter-spacing:0.02rem;}
     #footer ul{padding-left: 0rem;}
@@ -111,12 +111,15 @@
 
     /*.index .area{padding: 2rem 0;}*/
     .area.banner{display: flex; align-items: center;/*垂直置中*/}
-    .container{display: flex; justify-content: center;/*左右置中 padding: 0;*/}
-    .wrap{width: 100%; padding: 20px;}
-    .content{ margin-top: 2rem;}
+    .wrap{ padding: 20px;} /*width: 100%;*/
+    /*.container{display: flex; justify-content: center;}左右置中*/
+    .banner .wrap{display: flex; justify-content: center;}/*左右置中*/
 
-    .banner .wrap{
-        width: 90%;/**/
+    
+    .content{ margin-top: 2rem;}
+    
+    .banner-title-background-color{/*.banner .wrap*/
+        width: 100%;/**/
         text-align: center;
         background-color: rgba(255, 255, 255, 0.85);/*rgba(255, 255, 255, 0.65)*/
         border-radius: 5px;/**/
@@ -139,6 +142,7 @@
         background-attachment: fixed;/* 背景固定 */
         /*border-top: 1rem #0000005e solid;*/
     }
+
 
     .Shadow{box-shadow: 0px 3px 10px 1px rgba(0, 0, 0, 0.45);}
     .mezasu .Shadow{box-shadow: 0px 3px 15px 2px #113000;}
@@ -171,7 +175,7 @@
 
     /*.wrap{margin: 40px; }.mission .wrap, .leftBGimg .wrap*/
     .mission .item{margin: 2rem 0rem;}
-    .leftBGimg .item{margin:1.5rem 0rem 1.5rem 2.2rem;}
+    .leftBGimg .item{margin:1.5rem 0rem 1.5rem 0rem;}/*margin:1.5rem 0rem 1.5rem 2.2rem;*/
     /*.leftBGimg .item{margin-bottom: 4rem; }.mission .item,*/
 
     .mission .title{font-size: 1.7rem;}
@@ -550,7 +554,7 @@
     .tabContentaddHeight{padding: 5.9rem 0px 2rem;}
 
     #contactus-index{background-color: #8b8b8b; text-align: center;}/*rgba(0, 167, 234, 0.05)*/
-    #contactus-index .wrap{ padding: 67px 0;}
+    #contactus-index .wrap{ padding: 7rem 0;}
     #contactus-index .text{font-size: 2rem; margin-bottom: 2rem; color: #ffffff;}
     #contactus-index .white{border-color: white; color: white;}
 
@@ -608,8 +612,8 @@
     #footer .card-body {text-align: center;}
 
     /*.container{max-width: 768px;} max-width: 992px;*/
-    /*.banner .container{width: 580px;}*/
-    .mezasu .wrap{padding: 30px;}
+    /*.banner .container{width: 580px;}
+    .mezasu .wrap{padding: 30px;}*/
 
     .Orange-title{font-size: 3.5rem; font-weight: 500; letter-spacing:0.25rem; }
 
@@ -712,14 +716,11 @@
 
 @media (min-width: 992px) {
     .globe-map{height: 500px;}
-    .globe-map img{width: 100%; top: -10%; left: 0;}
-
-    
+    .globe-map img{width: 100%; top: -10%; left: 0;} 
 }
-@media (min-width: 1400px) {
-    .globe-map img{width: 100%; top: -20%; left: 0;}
 
-    
+@media (min-width: 1400px) {
+    .globe-map img{width: 100%; top: -20%; left: 0;}    
 }
 
 
