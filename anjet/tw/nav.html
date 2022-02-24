@@ -64,7 +64,7 @@
         <li class=""><a id="support" class="" href="news.html">新聞記事</a></li>-->
         <li class=""><a id="recruit" class="" href="recruit.html">人才招募</a></li>
         <li class=""><a id="contactus" class="" href="contactus.html">聯絡我們</a></li>
-        <li class=""><a id="language" class="" href="javascript:void(0)">LANGUAGE</a>
+        <li class=""><a id="language" class="" href="javascript:void(0)"><i class="fas fa-globe"></i></a><!--語言LANGUAGE-->
           <ul class="layer_2 language">
             <ol class="">
               <li class=""><a class="" href="javascript:void(0)">中</a></li>
@@ -121,7 +121,8 @@
         var w = document.body.scrollWidth;
         if (w > "768") { //992
           $(".layer_1").find("*").removeClass("show");
-        };
+          $(".change-href").attr("href","product.html");
+        }else{$(".change-href").attr("href","javascript:void(0)");};
       });
 
       /*$(".banner1, .carousel, .container").click(function () { //點class .container 的區塊 關閉選單    

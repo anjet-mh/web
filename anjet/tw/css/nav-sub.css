@@ -76,7 +76,7 @@
 /* 隱藏 .header_nav 選單 E */
 
 
-.main-nav-link-in-sub{display: none;}/*block*/
+.main-nav-link-in-sub{display: block;}/*block*/
 
 /* width>936px時 多層選單的定位 992px 860px */
 @media (min-width: 768px) {
