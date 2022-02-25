@@ -683,7 +683,7 @@
 
 @media (min-width: 1200px) {
     .container{max-width: 1024px;}
-    .globe-map img{width: 100%; top: -20%; left: 0;}    
+    /*.globe-map img{width: 100%; top: -20%; left: 0;}*/
 }
 
 

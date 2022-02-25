@@ -112,6 +112,6 @@
     /*.header_nav ul li ul{ display: block;}開啟第二層調整測試用*/
 
 
-    .header_nav ul li > ul.language {width: auto; left: unset; right: 12px; padding: 0 1rem;}
+    .header_nav ul li > ul.language {width: auto; left: unset; right: -10px; padding: 0 1rem;}
 
 }
