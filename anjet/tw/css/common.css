@@ -16,7 +16,7 @@
     }
 
     .row>*{margin: 0; padding: 0;}
-  
+
     .container-fluid{padding-right: var(--bs-gutter-x,0.5rem); padding-left: var(--bs-gutter-x,0.5rem);}/**/
 
     body {background-color: var(--body_bg-color);}/**/
@@ -342,8 +342,8 @@
     #company_area .date, #company_area .title, #history_area .date, #history_area .title, h6.title{font-weight: 600; margin-bottom: 0.3rem; padding-bottom: 0.3rem; border-bottom:1px solid var(--logo_blue2); color: var(--logo_blue2);}
     /*#company_area .text, #history_area .text{padding-left: 2.7rem; padding-right: 0.5rem;}width:calc(100% - 230px);*/
 
-    .globe-map{width: 100%; height: 300px; margin-bottom: 0.5rem;overflow: hidden; position: relative;}
-    .globe-map img{width: 250%; position: absolute; top: -15%; left: -90%;}
+    .globe-map{height: 300px; margin-bottom: 0.5rem; overflow: hidden; position: relative;}/*width: 100%; */
+    .globe-map img{width: 300%; height: auto; position: absolute; top: -15%; left: -120%;}/**/
     .globe-title, .card-sub-title{background-color: var(--logo_blue_0125); text-align: center; font-weight: 600; padding: 0.5rem; letter-spacing:0.5rem;}
     .globe-text{padding: 1rem;}
 
@@ -559,50 +559,16 @@
     #contactus-index .white{border-color: white; color: white;}
 
 /* ---------------------------------------------------------- */
-
-@media (min-width: 360px) {
-    .globe-map img {
-        width: 250%;
-        top: -30%;
-        left: -90%;
-    }
-} 
-
-@media (min-width: 400px) {
-    .globe-map img {
-        width: 200%;
-        top: -30%;
-        left: -70%;
-    }
-} 
-
-@media (min-width: 480px) {
-    .globe-map img {
-        width: 180%;
-        top: -30%;
-        left: -50%;
-    }
-} 
-
-@media (min-width: 540px) {
-    .globe-map img {
-        width: 168%;
-        top: -36%;
-        left: -48%;
-    }
-}
-
-@media (min-width: 768px) { /*min-width: 768px*/
+@media (min-width: 300px) {.globe-map img {width: 280%; top: -20%; left: -110%;}} 
+@media (min-width: 360px) {.globe-map img {width: 220%; top: -20%; left: -75%;}} 
+@media (min-width: 400px) {.globe-map img {width: 200%; top: -20%; left: -65%;}} 
+@media (min-width: 480px) {.globe-map img {width: 180%; top: -30%; left: -50%;}} 
+@media (min-width: 540px) {.globe-map img {width: 168%; top: -36%; left: -48%;}}
+@media (min-width: 768px) {.globe-map img {width: 127%; top: -15%; left: -15%;}
+    /*min-width: 768px*/
     /*.card img{width: 50%; height: 50%; 
         object-fit: cover; 填滿元素的寬度及高度(維持原比例)，通常會剪掉超出部分的物件。
     }*/
-    .globe-map img {
-        width: 127%;
-        top: -15%;
-        left: -15%;
-    }
-
-
 /*}
 
 @media (min-width: 992px) {*/
@@ -617,16 +583,12 @@
 
     .Orange-title{font-size: 3.5rem; font-weight: 500; letter-spacing:0.25rem; }
 
-
-    .BG_Green p, .focus p{font-size: 1.3rem; padding-bottom: 1.5rem; line-height: 2.5rem;}
-    /*.banner .wrap{width: 100%;}*/
-    .BG_Green{display: flex; align-items: center;}/*  padding:8rem 6rem;*/
+    .BG_Green p, .focus p{font-size: 1.3rem; padding-bottom: 1.5rem; line-height: 2.5rem;}/*.banner .wrap{width: 100%;}*/
+    .BG_Green{display: flex; align-items: center;}/*padding:8rem 6rem;*/
     .BG_Green .item{width: 50%;}
     .BG_Green .item:nth-child(2){margin-top: 0rem; padding-left: 3rem;}/*第二個item  margin-left: 2rem;*/        
     .BG_Green .img_box{height: 100%;}
     .BG_Green .btndiv{display: flex; justify-content: start;}
-
-
 
     .mission h2, .leftBGimg h2{font-size: 2.3rem;  }/*text-align: right;*/
 
@@ -719,7 +681,8 @@
     .globe-map img{width: 100%; top: -10%; left: 0;} 
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1200px) {
+    .container{max-width: 1024px;}
     .globe-map img{width: 100%; top: -20%; left: 0;}    
 }
 

@@ -37,7 +37,7 @@
           <ul class="layer_2">
             <div class="row">
 
-              <li class=""><a id="product-sub" class="main-nav-link-in-sub" href="product.html">產品資訊</a></li>
+              <li class=""><a id="product-sub" class="nav-link-in-sub-show" href="product.html">產品資訊</a></li>
               
               <div class="col-md-6">
                 <div class="layer_2_title">SiC 蕭特基二極體 (SBD)</div>
@@ -121,8 +121,12 @@
         var w = document.body.scrollWidth;
         if (w > "768") { //992
           $(".layer_1").find("*").removeClass("show");
-          $(".change-href").attr("href","product.html");
-        }else{$(".change-href").attr("href","javascript:void(0)");};
+          $(".change-href").attr("href","product.html"); //改網址
+          $("#product-sub").addClass("nav-link-in-sub-hide");
+        }else{
+          $(".change-href").attr("href","javascript:void(0)");//改網址
+          $("#product-sub").removeClass("nav-link-in-sub-hide");
+        }
       });
 
       /*$(".banner1, .carousel, .container").click(function () { //點class .container 的區塊 關閉選單    
