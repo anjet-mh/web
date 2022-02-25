@@ -77,8 +77,9 @@
 
 
 /*.main-nav-link-in-sub{display: block;}block*/
-.nav-link-in-sub-show{display: block;}
 .nav-link-in-sub-hide{display: none;}
+.nav-link-in-sub-show{display: block;}
+
 
 /* width>936px時 多層選單的定位 992px 860px */
 @media (min-width: 768px) {
