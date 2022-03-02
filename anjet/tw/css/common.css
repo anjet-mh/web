@@ -25,7 +25,7 @@
     h2{font-size: 2rem; letter-spacing:0.2rem; margin-bottom: 1rem; color:var(--logo_blue2); border-bottom: 1px solid var(--logo_blue2); padding-bottom: .8rem;}
     h4{font-size: 1.27rem;}
     h4, h5{margin: 0.5rem 0rem 1rem;}
-    h6{font-size: 0.92rem; padding-left: 10px;}
+    h6{font-size: 0.92rem;}/* padding-left: 10px;*/
     a{text-decoration: none; color: #000;}
     a:hover {color: var(--logo_blue)}
     p {font-weight: 300;} /*margin-bottom: 0rem; line-height: 0.8rem;*/
@@ -364,7 +364,7 @@
 
     .globe-map{height: 300px; margin-bottom: 0.5rem; overflow: hidden; position: relative;}/*width: 100%; */
     .globe-map img{width: 300%; height: auto; position: absolute; top: -15%; left: -120%;}/**/
-    .globe-title, .card-sub-title{background-color: var(--logo_blue_0125); text-align: center; font-weight: 600; padding: 0.5rem; letter-spacing:0.5rem;}
+    .globe-title{background-color: var(--logo_blue_0125); text-align: center; font-weight: 600; padding: 0.5rem; letter-spacing:0.5rem;}/*, .card-sub-title*/
     .globe-text{padding: 1rem;}
 
 
@@ -424,8 +424,10 @@
     #subtitle-bottom-line .en, #advantage_area .en{display: none;}
 
 /* -----------------*/  
+    #product_card_area .item1 {text-align: center;}
+    #product_card_area .item1, #product_card_area .item2{margin-bottom: 2rem;}
+    #product_card_area .item2 ol{padding-left: 20px;}
 
-    
 
     #product_card_area .card{border: unset; background-color: unset;}
     #product_card_area .card-header{text-align: left;}
@@ -648,6 +650,12 @@
     .left{padding-right: 20px;}
     .right{padding-left: 20px;}
     .item.right img{width: 80%;}
+
+
+    #product_card_area .wrapper{display: flex;}
+    #product_card_area img{width: 80%;}
+    #product_card_area .item1{width: 200px; display: flex; align-items: center; justify-content: center;}
+    #product_card_area .item2{width: 50%; padding-left: 20px;}
 
     #product_card_area .card_box{display: flex;}
     #product_card_area .card{width: 50%; margin: 10px;}
