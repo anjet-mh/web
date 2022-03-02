@@ -130,9 +130,21 @@
         height: 100vh;/*500px*/
         background: url(../img/banner/index-maehe2-1.jpg) center 70% no-repeat;
         background-size: cover;/* 背景自動縮放 */
+        position: relative;
     }
     /*.mezasu .container{width: 100vw;}
     .mezasu .wrap{width: 90%; }*/
+
+    .mezasu .banner-product{
+        position: absolute;
+        width: 100vw; 
+        height: 100px;
+        bottom: 50px;
+        display: flex;
+        text-align: center;        
+    }
+    .mezasu .banner-product .item{width: 25%; background-color: #ffffffbb;}
+
 
     .focus{
         height: 90vh;
@@ -339,7 +351,14 @@
     #about_area .area:nth-child(even){background-color: #dff6ff;}
     #about_area .item{margin-bottom: 3rem;} 
 
-    #company_area .date, #company_area .title, #history_area .date, #history_area .title, h6.title{font-weight: 600; margin-bottom: 0.3rem; padding-bottom: 0.3rem; border-bottom:1px solid var(--logo_blue2); color: var(--logo_blue2);}
+    #company_area .date, 
+    #company_area .title,  
+    #advantage_area .title, 
+    #history_area .date, 
+    #history_area .title, 
+    h6.title {width: 100%; font-weight: 600; margin-bottom: 0.3rem; padding-bottom: 0.3rem; border-bottom:1px solid var(--logo_blue2); color: var(--logo_blue2);}
+    #advantage_area .title{margin-bottom: 1.8rem;}
+    
     /*#company_area .text, #history_area .text{padding-left: 2.7rem; padding-right: 0.5rem;}width:calc(100% - 230px);*/
 
     .globe-map{height: 300px; margin-bottom: 0.5rem; overflow: hidden; position: relative;}/*width: 100%; */
@@ -358,49 +377,50 @@
     #vision_area .title{margin: 35px 0; font-size: 2rem; font-weight: 600; color: #00b6b6;}
     #vision_area p{margin:0 0 35px; font-size: 1.5rem;}*/
 
-    #subtitle-bottom-line .item{display: flex; flex-wrap:wrap;}
+    #subtitle-bottom-line .item, #advantage_area .item{display: flex; flex-wrap:wrap;}
     #subtitle-bottom-line .title{width: 100%;
         font-size: 1.5rem; /*font-weight: 600; */
         margin-bottom: 1.8rem; padding-bottom: 0.3rem;
         border-bottom:1px solid #ffffff;
         /*margin-top: -8px;*/
     }
-    #subtitle-bottom-line .img-box{ margin-right: 1.8rem;}/*margin-bottom: 1.8rem;*/
-    #subtitle-bottom-line img{ width: var(--subtitle-bottom-line-img); height: var(--subtitle-bottom-line-img); background-color: #ffffff;}/*  var(--logo_blue2)*/
-    #subtitle-bottom-line .text{width: calc(100% - var(--subtitle-bottom-line-img) - 1.8rem);}
-    #subtitle-bottom-line .text.no-img-box{width: 100%;}
+    #subtitle-bottom-line .img-box, #advantage_area .img-box{ margin-right: 1.8rem;}/*margin-bottom: 1.8rem;*/
+    #subtitle-bottom-line img, #advantage_area img{ width: var(--subtitle-bottom-line-img); height: var(--subtitle-bottom-line-img); background-color: #ffffff;}/*  var(--logo_blue2)*/
+    #advantage_area img{ background-color: var(--logo_blue2);}
+    #subtitle-bottom-line .text, #advantage_area .text{width: calc(100% - var(--subtitle-bottom-line-img) - 1.8rem);}
+    #subtitle-bottom-line .text.no-img-box, #advantage_area .text.no-img-box{width: 100%;}
 
-    #subtitle-bottom-line .img01{
+    #subtitle-bottom-line .img01, #advantage_area .img01{
         -webkit-mask: url(../img/about/01_core_technology.png) no-repeat;
         mask: url(../img/about/01_core_technology.png) no-repeat;
         -webkit-mask-size: 100% 100%;
         mask-size: 100% 100%;
     }
-    #subtitle-bottom-line .img02{
+    #subtitle-bottom-line .img02, #advantage_area .img02{
         -webkit-mask: url(../img/about/02_team_member.png) no-repeat;
         mask: url(../img/about/02_team_member.png) no-repeat;
         -webkit-mask-size: 100% 100%;
         mask-size: 100% 100%;
     }
-    #subtitle-bottom-line .img03{
+    #subtitle-bottom-line .img03, #advantage_area .img03{
         -webkit-mask: url(../img/about/03_20_years.png) no-repeat;
         mask: url(../img/about/03_20_years.png) no-repeat;
         -webkit-mask-size: 100% 100%;
         mask-size: 100% 100%;
     }
-    #subtitle-bottom-line .img04{
+    #subtitle-bottom-line .img04, #advantage_area .img04{
         -webkit-mask: url(../img/about/04_experience.png) no-repeat;
         mask: url(../img/about/04_experience.png) no-repeat;
         -webkit-mask-size: 100% 100%;
         mask-size: 100% 100%;
     }
-    #subtitle-bottom-line .img05{
+    #subtitle-bottom-line .img05, #advantage_area .img05{
         -webkit-mask: url(../img/about/05_relationship.png) no-repeat;
         mask: url(../img/about/05_relationship.png) no-repeat;
         -webkit-mask-size: 100% 100%;
         mask-size: 100% 100%;
     }
-    #subtitle-bottom-line .en{display: none;}
+    #subtitle-bottom-line .en, #advantage_area .en{display: none;}
 
 /* -----------------*/  
 
