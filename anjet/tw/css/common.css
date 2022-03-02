@@ -32,6 +32,7 @@
     ol, ul {padding: 0rem; margin: 0rem;}
     ol li {list-style-type: square; font-weight: 300; line-height: 2rem; }
     .font-subscripts {font-size: 0.5rem;}/*下標字*/
+    .wrapper{padding-left: 10px; padding-right: 10px;}
 
     .btn{letter-spacing: .1rem; border: 1px solid var(--logo_blue2); color: var(--logo_blue2);}/*--btn-color_background-color*/
     .btn:hover{background-color: var(--logo_blue2); color: rgba(255, 255, 255, 1);}/*--btn-color_background-color*/
@@ -356,9 +357,9 @@
     #advantage_area .title, 
     #history_area .date, 
     #history_area .title, 
-    h6.title {width: 100%; font-weight: 600; margin-bottom: 0.3rem; padding-bottom: 0.3rem; border-bottom:1px solid var(--logo_blue2); color: var(--logo_blue2);}
+    h6.title {width: 100%; font-size: 1.2rem; font-weight: 500; margin-bottom: 0.3rem; padding-bottom: 0.3rem; border-bottom:1px solid var(--logo_blue2); color: var(--logo_blue2);}
     #advantage_area .title{margin-bottom: 1.8rem;}
-    
+    #advantage_area .title small{padding-left: 10px; font-size: 0.9rem;}
     /*#company_area .text, #history_area .text{padding-left: 2.7rem; padding-right: 0.5rem;}width:calc(100% - 230px);*/
 
     .globe-map{height: 300px; margin-bottom: 0.5rem; overflow: hidden; position: relative;}/*width: 100%; */
@@ -514,7 +515,7 @@
     #product_area .product_title{margin: 20px 0;}/*margin-bottom: 1.5rem;*/
     #product_area .apn{width: 100%; height: auto; font-size: 1.8rem; text-align: center; padding: 0.1rem; margin-bottom: 0rem; border-radius: 10px 10px 0 0;}
     #product_area samp{/*display:block; text-align: center;*/ margin-left: 0.8rem; top: -0.2rem; font-size: 1.2rem; font-family: unset;}
-    #product_area .item{margin: 0% 0% 4%; padding: 1rem; }/*border: 1px solid var(--logo_blue_03);*/
+    #product_area .item{margin: 0% 0% 4%; padding: 10px; }/*border: 1px solid var(--logo_blue_03);*/
     #product_area .title{ font-size: 1.2rem; padding-bottom: 0.5rem; margin-bottom: 0.5rem; color: var(--logo_blue2) ; border-bottom: 1px solid var(--logo_blue2);}/*--logo_blue_03*/
     #product_area .packing-style{font-weight: 300;}
     #product_area .part-item {display: flex; margin-bottom: 1rem;}
