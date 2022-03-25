@@ -12,30 +12,45 @@
 .logo img {height: var(--logoImgHeight);/*transform:scale(0.5, 0.5);*/}
 .header_nav ol, .header_nav ul{margin: 0; padding: 0; z-index: 99;}
 .header_nav a{color:rgb(80, 80, 80); border: 1px solid rgba(255,255,255,.0);/* 預先做出有框的大小 border-radius: 5px; */}
-.header_nav li{padding: 0px 0.7rem 0.8rem; width: 100%; list-style: none; line-height: 1.5rem;} /*margin: 5px 0; padding: 3px 10px; */
+.header_nav li{margin: 0.7rem 0rem ; width: 100%; list-style: none; line-height: 1.5rem;} /*margin: 5px 0; padding: 3px 10px; */
 
 
-.header_nav ul li > ul{/*第二層ul的白底*/
+.header_nav ul li ul{/*第二層ul的白底*/
     margin: 0.5rem 0rem 0rem; 
-    padding: 0.5rem 0.25rem 0rem;
+    padding: 0.5rem 0.25rem;
     background-color: rgb(240, 240, 240);
     box-shadow:0px 4px 6px 2px rgba( 0, 0, 0, .3);
     border-radius: 5px;
     width: 100%;
+
+    position: absolute;
+    transform-origin:left top;
+    transform:scale(0);
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+     -ms-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+         transition: all 0.3s ease;
 }
+.header_nav ol li{margin: 0.7rem;}
 .header_nav ul li ul a{color:rgb(80, 80, 80);} /*第二層開始的a*/
 
 .header_nav .layer_2_title {margin: 0.1rem 0 0.4rem;}
 
 .header_nav a.active{color:var(--logo_blue);}    
+
 .header_nav li:hover > a, .header_nav .angle_down:hover,
 .header_nav ul li ul li:hover > a, .header_nav ul li ul .angle_down:hover{
-    color:var(--logo_blue);
-    border-bottom: 2px solid var(--logo_blue);
-}
+    color:var(--logo_blue);    
+}/*border-bottom: 2px solid var(--logo_blue);*/
+
 .header_nav ul li ul li:hover > a, .header_nav ul li ul .angle_down:hover{
     background-color: transparent;
 }
+
+.header_nav a{position: relative;}
+.header_nav a::before{position: absolute; content: ''; width: 0%; height: 5px; top: 100%; left: 0; transition: .3s;}
+.header_nav a:hover::before {width: 100%; left: 0%; background-color: var(--logo_blue);}
 
 /* 利用::after 加上向下或向右的符號 S */
 
@@ -70,9 +85,17 @@
 .menu_btn:active{color: #ffffff;border: 2px solid #ffffff;}
 
 /* 隱藏 .header_nav 選單 S */
-.header_nav ul li ul.show{display:block;}
-.header_nav ul li ul{display: none;}/**/
-.header_nav_Open_Close{height: 0px; transform:translateY(-500px);}/**/
+.header_nav ul li ul.show{
+    position: unset;
+    transform:scaleX(1);	
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+     -ms-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+         transition: all 0.3s ease;}/* */
+/*.header_nav ul li ul{display: none;}*/
+
+.header_nav_Open_Close{height: 0px; transform:translateY(-1000px);}
 /* 隱藏 .header_nav 選單 E */
 
 
@@ -86,15 +109,16 @@
 
     /*.main-nav-link-in-sub{display: none;}*/
 
-    .header_nav_Open_Close{height: 0px; transform:translateY(0px);}/**/
+    .header_nav_Open_Close{height: 0px; transform:translateY(0px);}
     .header{
         padding: 0rem; 
         height: var(--nav-height);/*65px*/
-        display: flex;
-        /*justify-content:space-between;*/justify-content: center;
+        display: flex;        
+        justify-content: center;
         align-items: center;
-    }
-    /*.header_nav li{padding:0px 10px 15px;}*/
+    }/*justify-content:space-between;*/
+
+    .header_nav li{margin: 0 0.7rem ;}/**/
     .header_nav{height: 100%;}
     .header_nav > ul{display: flex; white-space:nowrap; height: 100%;} /*margin-top: -.45rem;主選單 橫向排列 white-space:nowrap;強制不換行*/
     .header_nav .layer_1{position: relative;}/*padding-top: 20px;讓第一層之後的定位*/
@@ -102,11 +126,18 @@
     .header_nav .layer_2_title { line-height: normal; }
 
     .header_nav .layer_2{position: absolute; left: 0; top: 100%; margin: 0rem; white-space: normal;} /*第一層之後的定位*/
-    .header_nav .layer_2 ul{margin-top: 0.8rem;}
-
+    /*.header_nav .layer_2 ul{margin-top: 0.8rem;}*/
     
-    .header_nav li:hover > ul {display: block;}/* */
-    .header_nav ul li ul.show {display:none;}
+    .header_nav li:hover > ul {
+        transform-origin:center top;
+        transform:scale(1);
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+         -ms-transition: all 0.3s ease;
+          -o-transition: all 0.3s ease;
+             transition: all 0.3s ease;
+    }/*display: block; */
+    /*.header_nav ul li ul.show {display:none;}*/
 
     .menu_btn{display: none;}
     /*.header_nav_Open_Close{height: auto;}*/

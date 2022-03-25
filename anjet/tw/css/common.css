@@ -128,7 +128,7 @@
     }
 
     .mezasu{
-        height: 100vh;/*500px*/
+        height: 760px;/*500px*/
         background: url(../img/banner/index-maehe2-1.jpg) center 70% no-repeat;
         background-size: cover;/* 背景自動縮放 */
         position: relative;
@@ -140,7 +140,7 @@
         position: absolute;
         width: 100vw; 
         height: 100px;
-        bottom: 50px;
+        bottom: 0px;
         display: flex;
         text-align: center;        
     }
@@ -148,7 +148,7 @@
 
 
     .focus{
-        height: 90vh;
+        height: 640px;
         background: url(../img/banner/Semiconductor_Probing.jpg) 50% 50% no-repeat;
         /* 背景自動縮放/固定 */
         background-size: cover;/* 背景自動縮放 */
