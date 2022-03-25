@@ -12,7 +12,7 @@
 
   <link href="css/common.css" rel="stylesheet" type="text/css">
   <link href="css/nav-sub.css" rel="stylesheet" type="text/css">
-
+  <link href="css/carousel.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" type="text/css" href="slick/slick.css"/><!--   -->
   <!-- Add the new slick-theme.css if you want the default styling -->
   <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/><!--  -->
@@ -29,10 +29,10 @@
   <!-- 選單 -->
 
   <!-- <div class="top_space"></div>調整上方空間用 -->
-  <div class="area banner mezasu">
+  <!--container為定寬容器(根據容器變固定寬度 且有最大寬的限制) 加上-fluid後 變寬為100%-->
+<!--   <div class="area banner mezasu">
   
     <div class="container">
-      <!--container為定寬容器(根據容器變固定寬度 且有最大寬的限制) 加上-fluid後 變寬為100%-->
       <div class="wrap">
         <div class="banner-title-background-color Shadow">
           <h3 class="Orange-title">Make Difference in<br>Green Technologies</h3>
@@ -59,9 +59,39 @@
           <div class="text"></div>
         </div>
 
-
     </div>
   
+  </div> -->
+
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="Slide 7"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item bg1 active"><div class="txtbox"><div class="txt">Make Difference in Green Technologies</div></div></div><!---->
+      <div class="carousel-item bg2"><div class="txtbox"><div class="txt">Think more radical, new ideas for society !!</div></div></div>
+<!--       <div class="carousel-item bg7"></div>       
+      <div class="carousel-item bg6"></div>
+     
+      <div class="carousel-item bg3"></div>
+      <div class="carousel-item bg4"></div>
+      <div class="carousel-item bg5"></div> -->
+
+    </div>
+     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"  data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"  data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button> <!---->
   </div>
 
 
