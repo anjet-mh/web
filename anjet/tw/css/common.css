@@ -108,66 +108,7 @@
 
 
 
-    .top_space{margin-top: var(--nav-height);}/*  65px - 7px*/
-
-    /*.index .area{padding: 2rem 0;}*/
-    .area.banner{display: flex; align-items: center;/*垂直置中*/}
-    .wrap{ padding: 20px;} /*width: 100%;*/
-    /*.container{display: flex; justify-content: center;}左右置中*/
-    .banner .wrap{display: flex; justify-content: center;}/*左右置中*/
-
-    
-    .content{ margin-top: 2rem;}
-    
-    .banner-title-background-color{/*.banner .wrap*/
-        width: 100%;/**/
-        text-align: center;
-        background-color: rgba(255, 255, 255, 0.45);/*rgba(255, 255, 255, 0.65)*/
-        border-radius: 5px;/**/
-        padding:40px;
-    }
-
-    .mezasu{
-        height: 760px;/*500px*/
-        background: url(../img/banner/index-maehe2-1.jpg) center 70% no-repeat;
-        background-size: cover;/* 背景自動縮放 */
-        position: relative;
-    }
-    /*.mezasu .container{width: 100vw;}
-    .mezasu .wrap{width: 90%; }*/
-
-    .mezasu .banner-product{
-        position: absolute;
-        width: 100vw; 
-        height: 100px;
-        bottom: 0px;
-        display: flex;
-        text-align: center;        
-    }
-    .mezasu .banner-product .item{width: 25%; background-color: #ffffff22;}
-
-
-    .focus{
-        height: 640px;
-        background: url(../img/banner/Semiconductor_Probing.jpg) 50% 50% no-repeat;
-        /* 背景自動縮放/固定 */
-        background-size: cover;/* 背景自動縮放 */
-        background-attachment: fixed;/* 背景固定 */
-        /*border-top: 1rem #0000005e solid;*/
-    }
-
-
-    .Shadow{box-shadow: 0px 3px 10px 1px rgba(0, 0, 0, 0.45); backdrop-filter: blur(10px);}
-    .mezasu .Shadow{box-shadow: 0px 3px 15px 2px #207c0a; backdrop-filter: blur(10px);}
-  
-    .Orange-title{font-size: 2rem; color: #26910c;/*ff8800*/
-        text-shadow:
-        -1px -1px 0 rgba(236, 253, 232, 0.5),
-        1px -1px 0 rgb(255, 255, 255, 0.5),
-        -1px 1px 0 rgb(255, 255, 255, 0.5),
-        1px 1px 0 rgb(255, 255, 255, 0.5);
-    }
-    .banner h2{padding-bottom: .8rem;}/*color: #000; margin-bottom: 1rem; border-bottom: 1px solid #ff8800; */
+    .top_space{margin-top: calc(var(--nav-height) + 9px) ;}/*  65px - 7px*/
 
     
 
@@ -555,7 +496,7 @@
     .tabnavFixed {
         z-index: 9;
         position: fixed;
-        top: var(--nav-height);
+        top: calc( var(--nav-height) + 10.5px);
         left: 0px;
         right: 0px;
         margin-top: 0;
@@ -594,13 +535,15 @@
 @media (min-width: 480px) {.globe-map img {width: 180%; top: -30%; left: -50%;}} 
 @media (min-width: 540px) {.globe-map img {width: 168%; top: -36%; left: -48%;}}
 @media (min-width: 768px) {.globe-map img {width: 127%; top: -15%; left: -15%;}
+.top_space{margin-top: var(--nav-height);}/*  65px - 7px*/
     /*min-width: 768px*/
     /*.card img{width: 50%; height: 50%; 
         object-fit: cover; 填滿元素的寬度及高度(維持原比例)，通常會剪掉超出部分的物件。
     }*/
-/*}
-
+/*} 
 @media (min-width: 992px) {*/
+
+
     .wrap{padding: 80px 0px;}
     #contactus_area_no_hash .wrap{padding: 0px 20px 80px;}
     /*.top_space{margin-top: var(--nav-height);}65px*/
@@ -668,6 +611,12 @@
 
     #product_card_area .card_box{display: flex;}
     #product_card_area .card{width: 50%; margin: 10px;}
+
+    /*固定產品選單 S*/
+    .tabnavFixed {
+        top: var(--nav-height);
+    }
+    /*固定產品選單 E*/
 
     #contactus_area_no_hash .left{width: 300px;}
     #contactus_area_no_hash .right{width:calc(100% - 300px);}
