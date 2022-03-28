@@ -81,7 +81,7 @@
 
 /*.index .area{padding: 2rem 0;}*/
 .area.banner{display: flex; align-items: center;/*垂直置中*/}
-.wrap{ padding: 20px;} /*width: 100%;*/
+
 /*.container{display: flex; justify-content: center;}左右置中*/
 .banner .wrap{display: flex; justify-content: center;}/*左右置中*/
 
