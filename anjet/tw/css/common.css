@@ -142,7 +142,11 @@
     .mission .title{font-size: 1.7rem;}
 
     .mission h2, .leftBGimg h2{ font-size: 1.9rem; border-bottom: 0px;margin: 0rem; padding: 0rem; ;}/*white-space:nowrap*/
+
+
     .leftBGimg h2, .leftBGimg {color: #ffffff; }/*letter-spacing: 2rem; */
+    .leftBGimg .col-md-3{position: relative;}
+    .leftBGimg  h2::after{position: absolute; content: '';top: -39px; right: -20px;left: -20px; height: 100px; background-color: rgba(255, 255, 255, 0.466);}
     .area.leftBGimg{position: relative; overflow: hidden;}    
     .leftBGimg .container::after{position: absolute; content: ""; z-index: -2;
         background-image: url(../img/BG_001-1.png) ;
@@ -565,7 +569,10 @@
 
     .mission h2, .leftBGimg h2{font-size: 2.3rem;  }/*text-align: right;*/
 
+
     .mission .col-md-3, .leftBGimg .col-md-3{width: 20%;}
+    .leftBGimg .col-md-3{margin-top: 22px;}
+    .leftBGimg  h2::after{position: absolute; content: '';top: -22px; right: 10px;left: -100px;height: 100px;background-color: rgba(255, 255, 255, 0.466);}
     .mission .col-md-9, .leftBGimg .col-md-9{width: 80%;}
 
     .mission .col-md-2, .leftBGimg .col-md-2{width: 35%;}/* text-align: center;*/

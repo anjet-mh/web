@@ -18,9 +18,9 @@
 
     .carousel-inner{position: relative; overflow: hidden;}
 
-    .carousel-item .txtbox{position: absolute; margin: auto; left: 0; right: 0; z-index: 1; width: 100%; display: flex; text-align: center; justify-content: center;}
-    .carousel-item.bg1 .txtbox{background: rgba(255, 255, 255, 0.55); color: rgb(0, 85, 28); bottom: 41.3%; width: 60%; min-width: 240px; padding: 1rem; font-size: 2rem; font-weight: 700; backdrop-filter: blur(10px); border-radius: 5px;}/**/
-    .carousel-item.bg2 .txtbox{background: rgba(0, 0, 0, 0.8); color: #fff; bottom: 40px; padding: 8PX 0; font-size: 1.2rem;}
+    .carousel-item .txtbox{position: absolute; margin: auto; left: 0; right: 0; z-index: 1; width: 100%; display: flex; text-align: center; justify-content: center; font-weight: 700; backdrop-filter: blur(10px);}
+    .carousel-item.bg1 .txtbox{background: rgba(255, 255, 255, 0.55); color: rgb(0, 85, 28); bottom: 220px; width: 70%; min-width: 240px; padding: 2rem 1rem; font-size: 2rem; border-radius: 5px;}/**/
+    .carousel-item.bg2 .txtbox{background: rgba(0, 0, 0, 0.35); color: rgb(255, 255, 255); bottom: 120px; padding: 2rem; font-size: 1.4rem;}/* bottom: 40px; padding: 8PX 0;*/
     
     #carouselExampleCaptions .carousel-item.bg1::after{background: var(--background_url_bg1);}
     #carouselExampleCaptions .carousel-item.bg1::before{background: var(--background_url_bg1);}
