@@ -13,16 +13,14 @@
     }
     /* 變數設定 E */
 
-    #carouselExampleCaptions{background-color: rgb(32, 62, 65); margin-top: var(--nav-height);}/**/
-    #carouselExampleCaptions .carousel-item{height: var(--carousel_item_height1); }
+    #carouselExampleCaptions{background-color: rgb(32, 62, 65); margin-top: var(--nav-height2);}/**/
+    #carouselExampleCaptions .carousel-item{height: var(--carousel_item_height1);}
 
     .carousel-inner{position: relative; overflow: hidden;}
 
-    .carousel-item .txtbox{position: absolute; display: flex; z-index: 1; width: 100%; color: #fff; padding: 8PX 0; text-align: center; background: rgba(0, 0, 0, 0.8); font-size: 1.2rem; bottom: 40px; justify-content: center;}
-    .carousel-item.bg1 .txtbox{ background-color: transparent; top: 0; bottom: 0; display: flex; align-items: center;}
-    
-    .carousel-item.bg1 .txt{width: 100%; display: flex; justify-content: center; align-items: center; padding: 1rem 67px; color: rgb(0, 85, 28); font-size: 2rem; font-weight: 700; backdrop-filter: blur(10px);background: rgba(255, 255, 255, 0.4); }
-
+    .carousel-item .txtbox{position: absolute; margin: auto; left: 0; right: 0; z-index: 1; width: 100%; display: flex; text-align: center; justify-content: center;}
+    .carousel-item.bg1 .txtbox{background: rgba(255, 255, 255, 0.55); color: rgb(0, 85, 28); bottom: 41.3%; width: 60%; min-width: 240px; padding: 1rem; font-size: 2rem; font-weight: 700; backdrop-filter: blur(10px); border-radius: 5px;}/**/
+    .carousel-item.bg2 .txtbox{background: rgba(0, 0, 0, 0.8); color: #fff; bottom: 40px; padding: 8PX 0; font-size: 1.2rem;}
     
     #carouselExampleCaptions .carousel-item.bg1::after{background: var(--background_url_bg1);}
     #carouselExampleCaptions .carousel-item.bg1::before{background: var(--background_url_bg1);}
@@ -83,7 +81,7 @@
 .area.banner{display: flex; align-items: center;/*垂直置中*/}
 
 /*.container{display: flex; justify-content: center;}左右置中*/
-.banner .wrap{display: flex; justify-content: center;}/*左右置中*/
+/*.banner .wrap{display: flex; justify-content: center;}左右置中*/
 
 
 .content{ margin-top: 2rem;}
@@ -117,7 +115,7 @@
 .mezasu .banner-product .item{width: 25%; background-color: #ffffff22;}
 
 .focus .wrap{max-height: 628px;}
-.focus .banner-title-background-color{background-color: rgba(255, 255, 255, 0.75); overflow-y: auto;}
+.focus .banner-title-background-color{background-color: rgba(255, 255, 255, 0.75);}/* overflow-y: auto;*/
 .focus p{max-height: 450px;}
 .focus{
     height: 640px;
@@ -146,7 +144,8 @@
 
 @media (min-width: 768px){
     *{letter-spacing: .15rem;}
-
+    #carouselExampleCaptions{margin-top: var(--nav-height);}
+    .carousel-item.bg1 .txtbox{font-size: 2.5rem;}
     #carouselExampleCaptions .carousel-item{height: var(--carousel_item_height2);}
 
     #carouselExampleCaptions .carousel-item.bg1::after, 

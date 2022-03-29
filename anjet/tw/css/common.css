@@ -12,6 +12,7 @@
         --category_bg-color:#0c69c0;
         --btn-color_background-color:rgba(1, 64, 80, 1);
         --nav-height:75px;
+        --nav-height2:75px;/*86px;*/
         --subtitle-bottom-line-img:80px;
     }
 
@@ -108,7 +109,7 @@
 
 
 
-    .top_space{margin-top: calc(var(--nav-height) + 9px) ;}/*  65px - 7px*/
+    .top_space{margin-top: var(--nav-height2) ;}/*  65px - 7px*/
     .wrap{ padding: 20px;} /*width: 100%;*/
     
 

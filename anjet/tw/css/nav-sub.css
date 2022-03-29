@@ -1,11 +1,13 @@
 :root{
     --header_background-color:rgba(247, 247, 247, .95);
     --logoImgHeight:36px;
-    --headerPadding-TB:calc((var(--nav-height) - var(--logoImgHeight)) / 2);
+    --headerPadding-TB:calc((var(--nav-height) - var(--logoImgHeight) -11px) /2);
 }
 .row{margin: 0rem; padding: 0px 0.5rem;}/**/
 
-.header{padding: var(--headerPadding-TB) 0 ; background-color: var(--header_background-color); /*padding: 0.8rem 0 0.5rem; border-bottom: .15rem solid #bdbdbd;*/}
+.header{padding: var(--headerPadding-TB) 0 calc(var(--headerPadding-TB) - 11px); background-color: var(--header_background-color);}/*height: var(--nav-height);*/
+
+
 
 .logo, .header_nav {padding: 0 0.8rem;}
 /*.header_nav{height: 80vh; }*/
